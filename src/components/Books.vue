@@ -1,13 +1,16 @@
 <template>
   <div class="book-list">
-    <h4>Books List</h4>
+    <h4>Books Read</h4>
     <ul class="books">
-      <li class="book" v-for="(book, index) in books" :key="index">
+      <li class="book" v-for="(book, index) in filterReadBooks" :key="index">
+        <span v-if="book.fav" :class="[{ fav: book.fav }]"
+          ><font-awesome-icon icon="star" class="fav-icon"
+        /></span>
         <img
           class="book-cover-img"
           :class="[{ 'e-book': book.type == 'E-Book' }]"
           :alt="`${book.title} book cover`"
-          :src="require(`@/assets/${slug(book.title)}.png`)"
+          :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
         />
       </li>
     </ul>
@@ -15,45 +18,24 @@
 </template>
 
 <script>
-import BookData from "../data/bookData";
+import slugMixin from "@/mixins/slugMixin.js";
 
 export default {
-  data() {
-    return {
-      books: []
-    };
+  props: {
+    bookInfo: Array
   },
-  methods: {
-    slug(title) {
-      return title
-        .toLowerCase()
-        .replace(/ /g, "-")
-        .replace(/ /g, ":")
-        .replace(/ /g, "'")
-        .replace(/[^\w-]+/g, "");
-    },
-    bookData(books) {
-      let bookList = [];
-      books.forEach(book => {
-        let key = book.key;
-        let data = book.val();
-        bookList.push({
-          key: key,
-          title: data.title,
-          type: data.type
-        });
-      });
-
-      this.books = bookList;
+  mixins: [slugMixin],
+  computed: {
+    filterReadBooks() {
+      return this.bookInfo.filter(item => item.dateFinished);
     }
-  },
-  mounted() {
-    BookData.getAll().on("value", this.bookData);
   }
 };
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/varibles.scss";
+
 .book-cover-img {
   width: 100%;
   display: inline-block;
@@ -81,27 +63,42 @@ export default {
   .book {
     text-align: center;
     width: 48%;
+    position: relative;
     @media screen and (min-width: 668px) {
       width: 250px;
     }
+    .fav {
+      position: absolute;
+      top: 4%;
+      right: 20%;
+      .fav-icon {
+        font-size: 30px;
+
+        path {
+          fill: $yellow;
+          stroke: $black;
+          stroke-width: 23px;
+        }
+      }
+    }
   }
 
-  .book:nth-child(2n + 1) img {
+  .book:nth-child(2n + 1) {
     transform: rotate(-2deg);
   }
 
-  .book:nth-child(3n + 2) img {
+  .book:nth-child(3n + 2) {
     transform: rotate(2deg);
   }
-  .book:nth-child(5n + 3) img {
+  .book:nth-child(5n + 3) {
     transform: rotate(-4deg);
   }
 
-  .book:nth-child(7n + 5) img {
+  .book:nth-child(7n + 5) {
     transform: rotate(6deg);
   }
 
-  .book:nth-child(11n + 7) img {
+  .book:nth-child(11n + 7) {
     transform: rotate(4deg);
   }
 }
