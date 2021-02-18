@@ -1,41 +1,114 @@
 <template>
-  <h1>Statistics</h1>
+  <div class="statistics-container">
+    <h1>Statistics</h1>
+    <div class="statistics">
+      <div class="stat">
+        <p class="stat-number">{{ filterReadBooks.length }}</p>
+        <p class="stat-title">Books Read</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">{{ valueCount("progress", "started") }}</p>
+        <p class="stat-title">Currently Reading</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">{{ valueCount("progress", "dnf") }}</p>
+        <p class="stat-title">Did Not Finish</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">{{ countRead("pages").toLocaleString() }}</p>
+        <p class="stat-title">Total Pages</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">
+          {{ Math.floor(countRead("pages") / filterReadBooks.length) }}
+        </p>
+        <p class="stat-title">Avg Pages</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">
+          {{ (countRead("rating") / filterReadBooks.length).toFixed(2) }}
+        </p>
+        <p class="stat-title">Avg Rating</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">
+          {{ Math.floor(countRead("publishedYear") / filterReadBooks.length) }}
+        </p>
+        <p class="stat-title">Avg Release Year</p>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
-import BookData from "../../data/bookData";
+import slugMixin from "@/mixins/slugMixin.js";
 
 export default {
-  data() {
-    return {
-      books: []
-    };
+  props: {
+    bookInfo: Array
   },
-  methods: {
-    slug(title) {
-      return title
-        .toLowerCase()
-        .replace(/ /g, "-")
-        .replace(/ /g, ":")
-        .replace(/ /g, "'")
-        .replace(/[^\w-]+/g, "");
-    },
-    bookData(books) {
-      let bookList = [];
-      books.forEach(book => {
-        let key = book.key;
-        let data = book.val();
-        bookList.push({
-          key: key,
-          title: data.title
-        });
-      });
-
-      this.books = bookList;
+  mixins: [slugMixin],
+  computed: {
+    filterReadBooks() {
+      return this.bookInfo.filter(item => item.dateFinished);
     }
   },
-  mounted() {
-    BookData.getAll().on("value", this.bookData);
+  methods: {
+    countRead(key) {
+      return this.filterReadBooks.reduce(
+        (res, item) => (item[key] ? res + item[key] : res),
+        0
+      );
+    },
+    count(key) {
+      return this.bookInfo.reduce(
+        (res, item) => (item[key] ? res + item[key] : res),
+        0
+      );
+    },
+    valueCount(key, value) {
+      return this.bookInfo.filter(book => book[key] === value).length;
+    }
   }
 };
 </script>
-<style></style>
+<style lang="scss">
+@import "@/assets/styles/varibles.scss";
+
+.statistics {
+  display: flex;
+  .stat {
+    text-align: center;
+    border: 3px solid $black;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 5px;
+    padding: 5px;
+    .stat-number {
+      font-weight: bold;
+      font-size: 50px;
+      margin: 0;
+    }
+    .stat-title {
+      margin: 0;
+    }
+  }
+  .stat:nth-child(1) {
+    background-color: $purple;
+  }
+  .stat:nth-child(2) {
+    background-color: $blue;
+  }
+  .stat:nth-child(3) {
+    background-color: $orange;
+  }
+  .stat:nth-child(4) {
+    background-color: $red;
+  }
+  .stat:nth-child(5) {
+    background-color: $yellow;
+  }
+  .stat:nth-child(6) {
+    background-color: $green;
+  }
+}
+</style>
