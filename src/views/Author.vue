@@ -24,29 +24,41 @@
       </div>
     </div>
     <div class="main">
-      <h1>Author Stats</h1>
+      <div class="statistics"></div>
+      <Authors :author-info="authors" />
     </div>
   </div>
 </template>
 
 <script>
-import BookData from "@/data/bookData.js";
+// import BookData from "@/data/bookData.js";
+import Authors from "@/components/Authors.vue";
+import AuthorData from "@/data/authorData.js";
 
 export default {
   name: "Author",
-  components: {},
+  components: {
+    Authors
+  },
   data() {
     return {
-      books: []
+      // books: [],
+      authors: []
     };
   },
   methods: {
-    bookData(books) {
-      this.books = books.val();
+    // bookData(books) {
+    //   console.log(books.val());
+    //   this.books = books.val();
+    // },
+    authorData(authors) {
+      console.log(authors.val());
+      this.authors = authors.val();
     }
   },
   mounted() {
-    BookData.getAll().on("value", this.bookData);
+    // BookData.getAll().on("value", this.bookData);
+    AuthorData.getAll().on("value", this.authorData);
   }
 };
 </script>
