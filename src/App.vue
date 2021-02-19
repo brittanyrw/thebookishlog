@@ -10,5 +10,6 @@
 }
 body {
   margin: 0;
+  font-family: "Verdana";
 }
 </style>
