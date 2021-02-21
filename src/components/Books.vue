@@ -1,33 +1,53 @@
 <template>
-  <div class="book-list">
-    <h4>Books Read</h4>
-    <ul class="books">
-      <li class="book" v-for="(book, index) in filterReadBooks" :key="index">
-        <span v-if="book.fav" :class="[{ fav: book.fav }]"
-          ><font-awesome-icon icon="star" class="fav-icon"
-        /></span>
-        <img
-          class="book-cover-img"
-          :class="[{ 'e-book': book.type == 'E-Book' }]"
-          :alt="`${book.title} book cover`"
-          :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
-        />
-      </li>
-    </ul>
+  <div class="books-list">
+    <div class="read-book-list">
+      <h2>Books Read</h2>
+      <ul class="books">
+        <li
+          class="book"
+          v-for="(book, index) in filter('finished')"
+          :key="index"
+        >
+          <img
+            class="book-cover-img"
+            :class="[{ 'e-book': book.type == 'E-Book' }]"
+            :alt="`${book.title} book cover`"
+            :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="current-book-list">
+      <h2>Currently Reading</h2>
+      <ul>
+        <li v-for="(book, index) in filter('started')" :key="index">
+          <p>{{ book.title }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="dnf-book-list">
+      <h2>DNFed Books</h2>
+      <p>"Did Not Finish" books</p>
+      <ul>
+        <li v-for="(book, index) in filter('dnf')" :key="index">
+          <p>{{ book.title }}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
-import slugMixin from "@/mixins/slugMixin.js";
+import mixins from "@/mixins/mixins.js";
 
 export default {
   props: {
     bookInfo: Array
   },
-  mixins: [slugMixin],
-  computed: {
-    filterReadBooks() {
-      return this.bookInfo.filter(item => item.dateFinished);
+  mixins: [mixins],
+  methods: {
+    filter(status) {
+      return this.bookInfo.filter(item => item.progress == status);
     }
   }
 };
@@ -66,20 +86,6 @@ export default {
     position: relative;
     @media screen and (min-width: 668px) {
       width: 250px;
-    }
-    .fav {
-      position: absolute;
-      top: 4%;
-      right: 20%;
-      .fav-icon {
-        font-size: 30px;
-
-        path {
-          fill: $yellow;
-          stroke: $black;
-          stroke-width: 23px;
-        }
-      }
     }
   }
 

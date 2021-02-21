@@ -8,14 +8,16 @@
       </div>
       <div class="stat">
         <p class="stat-number">{{ valueCount("progress", "started") }}</p>
-        <p class="stat-title">Currently Reading</p>
+        <p class="stat-title">Started</p>
       </div>
       <div class="stat">
         <p class="stat-number">{{ valueCount("progress", "dnf") }}</p>
         <p class="stat-title">Did Not Finish</p>
       </div>
       <div class="stat">
-        <p class="stat-number">{{ countRead("pages").toLocaleString() }}</p>
+        <p class="stat-number stat-number-pages">
+          {{ countRead("pages").toLocaleString() }}
+        </p>
         <p class="stat-title">Total Pages</p>
       </div>
       <div class="stat">
@@ -40,13 +42,13 @@
   </div>
 </template>
 <script>
-import slugMixin from "@/mixins/slugMixin.js";
+import mixins from "@/mixins/mixins.js";
 
 export default {
   props: {
     bookInfo: Array
   },
-  mixins: [slugMixin],
+  mixins: [mixins],
   computed: {
     filterReadBooks() {
       return this.bookInfo.filter(item => item.dateFinished);
@@ -71,44 +73,6 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/styles/varibles.scss";
-
-.statistics {
-  display: flex;
-  .stat {
-    text-align: center;
-    border: 3px solid $black;
-    flex-grow: 1;
-    flex-basis: 0;
-    margin: 5px;
-    padding: 5px;
-    .stat-number {
-      font-weight: bold;
-      font-size: 50px;
-      margin: 0;
-    }
-    .stat-title {
-      margin: 0;
-    }
-  }
-  .stat:nth-child(1) {
-    background-color: $purple;
-  }
-  .stat:nth-child(2) {
-    background-color: $blue;
-  }
-  .stat:nth-child(3) {
-    background-color: $orange;
-  }
-  .stat:nth-child(4) {
-    background-color: $red;
-  }
-  .stat:nth-child(5) {
-    background-color: $yellow;
-  }
-  .stat:nth-child(6) {
-    background-color: $green;
-  }
-}
 </style>

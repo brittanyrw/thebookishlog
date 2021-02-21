@@ -2,7 +2,7 @@
   <div class="author-list">
     <h4>Authors Read</h4>
     <ul class="authors">
-      <li class="author" v-for="(author, index) in authorInfo" :key="index">
+      <li class="author" v-for="(author, index) in sortedAuthors" :key="index">
         <div class="author-img-wrapper">
           <img
             class="author-img"
@@ -42,20 +42,24 @@
 </template>
 
 <script>
-import slugMixin from "@/mixins/slugMixin.js";
+import mixins from "@/mixins/mixins.js";
 
 export default {
   props: {
     authorInfo: Array
   },
-  mixins: [slugMixin],
-  methods: {
-    flagEmoji(countryCode) {
-      return countryCode
-        .toUpperCase()
-        .replace(/./g, char =>
-          String.fromCodePoint(char.charCodeAt(0) + 127397)
-        );
+  mixins: [mixins],
+  computed: {
+    sortedAuthors() {
+      let sortedAuthorList = this.authorInfo;
+      const sorted = (a, b) => {
+        if (a.books.length > b.books.length) {
+          return -1;
+        } else {
+          return 1;
+        }
+      };
+      return sortedAuthorList.sort(sorted);
     }
   }
 };
@@ -69,10 +73,12 @@ export default {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   .author {
     border: 5px solid $black;
     display: flex;
     margin: 10px;
+    // flex-grow: 1;
     .author-img-wrapper {
       height: 200px;
       width: 200px;
@@ -129,6 +135,7 @@ export default {
       display: flex;
       align-items: center;
       padding: 10px 20px 10px 10px;
+      margin: auto;
     }
   }
   .author:nth-child(1n) .author-img-wrapper {
