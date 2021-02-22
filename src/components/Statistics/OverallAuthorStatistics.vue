@@ -25,8 +25,7 @@
         <p class="stat-percent">
           {{
             Math.floor(
-              (valueCount("gender", "non-binary-queer") / authorInfo.length) *
-                100
+              (valueCount("gender", "non-binary") / authorInfo.length) * 100
             )
           }}%
         </p>

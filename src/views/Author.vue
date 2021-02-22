@@ -31,9 +31,8 @@
 </template>
 
 <script>
-// import BookData from "@/data/bookData.js";
 import Authors from "@/components/Authors.vue";
-import AuthorData from "@/data/authorData.js";
+import { authorData } from "@/data/authors.js";
 import OverallAuthorStatistics from "@/components/Statistics/OverallAuthorStatistics.vue";
 
 export default {
@@ -44,16 +43,8 @@ export default {
   },
   data() {
     return {
-      authors: []
+      authors: authorData
     };
-  },
-  methods: {
-    authorData(authors) {
-      this.authors = authors.val();
-    }
-  },
-  mounted() {
-    AuthorData.getAll().on("value", this.authorData);
   }
 };
 </script>

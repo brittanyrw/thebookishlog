@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import BookData from "@/data/bookData.js";
+import { bookData } from "@/data/books.js";
 import Books from "@/components/Books.vue";
 import OverallBookStatistics from "@/components/Statistics/OverallBookStatistics.vue";
 
@@ -43,16 +43,8 @@ export default {
   },
   data() {
     return {
-      books: []
+      books: bookData
     };
-  },
-  methods: {
-    bookData(books) {
-      this.books = books.val();
-    }
-  },
-  mounted() {
-    BookData.getAll().on("value", this.bookData);
   }
 };
 </script>
