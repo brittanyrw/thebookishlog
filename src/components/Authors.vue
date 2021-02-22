@@ -1,6 +1,6 @@
 <template>
   <div class="author-list">
-    <h4>Authors Read</h4>
+    <h2>Authors Read</h2>
     <ul class="authors">
       <li class="author" v-for="(author, index) in sortedAuthors" :key="index">
         <div class="author-img-wrapper">
@@ -68,99 +68,101 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/varibles.scss";
 
-.authors {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  .author {
-    border: 5px solid $black;
+.author-list {
+  padding: 20px;
+  .authors {
+    list-style: none;
+    padding: 0;
     display: flex;
-    margin: 10px;
-    // flex-grow: 1;
-    .author-img-wrapper {
-      height: 200px;
-      width: 200px;
-      border-right: 5px solid $black;
-      overflow: hidden;
-      position: relative;
-      .author-img {
-        width: 100%;
-        min-height: 200px;
-      }
-      .author-name {
-        position: absolute;
-        bottom: 0;
-        background-color: rgba(255, 255, 255, 0.6);
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 5px;
-        color: black;
-        text-decoration: none;
-        font-size: 15px;
-      }
-      .author-info {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        width: 40px;
-        text-align: center;
-        span {
-          display: block;
-        }
-        .book-number {
-          background-color: white;
-          border-radius: 50%;
-          height: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 4px solid $black;
-          font-weight: bold;
-          font-size: 22px;
-          color: $black;
-        }
-        .lgbt {
-          margin-top: 10px;
-          height: 40px;
-        }
-        .flag {
-          font-size: 40px;
-        }
-      }
-    }
-    .author-books {
+    flex-wrap: wrap;
+    justify-content: center;
+    .author {
+      border: 5px solid $black;
       display: flex;
-      align-items: center;
-      padding: 10px 20px 10px 10px;
-      margin: auto;
+      margin: 10px;
+      // flex-grow: 1;
+      .author-img-wrapper {
+        height: 200px;
+        width: 200px;
+        border-right: 5px solid $black;
+        overflow: hidden;
+        position: relative;
+        .author-img {
+          width: 100%;
+        }
+        .author-name {
+          position: absolute;
+          bottom: 0;
+          background-color: rgba(255, 255, 255, 0.6);
+          left: 0;
+          width: 100%;
+          text-align: center;
+          padding: 5px;
+          color: black;
+          text-decoration: none;
+          font-size: 15px;
+        }
+        .author-info {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 40px;
+          text-align: center;
+          span {
+            display: block;
+          }
+          .book-number {
+            background-color: white;
+            border-radius: 50%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid $black;
+            font-weight: bold;
+            font-size: 22px;
+            color: $black;
+          }
+          .lgbt {
+            margin-top: 10px;
+            height: 40px;
+          }
+          .flag {
+            font-size: 40px;
+          }
+        }
+      }
+      .author-books {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px 10px 10px;
+        margin: auto;
+        .author-book-img {
+          height: 150px;
+        }
+      }
+    }
+    .author:nth-child(1n) .author-img-wrapper {
+      background-color: $purple;
+    }
+
+    .author:nth-child(2n) .author-img-wrapper {
+      background-color: $red;
+    }
+    .author:nth-child(3n) .author-img-wrapper {
+      background-color: $orange;
+    }
+
+    .author:nth-child(4n) .author-img-wrapper {
+      background-color: $blue;
+    }
+
+    .author:nth-child(5n) .author-img-wrapper {
+      background-color: $green;
+    }
+    .author:nth-child(6n) .author-img-wrapper {
+      background-color: $yellow;
     }
   }
-  .author:nth-child(1n) .author-img-wrapper {
-    background-color: $purple;
-  }
-
-  .author:nth-child(2n) .author-img-wrapper {
-    background-color: $red;
-  }
-  .author:nth-child(3n) .author-img-wrapper {
-    background-color: $orange;
-  }
-
-  .author:nth-child(4n) .author-img-wrapper {
-    background-color: $blue;
-  }
-
-  .author:nth-child(5n) .author-img-wrapper {
-    background-color: $green;
-  }
-  .author:nth-child(6n) .author-img-wrapper {
-    background-color: $yellow;
-  }
-}
-.author-book-img {
-  height: 150px;
 }
 </style>

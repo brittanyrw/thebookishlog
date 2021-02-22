@@ -1,6 +1,6 @@
 <template>
   <div class="statistics-container">
-    <h1>Author Statistics</h1>
+    <h2>Author Statistics</h2>
     <div class="statistics">
       <div class="stat">
         <p class="stat-number">{{ authorInfo.length }}</p>
@@ -59,8 +59,8 @@
       </div>
     </div>
     <div class="country-stats">
+      <h2>Author Countries</h2>
       <ul>
-        Author Countries
         <li
           v-for="(countryAmount, countryCode) in countArray(authorCountries)"
           :key="countryCode"
@@ -109,28 +109,88 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/varibles.scss";
 
+.statistics-container {
+  background-color: $black;
+  padding: 20px;
+  h2 {
+    color: #fae6e9;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .statistics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .stat {
+      background-color: #fae6e9;
+      text-align: center;
+      margin: 10px;
+      border: 2px solid #fae6e9;
+      -webkit-box-shadow: 5px 5px 0 #fae6e9;
+      box-shadow: 9px 9px 0 #fae6e9;
+      border-radius: 7px;
+      color: $black;
+      outline: 3px solid $black;
+      position: relative;
+      .stat-number {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px 20px 0 20px;
+      }
+      .stat-title {
+        margin: 0;
+        padding: 0 20px 30px 20px;
+      }
+      .stat-percent {
+        margin: 0;
+        background-color: $black;
+        color: #fae6e9;
+        position: absolute;
+        padding: 10px;
+        bottom: -40px;
+        right: 5px;
+        height: 65px;
+        width: 65px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 2px solid #fae6e9;
+      }
+    }
+  }
+}
+
 .country-stats {
   ul {
     list-style: none;
     padding: 0;
   }
-  li {
+  .author-stat-flags {
     display: inline-block;
+    background-color: #fae6e9;
+    text-align: center;
+    margin: 10px;
+    border-radius: 7px;
+    color: $black;
+    position: relative;
     padding: 10px;
-    border: 3px solid $black;
-    margin: 5px;
-  }
-  p {
-    display: inline-block;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  .author-stat-flag {
-    font-size: 40px;
-    margin-right: 10px;
-  }
-  .author-stat-flag-amount {
-    font-size: 30px;
+    p {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .author-stat-flag {
+      font-size: 50px;
+      margin-right: 15px;
+    }
+    .author-stat-flag-amount {
+      font-size: 40px;
+      font-weight: bold;
+    }
   }
 }
 </style>
