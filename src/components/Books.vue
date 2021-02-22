@@ -79,6 +79,63 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  .read-book-list {
+    padding: 20px;
+  }
+
+  .current-book-list {
+    padding: 20px;
+    background-color: $black;
+    h2 {
+      color: #fae6e9;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        background-color: #fae6e9;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        border: 2px solid #fae6e9;
+        -webkit-box-shadow: 5px 5px 0 #fae6e9;
+        box-shadow: 9px 9px 0 #fae6e9;
+        border-radius: 7px;
+        color: $black;
+        outline: 3px solid $black;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .dnf-book-list {
+    padding: 20px;
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        background-color: $black;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        border: 2px solid $black;
+        -webkit-box-shadow: 5px 5px 0 $black;
+        box-shadow: 9px 9px 0 $black;
+        border-radius: 7px;
+        color: #fae6e9;
+        outline: 3px solid #fae6e9;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
 
   .book {
     text-align: center;

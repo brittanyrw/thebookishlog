@@ -8,10 +8,10 @@ export const authorData = [
     country: [
       {
         code: "US",
-        name: "United States",
-      },
+        name: "United States"
+      }
     ],
-    website: "https:www.google.com",
+    website: "https:www.google.com"
   },
   {
     name: "Kalynn Bayron",
@@ -22,10 +22,10 @@ export const authorData = [
     country: [
       {
         code: "US",
-        name: "United States",
-      },
+        name: "United States"
+      }
     ],
-    website: "https:www.google.com",
+    website: "https:www.google.com"
   },
   {
     name: "Alexis Henderson",
@@ -36,10 +36,10 @@ export const authorData = [
     country: [
       {
         code: "US",
-        name: "United States",
-      },
+        name: "United States"
+      }
     ],
-    website: "https:www.google.com",
+    website: "https:www.google.com"
   },
   {
     name: "Tiffany D. Jackson",
@@ -50,10 +50,10 @@ export const authorData = [
     country: [
       {
         code: "US",
-        name: "United States",
-      },
+        name: "United States"
+      }
     ],
-    website: "https:www.google.com",
+    website: "https:www.google.com"
   },
   {
     name: "Sarah Andersen",
@@ -64,10 +64,10 @@ export const authorData = [
     country: [
       {
         code: "US",
-        name: "United States",
-      },
+        name: "United States"
+      }
     ],
-    website: "https:www.google.com",
+    website: "https:www.google.com"
   },
   {
     name: "Kimberly Jones",
@@ -78,10 +78,10 @@ export const authorData = [
     country: [
       {
         code: "US",
-        name: "United States",
-      },
+        name: "United States"
+      }
     ],
-    website: "https:www.google.com",
+    website: "https:www.google.com"
   },
   {
     name: "Camryn Garrett",
@@ -92,15 +92,15 @@ export const authorData = [
     country: [
       {
         code: "US",
-        name: "United States",
-      },
+        name: "United States"
+      }
     ],
-    website: "https:www.google.com",
+    website: "https:www.google.com"
   },
   {
     name: "Hallie Rubenhold",
     books: [
-      "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
+      "The Five: The Untold Lives of the Women Killed by Jack the Ripper"
     ],
     poc: false,
     gender: "female",
@@ -108,9 +108,9 @@ export const authorData = [
     country: [
       {
         code: "GB",
-        name: "United Kingdom",
-      },
+        name: "United Kingdom"
+      }
     ],
-    website: "https:www.google.com",
-  },
+    website: "https:www.google.com"
+  }
 ];
