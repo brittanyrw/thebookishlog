@@ -27,6 +27,9 @@
       </div>
     </nav>
     <router-view />
+    <footer>
+      <p>Created by <a href="https://musicalwebdev.com" target="_blank">Brittany Walker.</a></p>
+    </footer>
   </div>
 </template>
 
@@ -118,5 +121,13 @@ h2 {
   border: 7px solid $black;
   box-shadow: 10px 10px 0 $black;
   border-radius: 7px 7px 7px 0;
+}
+
+footer {
+  border-top: 7px solid $black;
+  padding: 10px;
+  a {
+    color: $black;
+  }
 }
 </style>
