@@ -87,7 +87,7 @@ export default {
     padding: 20px;
     background-color: $black;
     h2 {
-      color: #fae6e9;
+      color: $pink;
     }
     ul {
       padding: 0;
@@ -95,13 +95,13 @@ export default {
       display: flex;
       flex-wrap: wrap;
       li {
-        background-color: #fae6e9;
+        background-color: $pink;
         padding: 10px;
         text-align: center;
         margin: 10px;
-        border: 2px solid #fae6e9;
-        -webkit-box-shadow: 5px 5px 0 #fae6e9;
-        box-shadow: 9px 9px 0 #fae6e9;
+        border: 2px solid $pink;
+        -webkit-box-shadow: 5px 5px 0 $pink;
+        box-shadow: 9px 9px 0 $pink;
         border-radius: 7px;
         color: $black;
         outline: 3px solid $black;
@@ -128,8 +128,8 @@ export default {
         -webkit-box-shadow: 5px 5px 0 $black;
         box-shadow: 9px 9px 0 $black;
         border-radius: 7px;
-        color: #fae6e9;
-        outline: 3px solid #fae6e9;
+        color: $pink;
+        outline: 3px solid $pink;
         p {
           margin: 0;
         }

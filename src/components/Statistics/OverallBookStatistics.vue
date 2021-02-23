@@ -80,7 +80,7 @@ export default {
   background-color: $black;
   padding: 20px;
   h2 {
-    color: #fae6e9;
+    color: $pink;
     margin: 0;
     margin-bottom: 20px;
   }
@@ -89,13 +89,13 @@ export default {
     justify-content: center;
     flex-wrap: wrap;
     .stat {
-      background-color: #fae6e9;
+      background-color: $pink;
       padding: 20px;
       text-align: center;
       margin: 10px;
-      border: 2px solid #fae6e9;
-      -webkit-box-shadow: 5px 5px 0 #fae6e9;
-      box-shadow: 9px 9px 0 #fae6e9;
+      border: 2px solid $pink;
+      -webkit-box-shadow: 5px 5px 0 $pink;
+      box-shadow: 9px 9px 0 $pink;
       border-radius: 7px;
       color: $black;
       outline: 3px solid $black;

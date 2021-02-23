@@ -2,7 +2,7 @@
   <div id="app">
     <nav>
       <div class="title">
-        <h1>Bookish Log</h1>
+        <router-link to="/"><h1>Bookish Log</h1></router-link>
         <p>
           A log of all of the books I have read starting in 2021.
         </p>
@@ -41,7 +41,7 @@
 body {
   margin: 0;
   font-family: "Verdana";
-  background-color: #fae6e9;
+  background-color: $pink;
 }
 nav {
   border-bottom: 7px solid $black;
@@ -49,10 +49,13 @@ nav {
   .title {
     padding: 20px;
     border-right: 3px solid $black;
-    h1 {
+    h1,
+    a {
       margin: 0;
       font-family: "Abril Fatface", cursive;
       font-size: 30px;
+      color: $black;
+      text-decoration: none;
     }
     p {
       margin: 10px 0;
@@ -74,7 +77,7 @@ nav {
     }
     button:hover {
       background-color: $black;
-      color: #fae6e9;
+      color: $pink;
       transition: color 1s, background-color 1s;
       cursor: pointer;
     }
@@ -97,7 +100,7 @@ h2 {
 
 #app {
   margin: 50px;
-  background-color: #fae6e9;
+  background-color: $pink;
   border: 7px solid $black;
   box-shadow: 10px 10px 0 $black;
   border-radius: 7px 7px 7px 0;
