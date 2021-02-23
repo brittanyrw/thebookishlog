@@ -25,30 +25,6 @@ export const bookData = [
     fav: false
   },
   {
-    title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
-    author: ["Hallie Rubenhold"],
-    publishedYear: 2019,
-    setting: ["United Kingdom"],
-    genre: [
-      "History",
-      "True Crime",
-      "Feminism",
-      "Women's Stories",
-      "Mystery",
-      "Biography"
-    ],
-    type: "Non-Fiction",
-    pages: 333,
-    medium: "E-Book",
-    rating: 4.5,
-    dateStarted: "01/30/2021",
-    dateFinished: "02/20/2021",
-    progress: "finished",
-    bookCoverColor: "Blue",
-    bookCoverObject: "Woman",
-    fav: false
-  },
-  {
     title: "Cinderella Is Dead",
     author: ["Kalynn Bayron"],
     publishedYear: 2020,
@@ -191,6 +167,30 @@ export const bookData = [
     rating: 2.5,
     dateStarted: "02/12/2021",
     dateFinished: "02/14/2021",
+    progress: "finished",
+    bookCoverColor: "Blue",
+    bookCoverObject: "Woman",
+    fav: false
+  },
+  {
+    title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
+    author: ["Hallie Rubenhold"],
+    publishedYear: 2019,
+    setting: ["United Kingdom"],
+    genre: [
+      "History",
+      "True Crime",
+      "Feminism",
+      "Women's Stories",
+      "Mystery",
+      "Biography"
+    ],
+    type: "Non-Fiction",
+    pages: 333,
+    medium: "E-Book",
+    rating: 4.5,
+    dateStarted: "01/30/2021",
+    dateFinished: "02/20/2021",
     progress: "finished",
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",

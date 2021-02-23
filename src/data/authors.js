@@ -11,7 +11,7 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "https:www.google.com"
+    website: "ericaarmstrongdunbar.com"
   },
   {
     name: "Kalynn Bayron",
@@ -25,7 +25,7 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "https:www.google.com"
+    website: "kalynnbayron.com"
   },
   {
     name: "Alexis Henderson",
@@ -39,7 +39,7 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "https:www.google.com"
+    website: "alexishenderson.com"
   },
   {
     name: "Tiffany D. Jackson",
@@ -53,7 +53,7 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "https:www.google.com"
+    website: "writeinbk.com"
   },
   {
     name: "Sarah Andersen",
@@ -67,7 +67,7 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "https:www.google.com"
+    website: "sarahcandersen.com"
   },
   {
     name: "Kimberly Jones",
@@ -81,7 +81,21 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "https:www.google.com"
+    website: "kimjoneswrites.com"
+  },
+  {
+    name: "Gilly Segal",
+    books: ["I'm Not Dying with You Tonight"],
+    poc: false,
+    gender: "female",
+    lgbt: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "gillysegal.com"
   },
   {
     name: "Camryn Garrett",
@@ -95,7 +109,7 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "https:www.google.com"
+    website: "camryngarrett.com"
   },
   {
     name: "Hallie Rubenhold",
@@ -111,6 +125,6 @@ export const authorData = [
         name: "United Kingdom"
       }
     ],
-    website: "https:www.google.com"
+    website: "hallierubenhold.com"
   }
 ];
