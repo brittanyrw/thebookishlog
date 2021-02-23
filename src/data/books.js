@@ -112,7 +112,7 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Gray",
     bookCoverObject: "Woman",
-    fav: true
+    fav: false
   },
   {
     title: "Monday's Not Coming",
