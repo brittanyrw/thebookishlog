@@ -11,13 +11,13 @@
         <router-link to="/authors">
           <button>Authors</button>
         </router-link>
-        <router-link to="/genres">
+        <router-link to="/genres" :disabled="true" class="disabled">
           <button>Genres</button>
         </router-link>
-        <router-link to="/dates">
+        <router-link to="/dates" class="disabled">
           <button>Dates</button>
         </router-link>
-        <router-link to="/length">
+        <router-link to="/length" class="disabled">
           <button>Other</button>
         </router-link>
       </div>
@@ -74,6 +74,7 @@ nav {
       padding: 10px 25px;
       background-color: transparent;
       text-transform: uppercase;
+      outline-color: $black;
     }
     button:hover {
       background-color: $black;
@@ -88,6 +89,19 @@ nav {
     h4 {
       margin: 0;
     }
+  }
+  .disabled button {
+    cursor: not-allowed;
+    border-color: #ccc;
+    color: #ccc;
+  }
+  .disabled button:hover {
+    background-color: transparent;
+    color: #ccc;
+    transition: 0s;
+  }
+  .disabled button:focus {
+    outline: 0;
   }
 }
 
