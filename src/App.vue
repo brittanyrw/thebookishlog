@@ -85,6 +85,10 @@ nav {
       transition: color 1s, background-color 1s;
       cursor: pointer;
     }
+    .is-active button {
+      background-color: $black;
+      color: $pink;
+    }
   }
   .external-links {
     padding: 20px;
