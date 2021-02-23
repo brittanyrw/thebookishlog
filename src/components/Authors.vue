@@ -3,14 +3,29 @@
     <h2>Authors Read</h2>
     <ul class="authors">
       <li class="author" v-for="(author, index) in sortedAuthors" :key="index">
-        <div class="author-img-wrapper">
-          <img
-            class="author-img"
-            :alt="`${author.name}`"
-            :src="require(`@/assets/imgs/${slug(author.name)}.png`)"
-          />
-          <a class="author-name" :href="author.website">{{ author.name }}</a>
-          <div class="author-info">
+        <div class="author-name">
+          <h3>{{ author.name }}</h3>
+        </div>
+        <div class="author-imgs">
+          <div class="author-img-wrapper">
+            <img
+              class="author-img"
+              :alt="`${author.name}`"
+              :src="require(`@/assets/imgs/${slug(author.name)}.png`)"
+            />
+          </div>
+          <div class="author-books">
+            <img
+              v-for="(book, index) in author.books"
+              :key="index"
+              class="author-book-img"
+              :alt="`${book}`"
+              :src="require(`@/assets/imgs/${slug(book)}.png`)"
+            />
+          </div>
+        </div>
+        <div class="author-info">
+          <div class="author-stats">
             <span class="book-number">{{ author.books.length }}</span>
             <img
               v-if="author.lgbt"
@@ -26,15 +41,12 @@
               {{ flagEmoji(country.code) }}
             </span>
           </div>
-        </div>
-        <div class="author-books">
-          <img
-            v-for="(book, index) in author.books"
-            :key="index"
-            class="author-book-img"
-            :alt="`${book}`"
-            :src="require(`@/assets/imgs/${slug(book)}.png`)"
-          />
+          <a
+            :href="`https://${author.website}`"
+            target="_blank"
+            class="author-website"
+            >{{ author.website }}</a
+          >
         </div>
       </li>
     </ul>
@@ -70,6 +82,8 @@ export default {
 
 .author-list {
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
   .authors {
     list-style: none;
     padding: 0;
@@ -78,9 +92,26 @@ export default {
     justify-content: center;
     .author {
       border: 5px solid $black;
-      display: flex;
+      display: block;
       margin: 10px;
-      // flex-grow: 1;
+      border-radius: 7px;
+      flex-grow: 1;
+      .author-name {
+        color: $pink;
+        text-align: center;
+        padding: 20px;
+        background-color: $black;
+        h3 {
+          margin: 0;
+        }
+      }
+      .author-imgs {
+        display: flex;
+      }
+      .author-stats {
+        display: flex;
+        align-items: center;
+      }
       .author-img-wrapper {
         height: 200px;
         width: 200px;
@@ -90,46 +121,40 @@ export default {
         .author-img {
           width: 100%;
         }
-        .author-name {
-          position: absolute;
-          bottom: 0;
-          background-color: rgba(255, 255, 255, 0.6);
-          left: 0;
-          width: 100%;
-          text-align: center;
-          padding: 5px;
-          color: black;
-          text-decoration: none;
-          font-size: 15px;
-        }
-        .author-info {
-          position: absolute;
-          top: 5px;
-          left: 5px;
+      }
+      .author-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $black;
+        padding: 0 10px 5px 10px;
+        .book-number {
+          background-color: white;
+          border-radius: 50%;
+          height: 40px;
           width: 40px;
-          text-align: center;
-          span {
-            display: block;
-          }
-          .book-number {
-            background-color: white;
-            border-radius: 50%;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 4px solid $black;
-            font-weight: bold;
-            font-size: 22px;
-            color: $black;
-          }
-          .lgbt {
-            margin-top: 10px;
-            height: 40px;
-          }
-          .flag {
-            font-size: 40px;
-          }
+          border: 4px solid $black;
+          font-weight: bold;
+          font-size: 22px;
+          color: $black;
+          display: flex;
+          justify-content: center;
+          margin-right: 5px;
+          margin-top: 5px;
+        }
+        .lgbt {
+          margin-top: 10px;
+          height: 35px;
+          margin-right: 5px;
+        }
+        .flag {
+          font-size: 40px;
+          margin-top: 10px;
+        }
+        .author-website {
+          text-decoration: none;
+          color: $pink;
+          font-size: 14px;
         }
       }
       .author-books {
@@ -142,26 +167,8 @@ export default {
         }
       }
     }
-    .author:nth-child(1n) .author-img-wrapper {
-      background-color: $purple;
-    }
-
-    .author:nth-child(2n) .author-img-wrapper {
-      background-color: $red;
-    }
-    .author:nth-child(3n) .author-img-wrapper {
-      background-color: $orange;
-    }
-
-    .author:nth-child(4n) .author-img-wrapper {
-      background-color: $blue;
-    }
-
-    .author:nth-child(5n) .author-img-wrapper {
-      background-color: $green;
-    }
-    .author:nth-child(6n) .author-img-wrapper {
-      background-color: $yellow;
+    .author:last-child {
+      flex-grow: unset;
     }
   }
 }
