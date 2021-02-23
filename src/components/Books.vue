@@ -21,7 +21,7 @@
       <h2>Currently Reading</h2>
       <ul>
         <li v-for="(book, index) in filter('started')" :key="index">
-          <p>{{ book.title }}</p>
+          <p>{{ book.title }} by {{ book.author[0]}}</p>
         </li>
       </ul>
     </div>
@@ -30,7 +30,7 @@
       <p>"Did Not Finish" books</p>
       <ul>
         <li v-for="(book, index) in filter('dnf')" :key="index">
-          <p>{{ book.title }}</p>
+          <p>{{ book.title }} by {{ book.author[0] }}</p>
         </li>
       </ul>
     </div>
@@ -91,7 +91,10 @@ export default {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 30px auto;
       li {
+        flex-grow: 1;
         background-color: $pink;
         padding: 10px;
         text-align: center;
