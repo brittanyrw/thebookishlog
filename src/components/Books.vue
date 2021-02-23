@@ -1,8 +1,21 @@
 <template>
   <div class="books-list">
     <div class="read-book-list">
-      <h2>Books Read</h2>
-      <ul class="books">
+      <div class="header">
+        <h2>Books Read</h2>
+        <div class="toggle-button-wrapper">
+          <input
+            type="checkbox"
+            v-model="toggle"
+            true-value="yes"
+            false-value="no"
+            id="toggle-text-books"
+          />
+          <label for="toggle-text-books">Show Books with Text</label>
+        </div>
+      </div>
+
+      <ul class="books" v-show="toggle === 'no'">
         <li
           class="book"
           v-for="(book, index) in filter('finished')"
@@ -16,12 +29,28 @@
           />
         </li>
       </ul>
+      <ul class="books text-books" v-show="toggle === 'yes'">
+        <li
+          class="book"
+          v-for="(book, index) in filter('finished')"
+          :key="index"
+        >
+          <img
+            class="book-cover-img"
+            :alt="`${book.title} book cover`"
+            :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+          />
+          <div class="text-book-info">
+            <p>{{ book.title }} by {{ book.author[0] }}</p>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="current-book-list">
       <h2>Started Reading</h2>
       <ul>
         <li v-for="(book, index) in filter('started')" :key="index">
-          <p>{{ book.title }} by {{ book.author[0]}}</p>
+          <p>{{ book.title }} by {{ book.author[0] }}</p>
         </li>
       </ul>
     </div>
@@ -41,20 +70,30 @@
 import mixins from "@/mixins/mixins.js";
 
 export default {
+  data() {
+    return {
+      toggle: "no",
+    };
+  },
   props: {
-    bookInfo: Array
+    bookInfo: Array,
   },
   mixins: [mixins],
   methods: {
     filter(status) {
-      return this.bookInfo.filter(item => item.progress == status);
-    }
-  }
+      return this.bookInfo.filter((item) => item.progress == status);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/styles/varibles.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 
 .book-cover-img {
   width: 100%;
@@ -79,7 +118,26 @@ export default {
   .read-book-list {
     padding: 20px;
   }
-
+  .text-books {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    .text-book {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid black;
+      display: flex;
+      img {
+        max-height: 100px;
+        width: auto;
+      }
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
   .current-book-list {
     padding: 20px;
     background-color: $black;
@@ -147,15 +205,13 @@ export default {
       width: 250px;
     }
     &.e-book {
-    width: 200px; 
-    img {
-      max-height: 250px;
-      width: auto;
+      width: 200px;
+      img {
+        max-height: 250px;
+        width: auto;
+      }
     }
   }
-  }
-
-    
 
   .book:nth-child(2n + 1) {
     transform: rotate(-2deg);
@@ -174,6 +230,14 @@ export default {
 
   .book:nth-child(11n + 7) {
     transform: rotate(4deg);
+  }
+
+  .text-books {
+    margin-top: 30px;
+  }
+
+  .text-books .book {
+    transform: rotate(0deg);
   }
 }
 </style>
