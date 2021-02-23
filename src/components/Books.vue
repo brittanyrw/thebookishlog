@@ -18,7 +18,7 @@
       </ul>
     </div>
     <div class="current-book-list">
-      <h2>Currently Reading</h2>
+      <h2>Started Reading</h2>
       <ul>
         <li v-for="(book, index) in filter('started')" :key="index">
           <p>{{ book.title }} by {{ book.author[0]}}</p>
