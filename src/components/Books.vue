@@ -7,10 +7,10 @@
           class="book"
           v-for="(book, index) in filter('finished')"
           :key="index"
+          :class="[{ 'e-book': book.medium == 'E-Book' }]"
         >
           <img
             class="book-cover-img"
-            :class="[{ 'e-book': book.medium == 'E-Book' }]"
             :alt="`${book.title} book cover`"
             :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
           />
@@ -63,10 +63,6 @@ export default {
 
   @media screen and (min-width: 668px) {
     max-height: 300px;
-    width: auto;
-  }
-  &.e-book {
-    max-height: 250px;
     width: auto;
   }
 }
@@ -147,7 +143,16 @@ export default {
     @media screen and (min-width: 668px) {
       width: 250px;
     }
+    &.e-book {
+    width: 200px; 
+    img {
+      max-height: 250px;
+      width: auto;
+    }
   }
+  }
+
+    
 
   .book:nth-child(2n + 1) {
     transform: rotate(-2deg);
