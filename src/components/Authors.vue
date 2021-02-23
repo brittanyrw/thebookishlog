@@ -160,7 +160,7 @@ export default {
       .author-books {
         display: flex;
         align-items: center;
-        padding: 10px 20px 10px 10px;
+        padding: 10px;
         margin: auto;
         .author-book-img {
           height: 150px;

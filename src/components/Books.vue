@@ -10,7 +10,7 @@
         >
           <img
             class="book-cover-img"
-            :class="[{ 'e-book': book.type == 'E-Book' }]"
+            :class="[{ 'e-book': book.medium == 'E-Book' }]"
             :alt="`${book.title} book cover`"
             :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
           />
@@ -66,7 +66,7 @@ export default {
     width: auto;
   }
   &.e-book {
-    max-height: 200px;
+    max-height: 250px;
     width: auto;
   }
 }
@@ -79,6 +79,7 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
   .read-book-list {
     padding: 20px;
   }
@@ -141,6 +142,8 @@ export default {
     text-align: center;
     width: 48%;
     position: relative;
+    margin-right: 10px;
+    margin-bottom: 40px;
     @media screen and (min-width: 668px) {
       width: 250px;
     }
