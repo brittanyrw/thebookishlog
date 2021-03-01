@@ -72,18 +72,18 @@ import mixins from "@/mixins/mixins.js";
 export default {
   data() {
     return {
-      toggle: "no",
+      toggle: "no"
     };
   },
   props: {
-    bookInfo: Array,
+    bookInfo: Array
   },
   mixins: [mixins],
   methods: {
     filter(status) {
-      return this.bookInfo.filter((item) => item.progress == status);
-    },
-  },
+      return this.bookInfo.filter(item => item.progress == status);
+    }
+  }
 };
 </script>
 
