@@ -28,7 +28,10 @@
     </nav>
     <router-view />
     <footer>
-      <p>Created by <a href="https://musicalwebdev.com" target="_blank">Brittany Walker.</a></p>
+      <p>
+        Created by
+        <a href="https://musicalwebdev.com" target="_blank">Brittany Walker.</a>
+      </p>
     </footer>
   </div>
 </template>
@@ -92,9 +95,23 @@ nav {
   }
   .external-links {
     padding: 20px;
-    flex-grow: 1;
     h4 {
-      margin: 0;
+      margin: 0 0 20px 0;
+    }
+    a {
+      padding: 5px 10px;
+      background-color: $black;
+      color: $pink;
+      text-decoration: none;
+      border: 3px solid $black;
+    }
+    a:hover {
+      background-color: $pink;
+      color: $black;
+      transition: 0.5s;
+    }
+    @media screen and (min-width: 662px) {
+      border-top: 0;
     }
   }
   .disabled button {
