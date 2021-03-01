@@ -1,24 +1,6 @@
-# bookishlog
+# The Bookish Log
 
-## Project setup
-```
-npm install
-```
+A log of all of the books I have read starting in 2021.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+[thebookishlog](https://thebookishlog.com).
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
