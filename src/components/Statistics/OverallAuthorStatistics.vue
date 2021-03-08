@@ -35,11 +35,11 @@
           </p>
         </div>
         <div class="stat">
-          <p class="stat-number">{{ valueCount("poc", true) }}</p>
+          <p class="stat-number">{{ valueCount("bipoc", true) }}</p>
           <p class="stat-title">BIPOC</p>
           <p class="stat-percent">
             {{
-              Math.floor((valueCount("poc", true) / authorInfo.length) * 100)
+              Math.floor((valueCount("bipoc", true) / authorInfo.length) * 100)
             }}%
           </p>
         </div>
