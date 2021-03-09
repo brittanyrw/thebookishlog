@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="main">
     <nav>
       <div class="title">
         <router-link to="/"><h1>Bookish Log</h1></router-link>
@@ -136,7 +136,7 @@ h2 {
   font-family: "Abril Fatface", cursive;
 }
 
-#app {
+#main {
   margin: 50px;
   background-color: $pink;
   border: 7px solid $black;
