@@ -67,7 +67,7 @@
 </template>
 
 <script>
-import mixins from "@/mixins/mixins.js";
+import mixins from "@/mixins/mixins.ts";
 
 export default {
   data() {

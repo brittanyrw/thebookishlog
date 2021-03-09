@@ -1,6 +1,6 @@
 export default {
   methods: {
-    slug(title) {
+    slug(title: string) {
       return title
         .toLowerCase()
         .replace(/ /g, "-")
@@ -8,7 +8,7 @@ export default {
         .replace(/ /g, "'")
         .replace(/[^\w-]+/g, "");
     },
-    flagEmoji(countryCode) {
+    flagEmoji(countryCode: string) {
       return countryCode
         .toUpperCase()
         .replace(/./g, char =>
