@@ -209,6 +209,7 @@ export const bookData = [
     dateStarted: "02/14/2021",
     dateFinished: "",
     progress: "started",
+    pageProgress: 9,
     bookCoverColor: "Gold",
     bookCoverObject: "Woman",
     fav: false
@@ -226,6 +227,7 @@ export const bookData = [
     dateStarted: "11/29/2020",
     dateFinished: "",
     progress: "started",
+    pageProgress: 40,
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",
     fav: false
@@ -250,6 +252,7 @@ export const bookData = [
     dateStarted: "02/15/2021",
     dateFinished: "",
     progress: "started",
+    pageProgress: 3,
     bookCoverColor: "Brown",
     bookCoverObject: "Woman",
     fav: false
@@ -268,8 +271,15 @@ export const bookData = [
     dateStarted: "02/17/2021",
     dateFinished: "",
     progress: "started",
+    pageProgress: 30,
     bookCoverColor: "Blue",
     bookCoverObject: "Tissue",
     fav: false
+  },
+  {
+    title: "Renegades",
+    author: ["Marissa Meyer"],
+    progress: "started",
+    pageProgress: 0
   }
 ];

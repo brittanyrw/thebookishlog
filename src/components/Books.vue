@@ -50,7 +50,12 @@
       <h2>Started Reading</h2>
       <ul>
         <li v-for="(book, index) in filter('started')" :key="index">
-          <p>{{ book.title }} by {{ book.author[0] }}</p>
+          <p class="current-book-title">
+            <span :style="`width:${book.pageProgress}%;`">
+              {{ book.pageProgress }}%
+            </span>
+            {{ book.title }} by {{ book.author[0] }}
+          </p>
         </li>
       </ul>
     </div>
@@ -149,12 +154,11 @@ export default {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      max-width: 1200px;
       margin: 30px auto;
+      max-width: 1400px;
       li {
         flex-grow: 1;
         background-color: $pink;
-        padding: 10px;
         text-align: center;
         margin: 10px;
         border: 2px solid $pink;
@@ -165,6 +169,27 @@ export default {
         outline: 3px solid $black;
         p {
           margin: 0;
+          position: relative;
+          padding: 10px;
+          @media screen and (min-width: 668px) {
+            padding: 10px 10px 10px 50px;
+          }
+          span {
+            top: 0;
+            left: 0;
+            font-size: 14px;
+            padding-left: 15px;
+            height: 100%;
+            border-radius: 7px;
+            background-color: rgba(31, 31, 31, 0.5);
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            @media screen and (min-width: 668px) {
+              position: absolute;
+              margin-bottom: 0;
+            }
+          }
         }
       }
     }

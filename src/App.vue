@@ -72,7 +72,7 @@ nav {
     flex-grow: 1;
     border-right: 3px solid $black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     button {
@@ -81,6 +81,7 @@ nav {
       background-color: transparent;
       text-transform: uppercase;
       outline-color: $black;
+      margin: 0 10px;
     }
     button:hover {
       background-color: $black;
