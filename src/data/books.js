@@ -281,5 +281,11 @@ export const bookData = [
     author: ["Marissa Meyer"],
     progress: "started",
     pageProgress: 0
+  },
+  {
+    title: "Gods of Jade and Shadow",
+    author: ["Silvia Moreno-Garcia"],
+    progress: "started",
+    pageProgress: 14
   }
 ];
