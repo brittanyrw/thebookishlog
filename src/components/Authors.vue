@@ -93,9 +93,14 @@ export default {
     .author {
       border: 5px solid $black;
       display: block;
-      margin: 10px;
+      margin: 10px auto;
       border-radius: 7px;
       flex-grow: 1;
+      width: 100%;
+      @media screen and (min-width: 992px) { 
+        margin: 10px;
+        width: auto;
+      }
       .author-name {
         color: $pink;
         text-align: center;

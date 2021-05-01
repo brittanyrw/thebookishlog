@@ -140,12 +140,17 @@ export default {
     .country-stats {
       display: flex;
       padding: 35px 20px 20px 20px;
-      margin-right: 15px;
       border: 2px solid $pink;
       position: relative;
       flex-wrap: wrap;
       margin-bottom: 40px;
       align-items: center;
+      flex-grow: 1;
+      justify-content: center;
+      @media screen and (min-width: 992px) {
+        margin-right: 15px;
+        flex-grow: 0;
+      }
       h3 {
         position: absolute;
         background-color: #fae6e9;
@@ -161,7 +166,7 @@ export default {
     .stat {
       background-color: $pink;
       text-align: center;
-      margin: 10px;
+      margin: 10px 10px 40px 10px;
       border: 2px solid $pink;
       -webkit-box-shadow: 5px 5px 0 $pink;
       box-shadow: 9px 9px 0 $pink;
@@ -169,11 +174,17 @@ export default {
       color: $black;
       outline: 3px solid $black;
       position: relative;
+      @media screen and (min-width: 992px) {
+        margin: 10px;
+      }
       .stat-number {
-        font-size: 50px;
+        font-size: 35px;
         font-weight: bold;
         margin: 0;
         padding: 10px 20px 0 20px;
+        @media screen and (min-width: 992px) { 
+          font-size: 50px;
+        }
       }
       .stat-title {
         margin: 0;
@@ -205,6 +216,7 @@ export default {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
   }
   .author-stat-flags {
     display: inline-block;
@@ -221,12 +233,18 @@ export default {
       margin-top: 0;
     }
     .author-stat-flag {
-      font-size: 50px;
+      font-size: 35px;
       margin-right: 15px;
+      @media screen and (min-width: 992px) {
+        font-size: 40px;
+      }
     }
     .author-stat-flag-amount {
-      font-size: 40px;
+      font-size: 35px;
       font-weight: bold;
+      @media screen and (min-width: 992px) { 
+        font-size: 40px;
+      }
     }
   }
 }
