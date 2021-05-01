@@ -97,7 +97,7 @@ export default {
       border-radius: 7px;
       flex-grow: 1;
       width: 100%;
-      @media screen and (min-width: 992px) { 
+      @media screen and (min-width: 992px) {
         margin: 10px;
         width: auto;
       }

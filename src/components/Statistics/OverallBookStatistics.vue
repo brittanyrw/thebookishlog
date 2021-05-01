@@ -107,7 +107,7 @@ export default {
         font-size: 35px;
         font-weight: bold;
         margin: 0;
-        @media screen and (min-width: 922px) { 
+        @media screen and (min-width: 922px) {
           font-size: 50px;
         }
       }

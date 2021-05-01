@@ -182,7 +182,7 @@ export default {
         font-weight: bold;
         margin: 0;
         padding: 10px 20px 0 20px;
-        @media screen and (min-width: 992px) { 
+        @media screen and (min-width: 992px) {
           font-size: 50px;
         }
       }
@@ -242,7 +242,7 @@ export default {
     .author-stat-flag-amount {
       font-size: 35px;
       font-weight: bold;
-      @media screen and (min-width: 992px) { 
+      @media screen and (min-width: 992px) {
         font-size: 40px;
       }
     }
