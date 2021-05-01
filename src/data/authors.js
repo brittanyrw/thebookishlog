@@ -126,5 +126,19 @@ export const authorData = [
       }
     ],
     website: "hallierubenhold.com"
+  },
+  {
+    name: "Silvia Moreno-Garcia",
+    books: ["Gods of Jade and Shadow"],
+    bipoc: false,
+    gender: "female",
+    lgbt: false,
+    country: [
+      {
+        code: "MX",
+        name: "Mexico"
+      }
+    ],
+    website: "silviamoreno-garcia.com"
   }
 ];

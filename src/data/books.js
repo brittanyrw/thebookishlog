@@ -285,7 +285,18 @@ export const bookData = [
   {
     title: "Gods of Jade and Shadow",
     author: ["Silvia Moreno-Garcia"],
-    progress: "started",
-    pageProgress: 45
+    publishedYear: 2019,
+    setting: ["Mexico"],
+    genre: ["Fantasy", "Historical Fiction", "Mythology", "Magical Realism"],
+    type: "Fiction",
+    pages: 338,
+    medium: "E-Book",
+    rating: 3.5,
+    dateStarted: "04/12/2021",
+    dateFinished: "05/01/2021",
+    progress: "finished",
+    bookCoverColor: "Blue",
+    bookCoverObject: "Tissue",
+    fav: false
   }
 ];
