@@ -22,6 +22,28 @@
             }}%
           </p>
         </div>
+        <div class="stat">
+          <p class="stat-number">{{ valueCount("gender", "non-binary") }}</p>
+          <p class="stat-title">Non-Binary</p>
+          <p class="stat-percent">
+            {{
+              Math.floor(
+                (valueCount("gender", "non-binary") / authorInfo.length) * 100
+              )
+            }}%
+          </p>
+        </div>
+        <div class="stat">
+          <p class="stat-number">{{ valueCount("gender", "male") }}</p>
+          <p class="stat-title">Male</p>
+          <p class="stat-percent">
+            {{
+              Math.floor(
+                (valueCount("gender", "male") / authorInfo.length) * 100
+              )
+            }}%
+          </p>
+        </div>
       </div>
       <div class="other-stats">
         <h3>Other</h3>
