@@ -105,6 +105,8 @@ nav {
       color: $pink;
       text-decoration: none;
       border: 3px solid $black;
+      display: block;
+      text-align: center;
     }
     a:hover {
       background-color: $pink;
