@@ -51,10 +51,15 @@ body {
 }
 nav {
   border-bottom: 7px solid $black;
-  display: flex;
+  // display: flex;
+  @media screen and (min-width: 992px) {
+    display: flex;
+  }
   .title {
     padding: 20px;
-    border-right: 3px solid $black;
+    @media screen and (min-width: 992px) {
+      border-right: 3px solid $black;
+    }
     h1,
     a {
       margin: 0;
@@ -70,18 +75,20 @@ nav {
   .nav-links {
     padding: 20px;
     flex-grow: 1;
-    border-right: 3px solid $black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    @media screen and (min-width: 992px) {
+      border-right: 3px solid $black;
+    }
     button {
       border: 2px solid $black;
       padding: 10px 25px;
       background-color: transparent;
       text-transform: uppercase;
       outline-color: $black;
-      margin: 0 10px;
+      margin: 10px;
     }
     button:hover {
       background-color: $black;
@@ -140,11 +147,14 @@ h2 {
 }
 
 #main {
-  margin: 50px;
+  margin: 20px;
   background-color: $pink;
   border: 7px solid $black;
   box-shadow: 10px 10px 0 $black;
   border-radius: 7px 7px 7px 0;
+  @media screen and (min-width: 992px) {
+    margin: 50px;
+  }
 }
 
 footer {

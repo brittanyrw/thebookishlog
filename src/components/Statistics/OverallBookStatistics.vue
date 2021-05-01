@@ -99,10 +99,17 @@ export default {
       border-radius: 7px;
       color: $black;
       outline: 3px solid $black;
+      flex-grow: 1;
+      @media screen and (min-width: 922px) {
+        flex-grow: 0;
+      }
       .stat-number {
-        font-size: 50px;
+        font-size: 35px;
         font-weight: bold;
         margin: 0;
+        @media screen and (min-width: 922px) { 
+          font-size: 50px;
+        }
       }
       .stat-title {
         margin: 0;

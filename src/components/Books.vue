@@ -96,8 +96,13 @@ export default {
 @import "@/assets/styles/varibles.scss";
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  h2 {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .book-cover-img {
