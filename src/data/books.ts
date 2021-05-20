@@ -1,18 +1,65 @@
-export const bookData = [
+export interface Book {
+  title: string;
+  author: string[];
+  publishedYear: number;
+  setting: string[];
+  genre: Genres[];
+  type: BookType;
+  pages: number;
+  medium: Medium;
+  rating: number;
+  dateStarted: string;
+  dateFinished: string;
+  progress: Progress;
+  bookCoverColor: string;
+  bookCoverObject: string;
+  fav: boolean;
+  pageProgress: number;
+}
+
+export type Genres =
+  | "Biography"
+  | "Dystopia"
+  | "Fairy Tale"
+  | "Fantasy"
+  | "Feminism"
+  | "Health"
+  | "Historical Fiction"
+  | "History"
+  | "Horror"
+  | "Humor"
+  | "LGBTQIA"
+  | "Magical Realism"
+  | "Mystery"
+  | "Mythology"
+  | "Psychology"
+  | "Race"
+  | "Retelling"
+  | "Romance"
+  | "Science Fiction"
+  | "Slavery"
+  | "Social Justice"
+  | "Space"
+  | "True Crime"
+  | "Vampires"
+  | "Werewolves"
+  | "Western"
+  | "Witches"
+  | "Young Adult";
+
+export type BookType = "Fiction" | "Non-Fiction" | "Graphic Novel";
+
+export type Medium = "Physical" | "E-Book" | "Audio";
+
+export type Progress = "finished" | "started" | "dnf";
+
+export const bookData: Book[] = [
   {
     title: "She Came to Slay: The Life and Times of Harriet Tubman",
     author: ["Erica Armstrong Dunbar"],
     publishedYear: 2019,
     setting: ["United States"],
-    genre: [
-      "History",
-      "Biography",
-      "Feminism",
-      "African American History",
-      "US History",
-      "Race",
-      "Slavery"
-    ],
+    genre: ["History", "Biography", "Feminism", "Race", "Slavery"],
     type: "Non-Fiction",
     pages: 157,
     medium: "Physical",
@@ -22,7 +69,8 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Tan",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    pageProgress: 100
   },
   {
     title: "Cinderella Is Dead",
@@ -47,7 +95,8 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Purple",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    pageProgress: 100
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -64,22 +113,16 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Black",
     bookCoverObject: "Face",
-    fav: false
+    fav: false,
+    pageProgress: 100
   },
   {
     title: "Fangs",
     author: ["Sarah Andersen"],
     publishedYear: 2020,
     setting: ["Unknown"],
-    genre: [
-      "Romance",
-      "Fantasy",
-      "Vampires",
-      "Werewolves",
-      "Humor",
-      "Graphic Novel"
-    ],
-    type: "Fiction",
+    genre: ["Romance", "Fantasy", "Vampires", "Werewolves", "Humor"],
+    type: "Graphic Novel",
     pages: 100,
     medium: "Physical",
     rating: 4,
@@ -88,7 +131,8 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Red",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    pageProgress: 100
   },
   {
     title: "The Year of the Witching",
@@ -112,14 +156,15 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Gray",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    pageProgress: 100
   },
   {
     title: "Monday's Not Coming",
     author: ["Tiffany D. Jackson "],
     publishedYear: 2018,
     setting: ["United States", "Washington DC"],
-    genre: ["Young Adult", "Mystery", "Thriller"],
+    genre: ["Young Adult", "Mystery"],
     type: "Fiction",
     pages: 435,
     medium: "Physical",
@@ -129,21 +174,15 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Red",
     bookCoverObject: "Woman",
-    fav: true
+    fav: true,
+    pageProgress: 100
   },
   {
     title: "Uprooted",
     author: ["Naomi Novik"],
     publishedYear: 2015,
     setting: ["Fictional"],
-    genre: [
-      "Fantasy",
-      "Young Adult",
-      "Romance",
-      "Fairy Tale",
-      "Retelling",
-      "Magic"
-    ],
+    genre: ["Fantasy", "Young Adult", "Romance", "Fairy Tale", "Retelling"],
     type: "Fiction",
     pages: 435,
     medium: "E-Book",
@@ -153,14 +192,15 @@ export const bookData = [
     progress: "dnf",
     bookCoverColor: "Yellow",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    pageProgress: 100
   },
   {
     title: "Full Disclosure",
     author: ["Camryn Garrett"],
     publishedYear: 2019,
     setting: ["United States", "California"],
-    genre: ["Young Adult", "LGBTQIA", "Romance", "HIV", "Mystery"],
+    genre: ["Young Adult", "LGBTQIA", "Romance", "Health", "Mystery"],
     type: "Fiction",
     pages: 290,
     medium: "E-Book",
@@ -170,21 +210,15 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    pageProgress: 100
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
     author: ["Hallie Rubenhold"],
     publishedYear: 2019,
     setting: ["United Kingdom"],
-    genre: [
-      "History",
-      "True Crime",
-      "Feminism",
-      "Women's Stories",
-      "Mystery",
-      "Biography"
-    ],
+    genre: ["History", "True Crime", "Feminism", "Mystery", "Biography"],
     type: "Non-Fiction",
     pages: 333,
     medium: "E-Book",
@@ -194,7 +228,8 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    pageProgress: 100
   },
   {
     title: "The First Sister",
@@ -263,7 +298,7 @@ export const bookData = [
     author: ["Lori Gottlieb"],
     publishedYear: 2019,
     setting: ["United States"],
-    genre: ["Memoir", "Psychology", "Mental Health", "Self Help"],
+    genre: ["Biography", "Psychology"],
     type: "Non-Fiction",
     pages: 415,
     medium: "E-Book",
@@ -275,12 +310,6 @@ export const bookData = [
     bookCoverColor: "Blue",
     bookCoverObject: "Tissue",
     fav: false
-  },
-  {
-    title: "Renegades",
-    author: ["Marissa Meyer"],
-    progress: "started",
-    pageProgress: 0
   },
   {
     title: "Gods of Jade and Shadow",
@@ -297,6 +326,7 @@ export const bookData = [
     progress: "finished",
     bookCoverColor: "Blue",
     bookCoverObject: "Tissue",
-    fav: false
+    fav: false,
+    pageProgress: 100
   }
 ];

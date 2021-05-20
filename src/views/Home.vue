@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { bookData } from "@/data/books.js";
+import { bookData } from "@/data/books";
 import Books from "@/components/Books.vue";
 import OverallBookStatistics from "@/components/Statistics/OverallBookStatistics.vue";
 
