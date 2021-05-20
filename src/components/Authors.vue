@@ -167,8 +167,14 @@ export default {
         align-items: center;
         padding: 10px;
         margin: auto;
+        min-width: 132px;
+        justify-content: center;
         .author-book-img {
           height: 150px;
+          margin-right: 20px;
+        }
+        .author-book-img:last-child {
+          margin-right: 0;
         }
       }
     }

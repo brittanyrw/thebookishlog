@@ -43,7 +43,7 @@ export const authorData = [
   },
   {
     name: "Tiffany D. Jackson",
-    books: ["Monday's Not Coming"],
+    books: ["Monday's Not Coming", "Allegedly"],
     bipoc: true,
     gender: "female",
     lgbt: false,
@@ -129,7 +129,7 @@ export const authorData = [
   },
   {
     name: "Silvia Moreno-Garcia",
-    books: ["Gods of Jade and Shadow"],
+    books: ["Gods of Jade and Shadow", "Mexican Gothic"],
     bipoc: false,
     gender: "female",
     lgbt: false,
@@ -140,5 +140,33 @@ export const authorData = [
       }
     ],
     website: "silviamoreno-garcia.com"
+  },
+  {
+    name: "Adien Thomas",
+    books: ["Cemetery Boys"],
+    bipoc: true,
+    gender: "non-binary",
+    lgbt: true,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "aiden-thomas.com"
+  },
+  {
+    name: "Tommy Orange",
+    books: ["There There"],
+    bipoc: true,
+    gender: "male",
+    lgbt: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "twitter.com/thommyorange"
   }
 ];
