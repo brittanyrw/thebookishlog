@@ -17,7 +17,7 @@
         <router-link to="/dates" class="disabled">
           <button>Dates</button>
         </router-link>
-        <router-link to="/length" class="disabled">
+        <router-link to="/other" class="disabled">
           <button>Other</button>
         </router-link>
       </div>
