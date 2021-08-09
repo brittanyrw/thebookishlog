@@ -16,7 +16,7 @@ export default {};
 @import "@/assets/styles/varibles.scss";
 
 h2 {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
 </style>

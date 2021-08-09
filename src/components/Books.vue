@@ -161,6 +161,9 @@ export default {
       flex-wrap: wrap;
       margin: 30px auto;
       max-width: 1400px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
       li {
         flex-grow: 1;
         background-color: $pink;
@@ -172,6 +175,7 @@ export default {
         border-radius: 7px;
         color: $black;
         outline: 3px solid $black;
+        max-width: 500px;
         p {
           margin: 0;
           position: relative;
