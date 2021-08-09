@@ -45,6 +45,7 @@ export type Genres =
   | "Werewolves"
   | "Western"
   | "Witches"
+  | "Asia"
   | "Young Adult";
 
 export type BookType = "Fiction" | "Non-Fiction" | "Graphic Novel";
@@ -328,5 +329,23 @@ export const bookData: Book[] = [
     bookCoverObject: "Tissue",
     fav: false,
     pageProgress: 100
+  },
+  {
+    title: "Kim Jiyoung, Born 1982",
+    author: ["Cho Nam-Joo"],
+    publishedYear: 2016,
+    setting: ["South Korea"],
+    genre: ["Dystopia", "Feminism", "Asia"],
+    type: "Fiction",
+    pages: 163,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "08/09/2021",
+    dateFinished: "",
+    progress: "started",
+    pageProgress: 25,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Woman",
+    fav: false
   }
 ];
