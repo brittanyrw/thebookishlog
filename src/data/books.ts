@@ -343,7 +343,7 @@ export const bookData: Book[] = [
     dateStarted: "08/09/2021",
     dateFinished: "",
     progress: "started",
-    pageProgress: 42,
+    pageProgress: 70,
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",
     fav: false
