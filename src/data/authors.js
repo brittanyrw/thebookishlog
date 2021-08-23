@@ -2,7 +2,7 @@ export const authorData = [
   {
     name: "Erica Armstrong Dunbar",
     books: ["She Came to Slay: The Life and Times of Harriet Tubman"],
-    bipoc: true,
+    poc: true,
     gender: "female",
     lgbt: false,
     country: [
@@ -16,7 +16,7 @@ export const authorData = [
   {
     name: "Kalynn Bayron",
     books: ["Cinderella Is Dead"],
-    bipoc: true,
+    poc: true,
     gender: "female",
     lgbt: true,
     country: [
@@ -30,7 +30,7 @@ export const authorData = [
   {
     name: "Alexis Henderson",
     books: ["The Year of the Witching"],
-    bipoc: true,
+    poc: true,
     gender: "female",
     lgbt: false,
     country: [
@@ -44,7 +44,7 @@ export const authorData = [
   {
     name: "Tiffany D. Jackson",
     books: ["Monday's Not Coming"],
-    bipoc: true,
+    poc: true,
     gender: "female",
     lgbt: false,
     country: [
@@ -58,7 +58,7 @@ export const authorData = [
   {
     name: "Sarah Andersen",
     books: ["Fangs"],
-    bipoc: false,
+    poc: false,
     gender: "female",
     lgbt: false,
     country: [
@@ -72,7 +72,7 @@ export const authorData = [
   {
     name: "Kimberly Jones",
     books: ["I'm Not Dying with You Tonight"],
-    bipoc: true,
+    poc: true,
     gender: "female",
     lgbt: false,
     country: [
@@ -86,7 +86,7 @@ export const authorData = [
   {
     name: "Gilly Segal",
     books: ["I'm Not Dying with You Tonight"],
-    bipoc: false,
+    poc: false,
     gender: "female",
     lgbt: false,
     country: [
@@ -100,7 +100,7 @@ export const authorData = [
   {
     name: "Camryn Garrett",
     books: ["Full Disclosure"],
-    bipoc: true,
+    poc: true,
     gender: "female",
     lgbt: true,
     country: [
@@ -116,7 +116,7 @@ export const authorData = [
     books: [
       "The Five: The Untold Lives of the Women Killed by Jack the Ripper"
     ],
-    bipoc: false,
+    poc: false,
     gender: "female",
     lgbt: false,
     country: [
@@ -130,7 +130,7 @@ export const authorData = [
   {
     name: "Silvia Moreno-Garcia",
     books: ["Gods of Jade and Shadow"],
-    bipoc: false,
+    poc: false,
     gender: "female",
     lgbt: false,
     country: [
