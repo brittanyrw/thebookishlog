@@ -140,5 +140,19 @@ export const authorData = [
       }
     ],
     website: "silviamoreno-garcia.com"
+  },
+  {
+    name: "Cho Nam-Joo",
+    books: ["Kim Jiyoung, Born 1982"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    country: [
+      {
+        code: "KR",
+        name: "Korea"
+      }
+    ],
+    website: ""
   }
 ];
