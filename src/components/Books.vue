@@ -27,7 +27,11 @@
             :alt="`${book.title} book cover`"
             :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
           />
-          <div class="stars" :style="`--rating: ${book.rating};`" :aria-label="`Rating of this product is ${book.rating} out of 5.`"></div>
+          <div
+            class="stars"
+            :style="`--rating: ${book.rating};`"
+            :aria-label="`Rating of this product is ${book.rating} out of 5.`"
+          ></div>
         </li>
       </ul>
       <ul class="books text-books" v-show="toggle === 'yes'">
@@ -44,8 +48,11 @@
 
           <div class="text-book-info">
             <p>{{ book.title }} by {{ book.author[0] }}</p>
-            <div class="stars" :style="`--rating: ${book.rating};`" :aria-label="`Rating of this product is ${book.rating} out of 5.`"></div>
-
+            <div
+              class="stars"
+              :style="`--rating: ${book.rating};`"
+              :aria-label="`Rating of this product is ${book.rating} out of 5.`"
+            ></div>
           </div>
         </li>
       </ul>
@@ -81,18 +88,18 @@ import mixins from "@/mixins/mixins.ts";
 export default {
   data() {
     return {
-      toggle: "no",
+      toggle: "no"
     };
   },
   props: {
-    bookInfo: Array,
+    bookInfo: Array
   },
   mixins: [mixins],
   methods: {
     filter(status) {
-      return this.bookInfo.filter((item) => item.progress == status);
-    },
-  },
+      return this.bookInfo.filter(item => item.progress == status);
+    }
+  }
 };
 </script>
 
@@ -101,16 +108,20 @@ export default {
 
 .stars {
   --percent: calc(var(--rating) / 5 * 100%);
-  
+
   display: inline-block;
   font-size: 28px;
-  font-family: Times; 
+  font-family: Times;
   line-height: 1;
-  
+
   &::before {
-    content: '★★★★★';
+    content: "★★★★★";
     letter-spacing: 3px;
-    background: linear-gradient(90deg, #1F1F1F var(--percent), rgba(31, 31, 31, 0.5) var(--percent));
+    background: linear-gradient(
+      90deg,
+      #1f1f1f var(--percent),
+      rgba(31, 31, 31, 0.5) var(--percent)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
