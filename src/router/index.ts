@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Author from "../views/Author.vue";
-import Genres from "../views/Genres.vue";
+import Stats from "../views/Stats.vue";
 import Dates from "../views/Dates.vue";
 import OtherData from "../views/OtherData.vue";
 
@@ -17,9 +17,9 @@ const routes = [
     component: Author
   },
   {
-    path: "/genres",
-    name: "Genres",
-    component: Genres
+    path: "/stats",
+    name: "Stats",
+    component: Stats
   },
   {
     path: "/dates",

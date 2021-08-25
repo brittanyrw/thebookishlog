@@ -11,8 +11,8 @@
         <router-link to="/authors">
           <button>Authors</button>
         </router-link>
-        <router-link to="/genres" :disabled="true" class="disabled">
-          <button>Genres</button>
+        <router-link to="/stats" :disabled="true" class="disabled">
+          <button>Stats</button>
         </router-link>
         <router-link to="/dates" class="disabled">
           <button>Dates</button>

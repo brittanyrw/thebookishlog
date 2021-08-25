@@ -1,18 +1,18 @@
 <template>
-  <div class="genre">
+  <div class="overall-statistics">
     <div class="main">
-      <Genre />
+      <OverallStatistics />
     </div>
   </div>
 </template>
 
 <script>
-import Genre from "@/components/Genre.vue";
+import OverallStatistics from "@/components/OverallStatistics.vue";
 
 export default {
-  name: "Genres",
+  name: "Stats",
   components: {
-    Genre
+    OverallStatistics
   }
 };
 </script>

@@ -90,7 +90,7 @@ export default {
     flex-wrap: wrap;
     .stat {
       background-color: $pink;
-      padding: 20px;
+      padding: 15px;
       text-align: center;
       margin: 10px;
       border: 2px solid $pink;
@@ -108,7 +108,7 @@ export default {
         font-weight: bold;
         margin: 0;
         @media screen and (min-width: 922px) {
-          font-size: 50px;
+          font-size: 40px;
         }
       }
       .stat-title {

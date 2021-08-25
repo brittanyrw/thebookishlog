@@ -375,7 +375,7 @@ export const bookData: Book[] = [
   {
     title: "Ring Shout",
     author: ["P. Djèlí Clark"],
-    publishedYear: 2019,
+    publishedYear: 2020,
     setting: ["Fictional"],
     genre: [
       "Fantasy",
