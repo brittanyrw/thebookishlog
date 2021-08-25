@@ -154,5 +154,19 @@ export const authorData = [
       }
     ],
     website: ""
+  },
+  {
+    name: "Kim Liggett",
+    books: ["The Grace Year"],
+    poc: false,
+    gender: "female",
+    lgbt: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "kimliggett.com"
   }
 ];

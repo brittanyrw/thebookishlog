@@ -18,7 +18,10 @@ export interface Book {
 }
 
 export type Genres =
+  | "Alternative History"
+  | "Asia"
   | "Biography"
+  | "Black"
   | "Dystopia"
   | "Fairy Tale"
   | "Fantasy"
@@ -28,6 +31,7 @@ export type Genres =
   | "History"
   | "Horror"
   | "Humor"
+  | "Korea"
   | "LGBTQIA"
   | "Magical Realism"
   | "Mystery"
@@ -45,7 +49,6 @@ export type Genres =
   | "Werewolves"
   | "Western"
   | "Witches"
-  | "Asia"
   | "Young Adult";
 
 export type BookType = "Fiction" | "Non-Fiction" | "Graphic Novel";
@@ -60,7 +63,7 @@ export const bookData: Book[] = [
     author: ["Erica Armstrong Dunbar"],
     publishedYear: 2019,
     setting: ["United States"],
-    genre: ["History", "Biography", "Feminism", "Race", "Slavery"],
+    genre: ["History", "Biography", "Feminism", "Race", "Slavery", "Black"],
     type: "Non-Fiction",
     pages: 157,
     medium: "Physical",
@@ -85,7 +88,8 @@ export const bookData: Book[] = [
       "Retelling",
       "Fairy Tale",
       "Dystopia",
-      "Romance"
+      "Romance",
+      "Black"
     ],
     type: "Fiction",
     pages: 389,
@@ -104,7 +108,7 @@ export const bookData: Book[] = [
     author: ["Kimberly Jones", "Gilly Segal"],
     publishedYear: 2019,
     setting: ["United States", "Georgia (USA)"],
-    genre: ["Young Adult", "Race", "Social Justice"],
+    genre: ["Young Adult", "Race", "Social Justice", "Black"],
     type: "Fiction",
     pages: 247,
     medium: "Physical",
@@ -146,7 +150,9 @@ export const bookData: Book[] = [
       "Witches",
       "Young Adult",
       "Feminism",
-      "Historical Fiction"
+      "Historical Fiction",
+      "Race",
+      "Black"
     ],
     type: "Fiction",
     pages: 359,
@@ -165,7 +171,7 @@ export const bookData: Book[] = [
     author: ["Tiffany D. Jackson"],
     publishedYear: 2018,
     setting: ["United States", "Washington DC"],
-    genre: ["Young Adult", "Mystery"],
+    genre: ["Young Adult", "Mystery", "Black"],
     type: "Fiction",
     pages: 435,
     medium: "Physical",
@@ -201,7 +207,7 @@ export const bookData: Book[] = [
     author: ["Camryn Garrett"],
     publishedYear: 2019,
     setting: ["United States", "California"],
-    genre: ["Young Adult", "LGBTQIA", "Romance", "Health", "Mystery"],
+    genre: ["Young Adult", "LGBTQIA", "Romance", "Health", "Mystery", "Black"],
     type: "Fiction",
     pages: 290,
     medium: "E-Book",
@@ -335,7 +341,7 @@ export const bookData: Book[] = [
     author: ["Cho Nam-Joo"],
     publishedYear: 2016,
     setting: ["South Korea"],
-    genre: ["Dystopia", "Feminism", "Asia"],
+    genre: ["Dystopia", "Feminism", "Asia", "Korea"],
     type: "Fiction",
     pages: 163,
     medium: "Physical",
@@ -357,13 +363,38 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 404,
     medium: "Physical",
-    rating: 0,
+    rating: 4.5,
     dateStarted: "08/23/2021",
-    dateFinished: "",
-    progress: "started",
-    pageProgress: 22,
+    dateFinished: "08/24/2021",
+    progress: "finished",
+    pageProgress: 100,
     bookCoverColor: "Pink",
     bookCoverObject: "Woman",
+    fav: false
+  },
+  {
+    title: "Ring Shout",
+    author: ["P. Djèlí Clark"],
+    publishedYear: 2019,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "Horror",
+      "Historical Fiction",
+      "Race",
+      "Black",
+      "Alternative History"
+    ],
+    type: "Fiction",
+    pages: 185,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "08/24/2021",
+    dateFinished: "",
+    progress: "started",
+    pageProgress: 0,
+    bookCoverColor: "Red",
+    bookCoverObject: "Person",
     fav: false
   }
 ];
