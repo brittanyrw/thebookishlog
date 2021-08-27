@@ -396,5 +396,23 @@ export const bookData: Book[] = [
     bookCoverColor: "Red",
     bookCoverObject: "Person",
     fav: false
+  },
+  {
+    title: "The Boyfriend Project",
+    author: ["Alexis Hall"],
+    publishedYear: 2020,
+    setting: ["United Kingdom"],
+    genre: ["LGBTQIA", "Romance", "Humor"],
+    type: "Fiction",
+    pages: 185,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "08/27/2021",
+    dateFinished: "",
+    progress: "started",
+    pageProgress: 6,
+    bookCoverColor: "Red",
+    bookCoverObject: "Two People",
+    fav: false
   }
 ];
