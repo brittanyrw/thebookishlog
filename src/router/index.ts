@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Author from "../views/Author.vue";
 import Stats from "../views/Stats.vue";
-import Dates from "../views/Dates.vue";
+import HomeLibrary from "../views/HomeLibrary.vue";
 import OtherData from "../views/OtherData.vue";
 
 const routes = [
@@ -22,9 +22,9 @@ const routes = [
     component: Stats
   },
   {
-    path: "/dates",
-    name: "Dates",
-    component: Dates
+    path: "/home-library",
+    name: "HomeLibrary",
+    component: HomeLibrary
   },
   {
     path: "/other",

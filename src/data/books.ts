@@ -4,6 +4,7 @@ export interface Book {
   publishedYear: number;
   setting: string[];
   genre: Genres[];
+  age: Ages;
   type: BookType;
   pages: number;
   medium: Medium;
@@ -16,6 +17,13 @@ export interface Book {
   fav: boolean;
   pageProgress: number;
 }
+
+export type Ages =
+  | "Young Adult"
+  | "New Adult"
+  | "Adult"
+  | "Middle Grade"
+  | "Childrens";
 
 export type Genres =
   | "Alternative History"
@@ -48,8 +56,7 @@ export type Genres =
   | "Vampires"
   | "Werewolves"
   | "Western"
-  | "Witches"
-  | "Young Adult";
+  | "Witches";
 
 export type BookType = "Fiction" | "Non-Fiction" | "Graphic Novel";
 
@@ -64,6 +71,7 @@ export const bookData: Book[] = [
     publishedYear: 2019,
     setting: ["United States"],
     genre: ["History", "Biography", "Feminism", "Race", "Slavery", "Black"],
+    age: "Adult",
     type: "Non-Fiction",
     pages: 157,
     medium: "Physical",
@@ -82,7 +90,6 @@ export const bookData: Book[] = [
     publishedYear: 2020,
     setting: ["Fictional"],
     genre: [
-      "Young Adult",
       "Fantasy",
       "LGBTQIA",
       "Retelling",
@@ -91,6 +98,7 @@ export const bookData: Book[] = [
       "Romance",
       "Black"
     ],
+    age: "Young Adult",
     type: "Fiction",
     pages: 389,
     medium: "Physical",
@@ -108,7 +116,8 @@ export const bookData: Book[] = [
     author: ["Kimberly Jones", "Gilly Segal"],
     publishedYear: 2019,
     setting: ["United States", "Georgia (USA)"],
-    genre: ["Young Adult", "Race", "Social Justice", "Black"],
+    genre: ["Race", "Social Justice", "Black"],
+    age: "Young Adult",
     type: "Fiction",
     pages: 247,
     medium: "Physical",
@@ -127,6 +136,7 @@ export const bookData: Book[] = [
     publishedYear: 2020,
     setting: ["Unknown"],
     genre: ["Romance", "Fantasy", "Vampires", "Werewolves", "Humor"],
+    age: "Adult",
     type: "Graphic Novel",
     pages: 100,
     medium: "Physical",
@@ -148,12 +158,12 @@ export const bookData: Book[] = [
       "Fantasy",
       "Horror",
       "Witches",
-      "Young Adult",
       "Feminism",
       "Historical Fiction",
       "Race",
       "Black"
     ],
+    age: "Young Adult",
     type: "Fiction",
     pages: 359,
     medium: "Physical",
@@ -171,7 +181,8 @@ export const bookData: Book[] = [
     author: ["Tiffany D. Jackson"],
     publishedYear: 2018,
     setting: ["United States", "Washington DC"],
-    genre: ["Young Adult", "Mystery", "Black"],
+    genre: ["Mystery", "Black"],
+    age: "Young Adult",
     type: "Fiction",
     pages: 435,
     medium: "Physical",
@@ -189,7 +200,8 @@ export const bookData: Book[] = [
     author: ["Naomi Novik"],
     publishedYear: 2015,
     setting: ["Fictional"],
-    genre: ["Fantasy", "Young Adult", "Romance", "Fairy Tale", "Retelling"],
+    genre: ["Fantasy", "Romance", "Fairy Tale", "Retelling"],
+    age: "Young Adult",
     type: "Fiction",
     pages: 435,
     medium: "E-Book",
@@ -207,7 +219,8 @@ export const bookData: Book[] = [
     author: ["Camryn Garrett"],
     publishedYear: 2019,
     setting: ["United States", "California"],
-    genre: ["Young Adult", "LGBTQIA", "Romance", "Health", "Mystery", "Black"],
+    genre: ["LGBTQIA", "Romance", "Health", "Mystery", "Black"],
+    age: "Young Adult",
     type: "Fiction",
     pages: 290,
     medium: "E-Book",
@@ -226,6 +239,7 @@ export const bookData: Book[] = [
     publishedYear: 2019,
     setting: ["United Kingdom"],
     genre: ["History", "True Crime", "Feminism", "Mystery", "Biography"],
+    age: "Adult",
     type: "Non-Fiction",
     pages: 333,
     medium: "E-Book",
@@ -244,6 +258,7 @@ export const bookData: Book[] = [
     publishedYear: 2020,
     setting: ["Fictional"],
     genre: ["Science Fiction", "Fantasy", "LGBTQIA", "Space"],
+    age: "Adult",
     type: "Fiction",
     pages: 352,
     medium: "Physical",
@@ -262,6 +277,7 @@ export const bookData: Book[] = [
     publishedYear: 2019,
     setting: ["United States", "Canada"],
     genre: ["Dystopia", "Feminism"],
+    age: "Adult",
     type: "Fiction",
     pages: 422,
     medium: "Physical",
@@ -279,14 +295,8 @@ export const bookData: Book[] = [
     author: ["Charlotte Nicole Davis"],
     publishedYear: 2019,
     setting: ["Fictional"],
-    genre: [
-      "Young Adult",
-      "Fantasy",
-      "Historical Fiction",
-      "LGBTQIA",
-      "Western",
-      "Dystopia"
-    ],
+    genre: ["Fantasy", "Historical Fiction", "LGBTQIA", "Western", "Dystopia"],
+    age: "Young Adult",
     type: "Fiction",
     pages: 352,
     medium: "E-Book",
@@ -306,6 +316,7 @@ export const bookData: Book[] = [
     publishedYear: 2019,
     setting: ["United States"],
     genre: ["Biography", "Psychology"],
+    age: "Adult",
     type: "Non-Fiction",
     pages: 415,
     medium: "E-Book",
@@ -324,6 +335,7 @@ export const bookData: Book[] = [
     publishedYear: 2019,
     setting: ["Mexico"],
     genre: ["Fantasy", "Historical Fiction", "Mythology", "Magical Realism"],
+    age: "Adult",
     type: "Fiction",
     pages: 338,
     medium: "E-Book",
@@ -342,6 +354,7 @@ export const bookData: Book[] = [
     publishedYear: 2016,
     setting: ["South Korea"],
     genre: ["Dystopia", "Feminism", "Asia", "Korea"],
+    age: "Adult",
     type: "Fiction",
     pages: 163,
     medium: "Physical",
@@ -359,7 +372,8 @@ export const bookData: Book[] = [
     author: ["Kim Liggett"],
     publishedYear: 2019,
     setting: ["Fictional"],
-    genre: ["Young Adult", "Dystopia", "Fantasy", "Feminism"],
+    genre: ["Dystopia", "Fantasy", "Feminism"],
+    age: "Young Adult",
     type: "Fiction",
     pages: 404,
     medium: "Physical",
@@ -385,34 +399,74 @@ export const bookData: Book[] = [
       "Black",
       "Alternative History"
     ],
+    age: "Adult",
     type: "Fiction",
     pages: 185,
     medium: "E-Book",
-    rating: 0,
+    rating: 5,
     dateStarted: "08/24/2021",
-    dateFinished: "",
-    progress: "started",
-    pageProgress: 21,
+    dateFinished: "08/27/2021",
+    progress: "finished",
+    pageProgress: 100,
     bookCoverColor: "Red",
     bookCoverObject: "Person",
-    fav: false
+    fav: true
   },
   {
-    title: "The Boyfriend Project",
+    title: "Boyfriend Material",
     author: ["Alexis Hall"],
     publishedYear: 2020,
     setting: ["United Kingdom"],
     genre: ["LGBTQIA", "Romance", "Humor"],
+    age: "Adult",
     type: "Fiction",
     pages: 185,
     medium: "E-Book",
-    rating: 0,
+    rating: 3,
     dateStarted: "08/27/2021",
-    dateFinished: "",
-    progress: "started",
-    pageProgress: 6,
+    dateFinished: "08/29/2021",
+    progress: "finished",
+    pageProgress: 100,
     bookCoverColor: "Red",
     bookCoverObject: "Two People",
+    fav: false
+  },
+  {
+    title: "Red, White & Royal Blue",
+    author: ["Casey McQuiston"],
+    publishedYear: 2019,
+    setting: ["United Kingdom", "United States"],
+    genre: ["LGBTQIA", "Romance"],
+    age: "New Adult",
+    type: "Fiction",
+    pages: 418,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "08/29/2021",
+    dateFinished: "",
+    progress: "started",
+    pageProgress: 7,
+    bookCoverColor: "Pink",
+    bookCoverObject: "Two People",
+    fav: false
+  },
+  {
+    title: "The Vanishing Half",
+    author: ["Brit Bennett"],
+    publishedYear: 2020,
+    setting: ["United States"],
+    genre: ["Historical Fiction", "Race", "Black"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 343,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "08/29/2021",
+    dateFinished: "",
+    progress: "started",
+    pageProgress: 5,
+    bookCoverColor: "Purple",
+    bookCoverObject: "Two Women",
     fav: false
   }
 ];

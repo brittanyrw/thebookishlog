@@ -168,5 +168,34 @@ export const authorData = [
       }
     ],
     website: "kimliggett.com"
+  },
+  {
+    name: "P. Djèlí Clark",
+    books: ["Ring Shout"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "pdjeliclark.com"
+  },
+  {
+    name: "Alexis Hall",
+    books: ["Boyfriend Material"],
+    poc: false,
+    gender: "male",
+    lgbt: true,
+    country: [
+      {
+        code: "GB",
+        name: "United Kingdom"
+      }
+    ],
+    website: "quicunquevult.com",
+    image: false
   }
 ];

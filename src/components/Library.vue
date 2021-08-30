@@ -1,6 +1,6 @@
 <template>
-  <div class="date">
-    <div class="date-list">
+  <div class="home-library">
+    <div class="home-library-shelf">
       <div class="header">
         <h2>Coming Soon...</h2>
       </div>

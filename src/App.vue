@@ -14,8 +14,8 @@
         <router-link to="/stats" :disabled="true" class="disabled">
           <button>Stats</button>
         </router-link>
-        <router-link to="/dates" class="disabled">
-          <button>Dates</button>
+        <router-link to="/home-library" class="disabled">
+          <button>Home Library</button>
         </router-link>
         <router-link to="/other" class="disabled">
           <button>Other</button>

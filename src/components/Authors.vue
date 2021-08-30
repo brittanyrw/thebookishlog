@@ -1,7 +1,19 @@
 <template>
   <div class="author-list">
-    <h2>Authors Read</h2>
-    <ul class="authors">
+    <div class="header">
+      <h2>Authors Read</h2>
+      <div class="toggle-button-wrapper">
+        <input
+          type="checkbox"
+          v-model="toggle"
+          true-value="yes"
+          false-value="no"
+          id="toggle-author-images"
+        />
+        <label for="toggle-author-images">Show Author Image Grid</label>
+      </div>
+    </div>
+    <ul class="authors" v-show="toggle === 'no'">
       <li class="author" v-for="(author, index) in sortedAuthors" :key="index">
         <div class="author-name">
           <h3>{{ author.name }}</h3>
@@ -9,9 +21,16 @@
         <div class="author-imgs">
           <div class="author-img-wrapper">
             <img
+              v-if="author.image != false"
               class="author-img"
               :alt="`${author.name}`"
               :src="require(`@/assets/imgs/${slug(author.name)}.png`)"
+            />
+            <img
+              v-else
+              class="author-img"
+              :alt="`${author.name}`"
+              :src="require('@/assets/imgs/placeholder-author.png')"
             />
           </div>
           <div class="author-books">
@@ -50,6 +69,19 @@
         </div>
       </li>
     </ul>
+    <ul class="author-grid" v-show="toggle === 'yes'">
+      <li
+        class="author-grid-item"
+        v-for="(author, index) in authorsWithImages"
+        :key="index"
+      >
+        <img
+          class="author-grid-img"
+          :alt="`${author.name}`"
+          :src="require(`@/assets/imgs/${slug(author.name)}.png`)"
+        />
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -57,6 +89,11 @@
 import mixins from "@/mixins/mixins.ts";
 
 export default {
+  data() {
+    return {
+      toggle: "no"
+    };
+  },
   props: {
     authorInfo: Array
   },
@@ -72,6 +109,9 @@ export default {
         }
       };
       return sortedAuthorList.sort(sorted);
+    },
+    authorsWithImages() {
+      return this.sortedAuthors.filter(author => author.image != false);
     }
   }
 };
@@ -79,6 +119,15 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/styles/varibles.scss";
+.header {
+  h2 {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .author-list {
   padding: 20px;
@@ -179,6 +228,21 @@ export default {
     }
     .author:last-child {
       flex-grow: unset;
+    }
+  }
+}
+.author-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  .author-grid-item {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    img {
+      width: 100%;
     }
   }
 }

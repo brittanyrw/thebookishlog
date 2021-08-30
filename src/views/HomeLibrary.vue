@@ -1,18 +1,18 @@
 <template>
-  <div class="date">
+  <div class="library">
     <div class="main">
-      <Date />
+      <Library />
     </div>
   </div>
 </template>
 
 <script>
-import Date from "@/components/Date.vue";
+import Library from "@/components/Library.vue";
 
 export default {
-  name: "Dates",
+  name: "HomeLibrary",
   components: {
-    Date
+    Library
   }
 };
 </script>
