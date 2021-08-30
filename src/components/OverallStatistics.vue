@@ -4,13 +4,12 @@
       <div class="header">
         <h2>Coming Soon...</h2>
         <!-- <ul>
-          <li>Longest book</li>
-          <li>Shortest book</li>
+          <li>Length (longest book, shortest book, median book)</li>
           <li>Favorite Books</li>
-          <li>Lowest Rated Book</li>
+          <li>Lowest Rated Book(s)</li>
           <li>Top Genres</li>
-          <li>Physical #</li>
-          <li>E-Book #</li>
+          <li>Age (adult vs young adult)</li>
+          <li>Method (physical vs e-book)</li>
           <li>Setting</li>
           <li>Bar chart for published year</li>
         </ul> -->
