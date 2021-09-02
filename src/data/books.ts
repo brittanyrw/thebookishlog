@@ -445,7 +445,7 @@ export const bookData: Book[] = [
     dateStarted: "08/29/2021",
     dateFinished: "",
     progress: "started",
-    pageProgress: 7,
+    pageProgress: 42,
     bookCoverColor: "Pink",
     bookCoverObject: "Two People",
     fav: false
