@@ -61,12 +61,14 @@
       <h2>Started Reading</h2>
       <ul>
         <li v-for="(book, index) in sortedStartedBooks" :key="index">
-          <p class="current-book-title">
+          <div class="current-book-info">
             <span :style="`width:${book.pageProgress}%;`">
               {{ book.pageProgress }}%
             </span>
-            {{ book.title }} by {{ book.author[0] }}
-          </p>
+            <p class="current-book-title">{{ book.title }}</p>
+            <p class="current-book-author">by {{ book.author[0] }}</p>
+            <p class="current-book-date">Started: {{ book.dateStarted }}</p>
+          </div>
         </li>
       </ul>
     </div>
@@ -75,7 +77,14 @@
       <p>"Did Not Finish" books</p>
       <ul>
         <li v-for="(book, index) in filter('dnf')" :key="index">
-          <p>{{ book.title }} by {{ book.author[0] }}</p>
+          <div class="dnf-book-info">
+            <span :style="`width:${book.pageProgress}%;`">
+              {{ book.pageProgress }}%
+            </span>
+            <p class="dnf-book-title">{{ book.title }}</p>
+            <p class="dnf-book-author">by {{ book.author[0] }}</p>
+            <p class="dnf-book-date">DNF Date: {{ book.dnfDate }}</p>
+          </div>
         </li>
       </ul>
     </div>
@@ -97,7 +106,7 @@ export default {
   mixins: [mixins],
   computed: {
     sortedStartedBooks() {
-      let startedBooks = this.filter('started');
+      let startedBooks = this.filter("started");
       const sorted = (a, b) => {
         if (a.pageProgress > b.pageProgress) {
           return -1;
@@ -201,8 +210,9 @@ export default {
     ul {
       padding: 0;
       list-style: none;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      // flex-wrap: wrap;
       margin: 30px auto;
       max-width: 1400px;
       justify-content: center;
@@ -219,20 +229,30 @@ export default {
         color: $black;
         outline: 3px solid $black;
         max-width: 500px;
-        p {
+        .current-book-info {
           margin: 0;
           position: relative;
           padding: 10px;
           span {
-            font-weight: bold;
             font-size: 14px;
             padding-left: 15px;
             height: 100%;
             border-radius: 7px;
-            background-color: rgba(31, 31, 31, 0.5);
+            background-color: rgba(31, 31, 31, 0.3);
             display: flex;
             align-items: center;
             margin-bottom: 10px;
+          }
+          .current-book-title {
+            margin: 0 0 5px 0;
+            font-weight: bold;
+          }
+          .current-book-author {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+          }
+          .current-book-date {
+            margin: 0;
           }
         }
       }
@@ -244,12 +264,16 @@ export default {
     ul {
       padding: 0;
       list-style: none;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      margin: 30px auto;
+      max-width: 1400px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
       li {
         background-color: $black;
         padding: 10px;
-        text-align: center;
         margin: 10px;
         border: 2px solid $black;
         -webkit-box-shadow: 5px 5px 0 $black;
@@ -257,8 +281,31 @@ export default {
         border-radius: 7px;
         color: $pink;
         outline: 3px solid $pink;
-        p {
+        .dnf-book-info {
           margin: 0;
+          position: relative;
+          padding: 10px;
+          span {
+            font-size: 14px;
+            padding-left: 15px;
+            height: 100%;
+            border-radius: 7px;
+            background-color: rgb(250, 230, 233, .3);
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+          }
+          .dnf-book-title {
+            margin: 0 0 5px 0;
+            font-weight: bold;
+          }
+          .dnf-book-author {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+          }
+          .dnf-book-date {
+            margin: 0;
+          }
         }
       }
     }
