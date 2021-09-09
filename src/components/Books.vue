@@ -60,7 +60,7 @@
     <div class="current-book-list">
       <h2>Started Reading</h2>
       <ul>
-        <li v-for="(book, index) in filter('started')" :key="index">
+        <li v-for="(book, index) in sortedStartedBooks" :key="index">
           <p class="current-book-title">
             <span :style="`width:${book.pageProgress}%;`">
               {{ book.pageProgress }}%
@@ -88,18 +88,31 @@ import mixins from "@/mixins/mixins.ts";
 export default {
   data() {
     return {
-      toggle: "no"
+      toggle: "no",
     };
   },
   props: {
-    bookInfo: Array
+    bookInfo: Array,
   },
   mixins: [mixins],
+  computed: {
+    sortedStartedBooks() {
+      let startedBooks = this.filter('started');
+      const sorted = (a, b) => {
+        if (a.pageProgress > b.pageProgress) {
+          return -1;
+        } else {
+          return 1;
+        }
+      };
+      return startedBooks.sort(sorted);
+    },
+  },
   methods: {
     filter(status) {
-      return this.bookInfo.filter(item => item.progress == status);
-    }
-  }
+      return this.bookInfo.filter((item) => item.progress == status);
+    },
+  },
 };
 </script>
 
@@ -198,7 +211,6 @@ export default {
       li {
         flex-grow: 1;
         background-color: $pink;
-        text-align: center;
         margin: 10px;
         border: 2px solid $pink;
         -webkit-box-shadow: 5px 5px 0 $pink;
@@ -211,12 +223,8 @@ export default {
           margin: 0;
           position: relative;
           padding: 10px;
-          @media screen and (min-width: 668px) {
-            padding: 10px 10px 10px 50px;
-          }
           span {
-            top: 0;
-            left: 0;
+            font-weight: bold;
             font-size: 14px;
             padding-left: 15px;
             height: 100%;
@@ -225,10 +233,6 @@ export default {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
-            @media screen and (min-width: 668px) {
-              position: absolute;
-              margin-bottom: 0;
-            }
           }
         }
       }
