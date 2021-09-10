@@ -1,18 +1,24 @@
 <template>
   <div class="overall-statistics">
     <div class="main">
-      <OverallStatistics />
+      <OverallStatistics :book-info="books"/>
     </div>
   </div>
 </template>
 
 <script>
+import { bookData } from "@/data/books";
 import OverallStatistics from "@/components/OverallStatistics.vue";
 
 export default {
   name: "Stats",
   components: {
     OverallStatistics
+  },
+  data() {
+    return {
+      books: bookData
+    };
   }
 };
 </script>
