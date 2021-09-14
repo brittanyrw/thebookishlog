@@ -480,14 +480,14 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 343,
     medium: "E-Book",
-    rating: 0,
+    rating: 5,
     dateStarted: "08/29/2021",
-    dateFinished: "",
+    dateFinished: "09/13/2021",
     dnfDate: "",
-    progress: "started",
-    pageProgress: 20,
+    progress: "finished",
+    pageProgress: 100,
     bookCoverColor: "Purple",
     bookCoverObject: "Two Women",
-    fav: false
+    fav: true
   }
 ];

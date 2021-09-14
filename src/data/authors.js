@@ -197,5 +197,19 @@ export const authorData = [
     ],
     website: "quicunquevult.com",
     image: false
+  },
+  {
+    name: "Brit Bennett",
+    books: ["The Vanishing Half"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "britbennett.com"
   }
 ];
