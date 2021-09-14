@@ -28,6 +28,7 @@ export type Ages =
 
 export type Genres =
   | "Alternative History"
+  | "Africa"
   | "Asia"
   | "Biography"
   | "Black"
@@ -42,6 +43,7 @@ export type Genres =
   | "Humor"
   | "Korea"
   | "LGBTQIA"
+  | "Magic"
   | "Magical Realism"
   | "Mystery"
   | "Mythology"
@@ -489,5 +491,25 @@ export const bookData: Book[] = [
     bookCoverColor: "Purple",
     bookCoverObject: "Two Women",
     fav: true
+  },
+  {
+    title: "Raybearer",
+    author: ["Jordan Ifueko"],
+    publishedYear: 2020,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "LGBTQIA", "Magic", "Africa"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 368,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "09/13/2021",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "started",
+    pageProgress: 3,
+    bookCoverColor: "Gold",
+    bookCoverObject: "Woman's Face",
+    fav: false
   }
 ];
