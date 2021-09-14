@@ -31,9 +31,29 @@
             <p>{{ sortByRating()[sortByRating().length - 1].title }}</p>
           </div>
         </div>
+        <div class="age">
+          <div class="age-list">
+            <h3>Young Adult</h3>
+            <p>{{ valueCount("age", "Young Adult") }}</p>
+          </div>
+          <div class="age-list">
+            <h3>Adult</h3>
+            <p>{{ valueCount("age", "Adult") }}</p>
+          </div>
+        </div>
+        <div class="methods">
+          <div class="methods-list">
+            <h3>Physical Books</h3>
+            <p>{{ valueCount("medium", "Physical") }}</p>
+          </div>
+          <div class="methods-list">
+            <h3>E-Books</h3>
+            <p>{{ valueCount("medium", "E-Book") }}</p>
+          </div>
+        </div>
         <div class="genres">
           <div class="genre-list">
-            <h3>Top Genres</h3>
+            <h3>Genres</h3>
             <ul>
               <li
                 v-for="(genreAmount, genre) in count(listGenres)"
@@ -46,29 +66,9 @@
             </ul>
           </div>
         </div>
-        <div class="age">
-          <div class="age-list">
-            <h3>Young Adult</h3>
-            <p>Number here</p>
-          </div>
-          <div class="age-list">
-            <h3>Adult</h3>
-            <p>Number here</p>
-          </div>
-        </div>
-        <div class="methods">
-          <div class="methods-list">
-            <h3>Physical Books</h3>
-            <p>Number here</p>
-          </div>
-          <div class="methods-list">
-            <h3>E-Books</h3>
-            <p>Number here</p>
-          </div>
-        </div>
         <div class="setting">
           <div class="setting-list">
-            <h3>Top Book Settings</h3>
+            <h3>Book Settings</h3>
             <ul>
               <li
                 v-for="(settingAmount, setting) in count(listSettings)"
@@ -79,12 +79,6 @@
                 <p class="">{{ settingAmount }}</p>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="years">
-          <div class="years-list">
-            <h3>Published Years</h3>
-            <p>Chart here</p>
           </div>
         </div>
       </div>
@@ -116,7 +110,7 @@ export default {
       });
 
       return settingList.flat();
-    }
+    },
   },
   methods: {
     sortByLength() {
@@ -149,9 +143,14 @@ export default {
         countedObj[el] = countedObj[el] + 1 || 1;
       });
 
-      const sortedCountedObj = Object.entries(countedObj).sort((a,b)=> b[1]-a[1]);
+      const sortedCountedObj = Object.entries(countedObj).sort(
+        (a, b) => b[1] - a[1]
+      );
       countedObj = Object.fromEntries(sortedCountedObj);
       return countedObj;
+    },
+    valueCount(key, value) {
+      return this.filterReadBooks.filter((book) => book[key] === value).length;
     },
   },
 };
