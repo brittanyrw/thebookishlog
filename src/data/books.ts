@@ -188,7 +188,7 @@ export const bookData: Book[] = [
     title: "Monday's Not Coming",
     author: ["Tiffany D. Jackson"],
     publishedYear: 2018,
-    setting: ["United States", "Washington DC"],
+    setting: ["United States", "Washington, DC"],
     genre: ["Mystery", "Black"],
     age: "Young Adult",
     type: "Fiction",

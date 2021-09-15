@@ -108,6 +108,7 @@
                 v-for="(settingAmount, setting) in count(listSettings)"
                 :key="setting"
                 class="location"
+                :class="[{ 'fade-location': settingAmount < 2 }]"
               >
                 <p class="">{{ setting }}</p>
                 <p class="">{{ settingAmount }}</p>
@@ -330,6 +331,10 @@ h3 {
         padding-right: 10px;
         border-right: 3px solid $pink;
       }
+    }
+    .fade-location {
+      background-color: #5f5a5a;
+      color: $pink;
     }
   }
 }
