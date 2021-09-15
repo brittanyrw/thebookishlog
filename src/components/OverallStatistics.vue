@@ -2,55 +2,97 @@
   <div class="overall-stats-component">
     <div class="stats-list">
       <div class="statistics">
-        <div class="length">
-          <div class="longest-book">
-            <h3>Longest Book</h3>
-            <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
+        <section class="numbers">
+          <div class="age">
+            <div class="age-list">
+              <h3>Young Adult</h3>
+              <p>{{ valueCount("age", "Young Adult") }}</p>
+            </div>
+            <div class="age-list">
+              <h3>Adult</h3>
+              <p>{{ valueCount("age", "Adult") }}</p>
+            </div>
           </div>
-          <div class="shortest-book">
-            <h3>Shortest Book</h3>
-            <p>{{ sortByLength()[0].title }}</p>
+          <div class="methods">
+            <div class="methods-list">
+              <h3>Physical Books</h3>
+              <p>{{ valueCount("medium", "Physical") }}</p>
+            </div>
+            <div class="methods-list">
+              <h3>E-Books</h3>
+              <p>{{ valueCount("medium", "E-Book") }}</p>
+            </div>
           </div>
-        </div>
-        <div class="ratings">
-          <div class="favorite-books">
-            <h3>Favorite Books</h3>
-            <ul>
-              <li
-                class="book"
-                v-for="(book, index) in filter('fav', true)"
-                :key="index"
-                :class="[{ 'e-book': book.medium == 'E-Book' }]"
-              >
-                {{ book.title }}
-              </li>
-            </ul>
+        </section>
+        <section class="book-length-ratings">
+          <div class="length">
+            <div class="longest-book">
+              <h3>Longest Book</h3>
+              <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
+              <img
+                class="book-cover-img"
+                :class="[{ 'e-book': sortByLength()[sortByLength().length - 1].title.medium == 'E-Book' }]"
+                :alt="
+                  `${
+                    sortByLength()[sortByLength().length - 1].title
+                  } book cover`
+                "
+                :src="
+                  require(`@/assets/imgs/${slug(
+                    sortByLength()[sortByLength().length - 1].title
+                  )}.png`)"
+              />
+            </div>
+            <div class="shortest-book">
+              <h3>Shortest Book</h3>
+              <p>{{ sortByLength()[0].title }}</p>
+              <img
+                class="book-cover-img"
+                :class="[{ 'e-book': sortByLength()[0].medium == 'E-Book' }]"
+                :alt="`${sortByLength()[0].title} book cover`"
+                :src="
+                  require(`@/assets/imgs/${slug(sortByLength()[0].title)}.png`)"
+              />
+            </div>
           </div>
-          <div class="lowest-rated-book">
-            <h3>Lowest Rated Books</h3>
-            <p>{{ sortByRating()[sortByRating().length - 1].title }}</p>
+          <div class="ratings">
+            <div class="favorite-books">
+              <h3>Favorite Books</h3>
+              <ul>
+                <li
+                  class="book"
+                  v-for="(book, index) in filter('fav', true)"
+                  :key="index"
+                >
+                  <p>{{ book.title }}</p>
+                  <img
+                    class="book-cover-img"
+                    :class="[{ 'e-book': book.medium == 'E-Book' }]"
+                    :alt="`${book.title} book cover`"
+                    :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="lowest-rated-book">
+              <h3>Lowest Rated Books</h3>
+              <p>{{ sortByRating()[sortByRating().length - 1].title }}</p>
+              <img
+                class="book-cover-img"
+                :class="[{ 'e-book': sortByRating()[sortByRating().length - 1].medium == 'E-Book' }]"
+                :alt="
+                  `${
+                    sortByRating()[sortByRating().length - 1].title
+                  } book cover`
+                "
+                :src="
+                  require(`@/assets/imgs/${slug(
+                    sortByRating()[sortByRating().length - 1].title
+                  )}.png`)"
+              />
+            </div>
           </div>
-        </div>
-        <div class="age">
-          <div class="age-list">
-            <h3>Young Adult</h3>
-            <p>{{ valueCount("age", "Young Adult") }}</p>
-          </div>
-          <div class="age-list">
-            <h3>Adult</h3>
-            <p>{{ valueCount("age", "Adult") }}</p>
-          </div>
-        </div>
-        <div class="methods">
-          <div class="methods-list">
-            <h3>Physical Books</h3>
-            <p>{{ valueCount("medium", "Physical") }}</p>
-          </div>
-          <div class="methods-list">
-            <h3>E-Books</h3>
-            <p>{{ valueCount("medium", "E-Book") }}</p>
-          </div>
-        </div>
+        </section>
         <div class="genres">
           <div class="genre-list">
             <h3>Genres</h3>
@@ -58,7 +100,7 @@
               <li
                 v-for="(genreAmount, genre) in count(listGenres)"
                 :key="genre"
-                class=""
+                :class="[{ 'fade-genre': genreAmount < 3 }]"
               >
                 <p class="">{{ genre }}</p>
                 <p class="">{{ genreAmount }}</p>
@@ -87,17 +129,20 @@
 </template>
 
 <script>
+import mixins from "@/mixins/mixins.ts";
+
 export default {
   props: {
     bookInfo: Array,
   },
+  mixins: [mixins],
   computed: {
     filterReadBooks() {
-      return this.bookInfo.filter((item) => item.dateFinished);
+      return this.bookInfo.filter(item => item.dateFinished);
     },
     listGenres() {
       let genreList = [];
-      this.filterReadBooks.forEach(function (each) {
+      this.filterReadBooks.forEach(function(each) {
         genreList.push(each.genre);
       });
 
@@ -105,7 +150,7 @@ export default {
     },
     listSettings() {
       let settingList = [];
-      this.filterReadBooks.forEach(function (each) {
+      this.filterReadBooks.forEach(function(each) {
         settingList.push(each.setting);
       });
 
@@ -134,12 +179,12 @@ export default {
       return this.filterReadBooks.sort(sorted);
     },
     filter(key, value) {
-      return this.bookInfo.filter((item) => item[key] == value);
+      return this.bookInfo.filter(item => item[key] == value);
     },
     count(obj) {
       var countedObj = {};
 
-      obj.forEach(function (el) {
+      obj.forEach(function(el) {
         countedObj[el] = countedObj[el] + 1 || 1;
       });
 
@@ -150,7 +195,7 @@ export default {
       return countedObj;
     },
     valueCount(key, value) {
-      return this.filterReadBooks.filter((book) => book[key] === value).length;
+      return this.filterReadBooks.filter(book => book[key] === value).length;
     },
   },
 };
@@ -159,16 +204,37 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/varibles.scss";
 
-h2 {
-  text-align: center;
-  margin: 20px;
+// .stats-list {
+//   max-width: 1200px;
+//   margin: auto;
+// }
+
+ul {
+  padding: 0;
+  list-style: none;
 }
 
-.statistics {
-  max-width: 1200px;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 40px;
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.book-cover-img {
+  width: 120px;
+}
+
+.book-cover-img.e-book {
+  width: 90px;
+}
+
+.numbers,
+.genres {
+  background-color: $black;
+  color: $pink;
 }
 
 .length,
@@ -182,15 +248,5 @@ h2 {
   // display: grid;
   // grid-template-columns: 1fr 1fr;
   // grid-gap: 20px;
-}
-
-.length div,
-.ratings div,
-.genres div,
-.age div,
-.methods div,
-.setting div,
-.years div {
-  margin: 10px;
 }
 </style>

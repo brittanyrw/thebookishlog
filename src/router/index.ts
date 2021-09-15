@@ -3,7 +3,6 @@ import Home from "../views/Home.vue";
 import Author from "../views/Author.vue";
 import Stats from "../views/Stats.vue";
 import HomeLibrary from "../views/HomeLibrary.vue";
-import OtherData from "../views/OtherData.vue";
 
 const routes = [
   {
@@ -25,11 +24,6 @@ const routes = [
     path: "/home-library",
     name: "HomeLibrary",
     component: HomeLibrary
-  },
-  {
-    path: "/other",
-    name: "OtherData",
-    component: OtherData
   }
 ];
 
