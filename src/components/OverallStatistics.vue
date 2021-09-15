@@ -212,7 +212,7 @@ h2 {
 }
 
 h3 {
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
 .length {
@@ -229,6 +229,9 @@ h3 {
   max-width: 1000px;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 662px) {
+    flex-wrap: wrap;
+  }
   li {
     margin: 0 20px;
   }
@@ -256,15 +259,15 @@ h3 {
 .setting,
 .years {
   text-align: center;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // grid-gap: 20px;
 }
 
 .book-length-ratings {
   padding: 35px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 922px) {
+    grid-template-columns: 1fr 1fr;
+  }
   max-width: 1000px;
   margin: auto;
 }
@@ -343,11 +346,8 @@ h3 {
       margin: 15px;
       background-color: $pink;
       text-align: center;
-      // -webkit-box-shadow: 5px 5px 0 $pink;
-      // box-shadow: 9px 9px 0 $pink;
       border-radius: 7px;
       color: $black;
-      // outline: 3px solid $black;
       display: flex;
       p {
         margin: 0;
