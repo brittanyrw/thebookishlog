@@ -97,11 +97,11 @@ import mixins from "@/mixins/mixins.ts";
 export default {
   data() {
     return {
-      toggle: "no",
+      toggle: "no"
     };
   },
   props: {
-    bookInfo: Array,
+    bookInfo: Array
   },
   mixins: [mixins],
   computed: {
@@ -115,13 +115,13 @@ export default {
         }
       };
       return startedBooks.sort(sorted);
-    },
+    }
   },
   methods: {
     filter(status) {
-      return this.bookInfo.filter((item) => item.progress == status);
-    },
-  },
+      return this.bookInfo.filter(item => item.progress == status);
+    }
+  }
 };
 </script>
 
@@ -290,7 +290,7 @@ export default {
             padding-left: 15px;
             height: 100%;
             border-radius: 7px;
-            background-color: rgb(250, 230, 233, .3);
+            background-color: rgb(250, 230, 233, 0.3);
             display: flex;
             align-items: center;
             margin-bottom: 10px;

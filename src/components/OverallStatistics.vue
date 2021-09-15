@@ -4,23 +4,21 @@
       <div class="statistics">
         <section class="numbers">
           <div class="age">
-            <div class="age-list">
-              <h3>Young Adult</h3>
-              <p>{{ valueCount("age", "Young Adult") }}</p>
+            <div class="stat">
+              <p class="stat-number">{{ valueCount("age", "Young Adult") }}</p>
+              <h3 class="stat-title">Young Adult</h3>
             </div>
-            <div class="age-list">
-              <h3>Adult</h3>
-              <p>{{ valueCount("age", "Adult") }}</p>
+            <div class="stat">
+              <p class="stat-number">{{ valueCount("age", "Adult") }}</p>
+              <h3 class="stat-title">Adult</h3>
             </div>
-          </div>
-          <div class="methods">
-            <div class="methods-list">
-              <h3>Physical Books</h3>
-              <p>{{ valueCount("medium", "Physical") }}</p>
+            <div class="stat">
+              <p class="stat-number">{{ valueCount("medium", "Physical") }}</p>
+              <h3 class="stat-title">Physical Books</h3>
             </div>
-            <div class="methods-list">
-              <h3>E-Books</h3>
-              <p>{{ valueCount("medium", "E-Book") }}</p>
+            <div class="stat">
+              <p class="stat-number">{{ valueCount("medium", "E-Book") }}</p>
+              <h3 class="stat-title">E-Books</h3>
             </div>
           </div>
         </section>
@@ -28,10 +26,15 @@
           <div class="length">
             <div class="longest-book">
               <h3>Longest Book</h3>
-              <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
               <img
                 class="book-cover-img"
-                :class="[{ 'e-book': sortByLength()[sortByLength().length - 1].title.medium == 'E-Book' }]"
+                :class="[
+                  {
+                    'e-book':
+                      sortByLength()[sortByLength().length - 1].title.medium ==
+                      'E-Book'
+                  }
+                ]"
                 :alt="
                   `${
                     sortByLength()[sortByLength().length - 1].title
@@ -40,19 +43,24 @@
                 :src="
                   require(`@/assets/imgs/${slug(
                     sortByLength()[sortByLength().length - 1].title
-                  )}.png`)"
+                  )}.png`)
+                "
               />
+              <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
+              <p>{{ sortByLength()[sortByLength().length - 1].pages }} Pages</p>
             </div>
             <div class="shortest-book">
               <h3>Shortest Book</h3>
-              <p>{{ sortByLength()[0].title }}</p>
               <img
                 class="book-cover-img"
                 :class="[{ 'e-book': sortByLength()[0].medium == 'E-Book' }]"
                 :alt="`${sortByLength()[0].title} book cover`"
                 :src="
-                  require(`@/assets/imgs/${slug(sortByLength()[0].title)}.png`)"
+                  require(`@/assets/imgs/${slug(sortByLength()[0].title)}.png`)
+                "
               />
+              <p>{{ sortByLength()[0].title }}</p>
+              <p>{{ sortByLength()[0].pages }} Pages</p>
             </div>
           </div>
           <div class="ratings">
@@ -64,32 +72,15 @@
                   v-for="(book, index) in filter('fav', true)"
                   :key="index"
                 >
-                  <p>{{ book.title }}</p>
                   <img
                     class="book-cover-img"
                     :class="[{ 'e-book': book.medium == 'E-Book' }]"
                     :alt="`${book.title} book cover`"
                     :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
                   />
+                  <p>{{ book.title }}</p>
                 </li>
               </ul>
-            </div>
-            <div class="lowest-rated-book">
-              <h3>Lowest Rated Books</h3>
-              <p>{{ sortByRating()[sortByRating().length - 1].title }}</p>
-              <img
-                class="book-cover-img"
-                :class="[{ 'e-book': sortByRating()[sortByRating().length - 1].medium == 'E-Book' }]"
-                :alt="
-                  `${
-                    sortByRating()[sortByRating().length - 1].title
-                  } book cover`
-                "
-                :src="
-                  require(`@/assets/imgs/${slug(
-                    sortByRating()[sortByRating().length - 1].title
-                  )}.png`)"
-              />
             </div>
           </div>
         </section>
@@ -100,6 +91,7 @@
               <li
                 v-for="(genreAmount, genre) in count(listGenres)"
                 :key="genre"
+                class="genre"
                 :class="[{ 'fade-genre': genreAmount < 3 }]"
               >
                 <p class="">{{ genre }}</p>
@@ -115,7 +107,7 @@
               <li
                 v-for="(settingAmount, setting) in count(listSettings)"
                 :key="setting"
-                class=""
+                class="location"
               >
                 <p class="">{{ setting }}</p>
                 <p class="">{{ settingAmount }}</p>
@@ -133,7 +125,7 @@ import mixins from "@/mixins/mixins.ts";
 
 export default {
   props: {
-    bookInfo: Array,
+    bookInfo: Array
   },
   mixins: [mixins],
   computed: {
@@ -155,7 +147,7 @@ export default {
       });
 
       return settingList.flat();
-    },
+    }
   },
   methods: {
     sortByLength() {
@@ -196,8 +188,8 @@ export default {
     },
     valueCount(key, value) {
       return this.filterReadBooks.filter(book => book[key] === value).length;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -221,6 +213,25 @@ h2 {
 
 h3 {
   margin: 0;
+}
+
+.length {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.favorite-books ul {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin: 0 20px;
+  }
 }
 
 .book-cover-img {
@@ -248,5 +259,110 @@ h3 {
   // display: grid;
   // grid-template-columns: 1fr 1fr;
   // grid-gap: 20px;
+}
+
+.book-length-ratings {
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: auto;
+}
+.age {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 35px;
+  .stat {
+    background-color: $pink;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid $pink;
+    -webkit-box-shadow: 5px 5px 0 $pink;
+    box-shadow: 9px 9px 0 $pink;
+    border-radius: 7px;
+    color: $black;
+    outline: 3px solid $black;
+    flex-grow: 1;
+    @media screen and (min-width: 922px) {
+      flex-grow: 0;
+    }
+    .stat-number {
+      font-size: 35px;
+      font-weight: bold;
+      margin: 0;
+      @media screen and (min-width: 922px) {
+        font-size: 40px;
+      }
+    }
+    .stat-title {
+      margin: 0;
+    }
+  }
+}
+
+.setting {
+  padding: 35px;
+  .setting-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    .location {
+      margin: 15px;
+      background-color: $black;
+      text-align: center;
+      border-radius: 7px;
+      color: $pink;
+      display: flex;
+      p {
+        margin: 0;
+        padding: 10px;
+      }
+      p:first-child {
+        padding-right: 10px;
+        border-right: 3px solid $pink;
+      }
+    }
+  }
+}
+
+.genres {
+  padding: 35px;
+  .genre-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    .genre {
+      margin: 15px;
+      background-color: $pink;
+      text-align: center;
+      // -webkit-box-shadow: 5px 5px 0 $pink;
+      // box-shadow: 9px 9px 0 $pink;
+      border-radius: 7px;
+      color: $black;
+      // outline: 3px solid $black;
+      display: flex;
+      p {
+        margin: 0;
+        padding: 10px;
+      }
+      p:first-child {
+        padding-right: 10px;
+
+        border-right: 3px solid $black;
+      }
+    }
+    .fade-genre {
+      background-color: rgba(250, 230, 233, 0.3);
+      color: $pink;
+    }
+  }
 }
 </style>

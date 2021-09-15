@@ -1,7 +1,7 @@
 <template>
   <div class="overall-statistics">
     <div class="main">
-      <OverallStatistics :book-info="books"/>
+      <OverallStatistics :book-info="books" />
     </div>
   </div>
 </template>
