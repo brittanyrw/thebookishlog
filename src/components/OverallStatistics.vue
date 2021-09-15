@@ -25,7 +25,7 @@
         <section class="book-length-ratings">
           <div class="length">
             <div class="longest-book">
-              <h3>Longest Book</h3>
+              <h3>Shortest Book</h3>
               <img
                 class="book-cover-img"
                 :class="[
@@ -50,7 +50,7 @@
               <p>{{ sortByLength()[sortByLength().length - 1].pages }} Pages</p>
             </div>
             <div class="shortest-book">
-              <h3>Shortest Book</h3>
+              <h3>Longest Book</h3>
               <img
                 class="book-cover-img"
                 :class="[{ 'e-book': sortByLength()[0].medium == 'E-Book' }]"
