@@ -8,17 +8,17 @@
         </p>
       </div>
       <div class="nav-links">
+        <router-link to="/">
+          <button>Home</button>
+        </router-link>
         <router-link to="/authors">
           <button>Authors</button>
         </router-link>
-        <router-link to="/stats" :disabled="true" class="disabled">
+        <router-link to="/stats">
           <button>Stats</button>
         </router-link>
         <router-link to="/home-library" class="disabled">
           <button>Home Library</button>
-        </router-link>
-        <router-link to="/other" class="disabled">
-          <button>Other</button>
         </router-link>
       </div>
       <div class="external-links">
