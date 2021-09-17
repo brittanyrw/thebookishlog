@@ -316,6 +316,7 @@ h3 {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
+    margin: auto;
     .location {
       margin: 15px;
       background-color: $black;
@@ -347,6 +348,7 @@ h3 {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
+    margin: auto;
     .genre {
       margin: 15px;
       background-color: $pink;

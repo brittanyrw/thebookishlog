@@ -17,9 +17,6 @@
         <router-link to="/stats">
           <button>Stats</button>
         </router-link>
-        <router-link to="/home-library" class="disabled">
-          <button>Home Library</button>
-        </router-link>
       </div>
       <div class="external-links">
         <h4>Other Logs</h4>
