@@ -497,7 +497,7 @@ export const bookData: Book[] = [
     author: ["Jordan Ifueko"],
     publishedYear: 2020,
     setting: ["Fictional"],
-    genre: ["Fantasy", "LGBTQIA", "Magic", "Africa"],
+    genre: ["Fantasy", "LGBTQIA", "Magic", "Africa", "Black"],
     age: "Young Adult",
     type: "Fiction",
     pages: 368,

@@ -211,5 +211,19 @@ export const authorData = [
       }
     ],
     website: "britbennett.com"
+  },
+  {
+    name: "Jordan Ifueko",
+    books: ["Raybearer"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "jordanifueko.com"
   }
 ];
