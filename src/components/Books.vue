@@ -211,13 +211,19 @@ export default {
       padding: 0;
       list-style: none;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       // flex-wrap: wrap;
       margin: 30px auto;
       max-width: 1400px;
       justify-content: center;
       align-items: center;
       align-content: center;
+      @media screen and (min-width: 668px) { 
+        grid-template-columns: 1fr 1fr;
+      }
+      @media screen and (min-width: 992px) { 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
       li {
         flex-grow: 1;
         background-color: $pink;
@@ -265,12 +271,19 @@ export default {
       padding: 0;
       list-style: none;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       margin: 30px auto;
       max-width: 1400px;
       justify-content: center;
       align-items: center;
       align-content: center;
+      @media screen and (min-width: 668px) { 
+        grid-template-columns: 1fr 1fr;
+      }
+      @media screen and (min-width: 992px) { 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
       li {
         background-color: $black;
         padding: 10px;
