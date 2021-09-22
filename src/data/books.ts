@@ -17,6 +17,8 @@ export interface Book {
   bookCoverObject: string;
   fav: boolean;
   pageProgress: number;
+  tbr: boolean;
+  tbrMonth: string;
 }
 
 export type Ages =
@@ -65,7 +67,7 @@ export type BookType = "Fiction" | "Non-Fiction" | "Graphic Novel";
 
 export type Medium = "Physical" | "E-Book" | "Audio";
 
-export type Progress = "finished" | "started" | "dnf";
+export type Progress = "finished" | "started" | "dnf" | "not started";
 
 export const bookData: Book[] = [
   {
@@ -86,7 +88,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Tan",
     bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Cinderella Is Dead",
@@ -114,7 +118,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Purple",
     bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -134,7 +140,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Black",
     bookCoverObject: "Face",
     fav: false,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Fangs",
@@ -154,7 +162,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Red",
     bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "The Year of the Witching",
@@ -182,7 +192,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Gray",
     bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Monday's Not Coming",
@@ -202,7 +214,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Red",
     bookCoverObject: "Woman",
     fav: true,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Uprooted",
@@ -222,7 +236,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Yellow",
     bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 6
+    pageProgress: 6,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Full Disclosure",
@@ -242,7 +258,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -262,7 +280,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "The First Sister",
@@ -282,7 +302,9 @@ export const bookData: Book[] = [
     pageProgress: 9,
     bookCoverColor: "Gold",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "The Testaments",
@@ -302,7 +324,9 @@ export const bookData: Book[] = [
     pageProgress: 40,
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "The Good Luck Girls",
@@ -322,7 +346,9 @@ export const bookData: Book[] = [
     pageProgress: 13,
     bookCoverColor: "Brown",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title:
@@ -343,7 +369,9 @@ export const bookData: Book[] = [
     pageProgress: 30,
     bookCoverColor: "Blue",
     bookCoverObject: "Tissue",
-    fav: false
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Gods of Jade and Shadow",
@@ -363,7 +391,9 @@ export const bookData: Book[] = [
     bookCoverColor: "Blue",
     bookCoverObject: "Tissue",
     fav: false,
-    pageProgress: 100
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -383,7 +413,9 @@ export const bookData: Book[] = [
     pageProgress: 100,
     bookCoverColor: "Blue",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "The Grace Year",
@@ -403,7 +435,9 @@ export const bookData: Book[] = [
     pageProgress: 100,
     bookCoverColor: "Pink",
     bookCoverObject: "Woman",
-    fav: false
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Ring Shout",
@@ -430,7 +464,9 @@ export const bookData: Book[] = [
     pageProgress: 100,
     bookCoverColor: "Red",
     bookCoverObject: "Person",
-    fav: true
+    fav: true,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Boyfriend Material",
@@ -450,7 +486,9 @@ export const bookData: Book[] = [
     pageProgress: 100,
     bookCoverColor: "Red",
     bookCoverObject: "Two People",
-    fav: false
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "Red, White & Royal Blue",
@@ -470,13 +508,22 @@ export const bookData: Book[] = [
     pageProgress: 42,
     bookCoverColor: "Pink",
     bookCoverObject: "Two People",
-    fav: false
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
   },
   {
     title: "The Vanishing Half",
     author: ["Brit Bennett"],
     publishedYear: 2020,
-    setting: ["United States", "Louisiana", "California", "New York City", "Washington, DC", "Minnesota"],
+    setting: [
+      "United States",
+      "Louisiana",
+      "California",
+      "New York City",
+      "Washington, DC",
+      "Minnesota"
+    ],
     genre: ["Historical Fiction", "Race", "Black"],
     age: "Adult",
     type: "Fiction",
@@ -490,26 +537,206 @@ export const bookData: Book[] = [
     pageProgress: 100,
     bookCoverColor: "Purple",
     bookCoverObject: "Two Women",
-    fav: true
+    fav: true,
+    tbr: false,
+    tbrMonth: ""
   },
   {
-    title: "Raybearer",
-    author: ["Jordan Ifueko"],
-    publishedYear: 2020,
-    setting: ["Fictional"],
-    genre: ["Fantasy", "LGBTQIA", "Magic", "Africa", "Black"],
+    title: "Mexican Gothic",
+    author: ["Silvia Moreno-Garcia"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Horror"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October"
+  },
+  {
+    title: "The Afterlife of Holly Chase",
+    author: ["Cynthia Hand"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Retelling"],
     age: "Young Adult",
     type: "Fiction",
-    pages: 368,
-    medium: "E-Book",
-    rating: 4.5,
-    dateStarted: "09/13/2021",
-    dateFinished: "09/19/2021",
+    pages: 0,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
     dnfDate: "",
-    progress: "finished",
-    pageProgress: 100,
-    bookCoverColor: "Gold",
-    bookCoverObject: "Woman's Face",
-    fav: false
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "December"
+  },
+  {
+    title: "Grown",
+    author: ["Tiffany D. Jackson"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Mystery"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "November"
+  },
+  {
+    title: "Such A Fun Age",
+    author: ["Kiley Reid"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Mystery"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October"
+  },
+  {
+    title: "Dorothy Must Die",
+    author: ["Danielle Page"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Retelling"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "November"
+  },
+  {
+    title: "Allegedly",
+    author: ["Tiffany D. Jackson"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Mystery"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "November"
+  },
+  {
+    title: "Cemetery Boys",
+    author: ["Aiden Thomas"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Horror"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October"
+  },
+  {
+    title: "The Taking of Jake Livingston",
+    author: ["Ryan Douglass"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Horror"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October"
+  },
+  {
+    title: "In a Holidaze",
+    author: ["Christina Lauren"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Romance"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "December"
   }
-];
+]

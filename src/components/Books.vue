@@ -18,7 +18,7 @@
       <ul class="books" v-show="toggle === 'no'">
         <li
           class="book"
-          v-for="(book, index) in filter('finished')"
+          v-for="(book, index) in filter('progress', 'finished')"
           :key="index"
           :class="[{ 'e-book': book.medium == 'E-Book' }]"
         >
@@ -37,7 +37,7 @@
       <ul class="books text-books" v-show="toggle === 'yes'">
         <li
           class="book"
-          v-for="(book, index) in filter('finished')"
+          v-for="(book, index) in filter('progress','finished')"
           :key="index"
         >
           <img
@@ -76,7 +76,7 @@
       <h2>DNFed Books</h2>
       <p>"Did Not Finish" books</p>
       <ul>
-        <li v-for="(book, index) in filter('dnf')" :key="index">
+        <li v-for="(book, index) in filter('progress', 'dnf')" :key="index">
           <div class="dnf-book-info">
             <span :style="`width:${book.pageProgress}%;`">
               {{ book.pageProgress }}%
@@ -87,6 +87,60 @@
           </div>
         </li>
       </ul>
+    </div>
+    <div class="tbr-book-list">
+      <h2>Monthly To Be Read Lists</h2>
+      <div class="tbr-months">
+        <div class="tbr-wrapper">
+          <h3>October</h3>
+          <ul>
+            <li
+              v-for="(book, index) in filter('tbrMonth', 'October')"
+              :key="index"
+              :class="[{ 'tbr-read': book.progress == 'finished' }]"
+            >
+              <div class="tbr-book-info">
+                <h4 class="tbr-book-title">
+                  {{ book.title }}
+                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
+                </h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tbr-wrapper">
+          <h3>November</h3>
+          <ul>
+            <li
+              v-for="(book, index) in filter('tbrMonth', 'November')"
+              :key="index"
+              :class="[{ 'tbr-read': book.progress == 'finished' }]"
+            >
+              <div class="tbr-book-info">
+                <h4 class="tbr-book-title">{{ book.title }}
+                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
+                </h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tbr-wrapper">
+          <h3>December</h3>
+          <ul>
+            <li
+              v-for="(book, index) in filter('tbrMonth', 'December')"
+              :key="index"
+              :class="[{ 'tbr-read': book.progress == 'finished' }]"
+            >
+              <div class="tbr-book-info">
+                <h4 class="tbr-book-title">{{ book.title }}
+                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
+                </h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -106,7 +160,7 @@ export default {
   mixins: [mixins],
   computed: {
     sortedStartedBooks() {
-      let startedBooks = this.filter("started");
+      let startedBooks = this.filter("progress", "started");
       const sorted = (a, b) => {
         if (a.pageProgress > b.pageProgress) {
           return -1;
@@ -118,8 +172,8 @@ export default {
     }
   },
   methods: {
-    filter(status) {
-      return this.bookInfo.filter(item => item.progress == status);
+    filter(key, value) {
+      return this.bookInfo.filter(item => item[key] == value);
     }
   }
 };
@@ -261,6 +315,65 @@ export default {
             margin: 0;
           }
         }
+      }
+    }
+  }
+
+  .tbr-book-list {
+    padding: 20px;
+    background-color: $black;
+    h2,
+    h3 {
+      color: $pink;
+    }
+
+    h3 {
+      margin-left: 15px;
+    }
+    .tbr-months {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @media screen and (min-width: 668px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      margin: 30px auto;
+      max-width: 1400px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      li {
+        background-color: $pink;
+        margin: 20px 10px;
+        border: 2px solid $pink;
+        -webkit-box-shadow: 5px 5px 0 $pink;
+        box-shadow: 9px 9px 0 $pink;
+        border-radius: 7px;
+        color: $black;
+        outline: 3px solid $black;
+        max-width: 500px;
+        .tbr-book-info {
+          margin: 0;
+          padding: 10px;
+          .tbr-book-title {
+            margin: 0 0 5px 0;
+            font-weight: bold;
+          }
+          .tbr-book-author {
+            font-size: 14px;
+            margin: 0;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+    .tbr-read {
+      .tbr-book-title, .tbr-book-author {
+        text-decoration: line-through;
       }
     }
   }
