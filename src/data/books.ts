@@ -542,6 +542,28 @@ export const bookData: Book[] = [
     tbrMonth: ""
   },
   {
+    title: "Raybearer",
+    author: ["Jordan Ifueko"],
+    publishedYear: 2020,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "LGBTQIA", "Magic", "Africa", "Black"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 368,
+    medium: "E-Book",
+    rating: 4.5,
+    dateStarted: "09/13/2021",
+    dateFinished: "09/19/2021",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Gold",
+    bookCoverObject: "Woman's Face",
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
+  },
+  {
     title: "Mexican Gothic",
     author: ["Silvia Moreno-Garcia"],
     publishedYear: 0,
