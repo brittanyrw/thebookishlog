@@ -3,22 +3,29 @@
     <div class="stats-list">
       <div class="statistics">
         <section class="numbers">
+          <h2>Other Numbers</h2>
           <div class="age">
-            <div class="stat">
-              <p class="stat-number">{{ valueCount("age", "Young Adult") }}</p>
-              <h3 class="stat-title">Young Adult</h3>
+            <div class="stats-wrapper">
+              <h3>Age</h3>
+              <div class="stat">
+                <p class="stat-number">{{ valueCount("age", "Adult") }}</p>
+                <p class="stat-title">Adult</p>
+              </div>
+              <div class="stat">
+                <p class="stat-number">{{ valueCount("age", "Young Adult") }}</p>
+                <p class="stat-title">Young Adult</p>
+              </div>
             </div>
-            <div class="stat">
-              <p class="stat-number">{{ valueCount("age", "Adult") }}</p>
-              <h3 class="stat-title">Adult</h3>
-            </div>
-            <div class="stat">
-              <p class="stat-number">{{ valueCount("medium", "Physical") }}</p>
-              <h3 class="stat-title">Physical Books</h3>
-            </div>
-            <div class="stat">
-              <p class="stat-number">{{ valueCount("medium", "E-Book") }}</p>
-              <h3 class="stat-title">E-Books</h3>
+            <div class="stats-wrapper">
+              <h3>Medium</h3>
+              <div class="stat">
+                <p class="stat-number">{{ valueCount("medium", "Physical") }}</p>
+                <p class="stat-title">Physical Books</p>
+              </div>
+              <div class="stat">
+                <p class="stat-number">{{ valueCount("medium", "E-Book") }}</p>
+                <p class="stat-title">E-Books</p>
+              </div>
             </div>
           </div>
         </section>
@@ -43,9 +50,7 @@
                 :src="
                   require(`@/assets/imgs/${slug(
                     sortByLength()[sortByLength().length - 1].title
-                  )}.png`)
-                "
-              />
+                  )}.png`)"/>
               <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
               <p>{{ sortByLength()[sortByLength().length - 1].pages }} Pages</p>
             </div>
@@ -56,9 +61,7 @@
                 :class="[{ 'e-book': sortByLength()[0].medium == 'E-Book' }]"
                 :alt="`${sortByLength()[0].title} book cover`"
                 :src="
-                  require(`@/assets/imgs/${slug(sortByLength()[0].title)}.png`)
-                "
-              />
+                  require(`@/assets/imgs/${slug(sortByLength()[0].title)}.png`)"/>
               <p>{{ sortByLength()[0].title }}</p>
               <p>{{ sortByLength()[0].pages }} Pages</p>
             </div>
@@ -86,7 +89,7 @@
         </section>
         <div class="genres">
           <div class="genre-list">
-            <h3>Genres</h3>
+            <h2>Genres</h2>
             <ul>
               <li
                 v-for="(genreAmount, genre) in count(listGenres)"
@@ -102,7 +105,7 @@
         </div>
         <div class="setting">
           <div class="setting-list">
-            <h3>Book Settings</h3>
+            <h2>Book Settings</h2>
             <ul>
               <li
                 v-for="(settingAmount, setting) in count(listSettings)"
@@ -208,12 +211,45 @@ ul {
 }
 
 h2 {
-  text-align: center;
+  padding: 0 20px 20px 20px;
   margin: 0;
 }
 
 h3 {
   margin: 0 0 15px 0;
+}
+
+.numbers {
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .stats-wrapper {
+    display: flex;
+    padding: 35px 20px 20px 20px;
+    border: 2px solid $pink;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    @media screen and (min-width: 992px) {
+      margin-right: 15px;
+      flex-grow: 0;
+    }
+    h3 {
+      position: absolute;
+      background-color: #fae6e9;
+      color: #1f1f1f;
+      padding: 10px;
+      text-align: center;
+      z-index: 1;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .length {
@@ -299,7 +335,7 @@ h3 {
       font-weight: bold;
       margin: 0;
       @media screen and (min-width: 922px) {
-        font-size: 40px;
+        font-size: 50px;
       }
     }
     .stat-title {

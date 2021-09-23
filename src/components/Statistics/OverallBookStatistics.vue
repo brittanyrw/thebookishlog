@@ -78,7 +78,7 @@ export default {
 
 .statistics-container {
   background-color: $black;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   h2 {
     color: $pink;
     margin: 0;
