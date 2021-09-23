@@ -30,7 +30,7 @@
           <div
             class="stars"
             :style="`--rating: ${book.rating};`"
-            :aria-label="`Rating of this product is ${book.rating} out of 5.`"
+            :aria-label="`Rating is ${book.rating} out of 5.`"
           ></div>
         </li>
       </ul>
@@ -51,7 +51,7 @@
             <div
               class="stars"
               :style="`--rating: ${book.rating};`"
-              :aria-label="`Rating of this product is ${book.rating} out of 5.`"
+              :aria-label="`Rating is ${book.rating} out of 5.`"
             ></div>
           </div>
         </li>
