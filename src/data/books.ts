@@ -34,6 +34,7 @@ export type Genres =
   | "Asia"
   | "Biography"
   | "Black"
+  | "Crime"
   | "Dystopia"
   | "Fairy Tale"
   | "Fantasy"
@@ -47,6 +48,7 @@ export type Genres =
   | "LGBTQIA"
   | "Magic"
   | "Magical Realism"
+  | "Music"
   | "Mystery"
   | "Mythology"
   | "Psychology"
@@ -145,28 +147,6 @@ export const bookData: Book[] = [
     tbrMonth: ""
   },
   {
-    title: "Fangs",
-    author: ["Sarah Andersen"],
-    publishedYear: 2020,
-    setting: ["Fictional"],
-    genre: ["Romance", "Fantasy", "Vampires", "Werewolves", "Humor"],
-    age: "Adult",
-    type: "Graphic Novel",
-    pages: 100,
-    medium: "Physical",
-    rating: 3.5,
-    dateStarted: "02/09/2021",
-    dateFinished: "02/09/2021",
-    dnfDate: "",
-    progress: "finished",
-    bookCoverColor: "Red",
-    bookCoverObject: "Woman",
-    fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: ""
-  },
-  {
     title: "The Year of the Witching",
     author: ["Alexis Henderson"],
     publishedYear: 2020,
@@ -201,7 +181,7 @@ export const bookData: Book[] = [
     author: ["Tiffany D. Jackson"],
     publishedYear: 2018,
     setting: ["United States", "Washington, DC"],
-    genre: ["Mystery", "Black"],
+    genre: ["Mystery", "Black", "Crime", "Psychology"],
     age: "Young Adult",
     type: "Fiction",
     pages: 435,
@@ -564,6 +544,50 @@ export const bookData: Book[] = [
     tbrMonth: ""
   },
   {
+    title: "Allegedly",
+    author: ["Tiffany D. Jackson"],
+    publishedYear: 2017,
+    setting: ["New York City", "United States"],
+    genre: ["Mystery", "Black", "Psychology", "Crime"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 387,
+    medium: "Physical",
+    rating: 4,
+    dateStarted: "09/22/2021",
+    dateFinished: "09/24/2021",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "White",
+    bookCoverObject: "Girl",
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
+  },
+  {
+    title: "Let Me Hear a Rhyme",
+    author: ["Tiffany D. Jackson"],
+    publishedYear: 2019,
+    setting: ["United States", "New York City"],
+    genre: ["Mystery", "Black", "Psychology", "Crime", "Music"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 377,
+    medium: "Physical",
+    rating: 5,
+    dateStarted: "09/24/2021",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "started",
+    pageProgress: 5,
+    bookCoverColor: "Black",
+    bookCoverObject: "Three People",
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
+  },
+  {
     title: "Mexican Gothic",
     author: ["Silvia Moreno-Garcia"],
     publishedYear: 0,
@@ -672,28 +696,6 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "November"
-  },
-  {
-    title: "Allegedly",
-    author: ["Tiffany D. Jackson"],
-    publishedYear: 2017,
-    setting: [""],
-    genre: ["Mystery"],
-    age: "Young Adult",
-    type: "Fiction",
-    pages: 387,
-    medium: "Physical",
-    rating: 0,
-    dateStarted: "09/22/2021",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "started",
-    pageProgress: 16,
-    bookCoverColor: "White",
-    bookCoverObject: "Girl",
-    fav: false,
-    tbr: false,
-    tbrMonth: ""
   },
   {
     title: "Cemetery Boys",

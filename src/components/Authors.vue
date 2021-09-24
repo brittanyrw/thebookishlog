@@ -145,6 +145,7 @@ export default {
       margin: 10px auto;
       border-radius: 7px;
       width: 100%;
+      flex-grow: 1;
       @media screen and (min-width: 992px) {
         margin: 10px;
         width: auto;
@@ -226,7 +227,7 @@ export default {
         }
       }
     }
-    .author:last-child {
+    .author:last-child, .author:nth-last-child(2) {
       flex-grow: unset;
     }
   }

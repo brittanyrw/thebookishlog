@@ -43,7 +43,7 @@ export const authorData = [
   },
   {
     name: "Tiffany D. Jackson",
-    books: ["Monday's Not Coming"],
+    books: ["Monday's Not Coming", "Allegedly"],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -54,20 +54,6 @@ export const authorData = [
       }
     ],
     website: "writeinbk.com"
-  },
-  {
-    name: "Sarah Andersen",
-    books: ["Fangs"],
-    poc: false,
-    gender: "female",
-    lgbt: false,
-    country: [
-      {
-        code: "US",
-        name: "United States"
-      }
-    ],
-    website: "sarahcandersen.com"
   },
   {
     name: "Kimberly Jones",

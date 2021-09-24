@@ -260,6 +260,15 @@ h3 {
   align-items: center;
 }
 
+.longest-book {
+  max-width: 250px;
+}
+
+.ratings {
+  @media screen and (min-width: 992px){
+    border-left: 6px solid $black;
+  }
+}
 .favorite-books ul {
   display: flex;
   margin: auto;
