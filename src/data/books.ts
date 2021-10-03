@@ -63,7 +63,7 @@ export type Genres =
   | "Horror"
   | "Humor"
   | "Korea"
-  | "LGBTQIA"
+  | "LGBTQIA+"
   | "Magic"
   | "Magical Realism"
   | "Music"
@@ -74,6 +74,7 @@ export type Genres =
   | "Retelling"
   | "Romance"
   | "Science Fiction"
+  | "Short Stories"
   | "Slavery"
   | "Social Justice"
   | "Space"
@@ -83,7 +84,7 @@ export type Genres =
   | "Western"
   | "Witches";
 
-export type BookType = "Fiction" | "Non-Fiction" | "Graphic Novel";
+export type BookType = "Fiction" | "Non-Fiction";
 
 export type Medium = "Physical" | "E-Book" | "Audio";
 
@@ -119,7 +120,7 @@ export const bookData: Book[] = [
     setting: ["Fictional"],
     genre: [
       "Fantasy",
-      "LGBTQIA",
+      "LGBTQIA+",
       "Retelling",
       "Fairy Tale",
       "Dystopia",
@@ -243,7 +244,7 @@ export const bookData: Book[] = [
     author: ["Camryn Garrett"],
     publishedYear: 2019,
     setting: ["United States", "California"],
-    genre: ["LGBTQIA", "Romance", "Health", "Mystery", "Black"],
+    genre: ["LGBTQIA+", "Romance", "Health", "Mystery", "Black"],
     age: "Young Adult",
     type: "Fiction",
     pages: 290,
@@ -287,7 +288,7 @@ export const bookData: Book[] = [
     author: ["Linden Lewis"],
     publishedYear: 2020,
     setting: ["Fictional", "Space"],
-    genre: ["Science Fiction", "Fantasy", "LGBTQIA", "Space"],
+    genre: ["Science Fiction", "Fantasy", "LGBTQIA+", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 352,
@@ -331,7 +332,7 @@ export const bookData: Book[] = [
     author: ["Charlotte Nicole Davis"],
     publishedYear: 2019,
     setting: ["Fictional"],
-    genre: ["Fantasy", "Historical Fiction", "LGBTQIA", "Western", "Dystopia"],
+    genre: ["Fantasy", "Historical Fiction", "LGBTQIA+", "Western", "Dystopia"],
     age: "Young Adult",
     type: "Fiction",
     pages: 352,
@@ -471,7 +472,7 @@ export const bookData: Book[] = [
     author: ["Alexis Hall"],
     publishedYear: 2020,
     setting: ["United Kingdom", "London"],
-    genre: ["LGBTQIA", "Romance", "Humor"],
+    genre: ["LGBTQIA+", "Romance", "Humor"],
     age: "Adult",
     type: "Fiction",
     pages: 185,
@@ -493,7 +494,7 @@ export const bookData: Book[] = [
     author: ["Casey McQuiston"],
     publishedYear: 2019,
     setting: ["United Kingdom", "United States", "Washington, DC", "London"],
-    genre: ["LGBTQIA", "Romance"],
+    genre: ["LGBTQIA+", "Romance"],
     age: "New Adult",
     type: "Fiction",
     pages: 418,
@@ -544,7 +545,7 @@ export const bookData: Book[] = [
     author: ["Jordan Ifueko"],
     publishedYear: 2020,
     setting: ["Fictional"],
-    genre: ["Fantasy", "LGBTQIA", "Magic", "Africa", "Black"],
+    genre: ["Fantasy", "LGBTQIA+", "Magic", "Africa", "Black"],
     age: "Young Adult",
     type: "Fiction",
     pages: 368,
@@ -579,6 +580,34 @@ export const bookData: Book[] = [
     pageProgress: 100,
     bookCoverColor: "White",
     bookCoverObject: "Girl",
+    fav: false,
+    tbr: false,
+    tbrMonth: ""
+  },{
+    title: "Blackout",
+    author: [
+      "Dhonielle Clayton", 
+      "Tiffany D. Jackson", 
+      "Nic Stone" , 
+      "Angie Thomas", 
+      "Ashley Woodfolk", 
+      "Nicola Yoon"
+    ],
+    publishedYear: 2021,
+    setting: [""],
+    genre: ["Short Stories", "Black", "LGBTQIA+", "Romance"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 256,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "09/28/2021",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "started",
+    pageProgress: 10,
+    bookCoverColor: "Black",
+    bookCoverObject: "Bridge",
     fav: false,
     tbr: false,
     tbrMonth: ""
