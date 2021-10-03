@@ -12,9 +12,75 @@
         />
         <label for="toggle-author-images">Show Author Image Grid</label>
       </div>
+      <div class="toggle-button-wrapper">
+        <input
+          type="checkbox"
+          v-model="favToggle"
+          true-value="yes"
+          false-value="no"
+          id="toggle-fav-authors"
+        />
+        <label for="toggle-fav-authors">Show Favorite Authors</label>
+      </div>
     </div>
-    <ul class="authors" v-show="toggle === 'no'">
+    <ul class="authors" v-show="toggle === 'no' && favToggle === 'no'">
       <li class="author" v-for="(author, index) in sortedAuthors" :key="index">
+        <div class="author-name">
+          <h3>{{ author.name }}</h3>
+        </div>
+        <div class="author-imgs">
+          <div class="author-img-wrapper">
+            <img
+              v-if="author.image != false"
+              class="author-img"
+              :alt="`${author.name}`"
+              :src="require(`@/assets/imgs/${slug(author.name)}.png`)"
+            />
+            <img
+              v-else
+              class="author-img"
+              :alt="`${author.name}`"
+              :src="require('@/assets/imgs/placeholder-author.png')"
+            />
+          </div>
+          <div class="author-books">
+            <img
+              v-for="(book, index) in author.books"
+              :key="index"
+              class="author-book-img"
+              :alt="`${book}`"
+              :src="require(`@/assets/imgs/${slug(book)}.png`)"
+            />
+          </div>
+        </div>
+        <div class="author-info">
+          <div class="author-stats">
+            <span class="book-number">{{ author.books.length }}</span>
+            <img
+              v-if="author.lgbt"
+              class="lgbt"
+              alt="lgbt rainbow heart"
+              :src="require('@/assets/imgs/lgbtqa-heart.png')"
+            />
+            <span
+              class="flag"
+              v-for="(country, index) in author.country"
+              :key="index"
+            >
+              {{ flagEmoji(country.code) }}
+            </span>
+          </div>
+          <a
+            :href="`https://${author.website}`"
+            target="_blank"
+            class="author-website"
+            >{{ author.website }}</a
+          >
+        </div>
+      </li>
+    </ul>
+    <ul class="authors" v-show="favToggle === 'yes'">
+      <li class="author" v-for="(author, index) in favAuthors" :key="index">
         <div class="author-name">
           <h3>{{ author.name }}</h3>
         </div>
@@ -91,7 +157,8 @@ import mixins from "@/mixins/mixins.ts";
 export default {
   data() {
     return {
-      toggle: "no"
+      toggle: "no",
+      favToggle: "no"
     };
   },
   props: {
@@ -112,6 +179,9 @@ export default {
     },
     authorsWithImages() {
       return this.sortedAuthors.filter(author => author.image != false);
+    },
+    favAuthors() {
+      return this.sortedAuthors.filter(author => author.fav);
     }
   }
 };

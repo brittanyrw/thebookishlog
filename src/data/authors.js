@@ -5,6 +5,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "US",
@@ -19,6 +20,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: true,
+    fav: false,
     country: [
       {
         code: "US",
@@ -33,6 +35,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "US",
@@ -47,6 +50,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
+    fav: true,
     country: [
       {
         code: "US",
@@ -61,6 +65,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "US",
@@ -75,6 +80,7 @@ export const authorData = [
     poc: false,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "US",
@@ -89,6 +95,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: true,
+    fav: false,
     country: [
       {
         code: "US",
@@ -105,6 +112,7 @@ export const authorData = [
     poc: false,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "GB",
@@ -119,6 +127,7 @@ export const authorData = [
     poc: false,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "MX",
@@ -133,6 +142,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "KR",
@@ -147,6 +157,7 @@ export const authorData = [
     poc: false,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "US",
@@ -161,6 +172,7 @@ export const authorData = [
     poc: true,
     gender: "male",
     lgbt: false,
+    fav: true,
     country: [
       {
         code: "US",
@@ -175,6 +187,7 @@ export const authorData = [
     poc: false,
     gender: "male",
     lgbt: true,
+    fav: false,
     country: [
       {
         code: "GB",
@@ -190,6 +203,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
+    fav: true,
     country: [
       {
         code: "US",
@@ -204,6 +218,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
+    fav: false,
     country: [
       {
         code: "US",
@@ -211,5 +226,20 @@ export const authorData = [
       }
     ],
     website: "jordanifueko.com"
+  },
+  {
+    name: "Kiley Reid",
+    books: ["Such a Fun Age"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: true,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "kileyreid.com"
   }
 ];

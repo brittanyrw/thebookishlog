@@ -30,6 +30,26 @@
           </div>
         </section>
         <section class="book-length-ratings">
+          <div class="ratings">
+            <div class="favorite-books">
+              <h3>Favorite Books</h3>
+              <ul>
+                <li
+                  class="book"
+                  v-for="(book, index) in filter('fav', true)"
+                  :key="index"
+                >
+                  <img
+                    class="book-cover-img"
+                    :class="[{ 'e-book': book.medium == 'E-Book' }]"
+                    :alt="`${book.title} book cover`"
+                    :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                  />
+                  <p>{{ book.title }}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="length">
             <div class="longest-book">
               <h3>Shortest Book</h3>
@@ -64,26 +84,6 @@
                   require(`@/assets/imgs/${slug(sortByLength()[0].title)}.png`)"/>
               <p>{{ sortByLength()[0].title }}</p>
               <p>{{ sortByLength()[0].pages }} Pages</p>
-            </div>
-          </div>
-          <div class="ratings">
-            <div class="favorite-books">
-              <h3>Favorite Books</h3>
-              <ul>
-                <li
-                  class="book"
-                  v-for="(book, index) in filter('fav', true)"
-                  :key="index"
-                >
-                  <img
-                    class="book-cover-img"
-                    :class="[{ 'e-book': book.medium == 'E-Book' }]"
-                    :alt="`${book.title} book cover`"
-                    :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
-                  />
-                  <p>{{ book.title }}</p>
-                </li>
-              </ul>
             </div>
           </div>
         </section>
@@ -264,11 +264,6 @@ h3 {
   max-width: 250px;
 }
 
-.ratings {
-  @media screen and (min-width: 992px){
-    border-left: 6px solid $black;
-  }
-}
 .favorite-books ul {
   display: flex;
   margin: auto;
@@ -309,11 +304,6 @@ h3 {
 
 .book-length-ratings {
   padding: 35px;
-  display: grid;
-  grid-template-columns: 1fr;
-  @media screen and (min-width: 922px) {
-    grid-template-columns: 1fr 1fr;
-  }
   max-width: 1000px;
   margin: auto;
 }

@@ -2,7 +2,7 @@ export interface Book {
   title: string;
   author: string[];
   publishedYear: number;
-  setting: string[];
+  setting: Setting[];
   genre: Genres[];
   age: Ages;
   type: BookType;
@@ -27,6 +27,24 @@ export type Ages =
   | "Adult"
   | "Middle Grade"
   | "Childrens";
+
+export type Setting =
+  | ""
+  | "California"
+  | "Canada"
+  | "Fictional"
+  | "Georgia (USA)"
+  | "Louisiana"
+  | "London"
+  | "Mexico"
+  | "Minnesota"
+  | "New York City"
+  | "Philadelphia"
+  | "South Korea"
+  | "Space"
+  | "United Kingdom"
+  | "United States"
+  | "Washington, DC";
 
 export type Genres =
   | "Alternative History"
@@ -575,12 +593,12 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 377,
     medium: "Physical",
-    rating: 5,
+    rating: 0,
     dateStarted: "09/24/2021",
     dateFinished: "",
     dnfDate: "",
     progress: "started",
-    pageProgress: 5,
+    pageProgress: 19,
     bookCoverColor: "Black",
     bookCoverObject: "Three People",
     fav: false,
@@ -656,22 +674,22 @@ export const bookData: Book[] = [
   {
     title: "Such A Fun Age",
     author: ["Kiley Reid"],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Mystery"],
+    publishedYear: 2019,
+    setting: ["Philadelphia", "New York City"],
+    genre: ["Race", "Black"],
     age: "Adult",
     type: "Fiction",
-    pages: 0,
+    pages: 310,
     medium: "E-Book",
-    rating: 0,
-    dateStarted: "",
-    dateFinished: "",
+    rating: 5,
+    dateStarted: "09/30/2021",
+    dateFinished: "10/03/2021",
     dnfDate: "",
-    progress: "not started",
-    pageProgress: 0,
-    bookCoverColor: "",
-    bookCoverObject: "",
-    fav: false,
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Text",
+    fav: true,
     tbr: true,
     tbrMonth: "October"
   },
@@ -763,4 +781,4 @@ export const bookData: Book[] = [
     tbr: true,
     tbrMonth: "December"
   }
-]
+];
