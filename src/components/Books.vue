@@ -62,11 +62,11 @@
       <ul>
         <li v-for="(book, index) in sortedStartedBooks" :key="index">
           <div class="current-book-info">
-            <span :style="`width:${book.pageProgress}%;`">
+            <span class="progress" :style="`width:${book.pageProgress}%;`">
               {{ book.pageProgress }}%
             </span>
             <p class="current-book-title">{{ book.title }}</p>
-            <p class="current-book-author">by {{ book.author[0] }}</p>
+            <p class="current-book-author">by <span class="author-list" v-for="(author, index) in book.author" :key="index">{{ author }}</span></p>
             <p class="current-book-date">Started: {{ book.dateStarted }}</p>
           </div>
         </li>
@@ -293,7 +293,7 @@ export default {
           margin: 0;
           position: relative;
           padding: 10px;
-          span {
+          .progress {
             font-size: 14px;
             padding-left: 15px;
             height: 100%;
@@ -302,6 +302,16 @@ export default {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
+          }
+          .author-list {
+            &:before {
+              content: ", "
+            }
+          }
+          .author-list:first-child {
+            &:before {
+              content: "";
+            }
           }
           .current-book-title {
             margin: 0 0 5px 0;

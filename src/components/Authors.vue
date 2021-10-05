@@ -26,7 +26,15 @@
     <ul class="authors" v-show="toggle === 'no' && favToggle === 'no'">
       <li class="author" v-for="(author, index) in sortedAuthors" :key="index">
         <div class="author-name">
-          <h3>{{ author.name }}</h3>
+          <h3>
+            {{ author.name }}
+            <img
+              v-if="author.fav"
+              class="author-fav-star"
+              alt="Favorite Author"
+              :src="require('@/assets/imgs/star.svg')"
+            />
+          </h3>
         </div>
         <div class="author-imgs">
           <div class="author-img-wrapper">
@@ -82,7 +90,15 @@
     <ul class="authors" v-show="favToggle === 'yes'">
       <li class="author" v-for="(author, index) in favAuthors" :key="index">
         <div class="author-name">
-          <h3>{{ author.name }}</h3>
+          <h3>
+            {{ author.name }}
+            <img
+              v-if="author.fav"
+              class="author-fav-star"
+              alt="Favorite Author"
+              :src="require('@/assets/imgs/star.svg')"
+            />
+          </h3>
         </div>
         <div class="author-imgs">
           <div class="author-img-wrapper">
@@ -216,7 +232,7 @@ export default {
       border-radius: 7px;
       width: 100%;
       flex-grow: 1;
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 668px) {
         margin: 10px;
         width: auto;
       }
@@ -225,33 +241,52 @@ export default {
         text-align: center;
         padding: 20px;
         background-color: $black;
+        position: relative;
         h3 {
           margin: 0;
+          .author-fav-star {
+            position: absolute;
+            height: 30px;
+            top: 14px;
+            margin-left: 5px;
+          }
         }
       }
       .author-imgs {
-        display: flex;
+        @media screen and (min-width: 668px) {
+          display: flex;
+        }
       }
       .author-stats {
         display: flex;
         align-items: center;
       }
       .author-img-wrapper {
-        height: 200px;
-        width: 200px;
-        border-right: 5px solid $black;
+        height: 260px;
+        border-bottom: 5px solid $black;
         overflow: hidden;
         position: relative;
+        @media screen and (min-width: 668px) { 
+          width: 200px; 
+          height: 200px;
+          border-right: 5px solid $black;    
+          border-bottom: none;
+        }
         .author-img {
           width: 100%;
         }
       }
       .author-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         background-color: $black;
         padding: 0 10px 5px 10px;
+        @media screen and (min-width: 668px) {   
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .author-stats {
+          justify-content: center;
+        }
         .book-number {
           background-color: white;
           border-radius: 50%;
@@ -279,6 +314,14 @@ export default {
           text-decoration: none;
           color: $pink;
           font-size: 14px;
+          display: block;
+          margin: auto;
+          text-align: center;
+          @media screen and (min-width: 668px) {  
+            display: inline-block;
+            text-align: right;
+            margin: 0;
+          }
         }
       }
       .author-books {
@@ -288,6 +331,7 @@ export default {
         margin: auto;
         min-width: 132px;
         justify-content: center;
+        flex-wrap: wrap;
         .author-book-img {
           height: 150px;
           margin-right: 20px;

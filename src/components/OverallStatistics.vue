@@ -27,6 +27,17 @@
                 <p class="stat-title">E-Books</p>
               </div>
             </div>
+            <div class="stats-wrapper">
+              <h3>Source</h3>
+              <div class="stat">
+                <p class="stat-number">{{ valueCount("library", false) }}</p>
+                <p class="stat-title">Home Library</p>
+              </div>
+              <div class="stat">
+                <p class="stat-number">{{ valueCount("library", true) }}</p>
+                <p class="stat-title">Library Book</p>
+              </div>
+            </div>            
           </div>
         </section>
         <section class="book-length-ratings">

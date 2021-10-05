@@ -19,6 +19,7 @@ export interface Book {
   pageProgress: number;
   tbr: boolean;
   tbrMonth: string;
+  library: boolean;
 }
 
 export type Ages =
@@ -111,7 +112,8 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "Cinderella Is Dead",
@@ -141,7 +143,8 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -163,7 +166,8 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "The Year of the Witching",
@@ -193,7 +197,8 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "Monday's Not Coming",
@@ -215,7 +220,8 @@ export const bookData: Book[] = [
     fav: true,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "Uprooted",
@@ -237,7 +243,8 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 6,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "Full Disclosure",
@@ -259,7 +266,8 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -281,7 +289,8 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "The First Sister",
@@ -303,7 +312,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "The Testaments",
@@ -325,7 +335,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "The Good Luck Girls",
@@ -347,7 +358,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title:
@@ -370,7 +382,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Tissue",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "Gods of Jade and Shadow",
@@ -392,7 +405,8 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -414,7 +428,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "The Grace Year",
@@ -436,7 +451,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "Ring Shout",
@@ -465,7 +481,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Person",
     fav: true,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "Boyfriend Material",
@@ -487,7 +504,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Two People",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "Red, White & Royal Blue",
@@ -509,7 +527,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Two People",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "The Vanishing Half",
@@ -538,7 +557,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Two Women",
     fav: true,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "Raybearer",
@@ -560,7 +580,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman's Face",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "Allegedly",
@@ -582,7 +603,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Girl",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },{
     title: "Blackout",
     author: [
@@ -610,7 +632,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Bridge",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: true
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -632,7 +655,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Three People",
     fav: false,
     tbr: false,
-    tbrMonth: ""
+    tbrMonth: "",
+    library: false
   },
   {
     title: "Mexican Gothic",
@@ -654,7 +678,8 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "October"
+    tbrMonth: "October",
+    library: false
   },
   {
     title: "The Afterlife of Holly Chase",
@@ -676,7 +701,8 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "December"
+    tbrMonth: "December",
+    library: false
   },
   {
     title: "Grown",
@@ -698,7 +724,8 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "November"
+    tbrMonth: "November",
+    library: false
   },
   {
     title: "Such A Fun Age",
@@ -720,7 +747,8 @@ export const bookData: Book[] = [
     bookCoverObject: "Text",
     fav: true,
     tbr: true,
-    tbrMonth: "October"
+    tbrMonth: "October",
+    library: true
   },
   {
     title: "Dorothy Must Die",
@@ -742,7 +770,8 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "November"
+    tbrMonth: "November",
+    library: true
   },
   {
     title: "Cemetery Boys",
@@ -764,7 +793,8 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "October"
+    tbrMonth: "October",
+    library: false
   },
   {
     title: "The Taking of Jake Livingston",
@@ -786,7 +816,8 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "October"
+    tbrMonth: "October",
+    library: false
   },
   {
     title: "In a Holidaze",
@@ -808,6 +839,7 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "December"
+    tbrMonth: "December",
+    library: false
   }
 ];
