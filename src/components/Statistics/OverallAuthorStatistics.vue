@@ -76,6 +76,7 @@
           >
             <p class="author-stat-flag">{{ flagEmoji(countryCode) }}</p>
             <p class="author-stat-flag-amount">{{ countryAmount }}</p>
+            <p class="author-stat-country">{{ countryName(countryCode) }}</p>
           </li>
         </ul>
       </div>
@@ -111,6 +112,10 @@ export default {
       });
 
       return countedArray;
+    },
+    countryName(countryCode) {
+      let regionNames = new Intl.DisplayNames(["en"], { type: "region" });
+      return regionNames.of(countryCode);
     }
   }
 };
@@ -245,6 +250,9 @@ export default {
       @media screen and (min-width: 992px) {
         font-size: 40px;
       }
+    }
+    .author-stat-country {
+      display: block;
     }
   }
 }

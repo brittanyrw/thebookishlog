@@ -46,7 +46,7 @@ export const authorData = [
   },
   {
     name: "Tiffany D. Jackson",
-    books: ["Monday's Not Coming", "Allegedly"],
+    books: ["Monday's Not Coming", "Allegedly", "Blackout"],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -241,5 +241,80 @@ export const authorData = [
       }
     ],
     website: "kileyreid.com"
+  },
+  {
+    name: "Dhonielle Clayton",
+    books: ["Blackout"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "dhonielleclayton.com"
+  },
+  {
+    name: "Nic Stone",
+    books: ["Blackout"],
+    poc: true,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "nicstone.info"
+  },
+  {
+    name: "Angie Thomas",
+    books: ["Blackout"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "angiethomas.com"
+  },
+  {
+    name: "Ashley Woodfolk",
+    books: ["Blackout"],
+    poc: true,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "ashleywoodfolk.com"
+  },
+  {
+    name: "Nicola Yoon",
+    books: ["Blackout"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "JM",
+        name: "Jamaica"
+      }
+    ],
+    website: "nicolayoon.com"
   }
 ];
