@@ -20,7 +20,15 @@ export interface Book {
   tbr: boolean;
   tbrMonth: string;
   library: boolean;
+  dedication: Dedication | "";
 }
+
+export interface Dedication {
+  text: string;
+  person: string;
+}
+
+export type Person = "Mother";
 
 export type Ages =
   | "Young Adult"
@@ -113,7 +121,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Cinderella Is Dead",
@@ -144,7 +153,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -167,7 +177,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Year of the Witching",
@@ -198,7 +209,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Monday's Not Coming",
@@ -221,7 +233,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Uprooted",
@@ -244,7 +257,8 @@ export const bookData: Book[] = [
     pageProgress: 6,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Full Disclosure",
@@ -267,7 +281,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -290,7 +305,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The First Sister",
@@ -313,7 +329,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Testaments",
@@ -336,7 +353,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Good Luck Girls",
@@ -359,7 +377,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title:
@@ -383,7 +402,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Gods of Jade and Shadow",
@@ -406,7 +426,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -429,7 +450,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Grace Year",
@@ -452,7 +474,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Ring Shout",
@@ -482,7 +505,8 @@ export const bookData: Book[] = [
     fav: true,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Boyfriend Material",
@@ -505,7 +529,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Red, White & Royal Blue",
@@ -528,7 +553,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Vanishing Half",
@@ -558,7 +584,8 @@ export const bookData: Book[] = [
     fav: true,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Raybearer",
@@ -581,7 +608,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Allegedly",
@@ -604,7 +632,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -627,7 +656,12 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: {
+      text:
+        "For my cousin Sherrill Lavonne Bryant, who introduced me to hip-hop, bamboo earrings, Martin, Yo-Yo, En Vouge, and Jodeci. For the hustler in front of my autie's building who taught me how to move in a room full of vultures. For Brooklyn, home no matter where I go.",
+      person: "Family, Place"
+    }
   },
   {
     title: "Mexican Gothic",
@@ -650,7 +684,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "October",
-    library: false
+    library: false,
+    dedication: { text: "Para mi madre", person: "Mother" }
   },
   {
     title: "The Afterlife of Holly Chase",
@@ -673,7 +708,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "December",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Grown",
@@ -696,7 +732,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "November",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Such A Fun Age",
@@ -719,7 +756,8 @@ export const bookData: Book[] = [
     fav: true,
     tbr: true,
     tbrMonth: "October",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Blackout",
@@ -749,7 +787,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "October",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Cemetery Boys",
@@ -772,7 +811,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "October",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "In a Holidaze",
@@ -795,7 +835,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "December",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Crier's War",
@@ -818,7 +859,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "October",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Written in the Stars",
@@ -841,6 +883,7 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "November",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];
