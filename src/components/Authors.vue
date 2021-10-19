@@ -358,6 +358,7 @@ export default {
     overflow: hidden;
     img {
       width: 100%;
+      min-height: 200px;
     }
   }
 }

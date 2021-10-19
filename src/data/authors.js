@@ -316,5 +316,20 @@ export const authorData = [
       }
     ],
     website: "nicolayoon.com"
+  },
+  {
+    name: "Nina Varela",
+    books: ["Crier's War"],
+    poc: false,
+    gender: "female",
+    lgbt: true,
+    fav: true,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "ninavarela.com"
   }
 ];
