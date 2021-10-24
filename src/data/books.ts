@@ -56,7 +56,7 @@ export type Setting =
   | "Washington, DC";
 
 export type Genres =
-  | "Alternative History"
+  | "Alternate History"
   | "Africa"
   | "Asia"
   | "Biography"
@@ -488,7 +488,7 @@ export const bookData: Book[] = [
       "Historical Fiction",
       "Race",
       "Black",
-      "Alternative History"
+      "Alternate History"
     ],
     age: "Adult",
     type: "Fiction",
@@ -683,7 +683,7 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "October",
+    tbrMonth: "November",
     library: false,
     dedication: { text: "Para mi madre", person: "Mother" }
   },
@@ -861,7 +861,7 @@ export const bookData: Book[] = [
     bookCoverObject: "Words",
     fav: false,
     tbr: true,
-    tbrMonth: "October",
+    tbrMonth: "November",
     library: false,
     dedication: {
       text: "",
@@ -895,24 +895,106 @@ export const bookData: Book[] = [
   {
     title: "Dread Nation",
     author: ["Justina Ireland"],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Horror"],
+    publishedYear: 2018,
+    setting: ["United States"],
+    genre: [
+      "Fantasy",
+      "Horror",
+      "Historical Fiction",
+      "Race",
+      "Black",
+      "Alternate History"
+    ],
     age: "Young Adult",
     type: "Fiction",
+    pages: 455,
+    medium: "E-Book",
+    rating: 4,
+    dateStarted: "10/16/2021",
+    dateFinished: "10/22/2021",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Brown",
+    bookCoverObject: "Woman",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October",
+    library: true,
+    dedication: {
+      text: "For all the colored girls. I see you. <3",
+      person: "Black Girls"
+    }
+  },
+  {
+    title: "Hood Feminism",
+    author: ["Mikki Kendall"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Race"],
+    age: "Adult",
+    type: "Non-Fiction",
     pages: 0,
     medium: "E-Book",
     rating: 0,
-    dateStarted: "10/16/2021",
+    dateStarted: "",
     dateFinished: "",
     dnfDate: "",
-    progress: "started",
-    pageProgress: 28,
+    progress: "not started",
+    pageProgress: 0,
     bookCoverColor: "",
     bookCoverObject: "",
     fav: false,
     tbr: true,
     tbrMonth: "October",
+    library: true,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "A Memory Called Empire",
+    author: ["Arkady Martine"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Fantasy"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October",
+    library: true,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "Passing",
+    author: ["Nella Larsen"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Race"],
+    age: "Adult",
+    type: "Non-Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "November",
     library: true,
     dedication: { text: "", person: "" }
   }

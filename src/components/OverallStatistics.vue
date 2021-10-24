@@ -12,14 +12,18 @@
                 <p class="stat-title">Adult</p>
               </div>
               <div class="stat">
-                <p class="stat-number">{{ valueCount("age", "Young Adult") }}</p>
+                <p class="stat-number">
+                  {{ valueCount("age", "Young Adult") }}
+                </p>
                 <p class="stat-title">Young Adult</p>
               </div>
             </div>
             <div class="stats-wrapper">
               <h3>Medium</h3>
               <div class="stat">
-                <p class="stat-number">{{ valueCount("medium", "Physical") }}</p>
+                <p class="stat-number">
+                  {{ valueCount("medium", "Physical") }}
+                </p>
                 <p class="stat-title">Physical Books</p>
               </div>
               <div class="stat">
@@ -69,12 +73,13 @@
                 :src="
                   require(`@/assets/imgs/${slug(
                     sortByLength()[sortByLength().length - 1].title
-                  )}.png`)"/>
+                  )}.png`)"
+              />
               <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
               <p>{{ sortByLength()[sortByLength().length - 1].pages }} Pages</p>
             </div>
             <div class="longest-book">
-              <h3>Longest Books</h3>
+              <h3>Longest Book</h3>
               <div class="longest-book-wrapper">
                 <div
                   v-for="(book, index) in longestBook()"
@@ -85,8 +90,8 @@
                     class="book-cover-img"
                     :class="[{ 'e-book': book.medium == 'E-Book' }]"
                     :alt="`${book.title} book cover`"
-                    :src="
-                      require(`@/assets/imgs/${slug(book.title)}.png`)"/>
+                    :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                  />
                   <p>{{ book.title }}</p>
                   <p>{{ book.pages }} Pages</p>
                 </div>
@@ -268,7 +273,6 @@ h3 {
   margin: auto;
   max-width: 1000px;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -280,6 +284,7 @@ h3 {
 .longest-book-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .favorite-books ul {
@@ -294,9 +299,9 @@ h3 {
   }
 }
 
-.long-book {
-  margin-right: 10px;
-}
+// .long-book {
+//   margin-right: 10px;
+// }
 
 .book-cover-img {
   width: 120px;

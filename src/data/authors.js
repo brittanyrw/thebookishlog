@@ -331,5 +331,20 @@ export const authorData = [
       }
     ],
     website: "ninavarela.com"
+  },
+  {
+    name: "Justina Ireland",
+    books: ["Dread Nation"],
+    poc: true,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "authorjustinaireland.com"
   }
 ];
