@@ -37,7 +37,7 @@
       <ul class="books text-books" v-show="toggle === 'yes'">
         <li
           class="book"
-          v-for="(book, index) in filter('progress','finished')"
+          v-for="(book, index) in filter('progress', 'finished')"
           :key="index"
         >
           <img
@@ -66,7 +66,15 @@
               {{ book.pageProgress }}%
             </span>
             <p class="current-book-title">{{ book.title }}</p>
-            <p class="current-book-author">by <span class="author-list" v-for="(author, index) in book.author" :key="index">{{ author }}</span></p>
+            <p class="current-book-author">
+              by
+              <span
+                class="author-list"
+                v-for="(author, index) in book.author"
+                :key="index"
+                >{{ author }}</span
+              >
+            </p>
             <p class="current-book-date">Started: {{ book.dateStarted }}</p>
           </div>
         </li>
@@ -117,7 +125,8 @@
               :class="[{ 'tbr-read': book.progress == 'finished' }]"
             >
               <div class="tbr-book-info">
-                <h4 class="tbr-book-title">{{ book.title }}
+                <h4 class="tbr-book-title">
+                  {{ book.title }}
                   <span class="tbr-book-author">by {{ book.author[0] }}</span>
                 </h4>
               </div>
@@ -133,7 +142,8 @@
               :class="[{ 'tbr-read': book.progress == 'finished' }]"
             >
               <div class="tbr-book-info">
-                <h4 class="tbr-book-title">{{ book.title }}
+                <h4 class="tbr-book-title">
+                  {{ book.title }}
                   <span class="tbr-book-author">by {{ book.author[0] }}</span>
                 </h4>
               </div>
@@ -272,10 +282,10 @@ export default {
       justify-content: center;
       align-items: center;
       align-content: center;
-      @media screen and (min-width: 668px) { 
+      @media screen and (min-width: 668px) {
         grid-template-columns: 1fr 1fr;
       }
-      @media screen and (min-width: 992px) { 
+      @media screen and (min-width: 992px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
       li {
@@ -305,7 +315,7 @@ export default {
           }
           .author-list {
             &:before {
-              content: ", "
+              content: ", ";
             }
           }
           .author-list:first-child {
@@ -382,7 +392,8 @@ export default {
       }
     }
     .tbr-read {
-      .tbr-book-title, .tbr-book-author {
+      .tbr-book-title,
+      .tbr-book-author {
         text-decoration: line-through;
       }
     }
@@ -400,10 +411,10 @@ export default {
       justify-content: center;
       align-items: center;
       align-content: center;
-      @media screen and (min-width: 668px) { 
+      @media screen and (min-width: 668px) {
         grid-template-columns: 1fr 1fr;
       }
-      @media screen and (min-width: 992px) { 
+      @media screen and (min-width: 992px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
 
@@ -477,7 +488,7 @@ export default {
   }
 
   .book:nth-child(7n + 5) {
-    transform: rotate(6deg);
+    transform: rotate(-6deg);
   }
 
   .book:nth-child(11n + 7) {

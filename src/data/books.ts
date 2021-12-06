@@ -20,7 +20,15 @@ export interface Book {
   tbr: boolean;
   tbrMonth: string;
   library: boolean;
+  dedication: Dedication | "";
 }
+
+export interface Dedication {
+  text: string;
+  person: string;
+}
+
+export type Person = "Mother";
 
 export type Ages =
   | "Young Adult"
@@ -48,7 +56,7 @@ export type Setting =
   | "Washington, DC";
 
 export type Genres =
-  | "Alternative History"
+  | "Alternate History"
   | "Africa"
   | "Asia"
   | "Biography"
@@ -113,7 +121,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Cinderella Is Dead",
@@ -144,7 +153,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -167,7 +177,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Year of the Witching",
@@ -198,7 +209,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Monday's Not Coming",
@@ -221,7 +233,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Uprooted",
@@ -244,7 +257,8 @@ export const bookData: Book[] = [
     pageProgress: 6,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Full Disclosure",
@@ -267,7 +281,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -290,7 +305,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The First Sister",
@@ -313,7 +329,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Testaments",
@@ -336,7 +353,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Good Luck Girls",
@@ -359,7 +377,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title:
@@ -383,7 +402,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Gods of Jade and Shadow",
@@ -406,7 +426,8 @@ export const bookData: Book[] = [
     pageProgress: 100,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -429,7 +450,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Grace Year",
@@ -452,7 +474,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Ring Shout",
@@ -465,7 +488,7 @@ export const bookData: Book[] = [
       "Historical Fiction",
       "Race",
       "Black",
-      "Alternative History"
+      "Alternate History"
     ],
     age: "Adult",
     type: "Fiction",
@@ -482,7 +505,8 @@ export const bookData: Book[] = [
     fav: true,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Boyfriend Material",
@@ -505,7 +529,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Red, White & Royal Blue",
@@ -528,7 +553,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "The Vanishing Half",
@@ -558,7 +584,8 @@ export const bookData: Book[] = [
     fav: true,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Raybearer",
@@ -581,7 +608,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Allegedly",
@@ -604,36 +632,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
-  },{
-    title: "Blackout",
-    author: [
-      "Dhonielle Clayton", 
-      "Tiffany D. Jackson", 
-      "Nic Stone" , 
-      "Angie Thomas", 
-      "Ashley Woodfolk", 
-      "Nicola Yoon"
-    ],
-    publishedYear: 2021,
-    setting: [""],
-    genre: ["Short Stories", "Black", "LGBTQIA+", "Romance"],
-    age: "Young Adult",
-    type: "Fiction",
-    pages: 256,
-    medium: "E-Book",
-    rating: 0,
-    dateStarted: "09/28/2021",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "started",
-    pageProgress: 10,
-    bookCoverColor: "Black",
-    bookCoverObject: "Bridge",
-    fav: false,
-    tbr: true,
-    tbrMonth: "October",
-    library: true
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -656,7 +656,12 @@ export const bookData: Book[] = [
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: {
+      text:
+        "For my cousin Sherrill Lavonne Bryant, who introduced me to hip-hop, bamboo earrings, Martin, Yo-Yo, En Vouge, and Jodeci. For the hustler in front of my autie's building who taught me how to move in a room full of vultures. For Brooklyn, home no matter where I go.",
+      person: "Family, Place"
+    }
   },
   {
     title: "Mexican Gothic",
@@ -666,20 +671,21 @@ export const bookData: Book[] = [
     genre: ["Horror"],
     age: "Adult",
     type: "Fiction",
-    pages: 0,
+    pages: 301,
     medium: "Physical",
     rating: 0,
-    dateStarted: "",
+    dateStarted: "10/12/2021",
     dateFinished: "",
     dnfDate: "",
-    progress: "not started",
-    pageProgress: 0,
+    progress: "started",
+    pageProgress: 5,
     bookCoverColor: "",
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "October",
-    library: false
+    tbrMonth: "November",
+    library: false,
+    dedication: { text: "Para mi madre", person: "Mother" }
   },
   {
     title: "The Afterlife of Holly Chase",
@@ -702,7 +708,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "December",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Grown",
@@ -725,7 +732,8 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "November",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Such A Fun Age",
@@ -748,53 +756,39 @@ export const bookData: Book[] = [
     fav: true,
     tbr: true,
     tbrMonth: "October",
-    library: true
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
-    title: "Dorothy Must Die",
-    author: ["Danielle Page"],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Retelling"],
+    title: "Blackout",
+    author: [
+      "Dhonielle Clayton",
+      "Tiffany D. Jackson",
+      "Nic Stone",
+      "Angie Thomas",
+      "Ashley Woodfolk",
+      "Nicola Yoon"
+    ],
+    publishedYear: 2021,
+    setting: ["United States", "New York City"],
+    genre: ["Short Stories", "Black", "LGBTQIA+", "Romance"],
     age: "Young Adult",
     type: "Fiction",
-    pages: 0,
+    pages: 256,
     medium: "E-Book",
-    rating: 0,
-    dateStarted: "",
-    dateFinished: "",
+    rating: 3.5,
+    dateStarted: "09/28/2021",
+    dateFinished: "10/12/2021",
     dnfDate: "",
-    progress: "not started",
-    pageProgress: 0,
-    bookCoverColor: "",
-    bookCoverObject: "",
-    fav: false,
-    tbr: true,
-    tbrMonth: "November",
-    library: true
-  },
-  {
-    title: "Cemetery Boys",
-    author: ["Aiden Thomas"],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Horror"],
-    age: "Young Adult",
-    type: "Fiction",
-    pages: 0,
-    medium: "Physical",
-    rating: 0,
-    dateStarted: "",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "not started",
-    pageProgress: 0,
-    bookCoverColor: "",
-    bookCoverObject: "",
+    progress: "finished",
+    pageProgress: 10,
+    bookCoverColor: "Black",
+    bookCoverObject: "Bridge",
     fav: false,
     tbr: true,
     tbrMonth: "October",
-    library: false
+    library: true,
+    dedication: { text: "", person: "" }
   },
   {
     title: "In a Holidaze",
@@ -817,35 +811,67 @@ export const bookData: Book[] = [
     fav: false,
     tbr: true,
     tbrMonth: "December",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
   },
   {
     title: "Crier's War",
     author: ["Nina Varela"],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Fantasy"],
+    publishedYear: 2019,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "Romance", "LGBTQIA+", "Science Fiction", "Dystopia"],
     age: "Young Adult",
     type: "Fiction",
-    pages: 0,
+    pages: 435,
     medium: "E-Book",
-    rating: 0,
+    rating: 5,
     dateStarted: "10/05/2021",
+    dateFinished: "10/16/2021",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Gray",
+    bookCoverObject: "Words",
+    fav: true,
+    tbr: true,
+    tbrMonth: "October",
+    library: true,
+    dedication: {
+      text: "For the queer readers. You deserve every adventure.",
+      person: "LGBTQIA+"
+    }
+  },
+  {
+    title: "Iron Heart",
+    author: ["Nina Varela"],
+    publishedYear: 2020,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "Romance", "LGBTQIA+", "Science Fiction", "Dystopia"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 400,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "10/17/2021",
     dateFinished: "",
     dnfDate: "",
     progress: "started",
-    pageProgress: 6,
-    bookCoverColor: "",
-    bookCoverObject: "",
+    pageProgress: 10,
+    bookCoverColor: "Gold",
+    bookCoverObject: "Words",
     fav: false,
     tbr: true,
-    tbrMonth: "October",
-    library: false
+    tbrMonth: "November",
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
   },
   {
     title: "Written in the Stars",
     author: ["Alexandria Bellefleur"],
-    publishedYear: 2020,
+    publishedYear: 0,
     setting: [""],
     genre: ["Romance"],
     age: "Young Adult",
@@ -853,16 +879,123 @@ export const bookData: Book[] = [
     pages: 0,
     medium: "E-Book",
     rating: 0,
-    dateStarted: "12/05/2021",
+    dateStarted: "12/06/2021",
     dateFinished: "",
     dnfDate: "",
     progress: "started",
     pageProgress: 5,
-    bookCoverColor: "blue",
-    bookCoverObject: "two women",
+    bookCoverColor: "",
+    bookCoverObject: "",
     fav: false,
     tbr: false,
     tbrMonth: "",
-    library: false
+    library: false,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "Dread Nation",
+    author: ["Justina Ireland"],
+    publishedYear: 2018,
+    setting: ["United States"],
+    genre: [
+      "Fantasy",
+      "Horror",
+      "Historical Fiction",
+      "Race",
+      "Black",
+      "Alternate History"
+    ],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 455,
+    medium: "E-Book",
+    rating: 4,
+    dateStarted: "10/16/2021",
+    dateFinished: "10/22/2021",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Brown",
+    bookCoverObject: "Woman",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October",
+    library: true,
+    dedication: {
+      text: "For all the colored girls. I see you. <3",
+      person: "Black Girls"
+    }
+  },
+  {
+    title: "Hood Feminism",
+    author: ["Mikki Kendall"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Race"],
+    age: "Adult",
+    type: "Non-Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October",
+    library: true,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "A Memory Called Empire",
+    author: ["Arkady Martine"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Fantasy"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    tbrMonth: "October",
+    library: true,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "Passing",
+    author: ["Nella Larsen"],
+    publishedYear: 0,
+    setting: [""],
+    genre: ["Race"],
+    age: "Adult",
+    type: "Non-Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];

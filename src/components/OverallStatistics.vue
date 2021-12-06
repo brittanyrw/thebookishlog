@@ -12,14 +12,18 @@
                 <p class="stat-title">Adult</p>
               </div>
               <div class="stat">
-                <p class="stat-number">{{ valueCount("age", "Young Adult") }}</p>
+                <p class="stat-number">
+                  {{ valueCount("age", "Young Adult") }}
+                </p>
                 <p class="stat-title">Young Adult</p>
               </div>
             </div>
             <div class="stats-wrapper">
               <h3>Medium</h3>
               <div class="stat">
-                <p class="stat-number">{{ valueCount("medium", "Physical") }}</p>
+                <p class="stat-number">
+                  {{ valueCount("medium", "Physical") }}
+                </p>
                 <p class="stat-title">Physical Books</p>
               </div>
               <div class="stat">
@@ -51,7 +55,7 @@
             </div>
           </div>
           <div class="length">
-            <div class="longest-book">
+            <div class="shortest-book">
               <h3>Shortest Book</h3>
               <img
                 class="book-cover-img"
@@ -65,25 +69,33 @@
                 :alt="
                   `${
                     sortByLength()[sortByLength().length - 1].title
-                  } book cover`
-                "
+                  } book cover`"
                 :src="
                   require(`@/assets/imgs/${slug(
                     sortByLength()[sortByLength().length - 1].title
-                  )}.png`)"/>
+                  )}.png`)"
+              />
               <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
               <p>{{ sortByLength()[sortByLength().length - 1].pages }} Pages</p>
             </div>
-            <div class="shortest-book">
+            <div class="longest-book">
               <h3>Longest Book</h3>
-              <img
-                class="book-cover-img"
-                :class="[{ 'e-book': sortByLength()[0].medium == 'E-Book' }]"
-                :alt="`${sortByLength()[0].title} book cover`"
-                :src="
-                  require(`@/assets/imgs/${slug(sortByLength()[0].title)}.png`)"/>
-              <p>{{ sortByLength()[0].title }}</p>
-              <p>{{ sortByLength()[0].pages }} Pages</p>
+              <div class="longest-book-wrapper">
+                <div
+                  v-for="(book, index) in longestBook()"
+                  :key="index"
+                  class="long-book"
+                >
+                  <img
+                    class="book-cover-img"
+                    :class="[{ 'e-book': book.medium == 'E-Book' }]"
+                    :alt="`${book.title} book cover`"
+                    :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                  />
+                  <p>{{ book.title }}</p>
+                  <p>{{ book.pages }} Pages</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -192,6 +204,15 @@ export default {
     },
     valueCount(key, value) {
       return this.filterReadBooks.filter(book => book[key] === value).length;
+    },
+    longestBook() {
+      let longestBooks = [];
+      if (this.sortByLength()[0].pages == this.sortByLength()[1].pages) {
+        longestBooks.push(this.sortByLength()[0], this.sortByLength()[1]);
+      } else {
+        longestBooks.push(this.sortByLength()[0]);
+      }
+      return longestBooks;
     }
   }
 };
@@ -199,11 +220,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/styles/varibles.scss";
-
-// .stats-list {
-//   max-width: 1200px;
-//   margin: auto;
-// }
 
 ul {
   padding: 0;
@@ -256,12 +272,19 @@ h3 {
   display: flex;
   margin: auto;
   max-width: 1000px;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.longest-book {
+.shortest-book {
   max-width: 250px;
+  margin-right: 10px;
+}
+
+.longest-book-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .favorite-books ul {
@@ -270,13 +293,15 @@ h3 {
   max-width: 1000px;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 662px) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
   li {
     margin: 0 20px;
   }
 }
+
+// .long-book {
+//   margin-right: 10px;
+// }
 
 .book-cover-img {
   width: 120px;

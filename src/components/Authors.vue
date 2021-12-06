@@ -266,10 +266,10 @@ export default {
         border-bottom: 5px solid $black;
         overflow: hidden;
         position: relative;
-        @media screen and (min-width: 668px) { 
-          width: 200px; 
+        @media screen and (min-width: 668px) {
+          width: 200px;
           height: 200px;
-          border-right: 5px solid $black;    
+          border-right: 5px solid $black;
           border-bottom: none;
         }
         .author-img {
@@ -279,7 +279,7 @@ export default {
       .author-info {
         background-color: $black;
         padding: 0 10px 5px 10px;
-        @media screen and (min-width: 668px) {   
+        @media screen and (min-width: 668px) {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -317,7 +317,7 @@ export default {
           display: block;
           margin: auto;
           text-align: center;
-          @media screen and (min-width: 668px) {  
+          @media screen and (min-width: 668px) {
             display: inline-block;
             text-align: right;
             margin: 0;
@@ -341,7 +341,8 @@ export default {
         }
       }
     }
-    .author:last-child, .author:nth-last-child(2) {
+    .author:last-child,
+    .author:nth-last-child(2) {
       flex-grow: unset;
     }
   }
@@ -358,6 +359,7 @@ export default {
     overflow: hidden;
     img {
       width: 100%;
+      min-height: 200px;
     }
   }
 }
