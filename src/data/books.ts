@@ -845,7 +845,7 @@ export const bookData: Book[] = [
   {
     title: "Written in the Stars",
     author: ["Alexandria Bellefleur"],
-    publishedYear: 0,
+    publishedYear: 2020,
     setting: [""],
     genre: ["Romance"],
     age: "Young Adult",
@@ -853,16 +853,16 @@ export const bookData: Book[] = [
     pages: 0,
     medium: "E-Book",
     rating: 0,
-    dateStarted: "",
+    dateStarted: "12/05/2021",
     dateFinished: "",
     dnfDate: "",
-    progress: "not started",
-    pageProgress: 0,
-    bookCoverColor: "",
-    bookCoverObject: "",
+    progress: "started",
+    pageProgress: 5,
+    bookCoverColor: "blue",
+    bookCoverObject: "two women",
     fav: false,
-    tbr: true,
-    tbrMonth: "November",
+    tbr: false,
+    tbrMonth: "",
     library: false
   }
 ];
