@@ -18,7 +18,6 @@ export interface Book {
   fav: boolean;
   pageProgress: number;
   tbr: boolean;
-  tbrMonth: string;
   library: boolean;
   dedication: Dedication | "";
 }
@@ -120,7 +119,6 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -152,7 +150,6 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -176,7 +173,6 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -208,7 +204,6 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -232,7 +227,6 @@ export const bookData: Book[] = [
     fav: true,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -256,7 +250,6 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 6,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -280,7 +273,6 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -304,7 +296,6 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -328,7 +319,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -352,7 +342,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -376,7 +365,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -400,8 +388,7 @@ export const bookData: Book[] = [
     bookCoverColor: "Blue",
     bookCoverObject: "Tissue",
     fav: false,
-    tbr: false,
-    tbrMonth: "",
+    tbr: true,
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -425,7 +412,6 @@ export const bookData: Book[] = [
     fav: false,
     pageProgress: 100,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -449,7 +435,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -473,7 +458,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -504,7 +488,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Person",
     fav: true,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -528,7 +511,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Two People",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -552,7 +534,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Two People",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -583,7 +564,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Two Women",
     fav: true,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -607,7 +587,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Woman's Face",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -631,7 +610,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Girl",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -655,7 +633,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Three People",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: {
       text:
@@ -683,7 +660,6 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "November",
     library: false,
     dedication: { text: "Para mi madre", person: "Mother" }
   },
@@ -707,7 +683,6 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "December",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -731,7 +706,6 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "November",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -754,8 +728,7 @@ export const bookData: Book[] = [
     bookCoverColor: "Blue",
     bookCoverObject: "Text",
     fav: true,
-    tbr: true,
-    tbrMonth: "October",
+    tbr: false,
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -785,8 +758,7 @@ export const bookData: Book[] = [
     bookCoverColor: "Black",
     bookCoverObject: "Bridge",
     fav: false,
-    tbr: true,
-    tbrMonth: "October",
+    tbr: false,
     library: true,
     dedication: { text: "", person: "" }
   },
@@ -810,7 +782,6 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "December",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -833,8 +804,7 @@ export const bookData: Book[] = [
     bookCoverColor: "Gray",
     bookCoverObject: "Words",
     fav: true,
-    tbr: true,
-    tbrMonth: "October",
+    tbr: false,
     library: true,
     dedication: {
       text: "For the queer readers. You deserve every adventure.",
@@ -861,7 +831,6 @@ export const bookData: Book[] = [
     bookCoverObject: "Words",
     fav: false,
     tbr: true,
-    tbrMonth: "November",
     library: false,
     dedication: {
       text: "",
@@ -888,7 +857,6 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: false,
-    tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
   },
@@ -918,8 +886,7 @@ export const bookData: Book[] = [
     bookCoverColor: "Brown",
     bookCoverObject: "Woman",
     fav: false,
-    tbr: true,
-    tbrMonth: "October",
+    tbr: false,
     library: true,
     dedication: {
       text: "For all the colored girls. I see you. <3",
@@ -927,36 +894,12 @@ export const bookData: Book[] = [
     }
   },
   {
-    title: "Hood Feminism",
-    author: ["Mikki Kendall"],
-    publishedYear: 0,
+    title: "Redemptor",
+    author: ["Jordan Ifueko"],
+    publishedYear: 1900,
     setting: [""],
-    genre: ["Race"],
-    age: "Adult",
-    type: "Non-Fiction",
-    pages: 0,
-    medium: "E-Book",
-    rating: 0,
-    dateStarted: "",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "not started",
-    pageProgress: 0,
-    bookCoverColor: "",
-    bookCoverObject: "",
-    fav: false,
-    tbr: true,
-    tbrMonth: "October",
-    library: true,
-    dedication: { text: "", person: "" }
-  },
-  {
-    title: "A Memory Called Empire",
-    author: ["Arkady Martine"],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Fantasy"],
-    age: "Adult",
+    genre: [],
+    age: "Young Adult",
     type: "Fiction",
     pages: 0,
     medium: "E-Book",
@@ -970,18 +913,20 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     tbr: true,
-    tbrMonth: "October",
-    library: true,
-    dedication: { text: "", person: "" }
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
   },
   {
-    title: "Passing",
-    author: ["Nella Larsen"],
-    publishedYear: 0,
+    title: "This Poison Heart",
+    author: ["Kalynn Bayron"],
+    publishedYear: 1900,
     setting: [""],
-    genre: ["Race"],
-    age: "Adult",
-    type: "Non-Fiction",
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
     pages: 0,
     medium: "E-Book",
     rating: 0,
@@ -993,9 +938,323 @@ export const bookData: Book[] = [
     bookCoverColor: "",
     bookCoverObject: "",
     fav: false,
-    tbr: false,
-    tbrMonth: "",
+    tbr: true,
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Gearbreakers",
+    author: ["Zoe Hana Mikuta"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Iron Widow",
+    author: ["Xiran Jay Zhao"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Love Hypothesis",
+    author: ["Ali Hazelwood"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Black Girls Die Exhausted",
+    author: ["Jayne Allen"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "She Who Became the Sun",
+    author: ["Shelley Chan-Parker"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Ace of Spades",
+    author: ["Faridah Àbíké-Íyímídé"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Legendborn",
+    author: ["Tracy Deonn"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Black Sun",
+    author: ["Rebecca Roanhorse"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Cybernetic Tea Shop",
+    author: ["Meredith Katz"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Cemetery Boys",
+    author: ["Aiden Thomas"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "There There",
+    author: ["Tommy Orange"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
+  },
+  {
+    title: "Get a Life, Chloe Brown",
+    author: ["Talia Hibbert"],
+    publishedYear: 1900,
+    setting: [""],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "not started",
+    pageProgress: 0,
+    bookCoverColor: "",
+    bookCoverObject: "",
+    fav: false,
+    tbr: true,
+    library: false,
+    dedication: {
+      text: "",
+      person: ""
+    }
   }
 ];

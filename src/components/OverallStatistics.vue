@@ -1,5 +1,10 @@
 <template>
   <div class="overall-stats-component">
+    <div class="filter">
+      <button v-on:click="year = 'all'">All</button>
+      <button v-on:click="year = '2021'">2021</button>
+      <button v-on:click="year = '2022'">2022</button>
+    </div>
     <div class="stats-list">
       <div class="statistics">
         <section class="numbers">
@@ -69,11 +74,13 @@
                 :alt="
                   `${
                     sortByLength()[sortByLength().length - 1].title
-                  } book cover`"
+                  } book cover`
+                "
                 :src="
                   require(`@/assets/imgs/${slug(
                     sortByLength()[sortByLength().length - 1].title
-                  )}.png`)"
+                  )}.png`)
+                "
               />
               <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
               <p>{{ sortByLength()[sortByLength().length - 1].pages }} Pages</p>
@@ -140,6 +147,11 @@
 import mixins from "@/mixins/mixins.ts";
 
 export default {
+  data() {
+    return {
+      year: "all"
+    };
+  },
   props: {
     bookInfo: Array
   },
@@ -150,7 +162,7 @@ export default {
     },
     listGenres() {
       let genreList = [];
-      this.filterReadBooks.forEach(function(each) {
+      this.filterByYear(this.year).forEach(function(each) {
         genreList.push(each.genre);
       });
 
@@ -158,7 +170,7 @@ export default {
     },
     listSettings() {
       let settingList = [];
-      this.filterReadBooks.forEach(function(each) {
+      this.filterByYear(this.year).forEach(function(each) {
         settingList.push(each.setting);
       });
 
@@ -174,7 +186,7 @@ export default {
           return 1;
         }
       };
-      return this.filterReadBooks.sort(sorted);
+      return this.filterByYear(this.year).sort(sorted);
     },
     sortByRating() {
       const sorted = (a, b) => {
@@ -184,10 +196,10 @@ export default {
           return 1;
         }
       };
-      return this.filterReadBooks.sort(sorted);
+      return this.filterByYear(this.year).sort(sorted);
     },
     filter(key, value) {
-      return this.bookInfo.filter(item => item[key] == value);
+      return this.filterByYear(this.year).filter(item => item[key] == value);
     },
     count(obj) {
       var countedObj = {};
@@ -203,16 +215,29 @@ export default {
       return countedObj;
     },
     valueCount(key, value) {
-      return this.filterReadBooks.filter(book => book[key] === value).length;
+      return this.filterByYear(this.year).filter(book => book[key] === value)
+        .length;
     },
     longestBook() {
       let longestBooks = [];
+      console.log(this.sortByLength()[1].pages);
       if (this.sortByLength()[0].pages == this.sortByLength()[1].pages) {
         longestBooks.push(this.sortByLength()[0], this.sortByLength()[1]);
       } else {
         longestBooks.push(this.sortByLength()[0]);
       }
+      console.log(longestBooks);
       return longestBooks;
+    },
+    filterByYear(year) {
+      if (year === "all") {
+        return this.filterReadBooks;
+      } else {
+        return this.filterReadBooks.filter(book =>
+          book.dateFinished.includes(year)
+        );
+      }
+      //10/22/2021
     }
   }
 };

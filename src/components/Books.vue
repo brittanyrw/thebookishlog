@@ -96,62 +96,6 @@
         </li>
       </ul>
     </div>
-    <div class="tbr-book-list">
-      <h2>Monthly To Be Read Lists</h2>
-      <div class="tbr-months">
-        <div class="tbr-wrapper">
-          <h3>October</h3>
-          <ul>
-            <li
-              v-for="(book, index) in filter('tbrMonth', 'October')"
-              :key="index"
-              :class="[{ 'tbr-read': book.progress == 'finished' }]"
-            >
-              <div class="tbr-book-info">
-                <h4 class="tbr-book-title">
-                  {{ book.title }}
-                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
-                </h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="tbr-wrapper">
-          <h3>November</h3>
-          <ul>
-            <li
-              v-for="(book, index) in filter('tbrMonth', 'November')"
-              :key="index"
-              :class="[{ 'tbr-read': book.progress == 'finished' }]"
-            >
-              <div class="tbr-book-info">
-                <h4 class="tbr-book-title">
-                  {{ book.title }}
-                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
-                </h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="tbr-wrapper">
-          <h3>December</h3>
-          <ul>
-            <li
-              v-for="(book, index) in filter('tbrMonth', 'December')"
-              :key="index"
-              :class="[{ 'tbr-read': book.progress == 'finished' }]"
-            >
-              <div class="tbr-book-info">
-                <h4 class="tbr-book-title">
-                  {{ book.title }}
-                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
-                </h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -342,60 +286,32 @@ export default {
   .tbr-book-list {
     padding: 20px;
     background-color: $black;
-    h2,
-    h3 {
-      color: $pink;
-    }
-
-    h3 {
-      margin-left: 15px;
-    }
-    .tbr-months {
-      display: grid;
-      grid-template-columns: 1fr;
-
-      @media screen and (min-width: 668px) {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-    }
+    color: $pink;
     ul {
-      padding: 0;
       list-style: none;
-      margin: 30px auto;
-      max-width: 1400px;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      li {
-        background-color: $pink;
-        margin: 20px 10px;
-        border: 2px solid $pink;
-        -webkit-box-shadow: 5px 5px 0 $pink;
-        box-shadow: 9px 9px 0 $pink;
-        border-radius: 7px;
-        color: $black;
-        outline: 3px solid $black;
-        max-width: 500px;
-        .tbr-book-info {
-          margin: 0;
-          padding: 10px;
-          .tbr-book-title {
-            margin: 0 0 5px 0;
-            font-weight: bold;
-          }
-          .tbr-book-author {
-            font-size: 14px;
-            margin: 0;
-            font-weight: normal;
-          }
-        }
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      @media screen and (min-width: 992px) {
+        max-height: 550px;
       }
     }
-    .tbr-read {
-      .tbr-book-title,
-      .tbr-book-author {
-        text-decoration: line-through;
-      }
+
+    li {
+      margin: 10px 0;
+      max-width: 400px;
+    }
+
+    span {
+      font-weight: normal;
+    }
+    h4 {
+      margin: 10px 0 0 0;
+    }
+    .tbr-book-info {
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -502,5 +418,49 @@ export default {
   .text-books .book {
     transform: rotate(0deg);
   }
+}
+
+.check {
+  position: relative;
+  margin-right: 20px;
+}
+
+.check label {
+  background-color: $pink;
+  border: 1px solid $black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.check label:after {
+  border: 2px solid $pink;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.check input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.check input[type="checkbox"]:checked + label {
+  background-color: $black;
+  border-color: $pink;
+}
+
+.check input[type="checkbox"]:checked + label:after {
+  opacity: 1;
 }
 </style>
