@@ -74,14 +74,11 @@
                 :alt="
                   `${
                     sortByLength()[sortByLength().length - 1].title
-                  } book cover`
-                "
+                  } book cover`"
                 :src="
                   require(`@/assets/imgs/${slug(
                     sortByLength()[sortByLength().length - 1].title
-                  )}.png`)
-                "
-              />
+                  )}.png`)"/>
               <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
               <p>{{ sortByLength()[sortByLength().length - 1].pages }} Pages</p>
             </div>

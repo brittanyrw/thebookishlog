@@ -10,36 +10,36 @@
         </div>
       </div>
       <div class="gender-stats">
-        <h3>Gender</h3>
+        <h3>Identity</h3>
         <div class="stat">
-          <p class="stat-number">{{ valueCount("gender", "female") }}</p>
+          <p class="stat-number">{{ valueCount("identity", "female") }}</p>
           <p class="stat-title">Female</p>
           <p class="stat-percent">
             {{
               Math.floor(
-                (valueCount("gender", "female") / authorInfo.length) * 100
+                (valueCount("identity", "female") / authorInfo.length) * 100
               )
             }}%
           </p>
         </div>
         <div class="stat">
-          <p class="stat-number">{{ valueCount("gender", "non-binary") }}</p>
+          <p class="stat-number">{{ valueCount("identity", "non-binary") }}</p>
           <p class="stat-title">Non-Binary</p>
           <p class="stat-percent">
             {{
               Math.floor(
-                (valueCount("gender", "non-binary") / authorInfo.length) * 100
+                (valueCount("identity", "non-binary") / authorInfo.length) * 100
               )
             }}%
           </p>
         </div>
         <div class="stat">
-          <p class="stat-number">{{ valueCount("gender", "male") }}</p>
+          <p class="stat-number">{{ valueCount("identity", "male") }}</p>
           <p class="stat-title">Male</p>
           <p class="stat-percent">
             {{
               Math.floor(
-                (valueCount("gender", "male") / authorInfo.length) * 100
+                (valueCount("identity", "male") / authorInfo.length) * 100
               )
             }}%
           </p>
