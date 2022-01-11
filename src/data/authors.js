@@ -1,7 +1,12 @@
 export const authorData = [
   {
     name: "Erica Armstrong Dunbar",
-    books: ["She Came to Slay: The Life and Times of Harriet Tubman"],
+    books: [
+      {
+        name: "She Came to Slay: The Life and Times of Harriet Tubman",
+        year: 2021
+      }
+    ],
     poc: true,
     identity: "female",
     lgbt: false,
@@ -16,7 +21,16 @@ export const authorData = [
   },
   {
     name: "Kalynn Bayron",
-    books: ["Cinderella Is Dead"],
+    books: [
+      {
+        name: "Cinderella Is Dead",
+        year: 2021
+      },
+      {
+        name: "Get a Life, Chloe Brown",
+        year: 2022
+      }
+    ],
     poc: true,
     identity: "female",
     lgbt: true,
@@ -31,7 +45,12 @@ export const authorData = [
   },
   {
     name: "Alexis Henderson",
-    books: ["The Year of the Witching"],
+    books: [
+      {
+        name: "The Year of the Witching",
+        year: 2021
+      }
+    ],
     poc: true,
     identity: "female",
     lgbt: false,
@@ -46,7 +65,20 @@ export const authorData = [
   },
   {
     name: "Tiffany D. Jackson",
-    books: ["Monday's Not Coming", "Allegedly", "Blackout"],
+    books: [
+      {
+        name: "Monday's Not Coming",
+        year: 2021
+      },
+      {
+        name: "Allegedly",
+        year: 2022
+      },
+      {
+        name: "Blackout",
+        year: 2021
+      }
+    ],
     poc: true,
     identity: "female",
     lgbt: false,
@@ -61,7 +93,12 @@ export const authorData = [
   },
   {
     name: "Kimberly Jones",
-    books: ["I'm Not Dying with You Tonight"],
+    books: [
+      {
+        name: "I'm Not Dying with You Tonight",
+        year: 2021
+      }
+    ],
     poc: true,
     identity: "female",
     lgbt: false,
@@ -76,7 +113,12 @@ export const authorData = [
   },
   {
     name: "Gilly Segal",
-    books: ["I'm Not Dying with You Tonight"],
+    books: [
+      {
+        name: "I'm Not Dying with You Tonight",
+        year: 2021
+      }
+    ],    
     poc: false,
     identity: "female",
     lgbt: false,
@@ -91,7 +133,12 @@ export const authorData = [
   },
   {
     name: "Camryn Garrett",
-    books: ["Full Disclosure"],
+    books: [
+      {
+        name: "Full Disclosure",
+        year: 2021
+      }
+    ],    
     poc: true,
     identity: "female",
     lgbt: true,
@@ -107,8 +154,11 @@ export const authorData = [
   {
     name: "Hallie Rubenhold",
     books: [
-      "The Five: The Untold Lives of the Women Killed by Jack the Ripper"
-    ],
+      {
+        name: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
+        year: 2021
+      }
+    ],       
     poc: false,
     identity: "female",
     lgbt: false,
@@ -123,7 +173,12 @@ export const authorData = [
   },
   {
     name: "Silvia Moreno-Garcia",
-    books: ["Gods of Jade and Shadow"],
+    books: [
+      {
+        name: "Gods of Jade and Shadow",
+        year: 2021
+      }
+    ],       
     poc: false,
     identity: "female",
     lgbt: false,
@@ -138,7 +193,12 @@ export const authorData = [
   },
   {
     name: "Cho Nam-Joo",
-    books: ["Kim Jiyoung, Born 1982"],
+    books: [
+      {
+        name: "Kim Jiyoung, Born 1982",
+        year: 2021
+      }
+    ],       
     poc: true,
     identity: "female",
     lgbt: false,
@@ -153,7 +213,12 @@ export const authorData = [
   },
   {
     name: "Kim Liggett",
-    books: ["The Grace Year"],
+    books: [
+      {
+        name: "The Grace Year",
+        year: 2021
+      }
+    ],   
     poc: false,
     identity: "female",
     lgbt: false,
@@ -168,7 +233,12 @@ export const authorData = [
   },
   {
     name: "P. Djèlí Clark",
-    books: ["Ring Shout"],
+    books: [
+      {
+        name: "Ring Shout",
+        year: 2021
+      }
+    ],   
     poc: true,
     identity: "male",
     lgbt: false,
@@ -183,7 +253,12 @@ export const authorData = [
   },
   {
     name: "Alexis Hall",
-    books: ["Boyfriend Material"],
+    books: [
+      {
+        name: "Boyfriend Material",
+        year: 2021
+      }
+    ],   
     poc: false,
     identity: "male",
     lgbt: true,
@@ -199,7 +274,12 @@ export const authorData = [
   },
   {
     name: "Brit Bennett",
-    books: ["The Vanishing Half"],
+    books: [
+      {
+        name: "The Vanishing Half",
+        year: 2021
+      }
+    ],   
     poc: true,
     identity: "female",
     lgbt: false,
@@ -214,7 +294,12 @@ export const authorData = [
   },
   {
     name: "Jordan Ifueko",
-    books: ["Raybearer"],
+    books: [
+      {
+        name: "Raybearer",
+        year: 2021
+      }
+    ],   
     poc: true,
     identity: "female",
     lgbt: false,
@@ -229,7 +314,12 @@ export const authorData = [
   },
   {
     name: "Kiley Reid",
-    books: ["Such a Fun Age"],
+    books: [
+      {
+        name: "Such A Fun Age",
+        year: 2021
+      }
+    ],   
     poc: true,
     identity: "female",
     lgbt: false,
@@ -244,7 +334,12 @@ export const authorData = [
   },
   {
     name: "Dhonielle Clayton",
-    books: ["Blackout"],
+    books: [
+      {
+        name: "Blackout",
+        year: 2021
+      }
+    ],   
     poc: true,
     identity: "female",
     lgbt: false,
@@ -259,7 +354,12 @@ export const authorData = [
   },
   {
     name: "Nic Stone",
-    books: ["Blackout"],
+    books: [
+      {
+        name: "Blackout",
+        year: 2021
+      }
+    ],   
     poc: true,
     identity: "female",
     lgbt: true,
@@ -274,7 +374,12 @@ export const authorData = [
   },
   {
     name: "Angie Thomas",
-    books: ["Blackout"],
+    books: [
+      {
+        name: "Blackout",
+        year: 2021
+      }
+    ],    
     poc: true,
     identity: "female",
     lgbt: false,
@@ -289,7 +394,12 @@ export const authorData = [
   },
   {
     name: "Ashley Woodfolk",
-    books: ["Blackout"],
+    books: [
+      {
+        name: "Blackout",
+        year: 2021
+      }
+    ],    
     poc: true,
     identity: "female",
     lgbt: true,
@@ -304,7 +414,12 @@ export const authorData = [
   },
   {
     name: "Nicola Yoon",
-    books: ["Blackout"],
+    books: [
+      {
+        name: "Blackout",
+        year: 2021
+      }
+    ],      
     poc: true,
     identity: "female",
     lgbt: false,
@@ -319,7 +434,12 @@ export const authorData = [
   },
   {
     name: "Nina Varela",
-    books: ["Crier's War"],
+    books: [
+      {
+        name: "Crier's War",
+        year: 2021
+      }
+    ],    
     poc: false,
     identity: "female",
     lgbt: true,
@@ -334,7 +454,12 @@ export const authorData = [
   },
   {
     name: "Justina Ireland",
-    books: ["Dread Nation"],
+    books: [
+      {
+        name: "Dread Nation",
+        year: 2021
+      }
+    ],    
     poc: true,
     identity: "female",
     lgbt: true,

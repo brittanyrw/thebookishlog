@@ -1,6 +1,7 @@
 <template>
   <div class="overall-stats-component">
     <div class="filter">
+      <p>Filter:</p>
       <button v-on:click="year = 'all'">All</button>
       <button v-on:click="year = '2021'">2021</button>
       <button v-on:click="year = '2022'">2022</button>
@@ -217,13 +218,13 @@ export default {
     },
     longestBook() {
       let longestBooks = [];
-      console.log(this.sortByLength()[1].pages);
+      // console.log(this.sortByLength()[1].pages);
       if (this.sortByLength()[0].pages == this.sortByLength()[1].pages) {
         longestBooks.push(this.sortByLength()[0], this.sortByLength()[1]);
       } else {
         longestBooks.push(this.sortByLength()[0]);
       }
-      console.log(longestBooks);
+      // console.log(longestBooks);
       return longestBooks;
     },
     filterByYear(year) {
@@ -234,7 +235,6 @@ export default {
           book.dateFinished.includes(year)
         );
       }
-      //10/22/2021
     }
   }
 };
@@ -320,10 +320,6 @@ h3 {
     margin: 0 20px;
   }
 }
-
-// .long-book {
-//   margin-right: 10px;
-// }
 
 .book-cover-img {
   width: 120px;
@@ -452,6 +448,35 @@ h3 {
       background-color: rgba(250, 230, 233, 0.3);
       color: $pink;
     }
+  }
+}
+
+.filter {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  button {
+    border: 2px solid $black;
+    padding: 10px 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    outline-color: $black;
+    margin: 10px;
+    background-color: $black;
+    color: $pink;
+  }
+  button:hover {
+    background-color: $pink;
+    color: $black;
+    transition: color 1s, background-color 1s;
+    cursor: pointer;
+  }
+  .active button {
+    background-color: $pink;
+    color: $black;
   }
 }
 </style>

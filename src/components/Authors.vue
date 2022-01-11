@@ -1,5 +1,11 @@
 <template>
   <div class="author-list">
+    <div class="filter">
+      <p>Filter:</p>
+      <button v-on:click="year = 'all'">All</button>
+      <button v-on:click="year = '2021'">2021</button>
+      <button v-on:click="year = '2022'">2022</button>
+    </div>
     <div class="header">
       <h2>Authors Read</h2>
       <div class="toggle-button-wrapper">
@@ -56,8 +62,8 @@
               v-for="(book, index) in author.books"
               :key="index"
               class="author-book-img"
-              :alt="`${book}`"
-              :src="require(`@/assets/imgs/${slug(book)}.png`)"
+              :alt="`${book.name}`"
+              :src="require(`@/assets/imgs/${slug(book.name)}.png`)"
             />
           </div>
         </div>
@@ -120,8 +126,8 @@
               v-for="(book, index) in author.books"
               :key="index"
               class="author-book-img"
-              :alt="`${book}`"
-              :src="require(`@/assets/imgs/${slug(book)}.png`)"
+              :alt="`${book.name}`"
+              :src="require(`@/assets/imgs/${slug(book.name)}.png`)"
             />
           </div>
         </div>
@@ -361,6 +367,35 @@ export default {
       width: 100%;
       min-height: 200px;
     }
+  }
+}
+
+.filter {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  button {
+    border: 2px solid $black;
+    padding: 10px 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    outline-color: $black;
+    margin: 10px;
+    background-color: $black;
+    color: $pink;
+  }
+  button:hover {
+    background-color: $pink;
+    color: $black;
+    transition: color 1s, background-color 1s;
+    cursor: pointer;
+  }
+  .active button {
+    background-color: $pink;
+    color: $black;
   }
 }
 </style>
