@@ -32,6 +32,7 @@
             :style="`--rating: ${book.rating};`"
             :aria-label="`Rating is ${book.rating} out of 5.`"
           ></div>
+          <p class="read-date">{{ book.dateFinished }}</p>
         </li>
       </ul>
       <ul class="books text-books" v-show="toggle === 'yes'">
@@ -53,6 +54,7 @@
               :style="`--rating: ${book.rating};`"
               :aria-label="`Rating is ${book.rating} out of 5.`"
             ></div>
+            <p class="read-date">{{ book.dateFinished }}</p>
           </div>
         </li>
       </ul>
@@ -96,62 +98,6 @@
         </li>
       </ul>
     </div>
-    <div class="tbr-book-list">
-      <h2>Monthly To Be Read Lists</h2>
-      <div class="tbr-months">
-        <div class="tbr-wrapper">
-          <h3>October</h3>
-          <ul>
-            <li
-              v-for="(book, index) in filter('tbrMonth', 'October')"
-              :key="index"
-              :class="[{ 'tbr-read': book.progress == 'finished' }]"
-            >
-              <div class="tbr-book-info">
-                <h4 class="tbr-book-title">
-                  {{ book.title }}
-                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
-                </h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="tbr-wrapper">
-          <h3>November</h3>
-          <ul>
-            <li
-              v-for="(book, index) in filter('tbrMonth', 'November')"
-              :key="index"
-              :class="[{ 'tbr-read': book.progress == 'finished' }]"
-            >
-              <div class="tbr-book-info">
-                <h4 class="tbr-book-title">
-                  {{ book.title }}
-                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
-                </h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="tbr-wrapper">
-          <h3>December</h3>
-          <ul>
-            <li
-              v-for="(book, index) in filter('tbrMonth', 'December')"
-              :key="index"
-              :class="[{ 'tbr-read': book.progress == 'finished' }]"
-            >
-              <div class="tbr-book-info">
-                <h4 class="tbr-book-title">
-                  {{ book.title }}
-                  <span class="tbr-book-author">by {{ book.author[0] }}</span>
-                </h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -179,11 +125,22 @@ export default {
         }
       };
       return startedBooks.sort(sorted);
+    },
+    sortedBooks() {
+      let books = this.bookInfo;
+      const sorted = (a, b) => {
+        if (a.dateFinished > b.dateFinished) {
+          return -1;
+        } else {
+          return 1;
+        }
+      };
+      return books.sort(sorted);
     }
   },
   methods: {
     filter(key, value) {
-      return this.bookInfo.filter(item => item[key] == value);
+      return this.sortedBooks.filter(item => item[key] == value);
     }
   }
 };
@@ -233,6 +190,10 @@ export default {
   }
 }
 
+.read-date {
+  margin: 5px 0;
+}
+
 .books {
   padding: 0;
   margin: 0;
@@ -276,7 +237,6 @@ export default {
       list-style: none;
       display: grid;
       grid-template-columns: 1fr;
-      // flex-wrap: wrap;
       margin: 30px auto;
       max-width: 1400px;
       justify-content: center;
