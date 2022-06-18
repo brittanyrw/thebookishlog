@@ -20,7 +20,10 @@
           class="book"
           v-for="(book, index) in filter('progress', 'finished')"
           :key="index"
-          :class="[{ 'e-book': book.medium == 'E-Book' }]"
+          :class="[
+            { 'e-book': book.medium == 'E-Book' },
+            { audio: book.medium == 'Audio' }
+          ]"
         >
           <img
             class="book-cover-img"
@@ -129,12 +132,13 @@ export default {
     sortedBooks() {
       let books = this.bookInfo;
       const sorted = (a, b) => {
-        if (a.dateFinished > b.dateFinished) {
+        if (new Date(a.dateFinished) > new Date(b.dateFinished)) {
           return -1;
         } else {
           return 1;
         }
       };
+      console.log(books);
       return books.sort(sorted);
     }
   },
@@ -427,7 +431,8 @@ export default {
     @media screen and (min-width: 668px) {
       width: 250px;
     }
-    &.e-book {
+    &.e-book,
+    &.audio {
       width: 200px;
       img {
         max-height: 250px;

@@ -96,7 +96,7 @@ export type Genres =
 
 export type BookType = "Fiction" | "Non-Fiction";
 
-export type Medium = "Physical" | "E-Book" | "Audio";
+export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 
 export type Progress = "finished" | "started" | "dnf" | "not started";
 
@@ -645,13 +645,13 @@ export const bookData: Book[] = [
     age: "Young Adult",
     type: "Fiction",
     pages: 377,
-    medium: "Physical",
-    rating: 0,
+    medium: "Physical and Audio",
+    rating: 4,
     dateStarted: "09/24/2021",
-    dateFinished: "",
+    dateFinished: "06/18/2022",
     dnfDate: "",
-    progress: "started",
-    pageProgress: 19,
+    progress: "finished",
+    pageProgress: 100,
     bookCoverColor: "Black",
     bookCoverObject: "Three People",
     fav: false,
@@ -716,21 +716,21 @@ export const bookData: Book[] = [
     title: "Grown",
     author: ["Tiffany D. Jackson"],
     publishedYear: 2020,
-    setting: [""],
+    setting: ["New York City"],
     genre: ["Mystery", "Black", "Thriller"],
     age: "Young Adult",
     type: "Fiction",
     pages: 384,
     medium: "Audio",
-    rating: 0,
+    rating: 5,
     dateStarted: "06/16/2022",
-    dateFinished: "",
+    dateFinished: "06/17/2022",
     dnfDate: "",
-    progress: "started",
-    pageProgress: 4,
+    progress: "finished",
+    pageProgress: 100,
     bookCoverColor: "Yellow",
     bookCoverObject: "Woman",
-    fav: false,
+    fav: true,
     tbr: false,
     tbrMonth: "",
     library: false,

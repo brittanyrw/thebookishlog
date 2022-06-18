@@ -30,6 +30,16 @@
                 <p class="stat-number">{{ valueCount("medium", "E-Book") }}</p>
                 <p class="stat-title">E-Books</p>
               </div>
+              <div class="stat">
+                <p class="stat-number">{{ valueCount("medium", "Audio") }}</p>
+                <p class="stat-title">Audio Books</p>
+              </div>
+              <div class="stat">
+                <p class="stat-number">
+                  {{ valueCount("medium", "Physical and Audio") }}
+                </p>
+                <p class="stat-title">Both Physical & Audio</p>
+              </div>
             </div>
           </div>
         </section>
@@ -45,7 +55,10 @@
                 >
                   <img
                     class="book-cover-img"
-                    :class="[{ 'e-book': book.medium == 'E-Book' }]"
+                    :class="[
+                      { 'e-book': book.medium == 'E-Book' },
+                      { audio: book.medium == 'Audio' }
+                    ]"
                     :alt="`${book.title} book cover`"
                     :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
                   />
@@ -64,16 +77,23 @@
                     'e-book':
                       sortByLength()[sortByLength().length - 1].title.medium ==
                       'E-Book'
+                  },
+                  {
+                    audio:
+                      sortByLength()[sortByLength().length - 1].title.medium ==
+                      'Audio'
                   }
                 ]"
                 :alt="
                   `${
                     sortByLength()[sortByLength().length - 1].title
-                  } book cover`"
+                  } book cover`
+                "
                 :src="
                   require(`@/assets/imgs/${slug(
                     sortByLength()[sortByLength().length - 1].title
-                  )}.png`)"
+                  )}.png`)
+                "
               />
               <p>{{ sortByLength()[sortByLength().length - 1].title }}</p>
               <p>{{ sortByLength()[sortByLength().length - 1].pages }} Pages</p>
@@ -88,7 +108,10 @@
                 >
                   <img
                     class="book-cover-img"
-                    :class="[{ 'e-book': book.medium == 'E-Book' }]"
+                    :class="[
+                      { 'e-book': book.medium == 'E-Book' },
+                      { audio: book.medium == 'Audio' }
+                    ]"
                     :alt="`${book.title} book cover`"
                     :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
                   />
@@ -309,6 +332,10 @@ h3 {
 
 .book-cover-img.e-book {
   width: 90px;
+}
+
+.book-cover-img.audio {
+  width: 85px;
 }
 
 .numbers,

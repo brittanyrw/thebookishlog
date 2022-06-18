@@ -46,7 +46,13 @@ export const authorData = [
   },
   {
     name: "Tiffany D. Jackson",
-    books: ["Monday's Not Coming", "Allegedly", "Blackout"],
+    books: [
+      "Monday's Not Coming",
+      "Allegedly",
+      "Blackout",
+      "Grown",
+      "Let Me Hear a Rhyme"
+    ],
     poc: true,
     gender: "female",
     lgbt: false,
