@@ -902,5 +902,29 @@ export const bookData: Book[] = [
       text: "For all the colored girls. I see you. <3",
       person: "Black Girls"
     }
+  },
+  {
+    title: "Ace of Spades",
+    author: ["Faridah Àbíké-Íyímídé"],
+    publishedYear: 2021,
+    setting: ["Fictional"],
+    genre: ["Horror", "Thriller", "LGBTQIA+", "Black", "Race"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 470,
+    medium: "Physical and Audio",
+    rating: 5,
+    dateStarted: "06/18/2022",
+    dateFinished: "06/19/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Red",
+    bookCoverObject: "Two People",
+    fav: false,
+    tbr: true,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];

@@ -352,5 +352,20 @@ export const authorData = [
       }
     ],
     website: "authorjustinaireland.com"
+  },
+  {
+    name: "Faridah Àbíké-Íyímídé",
+    books: ["Ace of Spades"],
+    poc: true,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "GB",
+        name: "United Kingdom"
+      }
+    ],
+    website: "faridahabikeiyimide.com"
   }
 ];
