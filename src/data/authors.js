@@ -220,7 +220,7 @@ export const authorData = [
   },
   {
     name: "Jordan Ifueko",
-    books: ["Raybearer"],
+    books: ["Raybearer", "Redemptor"],
     poc: true,
     gender: "female",
     lgbt: false,

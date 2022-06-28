@@ -926,5 +926,29 @@ export const bookData: Book[] = [
     tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
+  },
+  {
+    title: "Redemptor",
+    author: ["Jordan Ifueko"],
+    publishedYear: 2021,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "LGBTQIA+", "Magic", "Africa", "Black"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 336,
+    medium: "Physical and Audio",
+    rating: 3.5,
+    dateStarted: "06/20/2022",
+    dateFinished: "06/28/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Purple",
+    bookCoverObject: "Woman's Face",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];
