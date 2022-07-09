@@ -58,6 +58,7 @@ export type Setting =
 export type Genres =
   | "Alternate History"
   | "Africa"
+  | "Afrofuturism"
   | "Asia"
   | "Biography"
   | "Black"
@@ -946,6 +947,38 @@ export const bookData: Book[] = [
     bookCoverColor: "Purple",
     bookCoverObject: "Woman's Face",
     fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "How Long 'til Black Future Month?",
+    author: ["N.K. Jemisin"],
+    publishedYear: 2018,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "LGBTQIA+",
+      "Magic",
+      "Short Stories",
+      "Black",
+      "Science Fiction",
+      "Afrofuturism"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 400,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "07/07/2022",
+    dateFinished: "07/09/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Black",
+    bookCoverObject: "Woman's Face",
+    fav: true,
     tbr: false,
     tbrMonth: "",
     library: false,

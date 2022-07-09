@@ -367,5 +367,20 @@ export const authorData = [
       }
     ],
     website: "faridahabikeiyimide.com"
+  },
+  {
+    name: "N.K. Jemisin",
+    books: ["How Long 'til Black Future Month?"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: true,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "nkjemisin.com"
   }
 ];
