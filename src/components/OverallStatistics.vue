@@ -315,10 +315,11 @@ h3 {
   margin: auto;
   max-width: 1000px;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
   li {
     margin: 0 20px;
+    max-width: 200px;
   }
 }
 

@@ -239,7 +239,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
-    fav: true,
+    fav: false,
     country: [
       {
         code: "US",
@@ -329,7 +329,7 @@ export const authorData = [
     poc: false,
     gender: "female",
     lgbt: true,
-    fav: true,
+    fav: false,
     country: [
       {
         code: "US",
@@ -382,5 +382,20 @@ export const authorData = [
       }
     ],
     website: "nkjemisin.com"
+  },
+  {
+    name: "Octavia E. Butler",
+    books: ["Bloodchild and Other Stories"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: true,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "octaviabutler.com"
   }
 ];
