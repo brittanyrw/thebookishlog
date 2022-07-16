@@ -397,5 +397,20 @@ export const authorData = [
       }
     ],
     website: "octaviabutler.com"
+  },
+  {
+    name: "Xiran Jay Zhao",
+    books: ["Iron Widow"],
+    poc: true,
+    gender: "non-binary",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "CN",
+        name: "China"
+      }
+    ],
+    website: "xiranjayzhao.com"
   }
 ];

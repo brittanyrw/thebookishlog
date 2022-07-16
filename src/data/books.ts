@@ -1014,5 +1014,36 @@ export const bookData: Book[] = [
     tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
+  },
+  {
+    title: "Iron Widow",
+    author: ["Xiran Jay Zhao"],
+    publishedYear: 2021,
+    setting: ["Fictional"],
+    genre: [
+      "LGBTQIA+",
+      "Fantasy",
+      "Asia",
+      "Science Fiction",
+      "Romance",
+      "Historical Fiction"
+    ],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 394,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "07/13/2022",
+    dateFinished: "07/16/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Red",
+    bookCoverObject: "Woman",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];
