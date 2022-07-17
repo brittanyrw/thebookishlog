@@ -96,6 +96,11 @@ export default {
       let countryList = [];
       this.authorInfo.forEach(function(each) {
         countryList.push(each.country[0].code);
+        if (each.country.length > 1) {
+          each.country.forEach(function(each) {
+            countryList.push(each.code);
+          });
+        }
       });
       return countryList;
     }
@@ -110,8 +115,21 @@ export default {
       arr.forEach(function(el) {
         countedArray[el] = countedArray[el] + 1 || 1;
       });
+      let sortable = [];
+      for (var country in countedArray) {
+        sortable.push([country, countedArray[country]]);
+      }
 
-      return countedArray;
+      sortable.sort(function(a, b) {
+        return b[1] - a[1];
+      });
+
+      let sortedCountries = {};
+      sortable.forEach(function(item) {
+        sortedCountries[item[0]] = item[1];
+      });
+      return sortedCountries;
+
     },
     countryName(countryCode) {
       let regionNames = new Intl.DisplayNames(["en"], { type: "region" });

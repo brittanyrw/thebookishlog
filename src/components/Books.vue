@@ -138,7 +138,6 @@ export default {
           return 1;
         }
       };
-      console.log(books);
       return books.sort(sorted);
     }
   },

@@ -1045,5 +1045,34 @@ export const bookData: Book[] = [
     tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
+  },
+  {
+    title: "Binti",
+    author: ["Nnedi Okorafor"],
+    publishedYear: 2015,
+    setting: ["Fictional"],
+    genre: [
+      "Short Stories",
+      "Science Fiction",
+      "Black",
+      "Afrofuturism"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 96,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "07/16/2022",
+    dateFinished: "07/16/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Black",
+    bookCoverObject: "Woman",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];

@@ -138,6 +138,10 @@ export const authorData = [
       {
         code: "MX",
         name: "Mexico"
+      },
+      {
+        code: "CA",
+        name: "Canada"
       }
     ],
     website: "silviamoreno-garcia.com"
@@ -183,6 +187,10 @@ export const authorData = [
       {
         code: "US",
         name: "United States"
+      },
+      {
+        code: "TT",
+        name: "Trinidad and Tobago"
       }
     ],
     website: "pdjeliclark.com"
@@ -229,6 +237,10 @@ export const authorData = [
       {
         code: "US",
         name: "United States"
+      },
+      {
+        code: "NG",
+        name: "Nigeria"
       }
     ],
     website: "jordanifueko.com"
@@ -319,6 +331,10 @@ export const authorData = [
       {
         code: "JM",
         name: "Jamaica"
+      },
+      {
+        code: "US",
+        name: "United States"
       }
     ],
     website: "nicolayoon.com"
@@ -364,6 +380,10 @@ export const authorData = [
       {
         code: "GB",
         name: "United Kingdom"
+      },
+      {
+        code: "NG",
+        name: "Nigeria"
       }
     ],
     website: "faridahabikeiyimide.com"
@@ -409,8 +429,31 @@ export const authorData = [
       {
         code: "CN",
         name: "China"
+      },
+      {
+        code: "CA",
+        name: "Canada"
       }
     ],
     website: "xiranjayzhao.com"
+  },
+  {
+    name: "Nnedi Okorafor",
+    books: ["Binti"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      },
+      {
+        code: "NG",
+        name: "Nigeria"
+      }
+    ],
+    website: "nnedi.com"
   }
 ];
