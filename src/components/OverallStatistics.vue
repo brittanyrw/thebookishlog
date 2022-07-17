@@ -331,6 +331,10 @@ h3 {
   width: 120px;
 }
 
+.shortest-book .book-cover-img {
+  width: 80px;
+}
+
 .book-cover-img.e-book {
   width: 90px;
 }

@@ -956,7 +956,7 @@ export const bookData: Book[] = [
     title: "How Long 'til Black Future Month?",
     author: ["N.K. Jemisin"],
     publishedYear: 2018,
-    setting: ["Fictional", "United States"],
+    setting: ["Fictional", "United States", "Space"],
     genre: [
       "Fantasy",
       "LGBTQIA+",
@@ -988,7 +988,7 @@ export const bookData: Book[] = [
     title: "Bloodchild and Other Stories",
     author: ["Octavia E. Butler"],
     publishedYear: 1995,
-    setting: ["Fictional", "United States"],
+    setting: ["Fictional", "United States", "Space"],
     genre: [
       "LGBTQIA+",
       "Short Stories",
@@ -1050,7 +1050,7 @@ export const bookData: Book[] = [
     title: "Binti",
     author: ["Nnedi Okorafor"],
     publishedYear: 2015,
-    setting: ["Fictional"],
+    setting: ["Fictional", "Space"],
     genre: [
       "Short Stories",
       "Science Fiction",
