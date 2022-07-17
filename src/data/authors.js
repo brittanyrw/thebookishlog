@@ -341,7 +341,7 @@ export const authorData = [
   },
   {
     name: "Nina Varela",
-    books: ["Crier's War"],
+    books: ["Crier's War", "Iron Heart"],
     poc: false,
     gender: "female",
     lgbt: true,
