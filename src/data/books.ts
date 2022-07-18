@@ -465,7 +465,7 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 404,
     medium: "Physical",
-    rating: 3.5,
+    rating: 3,
     dateStarted: "08/23/2021",
     dateFinished: "08/24/2021",
     dnfDate: "",
