@@ -829,7 +829,7 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 400,
     medium: "Physical and Audio",
-    rating: 4.5,
+    rating: 4,
     dateStarted: "10/17/2021",
     dateFinished: "07/17/2022",
     dnfDate: "",
