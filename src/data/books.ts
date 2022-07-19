@@ -1074,5 +1074,35 @@ export const bookData: Book[] = [
     tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
+  },
+  {
+    title: "This Poison Heart",
+    author: ["Kalynn Bayron"],
+    publishedYear: 2021,
+    setting: ["New York City", "United States"],
+    genre: [
+      "Fantasy",
+      "LGBTQIA+",
+      "Retelling",
+      "Black",
+      "Mythology"
+    ],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 384,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "07/16/2022",
+    dateFinished: "07/19/2022",
+    dnfDate: "",
+    progress: "finished",
+    bookCoverColor: "Green",
+    bookCoverObject: "Woman",
+    fav: false,
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];
