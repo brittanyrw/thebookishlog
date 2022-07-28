@@ -129,7 +129,6 @@ export default {
         sortedCountries[item[0]] = item[1];
       });
       return sortedCountries;
-
     },
     countryName(countryCode) {
       let regionNames = new Intl.DisplayNames(["en"], { type: "region" });
