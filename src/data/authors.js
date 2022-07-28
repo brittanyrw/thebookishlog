@@ -16,7 +16,7 @@ export const authorData = [
   },
   {
     name: "Kalynn Bayron",
-    books: ["Cinderella Is Dead", "This Poison Heart"],
+    books: ["Cinderella Is Dead", "This Poison Heart", "This Wicked Fate"],
     poc: true,
     gender: "female",
     lgbt: true,
