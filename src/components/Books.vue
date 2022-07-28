@@ -51,7 +51,17 @@
           />
 
           <div class="text-book-info">
-            <p>{{ book.title }} by {{ book.author[0] }}</p>
+            <p>
+              {{ book.title }} by
+              {{ book.author.join(", ") }}
+            </p>
+            <p
+              v-if="
+                book.medium == 'Audio' || book.medium == 'Physical and Audio'
+              "
+            >
+              Narrated by {{ book.audioBookNarrator.join(", ") }}
+            </p>
             <div
               class="stars"
               :style="`--rating: ${book.rating};`"
@@ -73,12 +83,7 @@
             <p class="current-book-title">{{ book.title }}</p>
             <p class="current-book-author">
               by
-              <span
-                class="author-list"
-                v-for="(author, index) in book.author"
-                :key="index"
-                >{{ author }}</span
-              >
+              {{ book.author.join(", ") }}
             </p>
             <p class="current-book-date">Started: {{ book.dateStarted }}</p>
           </div>
@@ -95,7 +100,7 @@
               {{ book.pageProgress }}%
             </span>
             <p class="dnf-book-title">{{ book.title }}</p>
-            <p class="dnf-book-author">by {{ book.author[0] }}</p>
+            <p class="dnf-book-author">by {{ book.author.join(", ") }}</p>
             <p class="dnf-book-date">DNF Date: {{ book.dnfDate }}</p>
           </div>
         </li>

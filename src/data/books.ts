@@ -1,6 +1,7 @@
 export interface Book {
   title: string;
   author: string[];
+  audioBookNarrator: string[] | "";
   publishedYear: number;
   setting: Setting[];
   genre: Genres[];
@@ -48,6 +49,7 @@ export type Setting =
   | "Mexico"
   | "Minnesota"
   | "New York City"
+  | "New York State"
   | "Philadelphia"
   | "South Korea"
   | "Space"
@@ -105,6 +107,7 @@ export const bookData: Book[] = [
   {
     title: "She Came to Slay: The Life and Times of Harriet Tubman",
     author: ["Erica Armstrong Dunbar"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United States"],
     genre: ["History", "Biography", "Feminism", "Race", "Slavery", "Black"],
@@ -129,6 +132,7 @@ export const bookData: Book[] = [
   {
     title: "Cinderella Is Dead",
     author: ["Kalynn Bayron"],
+    audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["Fictional"],
     genre: [
@@ -161,6 +165,7 @@ export const bookData: Book[] = [
   {
     title: "I'm Not Dying with You Tonight",
     author: ["Kimberly Jones", "Gilly Segal"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United States", "Georgia (USA)"],
     genre: ["Race", "Social Justice", "Black"],
@@ -185,6 +190,7 @@ export const bookData: Book[] = [
   {
     title: "The Year of the Witching",
     author: ["Alexis Henderson"],
+    audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["Fictional"],
     genre: [
@@ -217,6 +223,7 @@ export const bookData: Book[] = [
   {
     title: "Monday's Not Coming",
     author: ["Tiffany D. Jackson"],
+    audioBookNarrator: [""],
     publishedYear: 2018,
     setting: ["United States", "Washington, DC"],
     genre: ["Mystery", "Black", "Crime", "Psychology"],
@@ -241,6 +248,7 @@ export const bookData: Book[] = [
   {
     title: "Uprooted",
     author: ["Naomi Novik"],
+    audioBookNarrator: [""],
     publishedYear: 2015,
     setting: ["Fictional"],
     genre: ["Fantasy", "Romance", "Fairy Tale", "Retelling"],
@@ -265,6 +273,7 @@ export const bookData: Book[] = [
   {
     title: "Full Disclosure",
     author: ["Camryn Garrett"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United States", "California"],
     genre: ["LGBTQIA+", "Romance", "Health", "Mystery", "Black"],
@@ -289,6 +298,7 @@ export const bookData: Book[] = [
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
     author: ["Hallie Rubenhold"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United Kingdom", "London"],
     genre: ["History", "True Crime", "Feminism", "Mystery", "Biography"],
@@ -313,6 +323,7 @@ export const bookData: Book[] = [
   {
     title: "The First Sister",
     author: ["Linden Lewis"],
+    audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["Fictional", "Space"],
     genre: ["Science Fiction", "Fantasy", "LGBTQIA+", "Space"],
@@ -337,6 +348,7 @@ export const bookData: Book[] = [
   {
     title: "The Testaments",
     author: ["Margaret Atwood"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United States", "Canada"],
     genre: ["Dystopia", "Feminism"],
@@ -361,6 +373,7 @@ export const bookData: Book[] = [
   {
     title: "The Good Luck Girls",
     author: ["Charlotte Nicole Davis"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["Fictional"],
     genre: ["Fantasy", "Historical Fiction", "LGBTQIA+", "Western", "Dystopia"],
@@ -386,6 +399,7 @@ export const bookData: Book[] = [
     title:
       "Maybe You Should Talk to Someone: A Therapist, Her Therapist, and Our Lives Revealed",
     author: ["Lori Gottlieb"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United States", "California"],
     genre: ["Biography", "Psychology"],
@@ -410,6 +424,7 @@ export const bookData: Book[] = [
   {
     title: "Gods of Jade and Shadow",
     author: ["Silvia Moreno-Garcia"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["Mexico"],
     genre: ["Fantasy", "Historical Fiction", "Mythology", "Magical Realism"],
@@ -434,6 +449,7 @@ export const bookData: Book[] = [
   {
     title: "Kim Jiyoung, Born 1982",
     author: ["Cho Nam-Joo"],
+    audioBookNarrator: [""],
     publishedYear: 2016,
     setting: ["South Korea"],
     genre: ["Dystopia", "Feminism", "Asia", "Korea"],
@@ -458,6 +474,7 @@ export const bookData: Book[] = [
   {
     title: "The Grace Year",
     author: ["Kim Liggett"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["Fictional"],
     genre: ["Dystopia", "Fantasy", "Feminism"],
@@ -482,6 +499,7 @@ export const bookData: Book[] = [
   {
     title: "Ring Shout",
     author: ["P. Djèlí Clark"],
+    audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["Fictional", "Georgia (USA)"],
     genre: [
@@ -513,6 +531,7 @@ export const bookData: Book[] = [
   {
     title: "Boyfriend Material",
     author: ["Alexis Hall"],
+    audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["United Kingdom", "London"],
     genre: ["LGBTQIA+", "Romance", "Humor"],
@@ -537,6 +556,7 @@ export const bookData: Book[] = [
   {
     title: "Red, White & Royal Blue",
     author: ["Casey McQuiston"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United Kingdom", "United States", "Washington, DC", "London"],
     genre: ["LGBTQIA+", "Romance"],
@@ -561,6 +581,7 @@ export const bookData: Book[] = [
   {
     title: "The Vanishing Half",
     author: ["Brit Bennett"],
+    audioBookNarrator: [""],
     publishedYear: 2020,
     setting: [
       "United States",
@@ -592,6 +613,7 @@ export const bookData: Book[] = [
   {
     title: "Raybearer",
     author: ["Jordan Ifueko"],
+    audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["Fictional"],
     genre: ["Fantasy", "LGBTQIA+", "Magic", "Africa", "Black"],
@@ -616,6 +638,7 @@ export const bookData: Book[] = [
   {
     title: "Allegedly",
     author: ["Tiffany D. Jackson"],
+    audioBookNarrator: [""],
     publishedYear: 2017,
     setting: ["New York City", "United States"],
     genre: ["Mystery", "Black", "Psychology", "Crime"],
@@ -640,6 +663,7 @@ export const bookData: Book[] = [
   {
     title: "Let Me Hear a Rhyme",
     author: ["Tiffany D. Jackson"],
+    audioBookNarrator: ["Korey Jackson, Nile Bullock, Adenrele Ojo, Adam Lazarre-White"],
     publishedYear: 2019,
     setting: ["United States", "New York City"],
     genre: ["Mystery", "Black", "Psychology", "Crime", "Music"],
@@ -668,6 +692,7 @@ export const bookData: Book[] = [
   {
     title: "Mexican Gothic",
     author: ["Silvia Moreno-Garcia"],
+    audioBookNarrator: [""],
     publishedYear: 0,
     setting: [""],
     genre: ["Horror"],
@@ -692,6 +717,7 @@ export const bookData: Book[] = [
   {
     title: "The Afterlife of Holly Chase",
     author: ["Cynthia Hand"],
+    audioBookNarrator: [""],
     publishedYear: 0,
     setting: [""],
     genre: ["Retelling"],
@@ -716,6 +742,7 @@ export const bookData: Book[] = [
   {
     title: "Grown",
     author: ["Tiffany D. Jackson"],
+    audioBookNarrator: ["Joniece Abbott-Pratt"],
     publishedYear: 2020,
     setting: ["New York City"],
     genre: ["Mystery", "Black", "Thriller"],
@@ -740,6 +767,7 @@ export const bookData: Book[] = [
   {
     title: "Such A Fun Age",
     author: ["Kiley Reid"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["Philadelphia", "New York City"],
     genre: ["Race", "Black"],
@@ -771,6 +799,7 @@ export const bookData: Book[] = [
       "Ashley Woodfolk",
       "Nicola Yoon"
     ],
+    audioBookNarrator: [""],
     publishedYear: 2021,
     setting: ["United States", "New York City"],
     genre: ["Short Stories", "Black", "LGBTQIA+", "Romance"],
@@ -795,6 +824,7 @@ export const bookData: Book[] = [
   {
     title: "Crier's War",
     author: ["Nina Varela"],
+    audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["Fictional"],
     genre: ["Fantasy", "Romance", "LGBTQIA+", "Science Fiction", "Dystopia"],
@@ -822,6 +852,7 @@ export const bookData: Book[] = [
   {
     title: "Iron Heart",
     author: ["Nina Varela"],
+    audioBookNarrator: ["Kim Mai Guest"],
     publishedYear: 2020,
     setting: ["Fictional"],
     genre: ["Fantasy", "Romance", "LGBTQIA+", "Science Fiction", "Dystopia"],
@@ -849,6 +880,7 @@ export const bookData: Book[] = [
   {
     title: "Written in the Stars",
     author: ["Alexandria Bellefleur"],
+    audioBookNarrator: [""],
     publishedYear: 0,
     setting: [""],
     genre: ["Romance"],
@@ -873,6 +905,7 @@ export const bookData: Book[] = [
   {
     title: "Dread Nation",
     author: ["Justina Ireland"],
+    audioBookNarrator: [""],
     publishedYear: 2018,
     setting: ["United States"],
     genre: [
@@ -907,6 +940,7 @@ export const bookData: Book[] = [
   {
     title: "Ace of Spades",
     author: ["Faridah Àbíké-Íyímídé"],
+    audioBookNarrator: ["Tapiwa Mugweni"],
     publishedYear: 2021,
     setting: ["Fictional"],
     genre: ["Horror", "Thriller", "LGBTQIA+", "Black", "Race"],
@@ -931,6 +965,7 @@ export const bookData: Book[] = [
   {
     title: "Redemptor",
     author: ["Jordan Ifueko"],
+    audioBookNarrator: ["Joniece Abbott-Pratt"],
     publishedYear: 2021,
     setting: ["Fictional"],
     genre: ["Fantasy", "LGBTQIA+", "Magic", "Africa", "Black"],
@@ -955,6 +990,7 @@ export const bookData: Book[] = [
   {
     title: "How Long 'til Black Future Month?",
     author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Shayna Small, Gail Nelson-Holgate, Robin Ray Eller, Ron Butler, Kevin Stillwell, Je Nie Fleming, Jeanette Illidge"],
     publishedYear: 2018,
     setting: ["Fictional", "United States", "Space"],
     genre: [
@@ -987,6 +1023,7 @@ export const bookData: Book[] = [
   {
     title: "Bloodchild and Other Stories",
     author: ["Octavia E. Butler"],
+    audioBookNarrator: ["Janina Edwards"],
     publishedYear: 1995,
     setting: ["Fictional", "United States", "Space"],
     genre: [
@@ -1018,6 +1055,7 @@ export const bookData: Book[] = [
   {
     title: "Iron Widow",
     author: ["Xiran Jay Zhao"],
+    audioBookNarrator: ["Rong Fu"],
     publishedYear: 2021,
     setting: ["Fictional"],
     genre: [
@@ -1049,14 +1087,10 @@ export const bookData: Book[] = [
   {
     title: "Binti",
     author: ["Nnedi Okorafor"],
+    audioBookNarrator: ["Robin Miles"],
     publishedYear: 2015,
     setting: ["Fictional", "Space"],
-    genre: [
-      "Short Stories",
-      "Science Fiction",
-      "Black",
-      "Afrofuturism"
-    ],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
     age: "Adult",
     type: "Fiction",
     pages: 96,
@@ -1078,15 +1112,10 @@ export const bookData: Book[] = [
   {
     title: "This Poison Heart",
     author: ["Kalynn Bayron"],
+    audioBookNarrator: ["Jordan Cobb"],
     publishedYear: 2021,
-    setting: ["New York City", "United States"],
-    genre: [
-      "Fantasy",
-      "LGBTQIA+",
-      "Retelling",
-      "Black",
-      "Mythology"
-    ],
+    setting: ["New York City", "United States", "New York State"],
+    genre: ["Fantasy", "LGBTQIA+", "Retelling", "Black", "Mythology"],
     age: "Young Adult",
     type: "Fiction",
     pages: 384,
@@ -1097,6 +1126,31 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     bookCoverColor: "Green",
+    bookCoverObject: "Woman",
+    fav: false,
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "This Wicked Fate",
+    author: ["Kalynn Bayron"],
+    audioBookNarrator: ["Jordan Cobb"],
+    publishedYear: 2022,
+    setting: ["United States", "New York State"],
+    genre: ["Fantasy", "LGBTQIA+", "Retelling", "Black", "Mythology"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 320,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "07/19/2022",
+    dateFinished: "07/27/2022",
+    dnfDate: "",
+    progress: "finished",
+    bookCoverColor: "Purple",
     bookCoverObject: "Woman",
     fav: false,
     pageProgress: 100,
