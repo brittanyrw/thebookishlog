@@ -55,7 +55,8 @@ export type Setting =
   | "Space"
   | "United Kingdom"
   | "United States"
-  | "Washington, DC";
+  | "Washington, DC"
+  | "Asia";
 
 export type Genres =
   | "Alternate History"
@@ -64,6 +65,7 @@ export type Genres =
   | "Asia"
   | "Biography"
   | "Black"
+  | "China"
   | "Crime"
   | "Dystopia"
   | "Fairy Tale"
@@ -93,6 +95,7 @@ export type Genres =
   | "Thriller"
   | "True Crime"
   | "Vampires"
+  | "War"
   | "Werewolves"
   | "Western"
   | "Witches";
@@ -110,7 +113,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United States"],
-    genre: ["History", "Biography", "Feminism", "Race", "Slavery", "Black"],
+    genre: ["History", "Biography", "Feminism", "Race", "Slavery", "Black", "War"],
     age: "Adult",
     type: "Non-Fiction",
     pages: 157,
@@ -855,7 +858,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Kim Mai Guest"],
     publishedYear: 2020,
     setting: ["Fictional"],
-    genre: ["Fantasy", "Romance", "LGBTQIA+", "Science Fiction", "Dystopia"],
+    genre: ["Fantasy", "Romance", "LGBTQIA+", "Science Fiction", "Dystopia", "War"],
     age: "Young Adult",
     type: "Fiction",
     pages: 400,
@@ -914,7 +917,8 @@ export const bookData: Book[] = [
       "Historical Fiction",
       "Race",
       "Black",
-      "Alternate History"
+      "Alternate History",
+      "War"
     ],
     age: "Young Adult",
     type: "Fiction",
@@ -1064,7 +1068,8 @@ export const bookData: Book[] = [
       "Asia",
       "Science Fiction",
       "Romance",
-      "Historical Fiction"
+      "Historical Fiction",
+      "War"
     ],
     age: "Young Adult",
     type: "Fiction",
@@ -1151,6 +1156,31 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     bookCoverColor: "Purple",
+    bookCoverObject: "Woman",
+    fav: false,
+    pageProgress: 100,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "The Poppy War",
+    author: ["R.F. Kuang"],
+    audioBookNarrator: ["Emily Woo Zeller"],
+    publishedYear: 2018,
+    setting: ["Fictional", "Asia"],
+    genre: ["Fantasy", "Horror", "Retelling", "China", "Magic", "War"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 527,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "07/28/2022",
+    dateFinished: "07/30/2022",
+    dnfDate: "",
+    progress: "finished",
+    bookCoverColor: "White",
     bookCoverObject: "Woman",
     fav: false,
     pageProgress: 100,

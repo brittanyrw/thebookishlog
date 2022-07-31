@@ -455,5 +455,24 @@ export const authorData = [
       }
     ],
     website: "nnedi.com"
+  },
+  {
+    name: "R. F. Kuang",
+    books: ["The Poppy War"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      },
+      {
+        code: "CN",
+        name: "China"
+      }
+    ],
+    website: "rfkuang.com"
   }
 ];
