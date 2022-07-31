@@ -165,6 +165,54 @@
       </li>
     </ul>
   </div>
+  <div class="narrator-list">
+    <div class="header">
+      <h2>Audio Book Narrators</h2>
+    </div>
+    <ul class="narrators">
+      <li
+        class="narrator"
+        v-for="(narrator, index) in sortedNarrators"
+        :key="index"
+      >
+        <div class="narrator-name">
+          <h3>
+            {{ narrator.name }}
+          </h3>
+        </div>
+        <div class="narrator-books">
+          <div class="narrator-imgs">
+            <div class="narrator-img-wrapper">
+              <img
+                v-if="narrator.image != false"
+                class="narrator-img"
+                :alt="`${narrator.name}`"
+                :src="require(`@/assets/imgs/${slug(narrator.name)}.png`)"
+              />
+              <img
+                v-else
+                class="narrator-img"
+                :alt="`${narrator.name}`"
+                :src="require('@/assets/imgs/placeholder-author.png')"
+              />
+            </div>
+            <div class="narrator-books">
+              <img
+                v-for="(book, index) in narrator.books"
+                :key="index"
+                class="narrator-book-img"
+                :alt="`${book}`"
+                :src="require(`@/assets/imgs/${slug(book)}.png`)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="narrator-info">
+           <span class="book-number">{{ narrator.books.length }}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -178,7 +226,8 @@ export default {
     };
   },
   props: {
-    authorInfo: Array
+    authorInfo: Array,
+    audioBookNarrator: Array
   },
   mixins: [mixins],
   computed: {
@@ -192,6 +241,17 @@ export default {
         }
       };
       return sortedAuthorList.sort(sorted);
+    },
+    sortedNarrators() {
+      let sortedNarratorList = this.audioBookNarrator;
+      const sorted = (a, b) => {
+        if (a.books.length > b.books.length) {
+          return -1;
+        } else {
+          return 1;
+        }
+      };
+      return sortedNarratorList.sort(sorted);
     },
     authorsWithImages() {
       return this.sortedAuthors.filter(author => author.image != false);
@@ -215,17 +275,24 @@ export default {
   }
 }
 
-.author-list {
+.narrator-list {
+  border-top: 7px solid $black;
+}
+
+.author-list,
+.narrator-list {
   padding: 20px;
   max-width: 1200px;
   margin: auto;
-  .authors {
+  .authors,
+  .narrators {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .author {
+    .author,
+    .narrator {
       border: 5px solid $black;
       display: block;
       margin: 10px auto;
@@ -236,7 +303,8 @@ export default {
         margin: 10px;
         width: auto;
       }
-      .author-name {
+      .author-name,
+      .narrator-name {
         color: $pink;
         text-align: center;
         padding: 20px;
@@ -252,16 +320,22 @@ export default {
           }
         }
       }
-      .author-imgs {
+      .author-imgs,
+      .narrator-imgs {
         @media screen and (min-width: 668px) {
           display: flex;
         }
       }
-      .author-stats {
+      .narrator-imgs {
+        width: 100%;
+      }
+      .author-stats,
+      .narrator-stats {
         display: flex;
         align-items: center;
       }
-      .author-img-wrapper {
+      .author-img-wrapper,
+      .narrator-img-wrapper {
         height: 260px;
         border-bottom: 5px solid $black;
         overflow: hidden;
@@ -272,11 +346,13 @@ export default {
           border-right: 5px solid $black;
           border-bottom: none;
         }
-        .author-img {
+        .author-img,
+        .narrator-img {
           width: 100%;
         }
       }
-      .author-info {
+      .author-info,
+      .narrator-info {
         background-color: $black;
         padding: 0 10px 5px 10px;
         @media screen and (min-width: 668px) {
@@ -284,7 +360,8 @@ export default {
           justify-content: space-between;
           align-items: center;
         }
-        .author-stats {
+        .author-stats,
+        .narrator-stats {
           justify-content: center;
         }
         .book-number {
@@ -324,7 +401,8 @@ export default {
           }
         }
       }
-      .author-books {
+      .author-books,
+      .narrator-books {
         display: flex;
         align-items: center;
         padding: 10px;
@@ -332,28 +410,37 @@ export default {
         min-width: 132px;
         justify-content: center;
         flex-wrap: wrap;
-        .author-book-img {
+        .author-book-img,
+        .narrator-book-img {
           height: 150px;
           margin-right: 20px;
         }
-        .author-book-img:last-child {
+        .author-book-img:last-child,
+        .narrator-book-img:last-child {
           margin-right: 0;
         }
       }
+      .narrator-books {
+        padding: 0;
+      }
     }
     .author:last-child,
-    .author:nth-last-child(2) {
+    .author:nth-last-child(2),
+    .narrator:last-child,
+    .narrator:nth-last-child(2) {
       flex-grow: unset;
     }
   }
 }
-.author-grid {
+.author-grid,
+.narrator-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
-  .author-grid-item {
+  .author-grid-item,
+  .narrator-grid-item {
     width: 200px;
     height: 200px;
     overflow: hidden;
