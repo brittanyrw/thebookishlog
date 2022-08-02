@@ -458,11 +458,11 @@ export const authorData = [
   },
   {
     name: "R. F. Kuang",
-    books: ["The Poppy War"],
+    books: ["The Poppy War", "The Dragon Republic"],
     poc: true,
     gender: "female",
     lgbt: false,
-    fav: false,
+    fav: true,
     country: [
       {
         code: "US",
