@@ -95,13 +95,15 @@ export default {
     authorCountries() {
       let countryList = [];
       this.authorInfo.forEach(function(each) {
-        countryList.push(each.country[0].code);
         if (each.country.length > 1) {
           each.country.forEach(function(each) {
             countryList.push(each.code);
           });
+        } else {
+          countryList.push(each.country[0].code);
         }
       });
+      console.log(countryList);
       return countryList;
     }
   },
@@ -119,7 +121,6 @@ export default {
       for (var country in countedArray) {
         sortable.push([country, countedArray[country]]);
       }
-
       sortable.sort(function(a, b) {
         return b[1] - a[1];
       });

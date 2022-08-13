@@ -185,12 +185,12 @@ export const authorData = [
     fav: true,
     country: [
       {
-        code: "US",
-        name: "United States"
-      },
-      {
         code: "TT",
         name: "Trinidad and Tobago"
+      },
+      {
+        code: "US",
+        name: "United States"
       }
     ],
     website: "pdjeliclark.com"
@@ -235,12 +235,12 @@ export const authorData = [
     fav: false,
     country: [
       {
-        code: "US",
-        name: "United States"
-      },
-      {
         code: "NG",
         name: "Nigeria"
+      },
+      {
+        code: "US",
+        name: "United States"
       }
     ],
     website: "jordanifueko.com"
@@ -446,12 +446,12 @@ export const authorData = [
     fav: false,
     country: [
       {
-        code: "US",
-        name: "United States"
-      },
-      {
         code: "NG",
         name: "Nigeria"
+      },
+      {
+        code: "US",
+        name: "United States"
       }
     ],
     website: "nnedi.com"
@@ -465,14 +465,33 @@ export const authorData = [
     fav: true,
     country: [
       {
-        code: "US",
-        name: "United States"
-      },
-      {
         code: "CN",
         name: "China"
+      },
+      {
+        code: "US",
+        name: "United States"
       }
     ],
     website: "rfkuang.com"
+  },
+  {
+    name: "Namina Forna",
+    books: ["The Gilded Ones"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "SL",
+        name: "Sierra Leone"
+      },
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "naminaforna.com"
   }
 ];
