@@ -2,15 +2,19 @@
   <div class="statistics-container">
     <h2>Author Statistics</h2>
     <div class="statistics">
-      <div class="general-stats">
-        <h3>General</h3>
         <div class="stat">
           <p class="stat-number">{{ authorInfo.length }}</p>
           <p class="stat-title">Authors Read</p>
         </div>
-      </div>
-      <div class="gender-stats">
-        <h3>Gender</h3>
+        <div class="stat">
+          <p class="stat-number">{{ valueCount("poc", true) }}</p>
+          <p class="stat-title">Person of Color</p>
+          <p class="stat-percent">
+            {{
+              Math.floor((valueCount("poc", true) / authorInfo.length) * 100)
+            }}%
+          </p>
+        </div>        
         <div class="stat">
           <p class="stat-number">{{ valueCount("gender", "female") }}</p>
           <p class="stat-title">Female</p>
@@ -44,9 +48,6 @@
             }}%
           </p>
         </div>
-      </div>
-      <div class="other-stats">
-        <h3>Other</h3>
         <div class="stat">
           <p class="stat-number">{{ valueCount("lgbt", true) }}</p>
           <p class="stat-title">LGBTQIA+</p>
@@ -56,16 +57,6 @@
             }}%
           </p>
         </div>
-        <div class="stat">
-          <p class="stat-number">{{ valueCount("poc", true) }}</p>
-          <p class="stat-title">Person of Color</p>
-          <p class="stat-percent">
-            {{
-              Math.floor((valueCount("poc", true) / authorInfo.length) * 100)
-            }}%
-          </p>
-        </div>
-      </div>
       <div class="country-stats">
         <h3>Countries</h3>
         <ul>
@@ -166,6 +157,7 @@ export default {
       border: 2px solid $pink;
       position: relative;
       flex-wrap: wrap;
+      margin-top: 80px;
       margin-bottom: 40px;
       align-items: center;
       flex-grow: 1;

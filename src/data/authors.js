@@ -493,5 +493,20 @@ export const authorData = [
       }
     ],
     website: "naminaforna.com"
+  },
+  {
+    name: "Rivers Solomon",
+    books: ["The Unkindness of Ghosts"],
+    poc: true,
+    gender: "non-binary",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "rivers-solomon.com"
   }
 ];
