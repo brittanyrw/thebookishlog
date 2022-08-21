@@ -405,7 +405,7 @@ export const authorData = [
   },
   {
     name: "Octavia E. Butler",
-    books: ["Bloodchild and Other Stories"],
+    books: ["Bloodchild and Other Stories", "Kindred"],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -510,3 +510,5 @@ export const authorData = [
     website: "rivers-solomon.com"
   }
 ];
+
+// A Master of Djinn - Started Aug 20

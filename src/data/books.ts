@@ -46,6 +46,7 @@ export type Setting =
   | "Georgia (USA)"
   | "Louisiana"
   | "London"
+  | "Maryland"
   | "Mexico"
   | "Minnesota"
   | "New York City"
@@ -93,6 +94,7 @@ export type Genres =
   | "Social Justice"
   | "Space"
   | "Thriller"
+  | "Time Travel"
   | "True Crime"
   | "Vampires"
   | "War"
@@ -1303,6 +1305,39 @@ export const bookData: Book[] = [
     bookCoverObject: "",
     fav: false,
     pageProgress: 0,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
+  },
+  {
+    title: "Kindred",
+    author: ["Octavia E. Butler"],
+    audioBookNarrator: ["Kim Staunton"],
+    publishedYear: 1979,
+    setting: ["United States", "Maryland", "California"],
+    genre: [
+      "Black",
+      "Science Fiction",
+      "Time Travel",
+      "Horror",
+      "Race",
+      "History",
+      "Slavery"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 287,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "08/18/2022",
+    dateFinished: "08/20/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Orange",
+    bookCoverObject: "Woman",
+    fav: true,
     tbr: false,
     tbrMonth: "",
     library: false,
