@@ -510,5 +510,3 @@ export const authorData = [
     website: "rivers-solomon.com"
   }
 ];
-
-// A Master of Djinn - Started Aug 20
