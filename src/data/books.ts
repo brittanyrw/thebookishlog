@@ -42,6 +42,7 @@ export type Setting =
   | ""
   | "California"
   | "Canada"
+  | "Egypt"
   | "Fictional"
   | "Georgia (USA)"
   | "Louisiana"
@@ -1342,7 +1343,30 @@ export const bookData: Book[] = [
     tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
+  },
+  {
+    title: "A Master of Djinn",
+    author: ["P. Djèlí Clark"],
+    audioBookNarrator: ["Suehyla El-Attar"],
+    publishedYear: 2021,
+    setting: ["Egypt"],
+    genre: ["Science Fiction", "Magic", "Horror", "Race", "History", "Mystery"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 392,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/20/2022",
+    dateFinished: "09/02/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Brown",
+    bookCoverObject: "Building",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];
-
-// A Master of Djinn - Started Aug 20

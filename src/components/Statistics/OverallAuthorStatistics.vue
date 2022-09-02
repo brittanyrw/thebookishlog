@@ -2,61 +2,59 @@
   <div class="statistics-container">
     <h2>Author Statistics</h2>
     <div class="statistics">
-        <div class="stat">
-          <p class="stat-number">{{ authorInfo.length }}</p>
-          <p class="stat-title">Authors Read</p>
-        </div>
-        <div class="stat">
-          <p class="stat-number">{{ valueCount("poc", true) }}</p>
-          <p class="stat-title">Person of Color</p>
-          <p class="stat-percent">
-            {{
-              Math.floor((valueCount("poc", true) / authorInfo.length) * 100)
-            }}%
-          </p>
-        </div>        
-        <div class="stat">
-          <p class="stat-number">{{ valueCount("gender", "female") }}</p>
-          <p class="stat-title">Female</p>
-          <p class="stat-percent">
-            {{
-              Math.floor(
-                (valueCount("gender", "female") / authorInfo.length) * 100
-              )
-            }}%
-          </p>
-        </div>
-        <div class="stat">
-          <p class="stat-number">{{ valueCount("gender", "non-binary") }}</p>
-          <p class="stat-title">Non-Binary</p>
-          <p class="stat-percent">
-            {{
-              Math.floor(
-                (valueCount("gender", "non-binary") / authorInfo.length) * 100
-              )
-            }}%
-          </p>
-        </div>
-        <div class="stat">
-          <p class="stat-number">{{ valueCount("gender", "male") }}</p>
-          <p class="stat-title">Male</p>
-          <p class="stat-percent">
-            {{
-              Math.floor(
-                (valueCount("gender", "male") / authorInfo.length) * 100
-              )
-            }}%
-          </p>
-        </div>
-        <div class="stat">
-          <p class="stat-number">{{ valueCount("lgbt", true) }}</p>
-          <p class="stat-title">LGBTQIA+</p>
-          <p class="stat-percent">
-            {{
-              Math.floor((valueCount("lgbt", true) / authorInfo.length) * 100)
-            }}%
-          </p>
-        </div>
+      <div class="stat">
+        <p class="stat-number">{{ authorInfo.length }}</p>
+        <p class="stat-title">Authors Read</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">{{ valueCount("poc", true) }}</p>
+        <p class="stat-title">Person of Color</p>
+        <p class="stat-percent">
+          {{ Math.floor((valueCount("poc", true) / authorInfo.length) * 100) }}%
+        </p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">{{ valueCount("gender", "female") }}</p>
+        <p class="stat-title">Female</p>
+        <p class="stat-percent">
+          {{
+            Math.floor(
+              (valueCount("gender", "female") / authorInfo.length) * 100
+            )
+          }}%
+        </p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">{{ valueCount("gender", "non-binary") }}</p>
+        <p class="stat-title">Non-Binary</p>
+        <p class="stat-percent">
+          {{
+            Math.floor(
+              (valueCount("gender", "non-binary") / authorInfo.length) * 100
+            )
+          }}%
+        </p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">{{ valueCount("gender", "male") }}</p>
+        <p class="stat-title">Male</p>
+        <p class="stat-percent">
+          {{
+            Math.floor(
+              (valueCount("gender", "male") / authorInfo.length) * 100
+            )
+          }}%
+        </p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">{{ valueCount("lgbt", true) }}</p>
+        <p class="stat-title">LGBTQIA+</p>
+        <p class="stat-percent">
+          {{
+            Math.floor((valueCount("lgbt", true) / authorInfo.length) * 100)
+          }}%
+        </p>
+      </div>
       <div class="country-stats">
         <h3>Countries</h3>
         <ul>
