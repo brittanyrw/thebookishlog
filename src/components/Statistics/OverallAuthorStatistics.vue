@@ -92,7 +92,6 @@ export default {
           countryList.push(each.country[0].code);
         }
       });
-      console.log(countryList);
       return countryList;
     }
   },

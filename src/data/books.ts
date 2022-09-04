@@ -1368,7 +1368,30 @@ export const bookData: Book[] = [
     tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
+  },
+  {
+    title: "Binti: Home",
+    author: ["Nnedi Okorafor"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 2017,
+    setting: ["Fictional", "Space"],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 176,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "09/03/2022",
+    dateFinished: "09/03/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Woman",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];
-
-// Binti Home - started 9/3

@@ -27,6 +27,12 @@
         <p class="stat-title">Avg Pages</p>
       </div>
       <div class="stat">
+        <p class="stat-number stat-number-pages">
+          {{ Math.floor(averageTimeToRead) }}
+        </p>
+        <p class="stat-title">Avg Days Per Book</p>
+      </div>
+      <div class="stat">
         <p class="stat-number">
           {{ (countRead("rating") / filterReadBooks.length).toFixed(2) }}
         </p>
@@ -52,6 +58,16 @@ export default {
   computed: {
     filterReadBooks() {
       return this.bookInfo.filter(item => item.dateFinished);
+    },
+    averageTimeToRead() {
+      let timeToRead = this.filterReadBooks.map(
+        book =>
+          ((new Date(book.dateStarted) - new Date(book.dateFinished)) /
+            86400000) *
+            -1 +
+          1
+      );
+      return timeToRead.reduce((a, b) => a + b) / timeToRead.length;
     }
   },
   methods: {
@@ -88,6 +104,8 @@ export default {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
     .stat {
       background-color: $pink;
       padding: 15px;
