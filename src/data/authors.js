@@ -439,7 +439,7 @@ export const authorData = [
   },
   {
     name: "Nnedi Okorafor",
-    books: ["Binti", "Binti: Home"],
+    books: ["Binti", "Binti: Home", "Binti: Night Masquerade"],
     poc: true,
     gender: "female",
     lgbt: false,

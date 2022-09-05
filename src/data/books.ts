@@ -1393,5 +1393,30 @@ export const bookData: Book[] = [
     tbrMonth: "",
     library: false,
     dedication: { text: "", person: "" }
+  },
+  {
+    title: "Binti: Night Masquerade",
+    author: ["Nnedi Okorafor"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 2018,
+    setting: ["Fictional", "Space"],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 208,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "09/03/2022",
+    dateFinished: "09/04/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Brown",
+    bookCoverObject: "Woman",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" }
   }
 ];
