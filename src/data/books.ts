@@ -22,6 +22,7 @@ export interface Book {
   tbrMonth: string;
   library: boolean;
   dedication: Dedication | "";
+  alphabetChallenge: string | "";
 }
 
 export interface Dedication {
@@ -141,7 +142,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "S"
   },
   {
     title: "Cinderella Is Dead",
@@ -174,7 +176,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "C"
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -199,7 +202,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "I"
   },
   {
     title: "The Year of the Witching",
@@ -232,7 +236,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "Y"
   },
   {
     title: "Monday's Not Coming",
@@ -257,7 +262,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "M"
   },
   {
     title: "Uprooted",
@@ -282,7 +288,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Full Disclosure",
@@ -307,7 +314,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "F"
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -332,7 +340,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The First Sister",
@@ -357,7 +366,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The Testaments",
@@ -382,7 +392,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The Good Luck Girls",
@@ -407,7 +418,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title:
@@ -433,7 +445,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Gods of Jade and Shadow",
@@ -458,7 +471,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "G"
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -483,7 +497,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "K"
   },
   {
     title: "The Grace Year",
@@ -508,7 +523,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Ring Shout",
@@ -540,7 +556,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "R"
   },
   {
     title: "Boyfriend Material",
@@ -565,7 +582,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "B"
   },
   {
     title: "Red, White & Royal Blue",
@@ -590,7 +608,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The Vanishing Half",
@@ -622,7 +641,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "V"
   },
   {
     title: "Raybearer",
@@ -647,7 +667,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Allegedly",
@@ -672,7 +693,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "A"
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -703,7 +725,8 @@ export const bookData: Book[] = [
       text:
         "For my cousin Sherrill Lavonne Bryant, who introduced me to hip-hop, bamboo earrings, Martin, Yo-Yo, En Vouge, and Jodeci. For the hustler in front of my autie's building who taught me how to move in a room full of vultures. For Brooklyn, home no matter where I go.",
       person: "Family, Place"
-    }
+    },
+    alphabetChallenge: "L"
   },
   {
     title: "Mexican Gothic",
@@ -728,7 +751,8 @@ export const bookData: Book[] = [
     tbr: true,
     tbrMonth: "November",
     library: false,
-    dedication: { text: "Para mi madre", person: "Mother" }
+    dedication: { text: "Para mi madre", person: "Mother" },
+    alphabetChallenge: ""
   },
   {
     title: "The Afterlife of Holly Chase",
@@ -753,7 +777,8 @@ export const bookData: Book[] = [
     tbr: true,
     tbrMonth: "December",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Grown",
@@ -778,7 +803,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Such A Fun Age",
@@ -803,7 +829,8 @@ export const bookData: Book[] = [
     tbr: true,
     tbrMonth: "October",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Blackout",
@@ -835,7 +862,8 @@ export const bookData: Book[] = [
     tbr: true,
     tbrMonth: "October",
     library: true,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Crier's War",
@@ -863,7 +891,8 @@ export const bookData: Book[] = [
     dedication: {
       text: "For the queer readers. You deserve every adventure.",
       person: "LGBTQIA+"
-    }
+    },
+    alphabetChallenge: ""
   },
   {
     title: "Iron Heart",
@@ -898,7 +927,8 @@ export const bookData: Book[] = [
     dedication: {
       text: "",
       person: ""
-    }
+    },
+    alphabetChallenge: ""
   },
   {
     title: "Written in the Stars",
@@ -923,7 +953,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Dread Nation",
@@ -959,7 +990,8 @@ export const bookData: Book[] = [
     dedication: {
       text: "For all the colored girls. I see you. <3",
       person: "Black Girls"
-    }
+    },
+    alphabetChallenge: "D"
   },
   {
     title: "Ace of Spades",
@@ -984,7 +1016,8 @@ export const bookData: Book[] = [
     tbr: true,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Redemptor",
@@ -1009,7 +1042,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "How Long 'til Black Future Month?",
@@ -1044,7 +1078,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "H"
   },
   {
     title: "Bloodchild and Other Stories",
@@ -1076,7 +1111,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Iron Widow",
@@ -1109,7 +1145,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Binti",
@@ -1134,7 +1171,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "This Poison Heart",
@@ -1159,7 +1197,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "This Wicked Fate",
@@ -1184,7 +1223,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The Poppy War",
@@ -1209,7 +1249,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The Dragon Republic",
@@ -1234,7 +1275,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The Burning God",
@@ -1259,7 +1301,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The Gilded Ones",
@@ -1284,7 +1327,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "The Unkindness of Ghosts",
@@ -1309,7 +1353,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "U"
   },
   {
     title: "Kindred",
@@ -1342,7 +1387,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "A Master of Djinn",
@@ -1367,7 +1413,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Binti: Home",
@@ -1392,7 +1439,8 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   },
   {
     title: "Binti: Night Masquerade",
@@ -1417,6 +1465,7 @@ export const bookData: Book[] = [
     tbr: false,
     tbrMonth: "",
     library: false,
-    dedication: { text: "", person: "" }
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   }
 ];

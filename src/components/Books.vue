@@ -155,7 +155,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/varibles.scss";
+@import "@/assets/styles/variables.scss";
 
 .stars {
   --percent: calc(var(--rating) / 5 * 100%);

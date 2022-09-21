@@ -204,7 +204,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/varibles.scss";
+@import "@/assets/styles/variables.scss";
 .header {
   h2 {
     margin-bottom: 20px;

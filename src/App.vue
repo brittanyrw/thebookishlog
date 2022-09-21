@@ -34,7 +34,7 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/styles/varibles.scss";
+@import "@/assets/styles/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 * {

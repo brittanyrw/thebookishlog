@@ -90,7 +90,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/styles/varibles.scss";
+@import "@/assets/styles/variables.scss";
 
 .statistics-container {
   background-color: $black;
