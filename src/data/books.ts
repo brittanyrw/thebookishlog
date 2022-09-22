@@ -1467,5 +1467,39 @@ export const bookData: Book[] = [
     library: false,
     dedication: { text: "", person: "" },
     alphabetChallenge: ""
+  },
+  {
+    title: "The City We Became",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 2020,
+    setting: ["New York City", "United States"],
+    genre: [
+      "Fantasy",
+      "LGBTQIA+",
+      "Magic",
+      "Black",
+      "Science Fiction",
+      "Afrofuturism",
+      "War"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 434,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "09/05/2022",
+    dateFinished: "09/22/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Gray",
+    bookCoverObject: "City",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: "H"
   }
 ];

@@ -16,18 +16,6 @@
       </div>
       <div class="stat">
         <p class="stat-number stat-number-pages">
-          {{ countRead("pages").toLocaleString() }}
-        </p>
-        <p class="stat-title">Total Pages</p>
-      </div>
-      <div class="stat">
-        <p class="stat-number">
-          {{ Math.floor(countRead("pages") / filterReadBooks.length) }}
-        </p>
-        <p class="stat-title">Avg Pages</p>
-      </div>
-      <div class="stat">
-        <p class="stat-number stat-number-pages">
           {{ Math.floor(averageTimeToRead) }}
         </p>
         <p class="stat-title">Avg Days Per Book</p>
@@ -43,6 +31,18 @@
           {{ Math.floor(countRead("publishedYear") / filterReadBooks.length) }}
         </p>
         <p class="stat-title">Avg Release Year</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number stat-number-pages">
+          {{ countRead("pages").toLocaleString() }}
+        </p>
+        <p class="stat-title">Total Pages</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">
+          {{ Math.floor(countRead("pages") / filterReadBooks.length) }}
+        </p>
+        <p class="stat-title">Avg Pages</p>
       </div>
     </div>
   </div>
