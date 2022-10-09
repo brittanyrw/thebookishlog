@@ -54,6 +54,7 @@ export type Setting =
   | "New York City"
   | "New York State"
   | "Philadelphia"
+  | "South Africa"
   | "South Korea"
   | "Space"
   | "United Kingdom"
@@ -66,6 +67,7 @@ export type Genres =
   | "Africa"
   | "Afrofuturism"
   | "Asia"
+  | "Autobiography"
   | "Biography"
   | "Black"
   | "China"
@@ -73,6 +75,7 @@ export type Genres =
   | "Dystopia"
   | "Fairy Tale"
   | "Fantasy"
+  | "Family"
   | "Feminism"
   | "Health"
   | "Historical Fiction"
@@ -1501,5 +1504,31 @@ export const bookData: Book[] = [
     library: false,
     dedication: { text: "", person: "" },
     alphabetChallenge: "H"
+  },
+  {
+    title: "Born a Crime",
+    author: ["Trevor Noah"],
+    audioBookNarrator: ["Trevor Noah"],
+    publishedYear: 2016,
+    setting: ["South Africa"],
+    genre: ["Autobiography", "Black", "Africa", "Family", "Race"],
+    age: "Adult",
+    type: "Non-Fiction",
+    pages: 289,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "10/07/2022",
+    dateFinished: "10/09/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Man",
+    fav: true,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
   }
 ];

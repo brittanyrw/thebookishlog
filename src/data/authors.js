@@ -508,5 +508,20 @@ export const authorData = [
       }
     ],
     website: "rivers-solomon.com"
+  },
+  {
+    name: "Trevor Noah",
+    books: ["Born a Crime"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "ZA",
+        name: "South Africa"
+      }
+    ],
+    website: "trevornoah.com"
   }
 ];

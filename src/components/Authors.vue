@@ -354,12 +354,12 @@ export default {
   padding: 0;
   list-style: none;
   .author-grid-item {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     img {
       width: 100%;
-      min-height: 200px;
+      min-height: 150px;
     }
   }
 }
