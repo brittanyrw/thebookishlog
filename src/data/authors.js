@@ -523,5 +523,20 @@ export const authorData = [
       }
     ],
     website: "trevornoah.com"
+  },
+  {
+    name: "Talia Hibbert",
+    books: ["Get a Life, Chloe Brown"],
+    poc: true,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "GB",
+        name: "United Kingdom"
+      }
+    ],
+    website: "taliahibbert.com"
   }
 ];

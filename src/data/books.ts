@@ -41,6 +41,7 @@ export type Ages =
 
 export type Setting =
   | ""
+  | "Boston"
   | "California"
   | "Canada"
   | "Egypt"
@@ -72,6 +73,7 @@ export type Genres =
   | "Black"
   | "China"
   | "Crime"
+  | "Disability"
   | "Dystopia"
   | "Fairy Tale"
   | "Fantasy"
@@ -1525,6 +1527,58 @@ export const bookData: Book[] = [
     bookCoverColor: "Blue",
     bookCoverObject: "Man",
     fav: true,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "The Love Hypothesis",
+    author: ["Ali Hazelwood"],
+    audioBookNarrator: [],
+    publishedYear: 2021,
+    setting: ["California", "Boston"],
+    genre: ["Romance"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 289,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "11/21/2022",
+    dateFinished: "",
+    dnfDate: "",
+    progress: "started",
+    pageProgress: 5,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Woman and Man",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "Get a Life, Chloe Brown",
+    author: ["Talia Hibbert"],
+    audioBookNarrator: ["Adjoa Andoh"],
+    publishedYear: 2019,
+    setting: ["United Kingdom"],
+    genre: ["Romance", "Black", "Humor", "Disability", "Health"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 373,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "12/01/2022",
+    dateFinished: "12/11/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "White",
+    bookCoverObject: "Woman and Man",
+    fav: false,
     tbr: false,
     tbrMonth: "",
     library: false,
