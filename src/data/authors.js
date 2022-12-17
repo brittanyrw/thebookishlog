@@ -356,7 +356,7 @@ export const authorData = [
   },
   {
     name: "Justina Ireland",
-    books: ["Dread Nation"],
+    books: ["Dread Nation", "Deathless Divide"],
     poc: true,
     gender: "female",
     lgbt: true,
@@ -538,5 +538,39 @@ export const authorData = [
       }
     ],
     website: "taliahibbert.com"
+  },
+  {
+    name: "June Hur",
+    books: ["The Red Palace"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "KR",
+        name: "Korea"
+      },
+      {
+        code: "CA",
+        name: "Canada"
+      }
+    ],
+    website: "junehur.com"
+  },
+  {
+    name: "Colson Whitehead",
+    books: ["The Underground Railroad", "The Nickel Boys"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: true,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "colsonwhitehead.com"
   }
 ];

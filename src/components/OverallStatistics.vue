@@ -156,6 +156,10 @@
         </div>
       </div>
     </div>
+    <!-- <section class="next-book">
+      <button @click="nextBook">Next Book</button>
+      <p class="next-book-name">{{ newBook }}</p>
+    </section> -->
   </div>
 </template>
 
@@ -165,6 +169,11 @@ import mixins from "@/mixins/mixins.ts";
 export default {
   props: {
     bookInfo: Array
+  },
+  data() {
+    return {
+      newBook: ""
+    };
   },
   mixins: [mixins],
   computed: {
@@ -236,6 +245,10 @@ export default {
         longestBooks.push(this.sortByLength()[0]);
       }
       return longestBooks;
+    },
+    nextBook() {
+      let list = this.filter("progress", "started");
+      this.newBook = list[Math.floor(Math.random() * list.length)].title;
     }
   }
 };

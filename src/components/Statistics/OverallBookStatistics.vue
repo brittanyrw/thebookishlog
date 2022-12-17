@@ -53,29 +53,29 @@
     </div>
     <div class="additional-stats">
       <div class="stats-by-year-container">
-      <h3>Books Read by Year</h3>
-      <div class="stats-by-year">
-        <div class="stat">
-        <p class="stat-number">
-          {{ countYear("2021") }}
-        </p>
-        <p class="stat-title">2021</p>
+        <h3>Books Read by Year</h3>
+        <div class="stats-by-year">
+          <div class="stat">
+            <p class="stat-number">
+              {{ countYear("2021") }}
+            </p>
+            <p class="stat-title">2021</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">
+              {{ countYear("2022") }}
+            </p>
+            <p class="stat-title">2022</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">
+              {{ countYear("2023") }}
+            </p>
+            <p class="stat-title">2023</p>
+          </div>
+        </div>
       </div>
-      <div class="stat">
-        <p class="stat-number">
-          {{ countYear("2022") }}
-        </p>
-        <p class="stat-title">2022</p>
-      </div>
-      <div class="stat">
-        <p class="stat-number">
-          {{ countYear("2023") }}
-        </p>
-        <p class="stat-title">2023</p>
-      </div>
-      </div>
-    </div> 
-    </div> 
+    </div>
   </div>
 </template>
 <script>
@@ -118,7 +118,9 @@ export default {
       return this.bookInfo.filter(book => book[key] === value).length;
     },
     countYear(year) {
-      return this.filterReadBooks.filter(book => book["dateFinished"].includes(year)).length;
+      return this.filterReadBooks.filter(book =>
+        book["dateFinished"].includes(year)
+      ).length;
     }
   }
 };
@@ -126,7 +128,8 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/variables.scss";
 
-.statistics-container, .stats-by-year-container {
+.statistics-container,
+.stats-by-year-container {
   background-color: $black;
   padding: 20px 20px 40px 20px;
   h2 {
@@ -143,7 +146,8 @@ export default {
     top: -20px;
     left: 39%;
   }
-  .statistics, .stats-by-year {
+  .statistics,
+  .stats-by-year {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
