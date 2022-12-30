@@ -51,7 +51,8 @@ export const authorData = [
       "Allegedly",
       "Blackout",
       "Grown",
-      "Let Me Hear a Rhyme"
+      "Let Me Hear a Rhyme",
+      "Whiteout"
     ],
     poc: true,
     gender: "female",
@@ -262,7 +263,7 @@ export const authorData = [
   },
   {
     name: "Dhonielle Clayton",
-    books: ["Blackout"],
+    books: ["Blackout", "Whiteout"],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -277,7 +278,7 @@ export const authorData = [
   },
   {
     name: "Nic Stone",
-    books: ["Blackout"],
+    books: ["Blackout", "Whiteout"],
     poc: true,
     gender: "female",
     lgbt: true,
@@ -292,7 +293,7 @@ export const authorData = [
   },
   {
     name: "Angie Thomas",
-    books: ["Blackout"],
+    books: ["Blackout", "Whiteout"],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -307,7 +308,7 @@ export const authorData = [
   },
   {
     name: "Ashley Woodfolk",
-    books: ["Blackout"],
+    books: ["Blackout", "Whiteout"],
     poc: true,
     gender: "female",
     lgbt: true,
@@ -322,7 +323,7 @@ export const authorData = [
   },
   {
     name: "Nicola Yoon",
-    books: ["Blackout"],
+    books: ["Blackout", "Whiteout"],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -496,7 +497,7 @@ export const authorData = [
   },
   {
     name: "Rivers Solomon",
-    books: ["The Unkindness of Ghosts"],
+    books: ["The Unkindness of Ghosts", "The Deep"],
     poc: true,
     gender: "non-binary",
     lgbt: true,
@@ -572,5 +573,47 @@ export const authorData = [
       }
     ],
     website: "colsonwhitehead.com"
+  },
+  {
+    name: "Fonda Lee",
+    books: ["Jade City"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      },
+      {
+        code: "CA",
+        name: "Canada"
+      },
+      {
+        code: "CN",
+        name: "China"
+      }
+    ],
+    website: "fondalee.com"
+  },
+  {
+    name: "Axie Oh",
+    books: ["The Girl Who Fell Beneath the Sea"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      },
+      {
+        code: "KR",
+        name: "Korea"
+      }
+    ],
+    website: "axieoh.com"
   }
 ];

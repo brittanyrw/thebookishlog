@@ -41,6 +41,7 @@ export type Ages =
 
 export type Setting =
   | ""
+  | "Atlanta"
   | "Boston"
   | "California"
   | "Canada"
@@ -55,6 +56,7 @@ export type Setting =
   | "Minnesota"
   | "New York City"
   | "New York State"
+  | "Ocean"
   | "Philadelphia"
   | "South Africa"
   | "South Korea"
@@ -87,6 +89,7 @@ export type Genres =
   | "Humor"
   | "Korea"
   | "LGBTQIA+"
+  | "Mafia"
   | "Magic"
   | "Magical Realism"
   | "Music"
@@ -1066,7 +1069,8 @@ export const bookData: Book[] = [
       "Short Stories",
       "Black",
       "Science Fiction",
-      "Afrofuturism"
+      "Afrofuturism",
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1099,7 +1103,8 @@ export const bookData: Book[] = [
       "Black",
       "Science Fiction",
       "Afrofuturism",
-      "Horror"
+      "Horror",
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1160,7 +1165,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2015,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 96,
@@ -1428,7 +1433,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2017,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 176,
@@ -1454,7 +1459,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2018,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 208,
@@ -1697,6 +1702,142 @@ export const bookData: Book[] = [
     pageProgress: 100,
     bookCoverColor: "Red",
     bookCoverObject: "Two Boys",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "Jade City",
+    author: ["Fonda Lee"],
+    audioBookNarrator: ["Andrew Kishino"],
+    publishedYear: 2017,
+    setting: ["Asia", "Fictional"],
+    genre: ["Asia", "Crime", "Mafia", "Magical Realism", "Fantasy", "War"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 560,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "12/17/2022",
+    dateFinished: "12/21/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Green",
+    bookCoverObject: "Words",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "Whiteout",
+    author: [
+      "Dhonielle Clayton",
+      "Tiffany D.Jackson",
+      "Nic Stone",
+      "Angie Thomas",
+      "Ashley Woodfolk",
+      "Nicola Yoon"
+    ],
+    audioBookNarrator: [
+      "Nic Stone",
+      "Danielle Shemaiah",
+      "Shayna Small",
+      "Bahni Turpin",
+      "Alaska Jackson",
+      "Joniece Abbott-Pratt",
+      "Kevin R.Free",
+      "James Fouhey",
+      "Korey Jackson"
+    ],
+    publishedYear: 2022,
+    setting: ["United States", "Georgia (USA)", "Atlanta"],
+    genre: ["Black", "Romance", "LGBTQIA+"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 291,
+    medium: "Audio",
+    rating: 3,
+    dateStarted: "12/22/2022",
+    dateFinished: "12/24/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Couple",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "The Deep",
+    author: ["Rivers Solomon"],
+    audioBookNarrator: ["Daveed Diggs"],
+    publishedYear: 2019,
+    setting: ["Fictional", "Ocean"],
+    genre: [
+      "Black",
+      "Race",
+      "Short Stories",
+      "LGBTQIA+",
+      "Slavery",
+      "Romance",
+      "Science Fiction"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 116,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "12/24/2022",
+    dateFinished: "12/28/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Mermaid",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "The Girl Who Fell Beneath the Sea",
+    author: ["Axie Oh"],
+    audioBookNarrator: ["Rosa Escoda"],
+    publishedYear: 2019,
+    setting: ["Asia", "Fictional"],
+    genre: [
+      "Romance",
+      "Fantasy",
+      "Asia",
+      "Retelling",
+      "Mythology",
+      "Historical Fiction"
+    ],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 323,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "12/28/2022",
+    dateFinished: "12/30/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Woman",
     fav: false,
     tbr: false,
     tbrMonth: "",
