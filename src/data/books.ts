@@ -14,23 +14,9 @@ export interface Book {
   dateFinished: string;
   dnfDate: string;
   progress: Progress;
-  bookCoverColor: string;
-  bookCoverObject: string;
   fav: boolean;
   pageProgress: number;
-  tbr: boolean;
-  tbrMonth: string;
-  library: boolean;
-  dedication: Dedication | "";
-  alphabetChallenge: string | "";
 }
-
-export interface Dedication {
-  text: string;
-  person: string;
-}
-
-export type Person = "Mother";
 
 export type Ages =
   | "Young Adult"
@@ -144,15 +130,8 @@ export const bookData: Book[] = [
     dateFinished: "02/07/2021",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Tan",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "S"
+    pageProgress: 100
   },
   {
     title: "Cinderella Is Dead",
@@ -178,15 +157,8 @@ export const bookData: Book[] = [
     dateFinished: "02/08/2021",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Purple",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "C"
+    pageProgress: 100
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -204,15 +176,8 @@ export const bookData: Book[] = [
     dateFinished: "02/09/2021",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Black",
-    bookCoverObject: "Face",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "I"
+    pageProgress: 100
   },
   {
     title: "The Year of the Witching",
@@ -238,15 +203,8 @@ export const bookData: Book[] = [
     dateFinished: "02/11/2021",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Gray",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "Y"
+    pageProgress: 100
   },
   {
     title: "Monday's Not Coming",
@@ -264,15 +222,8 @@ export const bookData: Book[] = [
     dateFinished: "02/12/2021",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Red",
-    bookCoverObject: "Woman",
     fav: true,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "M"
+    pageProgress: 100
   },
   {
     title: "Uprooted",
@@ -290,15 +241,8 @@ export const bookData: Book[] = [
     dateFinished: "",
     dnfDate: "02/16/2021",
     progress: "dnf",
-    bookCoverColor: "Yellow",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 6,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    pageProgress: 6
   },
   {
     title: "Full Disclosure",
@@ -316,15 +260,8 @@ export const bookData: Book[] = [
     dateFinished: "02/14/2021",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Blue",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "F"
+    pageProgress: 100
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -342,15 +279,8 @@ export const bookData: Book[] = [
     dateFinished: "02/20/2021",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Blue",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    pageProgress: 100
   },
   {
     title: "The First Sister",
@@ -369,14 +299,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "started",
     pageProgress: 9,
-    bookCoverColor: "Gold",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The Testaments",
@@ -395,14 +318,7 @@ export const bookData: Book[] = [
     dnfDate: "09/09/2021",
     progress: "dnf",
     pageProgress: 40,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The Good Luck Girls",
@@ -421,14 +337,7 @@ export const bookData: Book[] = [
     dnfDate: "09/23/2021",
     progress: "dnf",
     pageProgress: 13,
-    bookCoverColor: "Brown",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title:
@@ -448,14 +357,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "started",
     pageProgress: 30,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Tissue",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Gods of Jade and Shadow",
@@ -473,15 +375,8 @@ export const bookData: Book[] = [
     dateFinished: "05/01/2021",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Blue",
-    bookCoverObject: "Tissue",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "G"
+    pageProgress: 100
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -500,14 +395,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "K"
+    fav: false
   },
   {
     title: "The Grace Year",
@@ -526,14 +414,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Pink",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Ring Shout",
@@ -559,14 +440,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Red",
-    bookCoverObject: "Person",
-    fav: true,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "R"
+    fav: true
   },
   {
     title: "Boyfriend Material",
@@ -585,14 +459,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Red",
-    bookCoverObject: "Two People",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "B"
+    fav: false
   },
   {
     title: "Red, White & Royal Blue",
@@ -611,14 +478,7 @@ export const bookData: Book[] = [
     dnfDate: "09/17/2021",
     progress: "dnf",
     pageProgress: 42,
-    bookCoverColor: "Pink",
-    bookCoverObject: "Two People",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The Vanishing Half",
@@ -644,14 +504,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Purple",
-    bookCoverObject: "Two Women",
-    fav: true,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "V"
+    fav: true
   },
   {
     title: "Raybearer",
@@ -670,14 +523,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Gold",
-    bookCoverObject: "Woman's Face",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Allegedly",
@@ -696,14 +542,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "White",
-    bookCoverObject: "Girl",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "A"
+    fav: false
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -724,18 +563,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Black",
-    bookCoverObject: "Three People",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: {
-      text:
-        "For my cousin Sherrill Lavonne Bryant, who introduced me to hip-hop, bamboo earrings, Martin, Yo-Yo, En Vouge, and Jodeci. For the hustler in front of my autie's building who taught me how to move in a room full of vultures. For Brooklyn, home no matter where I go.",
-      person: "Family, Place"
-    },
-    alphabetChallenge: "L"
+    fav: false
   },
   {
     title: "Mexican Gothic",
@@ -754,14 +582,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "started",
     pageProgress: 5,
-    bookCoverColor: "",
-    bookCoverObject: "",
-    fav: false,
-    tbr: true,
-    tbrMonth: "November",
-    library: false,
-    dedication: { text: "Para mi madre", person: "Mother" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The Afterlife of Holly Chase",
@@ -780,14 +601,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "not started",
     pageProgress: 0,
-    bookCoverColor: "",
-    bookCoverObject: "",
-    fav: false,
-    tbr: true,
-    tbrMonth: "December",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Grown",
@@ -806,14 +620,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Yellow",
-    bookCoverObject: "Woman",
-    fav: true,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: true
   },
   {
     title: "Such A Fun Age",
@@ -832,14 +639,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Text",
-    fav: false,
-    tbr: true,
-    tbrMonth: "October",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Blackout",
@@ -865,14 +665,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 10,
-    bookCoverColor: "Black",
-    bookCoverObject: "Bridge",
-    fav: false,
-    tbr: true,
-    tbrMonth: "October",
-    library: true,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Crier's War",
@@ -891,17 +684,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Gray",
-    bookCoverObject: "Words",
-    fav: false,
-    tbr: true,
-    tbrMonth: "October",
-    library: true,
-    dedication: {
-      text: "For the queer readers. You deserve every adventure.",
-      person: "LGBTQIA+"
-    },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Iron Heart",
@@ -927,17 +710,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Gold",
-    bookCoverObject: "Words",
-    fav: false,
-    tbr: false,
-    tbrMonth: "November",
-    library: false,
-    dedication: {
-      text: "",
-      person: ""
-    },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Written in the Stars",
@@ -956,14 +729,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "started",
     pageProgress: 5,
-    bookCoverColor: "",
-    bookCoverObject: "",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Dread Nation",
@@ -990,17 +756,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Brown",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: true,
-    tbrMonth: "October",
-    library: true,
-    dedication: {
-      text: "For all the colored girls. I see you. <3",
-      person: "Black Girls"
-    },
-    alphabetChallenge: "D"
+    fav: false
   },
   {
     title: "Ace of Spades",
@@ -1019,14 +775,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Red",
-    bookCoverObject: "Two People",
-    fav: false,
-    tbr: true,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Redemptor",
@@ -1045,14 +794,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Purple",
-    bookCoverObject: "Woman's Face",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "How Long 'til Black Future Month?",
@@ -1082,14 +824,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Black",
-    bookCoverObject: "Woman's Face",
-    fav: true,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "H"
+    fav: true
   },
   {
     title: "Bloodchild and Other Stories",
@@ -1116,14 +851,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Black",
-    bookCoverObject: "Words",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Iron Widow",
@@ -1150,14 +878,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Red",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Binti",
@@ -1165,7 +886,13 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2015,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
+    genre: [
+      "Short Stories",
+      "Science Fiction",
+      "Black",
+      "Afrofuturism",
+      "Space"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 96,
@@ -1176,14 +903,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Black",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "This Poison Heart",
@@ -1201,15 +921,8 @@ export const bookData: Book[] = [
     dateFinished: "07/19/2022",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Green",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    pageProgress: 100
   },
   {
     title: "This Wicked Fate",
@@ -1227,15 +940,8 @@ export const bookData: Book[] = [
     dateFinished: "07/27/2022",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Purple",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    pageProgress: 100
   },
   {
     title: "The Poppy War",
@@ -1253,15 +959,8 @@ export const bookData: Book[] = [
     dateFinished: "07/30/2022",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "White",
-    bookCoverObject: "Woman",
     fav: true,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    pageProgress: 100
   },
   {
     title: "The Dragon Republic",
@@ -1279,15 +978,8 @@ export const bookData: Book[] = [
     dateFinished: "08/01/2022",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "White",
-    bookCoverObject: "Dragon",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    pageProgress: 100
   },
   {
     title: "The Burning God",
@@ -1305,15 +997,8 @@ export const bookData: Book[] = [
     dateFinished: "08/04/2022",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "White",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    pageProgress: 100
   },
   {
     title: "The Gilded Ones",
@@ -1331,15 +1016,8 @@ export const bookData: Book[] = [
     dateFinished: "08/13/2022",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "Green",
-    bookCoverObject: "Woman",
     fav: false,
-    pageProgress: 100,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    pageProgress: 100
   },
   {
     title: "The Unkindness of Ghosts",
@@ -1357,15 +1035,8 @@ export const bookData: Book[] = [
     dateFinished: "08/16/2022",
     dnfDate: "",
     progress: "finished",
-    bookCoverColor: "",
-    bookCoverObject: "",
     fav: false,
-    pageProgress: 0,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "U"
+    pageProgress: 0
   },
   {
     title: "Kindred",
@@ -1392,14 +1063,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Orange",
-    bookCoverObject: "Woman",
-    fav: true,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: true
   },
   {
     title: "A Master of Djinn",
@@ -1418,14 +1082,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Brown",
-    bookCoverObject: "Building",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Binti: Home",
@@ -1433,7 +1090,13 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2017,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
+    genre: [
+      "Short Stories",
+      "Science Fiction",
+      "Black",
+      "Afrofuturism",
+      "Space"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 176,
@@ -1444,14 +1107,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Binti: Night Masquerade",
@@ -1459,7 +1115,13 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2018,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
+    genre: [
+      "Short Stories",
+      "Science Fiction",
+      "Black",
+      "Afrofuturism",
+      "Space"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 208,
@@ -1470,14 +1132,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Brown",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The City We Became",
@@ -1504,14 +1159,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Gray",
-    bookCoverObject: "City",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: "H"
+    fav: false
   },
   {
     title: "Born a Crime",
@@ -1530,14 +1178,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Man",
-    fav: true,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: true
   },
   {
     title: "The Love Hypothesis",
@@ -1556,14 +1197,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "started",
     pageProgress: 5,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Woman and Man",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Get a Life, Chloe Brown",
@@ -1582,14 +1216,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "White",
-    bookCoverObject: "Woman and Man",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Deathless Divide",
@@ -1616,14 +1243,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "White",
-    bookCoverObject: "Woman and Man",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The Red Palace",
@@ -1642,14 +1262,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "White",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The Underground Railroad",
@@ -1674,14 +1287,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Red",
-    bookCoverObject: "Train Tracks",
-    fav: true,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: true
   },
   {
     title: "The Nickel Boys",
@@ -1700,14 +1306,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Red",
-    bookCoverObject: "Two Boys",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Jade City",
@@ -1726,14 +1325,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Green",
-    bookCoverObject: "Words",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "Whiteout",
@@ -1769,14 +1361,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Couple",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The Deep",
@@ -1803,14 +1388,7 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Mermaid",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   },
   {
     title: "The Girl Who Fell Beneath the Sea",
@@ -1836,13 +1414,6 @@ export const bookData: Book[] = [
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
-    bookCoverColor: "Blue",
-    bookCoverObject: "Woman",
-    fav: false,
-    tbr: false,
-    tbrMonth: "",
-    library: false,
-    dedication: { text: "", person: "" },
-    alphabetChallenge: ""
+    fav: false
   }
 ];
