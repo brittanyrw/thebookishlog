@@ -41,11 +41,13 @@ export type Ages =
 
 export type Setting =
   | ""
+  | "Atlanta"
   | "Boston"
   | "California"
   | "Canada"
   | "Egypt"
   | "Fictional"
+  | "Florida"
   | "Georgia (USA)"
   | "Louisiana"
   | "London"
@@ -54,6 +56,7 @@ export type Setting =
   | "Minnesota"
   | "New York City"
   | "New York State"
+  | "Ocean"
   | "Philadelphia"
   | "South Africa"
   | "South Korea"
@@ -86,6 +89,7 @@ export type Genres =
   | "Humor"
   | "Korea"
   | "LGBTQIA+"
+  | "Mafia"
   | "Magic"
   | "Magical Realism"
   | "Music"
@@ -1099,7 +1103,7 @@ export const bookData: Book[] = [
       "Black",
       "Science Fiction",
       "Afrofuturism",
-      "Horror", 
+      "Horror",
       "Space"
     ],
     age: "Adult",
@@ -1580,6 +1584,260 @@ export const bookData: Book[] = [
     pageProgress: 100,
     bookCoverColor: "White",
     bookCoverObject: "Woman and Man",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "Deathless Divide",
+    author: ["Justina Ireland"],
+    audioBookNarrator: ["Bahni Turpin", "Jordan Cobb"],
+    publishedYear: 2020,
+    setting: ["United States", "California"],
+    genre: [
+      "Fantasy",
+      "Horror",
+      "Historical Fiction",
+      "Race",
+      "Black",
+      "Alternate History",
+      "War"
+    ],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 560,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "12/14/2022",
+    dateFinished: "12/15/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "White",
+    bookCoverObject: "Woman and Man",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "The Red Palace",
+    author: ["June Hur"],
+    audioBookNarrator: ["Michelle H. Lee"],
+    publishedYear: 2022,
+    setting: ["South Korea"],
+    genre: ["Asia", "Mystery", "Health", "Crime", "Korea"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 336,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "12/11/2022",
+    dateFinished: "12/12/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "White",
+    bookCoverObject: "Woman",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "The Underground Railroad",
+    author: ["Colson Whitehead"],
+    audioBookNarrator: ["Bahni Turpin"],
+    publishedYear: 2016,
+    setting: ["United States"],
+    genre: [
+      "Black",
+      "Slavery",
+      "History",
+      "Alternate History",
+      "Historical Fiction"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 306,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "12/13/2022",
+    dateFinished: "12/14/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Red",
+    bookCoverObject: "Train Tracks",
+    fav: true,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "The Nickel Boys",
+    author: ["Colson Whitehead"],
+    audioBookNarrator: ["JD Jackson"],
+    publishedYear: 2019,
+    setting: ["United States", "Florida"],
+    genre: ["Black", "Race", "Crime"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 213,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "12/15/2022",
+    dateFinished: "12/16/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Red",
+    bookCoverObject: "Two Boys",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "Jade City",
+    author: ["Fonda Lee"],
+    audioBookNarrator: ["Andrew Kishino"],
+    publishedYear: 2017,
+    setting: ["Asia", "Fictional"],
+    genre: ["Asia", "Crime", "Mafia", "Magical Realism", "Fantasy", "War"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 560,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "12/17/2022",
+    dateFinished: "12/21/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Green",
+    bookCoverObject: "Words",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "Whiteout",
+    author: [
+      "Dhonielle Clayton",
+      "Tiffany D.Jackson",
+      "Nic Stone",
+      "Angie Thomas",
+      "Ashley Woodfolk",
+      "Nicola Yoon"
+    ],
+    audioBookNarrator: [
+      "Nic Stone",
+      "Danielle Shemaiah",
+      "Shayna Small",
+      "Bahni Turpin",
+      "Alaska Jackson",
+      "Joniece Abbott-Pratt",
+      "Kevin R.Free",
+      "James Fouhey",
+      "Korey Jackson"
+    ],
+    publishedYear: 2022,
+    setting: ["United States", "Georgia (USA)", "Atlanta"],
+    genre: ["Black", "Romance", "LGBTQIA+"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 291,
+    medium: "Audio",
+    rating: 3,
+    dateStarted: "12/22/2022",
+    dateFinished: "12/24/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Couple",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "The Deep",
+    author: ["Rivers Solomon"],
+    audioBookNarrator: ["Daveed Diggs"],
+    publishedYear: 2019,
+    setting: ["Fictional", "Ocean"],
+    genre: [
+      "Black",
+      "Race",
+      "Short Stories",
+      "LGBTQIA+",
+      "Slavery",
+      "Romance",
+      "Science Fiction"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 116,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "12/24/2022",
+    dateFinished: "12/28/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Mermaid",
+    fav: false,
+    tbr: false,
+    tbrMonth: "",
+    library: false,
+    dedication: { text: "", person: "" },
+    alphabetChallenge: ""
+  },
+  {
+    title: "The Girl Who Fell Beneath the Sea",
+    author: ["Axie Oh"],
+    audioBookNarrator: ["Rosa Escoda"],
+    publishedYear: 2019,
+    setting: ["Asia", "Fictional"],
+    genre: [
+      "Romance",
+      "Fantasy",
+      "Asia",
+      "Retelling",
+      "Mythology",
+      "Historical Fiction"
+    ],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 323,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "12/28/2022",
+    dateFinished: "12/30/2022",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    bookCoverColor: "Blue",
+    bookCoverObject: "Woman",
     fav: false,
     tbr: false,
     tbrMonth: "",
