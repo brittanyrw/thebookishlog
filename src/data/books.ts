@@ -1065,7 +1065,8 @@ export const bookData: Book[] = [
       "Short Stories",
       "Black",
       "Science Fiction",
-      "Afrofuturism"
+      "Afrofuturism",
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1098,7 +1099,8 @@ export const bookData: Book[] = [
       "Black",
       "Science Fiction",
       "Afrofuturism",
-      "Horror"
+      "Horror", 
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1159,7 +1161,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2015,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 96,
@@ -1427,7 +1429,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2017,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 176,
@@ -1453,7 +1455,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2018,
     setting: ["Fictional", "Space"],
-    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism"],
+    genre: ["Short Stories", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 208,
