@@ -978,7 +978,7 @@ export const bookData: Book[] = [
     dateFinished: "08/01/2022",
     dnfDate: "",
     progress: "finished",
-    fav: false,
+    fav: true,
     pageProgress: 100
   },
   {
@@ -997,7 +997,7 @@ export const bookData: Book[] = [
     dateFinished: "08/04/2022",
     dnfDate: "",
     progress: "finished",
-    fav: false,
+    fav: true,
     pageProgress: 100
   },
   {

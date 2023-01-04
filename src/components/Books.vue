@@ -3,7 +3,7 @@
     <div class="read-book-list">
       <div class="header">
         <h2>Books Read</h2>
-        <div class="toggle-button-wrapper">
+        <!-- <div class="toggle-button-wrapper">
           <input
             type="checkbox"
             v-model="toggle"
@@ -12,10 +12,10 @@
             id="toggle-text-books"
           />
           <label for="toggle-text-books">Show Books with Text</label>
-        </div>
+        </div> -->
       </div>
 
-      <ul class="books" v-show="toggle === 'no'">
+      <ul class="books">
         <li
           class="book"
           v-for="(book, index) in filter('progress', 'finished')"
@@ -30,6 +30,12 @@
             :alt="`${book.title} book cover`"
             :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
           />
+          <div class="text-book-info">
+            <p>
+              {{ book.title }} by
+              {{ book.author.join(", ") }}
+            </p>
+          </div>
           <div
             class="stars"
             :style="`--rating: ${book.rating};`"
@@ -38,7 +44,7 @@
           <p class="read-date">{{ book.dateFinished }}</p>
         </li>
       </ul>
-      <ul class="books text-books" v-show="toggle === 'yes'">
+      <!-- <ul class="books text-books" v-show="toggle === 'yes'">
         <li
           class="book"
           v-for="(book, index) in filter('progress', 'finished')"
@@ -70,7 +76,7 @@
             <p class="read-date">{{ book.dateFinished }}</p>
           </div>
         </li>
-      </ul>
+      </ul> -->
     </div>
     <div class="current-book-list">
       <h2>Started Reading</h2>
@@ -208,7 +214,7 @@ export default {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin-top: 40px;
   .read-book-list {
@@ -445,24 +451,24 @@ export default {
     }
   }
 
-  .book:nth-child(2n + 1) {
-    transform: rotate(-2deg);
-  }
+  // .book:nth-child(2n + 1) .book-cover-img {
+  //   transform: rotate(-2deg);
+  // }
 
-  .book:nth-child(3n + 2) {
-    transform: rotate(2deg);
-  }
-  .book:nth-child(5n + 3) {
-    transform: rotate(-4deg);
-  }
+  // .book:nth-child(3n + 2) .book-cover-img {
+  //   transform: rotate(2deg);
+  // }
+  // .book:nth-child(5n + 3) .book-cover-img {
+  //   transform: rotate(-4deg);
+  // }
 
-  .book:nth-child(7n + 5) {
-    transform: rotate(-6deg);
-  }
+  // .book:nth-child(7n + 5) .book-cover-img {
+  //   transform: rotate(-6deg);
+  // }
 
-  .book:nth-child(11n + 7) {
-    transform: rotate(4deg);
-  }
+  // .book:nth-child(11n + 7) .book-cover-img {
+  //   transform: rotate(4deg);
+  // }
 
   .text-books {
     margin-top: 30px;
