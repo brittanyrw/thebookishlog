@@ -31,6 +31,7 @@ export type Setting =
   | "Boston"
   | "California"
   | "Canada"
+  | "China"
   | "Egypt"
   | "Fictional"
   | "Florida"
@@ -53,6 +54,7 @@ export type Setting =
   | "Asia";
 
 export type Genres =
+  | "Academic"
   | "Alternate History"
   | "Africa"
   | "Afrofuturism"
@@ -764,7 +766,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Tapiwa Mugweni"],
     publishedYear: 2021,
     setting: ["Fictional"],
-    genre: ["Horror", "Thriller", "LGBTQIA+", "Black", "Race"],
+    genre: ["Horror", "Thriller", "LGBTQIA+", "Black", "Race", "Academic"],
     age: "Young Adult",
     type: "Fiction",
     pages: 470,
@@ -945,7 +947,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Poppy War",
-    author: ["R.F. Kuang"],
+    author: ["Rebecca F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2018,
     setting: ["Fictional", "Asia"],
@@ -964,7 +966,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Dragon Republic",
-    author: ["R.F. Kuang"],
+    author: ["Rebecca F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2019,
     setting: ["Fictional", "Asia"],
@@ -983,7 +985,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Burning God",
-    author: ["R.F. Kuang"],
+    author: ["Rebecca F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2020,
     setting: ["Fictional", "Asia"],
@@ -1415,5 +1417,33 @@ export const bookData: Book[] = [
     progress: "finished",
     pageProgress: 100,
     fav: false
+  },
+  {
+    title: "Babel",
+    author: ["Rebecca F. Kuang"],
+    audioBookNarrator: ["Chris Lew Kum Hoi", "Billie Fulford-Brown"],
+    publishedYear: 2022,
+    setting: ["Fictional", "Asia", "United Kingdom", "China"],
+    genre: [
+      "Fantasy",
+      "Horror",
+      "China",
+      "Magic",
+      "War",
+      "Race",
+      "Historical Fiction",
+      "Alternate History"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 545,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "01/01/2023",
+    dateFinished: "01/05/2023",
+    dnfDate: "",
+    progress: "finished",
+    fav: true,
+    pageProgress: 100
   }
 ];

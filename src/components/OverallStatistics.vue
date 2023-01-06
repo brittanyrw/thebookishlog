@@ -232,6 +232,7 @@ export default {
         (a, b) => b[1] - a[1]
       );
       countedObj = Object.fromEntries(sortedCountedObj);
+      console.log(countedObj);
       return countedObj;
     },
     valueCount(key, value) {
@@ -312,6 +313,12 @@ h3 {
   flex-wrap: wrap;
 }
 
+.star-ratings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .shortest-book {
   max-width: 250px;
   margin-right: 10px;
@@ -323,16 +330,21 @@ h3 {
   justify-content: center;
 }
 
-.favorite-books ul {
-  display: flex;
-  margin: auto;
-  max-width: 1000px;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
-  li {
-    margin: 0 20px;
-    max-width: 200px;
+.overall-stats-component {
+  .favorite-books ul {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    li {
+      margin: 0 20px;
+      max-width: 200px;
+    }
+    .book p {
+      max-width: 100px;
+    }
   }
 }
 

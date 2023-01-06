@@ -458,8 +458,8 @@ export const authorData = [
     website: "nnedi.com"
   },
   {
-    name: "R. F. Kuang",
-    books: ["The Poppy War", "The Dragon Republic", "The Burning God"],
+    name: "Rebecca F. Kuang",
+    books: ["The Poppy War", "The Dragon Republic", "The Burning God", "Babel"],
     poc: true,
     gender: "female",
     lgbt: false,
