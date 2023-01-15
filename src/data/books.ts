@@ -1445,5 +1445,51 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: true,
     pageProgress: 100
+  },
+  {
+    title: "The World We Make",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 2022,
+    setting: ["New York City", "United States"],
+    genre: [
+      "Fantasy",
+      "LGBTQIA+",
+      "Magic",
+      "Black",
+      "Science Fiction",
+      "Afrofuturism",
+      "War"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 357,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "01/08/2023",
+    dateFinished: "01/12/2023",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    fav: false
+  },
+  {
+    title: "The Killing Moon",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Sarah Zimmerman"],
+    publishedYear: 2012,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "LGBTQIA+", "Magic", "Black", "Science Fiction", "War"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 418,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "01/03/2023",
+    dateFinished: "01/08/2023",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    fav: false
   }
 ];

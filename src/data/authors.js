@@ -391,7 +391,12 @@ export const authorData = [
   },
   {
     name: "N.K. Jemisin",
-    books: ["How Long 'til Black Future Month?", "The City We Became"],
+    books: [
+      "How Long 'til Black Future Month?",
+      "The City We Became",
+      "The Killing Moon",
+      "The World We Make"
+    ],
     poc: true,
     gender: "female",
     lgbt: false,
