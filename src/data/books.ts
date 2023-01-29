@@ -1491,5 +1491,24 @@ export const bookData: Book[] = [
     progress: "finished",
     pageProgress: 100,
     fav: false
+  },
+  {
+    title: "The Hundred Thousand Kingdoms",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Casaundra Freeman"],
+    publishedYear: 2010,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "Romance", "Magic", "Black", "Science Fiction", "War"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 427,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "01/13/2023",
+    dateFinished: "01/15/2023",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    fav: false
   }
 ];
