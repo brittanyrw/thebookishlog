@@ -43,6 +43,7 @@ export type Setting =
   | "Minnesota"
   | "New York City"
   | "New York State"
+  | "Nigeria"
   | "Ocean"
   | "Philadelphia"
   | "South Africa"
@@ -1510,5 +1511,52 @@ export const bookData: Book[] = [
     progress: "finished",
     pageProgress: 100,
     fav: false
+  },
+  {
+    title: "Akata Witch",
+    author: ["Nnedi Okorafor"],
+    audioBookNarrator: ["Yetide Badaki"],
+    publishedYear: 2011,
+    setting: ["Nigeria"],
+    genre: ["Science Fiction", "Black", "Magic", "Crime"],
+    age: "Middle Grade",
+    type: "Fiction",
+    pages: 349,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "01/15/2023",
+    dateFinished: "01/25/2023",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    fav: false
+  },
+  {
+    title: "Stories from the Tenants Downstairs",
+    author: ["Sidik Fofana"],
+    audioBookNarrator: [
+      "Joniece Abbott-Pratt",
+      "Nile Bullock",
+      "Sidik Fofana",
+      "Dominic Hoffman",
+      "DePre Owens",
+      "André Santana",
+      "Bahni Turpin",
+      "Jade Wheeler"
+    ],
+    publishedYear: 2022,
+    setting: ["New York City", "United States"],
+    genre: ["Short Stories", "Black", "Crime", "Family"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 213,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "01/15/2023",
+    dateFinished: "01/25/2023",
+    dnfDate: "",
+    progress: "finished",
+    pageProgress: 100,
+    fav: true
   }
 ];

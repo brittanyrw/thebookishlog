@@ -17,6 +17,18 @@
                 </p>
                 <p class="stat-title">Young Adult</p>
               </div>
+              <div class="stat">
+                <p class="stat-number">
+                  {{ valueCount("age", "Middle Grade") }}
+                </p>
+                <p class="stat-title">Middle Grade</p>
+              </div>
+              <div class="stat">
+                <p class="stat-number">
+                  {{ valueCount("age", "Childrens") }}
+                </p>
+                <p class="stat-title">Children's</p>
+              </div>
             </div>
             <div class="stats-wrapper">
               <h3>Medium</h3>

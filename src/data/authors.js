@@ -395,7 +395,8 @@ export const authorData = [
       "How Long 'til Black Future Month?",
       "The City We Became",
       "The Killing Moon",
-      "The World We Make"
+      "The World We Make",
+      "The Hundred Thousand Kingdoms"
     ],
     poc: true,
     gender: "female",
@@ -445,7 +446,7 @@ export const authorData = [
   },
   {
     name: "Nnedi Okorafor",
-    books: ["Binti", "Binti: Home", "Binti: Night Masquerade"],
+    books: ["Binti", "Binti: Home", "Binti: Night Masquerade", "Akata Witch"],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -620,5 +621,20 @@ export const authorData = [
       }
     ],
     website: "axieoh.com"
+  },
+  {
+    name: "Sidik Fofana",
+    books: ["Stories from the Tenants Downstairs"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "sidikfofana.com"
   }
 ];
