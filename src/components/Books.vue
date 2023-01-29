@@ -142,11 +142,28 @@ export default {
     },
     sortedBooks() {
       let books = this.bookInfo;
+
+
       const sorted = (a, b) => {
-        if (new Date(a.dateFinished) > new Date(b.dateFinished)) {
-          return -1;
-        } else {
+        if (
+          new Date(
+            b.dateFinished.split("/")[2] +
+              "/" +
+              b.dateFinished.split("/")[1] +
+              "/" +
+              b.dateFinished.split("/")[0]
+          ) >
+          new Date(
+            a.dateFinished.split("/")[2] +
+              "/" +
+              a.dateFinished.split("/")[1] +
+              "/" +
+              a.dateFinished.split("/")[0]
+          )
+        ) {
           return 1;
+        } else {
+          return -1;
         }
       };
       return books.sort(sorted);

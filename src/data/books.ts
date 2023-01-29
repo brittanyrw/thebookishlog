@@ -1505,7 +1505,7 @@ export const bookData: Book[] = [
     medium: "Audio",
     rating: 3.5,
     dateStarted: "01/13/2023",
-    dateFinished: "01/15/2023",
+    dateFinished: "1/15/2023",
     dnfDate: "",
     progress: "finished",
     pageProgress: 100,
