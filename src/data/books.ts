@@ -12,10 +12,9 @@ export interface Book {
   rating: number;
   dateStarted: string;
   dateFinished: string;
-  dnfDate: string;
   progress: Progress;
   fav: boolean;
-  pageProgress: number;
+  color: string;
 }
 
 export type Ages =
@@ -106,7 +105,7 @@ export type BookType = "Fiction" | "Non-Fiction";
 
 export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 
-export type Progress = "finished" | "started" | "dnf" | "not started";
+export type Progress = "finished";
 
 export const bookData: Book[] = [
   {
@@ -131,10 +130,9 @@ export const bookData: Book[] = [
     rating: 4.5,
     dateStarted: "12/18/2020",
     dateFinished: "02/07/2021",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "Cinderella Is Dead",
@@ -158,10 +156,9 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "02/07/2021",
     dateFinished: "02/08/2021",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -177,10 +174,9 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "02/09/2021",
     dateFinished: "02/09/2021",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "The Year of the Witching",
@@ -204,10 +200,9 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "02/09/2021",
     dateFinished: "02/11/2021",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "Monday's Not Coming",
@@ -223,29 +218,9 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "02/11/2021",
     dateFinished: "02/12/2021",
-    dnfDate: "",
     progress: "finished",
     fav: true,
-    pageProgress: 100
-  },
-  {
-    title: "Uprooted",
-    author: ["Naomi Novik"],
-    audioBookNarrator: [""],
-    publishedYear: 2015,
-    setting: ["Fictional"],
-    genre: ["Fantasy", "Romance", "Fairy Tale", "Retelling"],
-    age: "Young Adult",
-    type: "Fiction",
-    pages: 435,
-    medium: "E-Book",
-    rating: 0,
-    dateStarted: "02/11/2021",
-    dateFinished: "",
-    dnfDate: "02/16/2021",
-    progress: "dnf",
-    fav: false,
-    pageProgress: 6
+    color: ""
   },
   {
     title: "Full Disclosure",
@@ -261,10 +236,9 @@ export const bookData: Book[] = [
     rating: 2.5,
     dateStarted: "02/12/2021",
     dateFinished: "02/14/2021",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -280,87 +254,9 @@ export const bookData: Book[] = [
     rating: 4.5,
     dateStarted: "01/30/2021",
     dateFinished: "02/20/2021",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
-  },
-  {
-    title: "The First Sister",
-    author: ["Linden Lewis"],
-    audioBookNarrator: [""],
-    publishedYear: 2020,
-    setting: ["Fictional", "Space"],
-    genre: ["Science Fiction", "Fantasy", "LGBTQIA+", "Space"],
-    age: "Adult",
-    type: "Fiction",
-    pages: 352,
-    medium: "Physical",
-    rating: 0,
-    dateStarted: "02/14/2021",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "started",
-    pageProgress: 9,
-    fav: false
-  },
-  {
-    title: "The Testaments",
-    author: ["Margaret Atwood"],
-    audioBookNarrator: [""],
-    publishedYear: 2019,
-    setting: ["United States", "Canada"],
-    genre: ["Dystopia", "Feminism"],
-    age: "Adult",
-    type: "Fiction",
-    pages: 422,
-    medium: "Physical",
-    rating: 0,
-    dateStarted: "11/29/2020",
-    dateFinished: "",
-    dnfDate: "09/09/2021",
-    progress: "dnf",
-    pageProgress: 40,
-    fav: false
-  },
-  {
-    title: "The Good Luck Girls",
-    author: ["Charlotte Nicole Davis"],
-    audioBookNarrator: [""],
-    publishedYear: 2019,
-    setting: ["Fictional"],
-    genre: ["Fantasy", "Historical Fiction", "LGBTQIA+", "Western", "Dystopia"],
-    age: "Young Adult",
-    type: "Fiction",
-    pages: 352,
-    medium: "E-Book",
-    rating: 0,
-    dateStarted: "02/15/2021",
-    dateFinished: "",
-    dnfDate: "09/23/2021",
-    progress: "dnf",
-    pageProgress: 13,
-    fav: false
-  },
-  {
-    title:
-      "Maybe You Should Talk to Someone: A Therapist, Her Therapist, and Our Lives Revealed",
-    author: ["Lori Gottlieb"],
-    audioBookNarrator: [""],
-    publishedYear: 2019,
-    setting: ["United States", "California"],
-    genre: ["Biography", "Psychology"],
-    age: "Adult",
-    type: "Non-Fiction",
-    pages: 415,
-    medium: "E-Book",
-    rating: 0,
-    dateStarted: "02/17/2021",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "started",
-    pageProgress: 30,
-    fav: false
+    color: ""
   },
   {
     title: "Gods of Jade and Shadow",
@@ -376,10 +272,9 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "04/12/2021",
     dateFinished: "05/01/2021",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -395,9 +290,8 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "08/09/2021",
     dateFinished: "08/23/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -414,9 +308,8 @@ export const bookData: Book[] = [
     rating: 3,
     dateStarted: "08/23/2021",
     dateFinished: "08/24/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -440,9 +333,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "08/24/2021",
     dateFinished: "08/27/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: true
   },
   {
@@ -459,28 +351,8 @@ export const bookData: Book[] = [
     rating: 3,
     dateStarted: "08/27/2021",
     dateFinished: "08/29/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
-    fav: false
-  },
-  {
-    title: "Red, White & Royal Blue",
-    author: ["Casey McQuiston"],
-    audioBookNarrator: [""],
-    publishedYear: 2019,
-    setting: ["United Kingdom", "United States", "Washington, DC", "London"],
-    genre: ["LGBTQIA+", "Romance"],
-    age: "New Adult",
-    type: "Fiction",
-    pages: 418,
-    medium: "Physical",
-    rating: 0,
-    dateStarted: "08/29/2021",
-    dateFinished: "",
-    dnfDate: "09/17/2021",
-    progress: "dnf",
-    pageProgress: 42,
+    color: "",
     fav: false
   },
   {
@@ -504,9 +376,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "08/29/2021",
     dateFinished: "09/13/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: true
   },
   {
@@ -523,9 +394,8 @@ export const bookData: Book[] = [
     rating: 4.5,
     dateStarted: "09/13/2021",
     dateFinished: "09/19/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -542,9 +412,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "09/22/2021",
     dateFinished: "09/24/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -563,47 +432,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "09/24/2021",
     dateFinished: "06/18/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
-    fav: false
-  },
-  {
-    title: "Mexican Gothic",
-    author: ["Silvia Moreno-Garcia"],
-    audioBookNarrator: [""],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Horror"],
-    age: "Adult",
-    type: "Fiction",
-    pages: 301,
-    medium: "Physical",
-    rating: 0,
-    dateStarted: "10/12/2021",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "started",
-    pageProgress: 5,
-    fav: false
-  },
-  {
-    title: "The Afterlife of Holly Chase",
-    author: ["Cynthia Hand"],
-    audioBookNarrator: [""],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Retelling"],
-    age: "Young Adult",
-    type: "Fiction",
-    pages: 0,
-    medium: "Physical",
-    rating: 0,
-    dateStarted: "",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "not started",
-    pageProgress: 0,
+    color: "",
     fav: false
   },
   {
@@ -620,9 +450,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "06/16/2022",
     dateFinished: "06/17/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: true
   },
   {
@@ -639,9 +468,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "09/30/2021",
     dateFinished: "10/03/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -665,10 +493,9 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "09/28/2021",
     dateFinished: "10/12/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 10,
-    fav: false
+    fav: false,
+    color: ""
   },
   {
     title: "Crier's War",
@@ -684,9 +511,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "10/05/2021",
     dateFinished: "10/16/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -710,28 +536,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "10/17/2021",
     dateFinished: "07/17/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
-    fav: false
-  },
-  {
-    title: "Written in the Stars",
-    author: ["Alexandria Bellefleur"],
-    audioBookNarrator: [""],
-    publishedYear: 0,
-    setting: [""],
-    genre: ["Romance"],
-    age: "Young Adult",
-    type: "Fiction",
-    pages: 0,
-    medium: "E-Book",
-    rating: 0,
-    dateStarted: "12/06/2021",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "started",
-    pageProgress: 5,
+    color: "",
     fav: false
   },
   {
@@ -756,9 +562,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "10/16/2021",
     dateFinished: "10/22/2021",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -775,9 +580,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "06/18/2022",
     dateFinished: "06/19/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -794,9 +598,8 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "06/20/2022",
     dateFinished: "06/28/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -824,9 +627,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "07/07/2022",
     dateFinished: "07/09/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: true
   },
   {
@@ -851,9 +653,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "07/09/2022",
     dateFinished: "07/10/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -878,9 +679,8 @@ export const bookData: Book[] = [
     rating: 4.5,
     dateStarted: "07/13/2022",
     dateFinished: "07/16/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -903,9 +703,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "07/16/2022",
     dateFinished: "07/16/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -922,10 +721,9 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "07/16/2022",
     dateFinished: "07/19/2022",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "This Wicked Fate",
@@ -941,10 +739,9 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "07/19/2022",
     dateFinished: "07/27/2022",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "The Poppy War",
@@ -960,10 +757,9 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "07/28/2022",
     dateFinished: "07/30/2022",
-    dnfDate: "",
     progress: "finished",
     fav: true,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "The Dragon Republic",
@@ -979,10 +775,9 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "07/30/2022",
     dateFinished: "08/01/2022",
-    dnfDate: "",
     progress: "finished",
     fav: true,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "The Burning God",
@@ -998,10 +793,9 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "08/01/2022",
     dateFinished: "08/04/2022",
-    dnfDate: "",
     progress: "finished",
     fav: true,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "The Gilded Ones",
@@ -1017,10 +811,9 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "08/08/2022",
     dateFinished: "08/13/2022",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "The Unkindness of Ghosts",
@@ -1036,10 +829,9 @@ export const bookData: Book[] = [
     rating: 4.5,
     dateStarted: "08/13/2022",
     dateFinished: "08/16/2022",
-    dnfDate: "",
     progress: "finished",
     fav: false,
-    pageProgress: 0
+    color: ""
   },
   {
     title: "Kindred",
@@ -1063,9 +855,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "08/18/2022",
     dateFinished: "08/20/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: true
   },
   {
@@ -1082,9 +873,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "08/20/2022",
     dateFinished: "09/02/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1107,9 +897,8 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "09/03/2022",
     dateFinished: "09/03/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1132,9 +921,8 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "09/03/2022",
     dateFinished: "09/04/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1159,9 +947,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "09/05/2022",
     dateFinished: "09/22/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1178,29 +965,9 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "10/07/2022",
     dateFinished: "10/09/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: true
-  },
-  {
-    title: "The Love Hypothesis",
-    author: ["Ali Hazelwood"],
-    audioBookNarrator: [],
-    publishedYear: 2021,
-    setting: ["California", "Boston"],
-    genre: ["Romance"],
-    age: "Adult",
-    type: "Fiction",
-    pages: 289,
-    medium: "Physical",
-    rating: 0,
-    dateStarted: "11/21/2022",
-    dateFinished: "",
-    dnfDate: "",
-    progress: "started",
-    pageProgress: 5,
-    fav: false
   },
   {
     title: "Get a Life, Chloe Brown",
@@ -1216,9 +983,8 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "12/01/2022",
     dateFinished: "12/11/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1243,9 +1009,8 @@ export const bookData: Book[] = [
     rating: 4.5,
     dateStarted: "12/14/2022",
     dateFinished: "12/15/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1262,9 +1027,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "12/11/2022",
     dateFinished: "12/12/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1287,9 +1051,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "12/13/2022",
     dateFinished: "12/14/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: true
   },
   {
@@ -1306,9 +1069,8 @@ export const bookData: Book[] = [
     rating: 4.5,
     dateStarted: "12/15/2022",
     dateFinished: "12/16/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1325,9 +1087,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "12/17/2022",
     dateFinished: "12/21/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1361,9 +1122,8 @@ export const bookData: Book[] = [
     rating: 3,
     dateStarted: "12/22/2022",
     dateFinished: "12/24/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1388,9 +1148,8 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "12/24/2022",
     dateFinished: "12/28/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1414,9 +1173,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "12/28/2022",
     dateFinished: "12/30/2022",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1442,10 +1200,9 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "01/01/2023",
     dateFinished: "01/05/2023",
-    dnfDate: "",
     progress: "finished",
     fav: true,
-    pageProgress: 100
+    color: ""
   },
   {
     title: "The World We Make",
@@ -1469,9 +1226,8 @@ export const bookData: Book[] = [
     rating: 4.5,
     dateStarted: "01/08/2023",
     dateFinished: "01/12/2023",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1488,9 +1244,8 @@ export const bookData: Book[] = [
     rating: 4,
     dateStarted: "01/03/2023",
     dateFinished: "01/08/2023",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1507,9 +1262,8 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "01/13/2023",
     dateFinished: "01/15/2023",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1526,9 +1280,8 @@ export const bookData: Book[] = [
     rating: 3.5,
     dateStarted: "01/15/2023",
     dateFinished: "01/25/2023",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: false
   },
   {
@@ -1554,9 +1307,8 @@ export const bookData: Book[] = [
     rating: 5,
     dateStarted: "01/15/2023",
     dateFinished: "01/25/2023",
-    dnfDate: "",
     progress: "finished",
-    pageProgress: 100,
+    color: "",
     fav: true
   }
 ];

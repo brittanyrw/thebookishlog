@@ -7,14 +7,6 @@
         <p class="stat-title">Books Read</p>
       </div>
       <div class="stat">
-        <p class="stat-number">{{ valueCount("progress", "started") }}</p>
-        <p class="stat-title">Started</p>
-      </div>
-      <div class="stat">
-        <p class="stat-number">{{ valueCount("progress", "dnf") }}</p>
-        <p class="stat-title">Did Not Finish</p>
-      </div>
-      <div class="stat">
         <p class="stat-number stat-number-pages">
           {{ Math.floor(averageTimeToRead) }}
         </p>
@@ -50,12 +42,7 @@
         </p>
         <p class="stat-title">Avg Pages</p>
       </div>
-    </div>
-    <div class="additional-stats">
-      <div class="stats-by-year-container">
-        <h3>Books Read by Year</h3>
-        <div class="stats-by-year">
-          <div class="stat">
+      <div class="stat">
             <p class="stat-number">
               {{ countYear("2021") }}
             </p>
@@ -73,8 +60,6 @@
             </p>
             <p class="stat-title">2023</p>
           </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
