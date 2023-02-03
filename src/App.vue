@@ -149,7 +149,7 @@ h2 {
   border: 7px solid $black;
   box-shadow: 10px 10px 0 $black;
   border-radius: 7px 7px 7px 0;
-  max-width: 1200px;
+  max-width: 1300px;
   @media screen and (min-width: 992px) {
     margin: 50px auto;
   }

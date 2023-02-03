@@ -346,16 +346,16 @@ h3 {
   .favorite-books ul {
     display: flex;
     margin: auto;
-    max-width: 1000px;
+    max-width: 1300px;
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
     li {
-      margin: 0 20px;
-      max-width: 200px;
+      margin: 0 10px;
+      width: 150px;
     }
     .book p {
-      max-width: 100px;
+      margin: 10px auto;
     }
   }
 }
@@ -365,19 +365,8 @@ h3 {
 // }
 
 .book-cover-img {
-  width: 120px;
-}
-
-.shortest-book .book-cover-img {
-  width: 80px;
-}
-
-.book-cover-img.e-book {
-  width: 90px;
-}
-
-.book-cover-img.audio {
-  width: 85px;
+  width: auto;
+  height: 150px;
 }
 
 .numbers,
@@ -405,7 +394,7 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   padding: 35px;
   .stat {
@@ -444,7 +433,7 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     .location {
       margin: 15px;
@@ -476,7 +465,7 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     .genre {
       margin: 15px;

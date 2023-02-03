@@ -217,7 +217,7 @@ export default {
 
 .author-list {
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   .authors {
     list-style: none;

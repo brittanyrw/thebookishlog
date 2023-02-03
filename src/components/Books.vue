@@ -3,7 +3,7 @@
     <div class="read-book-list">
       <div class="header">
         <h2>Books Read</h2>
-        <!-- <div class="toggle-button-wrapper">
+        <div class="toggle-button-wrapper">
           <input
             type="checkbox"
             v-model="toggle"
@@ -11,11 +11,11 @@
             false-value="no"
             id="toggle-text-books"
           />
-          <label for="toggle-text-books">Show Books with Text</label>
-        </div> -->
+          <label for="toggle-text-books">Book Cover Grid</label>
+        </div>
       </div>
 
-      <ul class="books">
+      <ul class="books"  v-show="toggle === 'no' ">
         <li
           class="book"
           v-for="(book, index) in filter('progress', 'finished')"
@@ -31,10 +31,8 @@
             :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
           />
           <div class="text-book-info">
-            <p>
-              {{ book.title }} by
-              {{ book.author.join(", ") }}
-            </p>
+            <h3>{{ book.title }}</h3>
+            <p class="author">{{ book.author.join(", ") }}</p>
           </div>
           <div
             class="stars"
@@ -44,9 +42,9 @@
           <p class="read-date">{{ book.dateFinished }}</p>
         </li>
       </ul>
-      <!-- <ul class="books text-books" v-show="toggle === 'yes'">
+      <ul class="books text-books" v-show="toggle === 'yes'">
         <li
-          class="book"
+          class="book grid-book"
           v-for="(book, index) in filter('progress', 'finished')"
           :key="index"
         >
@@ -55,60 +53,6 @@
             :alt="`${book.title} book cover`"
             :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
           />
-
-          <div class="text-book-info">
-            <p>
-              {{ book.title }} by
-              {{ book.author.join(", ") }}
-            </p>
-            <p
-              v-if="
-                book.medium == 'Audio' || book.medium == 'Physical and Audio'
-              "
-            >
-              Narrated by {{ book.audioBookNarrator.join(", ") }}
-            </p>
-            <div
-              class="stars"
-              :style="`--rating: ${book.rating};`"
-              :aria-label="`Rating is ${book.rating} out of 5.`"
-            ></div>
-            <p class="read-date">{{ book.dateFinished }}</p>
-          </div>
-        </li>
-      </ul> -->
-    </div>
-    <div class="current-book-list">
-      <h2>Started Reading</h2>
-      <ul>
-        <li v-for="(book, index) in sortedStartedBooks" :key="index">
-          <div class="current-book-info">
-            <span class="progress" :style="`width:${book.pageProgress}%;`">
-              {{ book.pageProgress }}%
-            </span>
-            <p class="current-book-title">{{ book.title }}</p>
-            <p class="current-book-author">
-              by
-              {{ book.author.join(", ") }}
-            </p>
-            <p class="current-book-date">Started: {{ book.dateStarted }}</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="dnf-book-list">
-      <h2>DNFed Books</h2>
-      <p>"Did Not Finish" books</p>
-      <ul>
-        <li v-for="(book, index) in filter('progress', 'dnf')" :key="index">
-          <div class="dnf-book-info">
-            <span :style="`width:${book.pageProgress}%;`">
-              {{ book.pageProgress }}%
-            </span>
-            <p class="dnf-book-title">{{ book.title }}</p>
-            <p class="dnf-book-author">by {{ book.author.join(", ") }}</p>
-            <p class="dnf-book-date">DNF Date: {{ book.dnfDate }}</p>
-          </div>
         </li>
       </ul>
     </div>
@@ -211,14 +155,14 @@ export default {
 }
 
 .book-cover-img {
-  width: 100%;
+  width: auto;
   display: inline-block;
-  max-height: 350px;
+  height: 250px;
 
-  @media screen and (min-width: 668px) {
-    max-height: 300px;
-    width: auto;
-  }
+  // @media screen and (min-width: 668px) {
+  //   max-height: 300px;
+  //   width: auto;
+  // }
 }
 
 .read-date {
@@ -243,6 +187,10 @@ export default {
     margin: 0;
     list-style: none;
     flex-wrap: wrap;
+    .grid-book {
+      margin: 0;
+      width: 170px;
+    }
     .text-book {
       padding: 10px;
       margin: 10px;
@@ -456,36 +404,9 @@ export default {
     margin-right: 10px;
     margin-bottom: 40px;
     @media screen and (min-width: 668px) {
-      width: 250px;
-    }
-    &.e-book,
-    &.audio {
-      width: 200px;
-      img {
-        max-height: 250px;
-        width: auto;
-      }
+      width: 230px;
     }
   }
-
-  // .book:nth-child(2n + 1) .book-cover-img {
-  //   transform: rotate(-2deg);
-  // }
-
-  // .book:nth-child(3n + 2) .book-cover-img {
-  //   transform: rotate(2deg);
-  // }
-  // .book:nth-child(5n + 3) .book-cover-img {
-  //   transform: rotate(-4deg);
-  // }
-
-  // .book:nth-child(7n + 5) .book-cover-img {
-  //   transform: rotate(-6deg);
-  // }
-
-  // .book:nth-child(11n + 7) .book-cover-img {
-  //   transform: rotate(4deg);
-  // }
 
   .text-books {
     margin-top: 30px;

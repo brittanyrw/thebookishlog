@@ -141,7 +141,7 @@ export default {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 40px;
