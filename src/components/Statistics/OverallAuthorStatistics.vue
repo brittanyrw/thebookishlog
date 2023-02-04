@@ -132,6 +132,7 @@ export default {
 .statistics-container {
   background-color: $black;
   padding: 20px;
+  border: 2px solid white;
   h2 {
     color: white;
     margin: 0;

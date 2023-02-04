@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      <ul class="books"  v-show="toggle === 'no' ">
+      <ul class="books" v-show="toggle === 'no'">
         <li
           class="book"
           v-for="(book, index) in filter('progress', 'finished')"
@@ -90,7 +90,6 @@ export default {
     sortedBooks() {
       let books = this.bookInfo;
 
-
       const sorted = (a, b) => {
         if (
           new Date(
@@ -161,6 +160,7 @@ export default {
   position: relative;
   z-index: 1;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .bookmark {
@@ -203,7 +203,7 @@ export default {
   }
 }
 
-.book:nth-child(2n + 1) { 
+.book:nth-child(2n + 1) {
   .bookmark {
     width: 40px;
   }
@@ -224,7 +224,7 @@ export default {
   .bookmark {
     width: 40px;
     border-radius: 20px 20px 0 0;
-  } 
+  }
 }
 .book:nth-child(11n + 7) {
   .bookmark {
@@ -237,7 +237,8 @@ export default {
     height: 100px;
     width: 40px;
   }
-  .bookmark:before, .bookmark:after {
+  .bookmark:before,
+  .bookmark:after {
     position: absolute;
     content: "";
     background: inherit;
@@ -255,12 +256,12 @@ export default {
   }
 }
 
-
 .book-cover-img {
   width: auto;
   display: inline-block;
   height: 250px;
-  box-shadow: 2px 2px white, 4px 4px $black, 6px 6px white, 8px 8px $black, 10px 10px white, 12px 12px $black;
+  box-shadow: 2px 2px white, 4px 4px $black, 6px 6px white, 8px 8px $black,
+    10px 10px white, 12px 12px $black;
   border: 2px solid $black;
 }
 
@@ -279,6 +280,10 @@ export default {
   margin-top: 40px;
   h3 {
     margin-top: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .author {
+    margin: 8px;
   }
   .read-book-list {
     padding: 20px;
