@@ -118,12 +118,12 @@ export default {
   background-color: $black;
   padding: 20px 20px 40px 20px;
   h2 {
-    color: $pink;
+    color: white;
     margin: 0;
     margin-bottom: 20px;
   }
   h3 {
-    background-color: $pink;
+    background-color: white;
     padding: 10px;
     display: inline-block;
     margin: 0;
@@ -139,13 +139,13 @@ export default {
     max-width: 1000px;
     margin: auto;
     .stat {
-      background-color: $pink;
+      background-color: white;
       padding: 15px;
       text-align: center;
       margin: 10px;
-      border: 2px solid $pink;
-      -webkit-box-shadow: 5px 5px 0 $pink;
-      box-shadow: 9px 9px 0 $pink;
+      border: 2px solid white;
+      -webkit-box-shadow: 5px 5px 0 white;
+      box-shadow: 9px 9px 0 white;
       border-radius: 7px;
       color: $black;
       outline: 3px solid $black;
@@ -170,7 +170,7 @@ export default {
 
 .stats-by-year-container {
   text-align: center;
-  border: 2px solid $pink;
+  border: 2px solid white;
   margin: 50px 20px 20px 20px;
   position: relative;
   padding-top: 40px;

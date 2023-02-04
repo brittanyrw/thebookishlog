@@ -237,7 +237,7 @@ export default {
         width: auto;
       }
       .author-name {
-        color: $pink;
+        color: white;
         text-align: center;
         padding: 20px;
         background-color: $black;
@@ -312,7 +312,7 @@ export default {
         }
         .author-website {
           text-decoration: none;
-          color: $pink;
+          color: white;
           font-size: 14px;
           display: block;
           margin: auto;

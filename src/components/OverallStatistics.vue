@@ -292,7 +292,7 @@ h3 {
   .stats-wrapper {
     display: flex;
     padding: 35px 20px 20px 20px;
-    border: 2px solid $pink;
+    border: 2px solid white;
     position: relative;
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -305,7 +305,7 @@ h3 {
     }
     h3 {
       position: absolute;
-      background-color: #fae6e9;
+      background-color: white;
       color: #1f1f1f;
       padding: 10px;
       text-align: center;
@@ -372,7 +372,7 @@ h3 {
 .numbers,
 .genres {
   background-color: $black;
-  color: $pink;
+  color: white;
 }
 
 .length,
@@ -398,13 +398,13 @@ h3 {
   margin: auto;
   padding: 35px;
   .stat {
-    background-color: $pink;
+    background-color: white;
     padding: 15px;
     text-align: center;
     margin: 10px;
-    border: 2px solid $pink;
-    -webkit-box-shadow: 5px 5px 0 $pink;
-    box-shadow: 9px 9px 0 $pink;
+    border: 2px solid white;
+    -webkit-box-shadow: 5px 5px 0 white;
+    box-shadow: 9px 9px 0 white;
     border-radius: 7px;
     color: $black;
     outline: 3px solid $black;
@@ -440,7 +440,7 @@ h3 {
       background-color: $black;
       text-align: center;
       border-radius: 7px;
-      color: $pink;
+      color: white;
       display: flex;
       p {
         margin: 0;
@@ -448,12 +448,12 @@ h3 {
       }
       p:first-child {
         padding-right: 10px;
-        border-right: 3px solid $pink;
+        border-right: 3px solid white;
       }
     }
     .fade-location {
       background-color: #5f5a5a;
-      color: $pink;
+      color: white;
     }
   }
 }
@@ -469,7 +469,7 @@ h3 {
     margin: auto;
     .genre {
       margin: 15px;
-      background-color: $pink;
+      background-color: white;
       text-align: center;
       border-radius: 7px;
       color: $black;
@@ -486,7 +486,7 @@ h3 {
     }
     .fade-genre {
       background-color: rgba(250, 230, 233, 0.3);
-      color: $pink;
+      color: white;
     }
   }
 }

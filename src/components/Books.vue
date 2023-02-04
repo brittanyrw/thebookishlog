@@ -31,7 +31,7 @@
               :alt="`${book.title} book cover`"
               :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
             />
-            <div class="bookmark"></div>
+            <div class="bookmark" :class="book.color"></div>
           </div>
           <div class="text-book-info">
             <h3>{{ book.title }}</h3>
@@ -157,15 +157,111 @@ export default {
   }
 }
 
+.book-cover-img-wrapper {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.bookmark {
+  position: absolute;
+  height: 290px;
+  width: 30px;
+  top: -15px;
+  left: 10px;
+  z-index: -1;
+  border: 2px solid $black;
+  &.red {
+    background: #d31d1d;
+  }
+  &.darkblue {
+    background: #1d5ed3;
+  }
+  &.lightblue {
+    background: #1dadd3;
+  }
+  &.gold {
+    background: #d3a01d;
+  }
+  &.black {
+    background: #3d3b36;
+  }
+  &.purple {
+    background: #6e1dd3;
+  }
+  &.pink {
+    background: #d31d96;
+  }
+  &.green {
+    background: #1a963c;
+  }
+  &.brown {
+    background: #903911;
+  }
+  &.orange {
+    background: #d3721d;
+  }
+}
+
+.book:nth-child(2n + 1) { 
+  .bookmark {
+    width: 40px;
+  }
+}
+.book:nth-child(3n + 2) {
+  .bookmark {
+    width: 40px;
+    border-radius: 5px;
+  }
+}
+.book:nth-child(5n + 3) {
+  .bookmark {
+    width: 40px;
+    border-radius: 20px;
+  }
+}
+.book:nth-child(7n + 5) {
+  .bookmark {
+    width: 40px;
+    border-radius: 20px 20px 0 0;
+  } 
+}
+.book:nth-child(11n + 7) {
+  .bookmark {
+    width: 40px;
+    height: 100px;
+  }
+}
+.book:nth-child(13n + 11) {
+  .bookmark {
+    height: 100px;
+    width: 40px;
+  }
+  .bookmark:before, .bookmark:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 20px;
+    width: 10px;
+    bottom: -188px;
+    transform: rotate(45deg);
+    border: 2px solid black;
+  }
+  .bookmark:before {
+    right: 3px;
+  }
+  .bookmark:after {
+    left: 3px;
+  }
+}
+
+
 .book-cover-img {
   width: auto;
   display: inline-block;
   height: 250px;
-
-  // @media screen and (min-width: 668px) {
-  //   max-height: 300px;
-  //   width: auto;
-  // }
+  box-shadow: 2px 2px white, 4px 4px $black, 6px 6px white, 8px 8px $black, 10px 10px white, 12px 12px $black;
+  border: 2px solid $black;
 }
 
 .read-date {
@@ -181,6 +277,9 @@ export default {
   align-items: flex-start;
   justify-content: center;
   margin-top: 40px;
+  h3 {
+    margin-top: 1.5rem;
+  }
   .read-book-list {
     padding: 20px;
   }
@@ -205,197 +304,6 @@ export default {
       }
       p {
         margin: 5px 0;
-      }
-    }
-  }
-  .current-book-list {
-    padding: 20px;
-    background-color: $black;
-    h2 {
-      color: $pink;
-    }
-    ul {
-      padding: 0;
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: 30px auto;
-      max-width: 1400px;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      @media screen and (min-width: 668px) {
-        grid-template-columns: 1fr 1fr;
-      }
-      @media screen and (min-width: 992px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-      }
-      li {
-        flex-grow: 1;
-        background-color: $pink;
-        margin: 10px;
-        border: 2px solid $pink;
-        -webkit-box-shadow: 5px 5px 0 $pink;
-        box-shadow: 9px 9px 0 $pink;
-        border-radius: 7px;
-        color: $black;
-        outline: 3px solid $black;
-        max-width: 500px;
-        .current-book-info {
-          margin: 0;
-          position: relative;
-          padding: 10px;
-          .progress {
-            font-size: 14px;
-            padding-left: 15px;
-            height: 100%;
-            border-radius: 7px;
-            background-color: rgba(31, 31, 31, 0.3);
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-          }
-          .author-list {
-            &:before {
-              content: ", ";
-            }
-          }
-          .author-list:first-child {
-            &:before {
-              content: "";
-            }
-          }
-          .current-book-title {
-            margin: 0 0 5px 0;
-            font-weight: bold;
-          }
-          .current-book-author {
-            font-size: 14px;
-            margin: 0 0 10px 0;
-          }
-          .current-book-date {
-            margin: 0;
-          }
-        }
-      }
-    }
-  }
-
-  .tbr-book-list {
-    padding: 20px;
-    background-color: $black;
-    h2,
-    h3 {
-      color: $pink;
-    }
-
-    h3 {
-      margin-left: 15px;
-    }
-    .tbr-months {
-      display: grid;
-      grid-template-columns: 1fr;
-
-      @media screen and (min-width: 668px) {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-    }
-    ul {
-      padding: 0;
-      list-style: none;
-      margin: 30px auto;
-      max-width: 1400px;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      li {
-        background-color: $pink;
-        margin: 20px 10px;
-        border: 2px solid $pink;
-        -webkit-box-shadow: 5px 5px 0 $pink;
-        box-shadow: 9px 9px 0 $pink;
-        border-radius: 7px;
-        color: $black;
-        outline: 3px solid $black;
-        max-width: 500px;
-        .tbr-book-info {
-          margin: 0;
-          padding: 10px;
-          .tbr-book-title {
-            margin: 0 0 5px 0;
-            font-weight: bold;
-          }
-          .tbr-book-author {
-            font-size: 14px;
-            margin: 0;
-            font-weight: normal;
-          }
-        }
-      }
-    }
-    .tbr-read {
-      .tbr-book-title,
-      .tbr-book-author {
-        text-decoration: line-through;
-      }
-    }
-  }
-
-  .dnf-book-list {
-    padding: 20px;
-    ul {
-      padding: 0;
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: 30px auto;
-      max-width: 1400px;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      @media screen and (min-width: 668px) {
-        grid-template-columns: 1fr 1fr;
-      }
-      @media screen and (min-width: 992px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-      }
-
-      li {
-        background-color: $black;
-        padding: 10px;
-        margin: 10px;
-        border: 2px solid $black;
-        -webkit-box-shadow: 5px 5px 0 $black;
-        box-shadow: 9px 9px 0 $black;
-        border-radius: 7px;
-        color: $pink;
-        outline: 3px solid $pink;
-        .dnf-book-info {
-          margin: 0;
-          position: relative;
-          padding: 10px;
-          span {
-            font-size: 14px;
-            padding-left: 15px;
-            height: 100%;
-            border-radius: 7px;
-            background-color: rgb(250, 230, 233, 0.3);
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-          }
-          .dnf-book-title {
-            margin: 0 0 5px 0;
-            font-weight: bold;
-          }
-          .dnf-book-author {
-            font-size: 14px;
-            margin: 0 0 10px 0;
-          }
-          .dnf-book-date {
-            margin: 0;
-          }
-        }
       }
     }
   }

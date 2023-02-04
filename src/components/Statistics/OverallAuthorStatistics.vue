@@ -133,7 +133,7 @@ export default {
   background-color: $black;
   padding: 20px;
   h2 {
-    color: $pink;
+    color: white;
     margin: 0;
     margin-bottom: 20px;
   }
@@ -151,7 +151,7 @@ export default {
     .country-stats {
       display: flex;
       padding: 35px 20px 20px 20px;
-      border: 2px solid $pink;
+      border: 2px solid white;
       position: relative;
       flex-wrap: wrap;
       margin-top: 80px;
@@ -165,7 +165,7 @@ export default {
       }
       h3 {
         position: absolute;
-        background-color: #fae6e9;
+        background-color: white;
         color: #1f1f1f;
         padding: 10px;
         text-align: center;
@@ -176,12 +176,12 @@ export default {
       }
     }
     .stat {
-      background-color: $pink;
+      background-color: white;
       text-align: center;
       margin: 10px 10px 40px 10px;
-      border: 2px solid $pink;
-      -webkit-box-shadow: 5px 5px 0 $pink;
-      box-shadow: 9px 9px 0 $pink;
+      border: 2px solid white;
+      -webkit-box-shadow: 5px 5px 0 white;
+      box-shadow: 9px 9px 0 white;
       border-radius: 7px;
       color: $black;
       outline: 3px solid $black;
@@ -205,7 +205,7 @@ export default {
       .stat-percent {
         margin: 0;
         background-color: $black;
-        color: $pink;
+        color: white;
         position: absolute;
         padding: 10px;
         bottom: -40px;
@@ -217,7 +217,7 @@ export default {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        border: 2px solid $pink;
+        border: 2px solid white;
       }
     }
   }
@@ -232,7 +232,7 @@ export default {
   }
   .author-stat-flags {
     display: inline-block;
-    background-color: $pink;
+    background-color: white;
     text-align: center;
     margin: 10px;
     border-radius: 7px;

@@ -44,7 +44,7 @@
 body {
   margin: 0;
   font-family: "Verdana";
-  background-color: $pink;
+  background-color: white;
 }
 nav {
   border-bottom: 7px solid $black;
@@ -89,13 +89,13 @@ nav {
     }
     button:hover {
       background-color: $black;
-      color: $pink;
+      color: white;
       transition: color 1s, background-color 1s;
       cursor: pointer;
     }
     .is-active button {
       background-color: $black;
-      color: $pink;
+      color: white;
     }
   }
   .external-links {
@@ -106,14 +106,14 @@ nav {
     a {
       padding: 5px 10px;
       background-color: $black;
-      color: $pink;
+      color: white;
       text-decoration: none;
       border: 3px solid $black;
       display: block;
       text-align: center;
     }
     a:hover {
-      background-color: $pink;
+      background-color: white;
       color: $black;
       transition: 0.5s;
     }
@@ -145,7 +145,7 @@ h2 {
 
 #main {
   margin: 20px auto;
-  background-color: $pink;
+  background-color: white;
   border: 7px solid $black;
   box-shadow: 10px 10px 0 $black;
   border-radius: 7px 7px 7px 0;

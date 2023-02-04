@@ -132,7 +132,7 @@ export const bookData: Book[] = [
     dateFinished: "02/07/2021",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "red"
   },
   {
     title: "Cinderella Is Dead",
@@ -158,7 +158,7 @@ export const bookData: Book[] = [
     dateFinished: "02/08/2021",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "purple"
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -176,7 +176,7 @@ export const bookData: Book[] = [
     dateFinished: "02/09/2021",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "red"
   },
   {
     title: "The Year of the Witching",
@@ -202,7 +202,7 @@ export const bookData: Book[] = [
     dateFinished: "02/11/2021",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "gold"
   },
   {
     title: "Monday's Not Coming",
@@ -220,7 +220,7 @@ export const bookData: Book[] = [
     dateFinished: "02/12/2021",
     progress: "finished",
     fav: true,
-    color: ""
+    color: "red"
   },
   {
     title: "Full Disclosure",
@@ -238,7 +238,7 @@ export const bookData: Book[] = [
     dateFinished: "02/14/2021",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "darkblue"
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -256,7 +256,7 @@ export const bookData: Book[] = [
     dateFinished: "02/20/2021",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "lightblue"
   },
   {
     title: "Gods of Jade and Shadow",
@@ -274,7 +274,7 @@ export const bookData: Book[] = [
     dateFinished: "05/01/2021",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "purple"
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -291,7 +291,7 @@ export const bookData: Book[] = [
     dateStarted: "08/09/2021",
     dateFinished: "08/23/2021",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: false
   },
   {
@@ -309,7 +309,7 @@ export const bookData: Book[] = [
     dateStarted: "08/23/2021",
     dateFinished: "08/24/2021",
     progress: "finished",
-    color: "",
+    color: "pink",
     fav: false
   },
   {
@@ -334,7 +334,7 @@ export const bookData: Book[] = [
     dateStarted: "08/24/2021",
     dateFinished: "08/27/2021",
     progress: "finished",
-    color: "",
+    color: "black",
     fav: true
   },
   {
@@ -352,7 +352,7 @@ export const bookData: Book[] = [
     dateStarted: "08/27/2021",
     dateFinished: "08/29/2021",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: false
   },
   {
@@ -377,7 +377,7 @@ export const bookData: Book[] = [
     dateStarted: "08/29/2021",
     dateFinished: "09/13/2021",
     progress: "finished",
-    color: "",
+    color: "darkblue",
     fav: true
   },
   {
@@ -395,7 +395,7 @@ export const bookData: Book[] = [
     dateStarted: "09/13/2021",
     dateFinished: "09/19/2021",
     progress: "finished",
-    color: "",
+    color: "purple",
     fav: false
   },
   {
@@ -413,7 +413,7 @@ export const bookData: Book[] = [
     dateStarted: "09/22/2021",
     dateFinished: "09/24/2021",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: false
   },
   {
@@ -433,7 +433,7 @@ export const bookData: Book[] = [
     dateStarted: "09/24/2021",
     dateFinished: "06/18/2022",
     progress: "finished",
-    color: "",
+    color: "green",
     fav: false
   },
   {
@@ -451,7 +451,7 @@ export const bookData: Book[] = [
     dateStarted: "06/16/2022",
     dateFinished: "06/17/2022",
     progress: "finished",
-    color: "",
+    color: "gold",
     fav: true
   },
   {
@@ -469,7 +469,7 @@ export const bookData: Book[] = [
     dateStarted: "09/30/2021",
     dateFinished: "10/03/2021",
     progress: "finished",
-    color: "",
+    color: "pink",
     fav: false
   },
   {
@@ -495,7 +495,7 @@ export const bookData: Book[] = [
     dateFinished: "10/12/2021",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "purple"
   },
   {
     title: "Crier's War",
@@ -512,7 +512,7 @@ export const bookData: Book[] = [
     dateStarted: "10/05/2021",
     dateFinished: "10/16/2021",
     progress: "finished",
-    color: "",
+    color: "gold",
     fav: false
   },
   {
@@ -537,7 +537,7 @@ export const bookData: Book[] = [
     dateStarted: "10/17/2021",
     dateFinished: "07/17/2022",
     progress: "finished",
-    color: "",
+    color: "black",
     fav: false
   },
   {
@@ -563,7 +563,7 @@ export const bookData: Book[] = [
     dateStarted: "10/16/2021",
     dateFinished: "10/22/2021",
     progress: "finished",
-    color: "",
+    color: "brown",
     fav: false
   },
   {
@@ -581,7 +581,7 @@ export const bookData: Book[] = [
     dateStarted: "06/18/2022",
     dateFinished: "06/19/2022",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: false
   },
   {
@@ -599,7 +599,7 @@ export const bookData: Book[] = [
     dateStarted: "06/20/2022",
     dateFinished: "06/28/2022",
     progress: "finished",
-    color: "",
+    color: "purple",
     fav: false
   },
   {
@@ -628,7 +628,7 @@ export const bookData: Book[] = [
     dateStarted: "07/07/2022",
     dateFinished: "07/09/2022",
     progress: "finished",
-    color: "",
+    color: "gold",
     fav: true
   },
   {
@@ -654,7 +654,7 @@ export const bookData: Book[] = [
     dateStarted: "07/09/2022",
     dateFinished: "07/10/2022",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: false
   },
   {
@@ -680,7 +680,7 @@ export const bookData: Book[] = [
     dateStarted: "07/13/2022",
     dateFinished: "07/16/2022",
     progress: "finished",
-    color: "",
+    color: "orange",
     fav: false
   },
   {
@@ -704,7 +704,7 @@ export const bookData: Book[] = [
     dateStarted: "07/16/2022",
     dateFinished: "07/16/2022",
     progress: "finished",
-    color: "",
+    color: "brown",
     fav: false
   },
   {
@@ -723,7 +723,7 @@ export const bookData: Book[] = [
     dateFinished: "07/19/2022",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "green"
   },
   {
     title: "This Wicked Fate",
@@ -741,7 +741,7 @@ export const bookData: Book[] = [
     dateFinished: "07/27/2022",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "purple"
   },
   {
     title: "The Poppy War",
@@ -759,7 +759,7 @@ export const bookData: Book[] = [
     dateFinished: "07/30/2022",
     progress: "finished",
     fav: true,
-    color: ""
+    color: "red"
   },
   {
     title: "The Dragon Republic",
@@ -777,7 +777,7 @@ export const bookData: Book[] = [
     dateFinished: "08/01/2022",
     progress: "finished",
     fav: true,
-    color: ""
+    color: "darkblue"
   },
   {
     title: "The Burning God",
@@ -795,7 +795,7 @@ export const bookData: Book[] = [
     dateFinished: "08/04/2022",
     progress: "finished",
     fav: true,
-    color: ""
+    color: "purple"
   },
   {
     title: "The Gilded Ones",
@@ -813,7 +813,7 @@ export const bookData: Book[] = [
     dateFinished: "08/13/2022",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "gold"
   },
   {
     title: "The Unkindness of Ghosts",
@@ -831,7 +831,7 @@ export const bookData: Book[] = [
     dateFinished: "08/16/2022",
     progress: "finished",
     fav: false,
-    color: ""
+    color: "darkblue"
   },
   {
     title: "Kindred",
@@ -856,7 +856,7 @@ export const bookData: Book[] = [
     dateStarted: "08/18/2022",
     dateFinished: "08/20/2022",
     progress: "finished",
-    color: "",
+    color: "black",
     fav: true
   },
   {
@@ -874,7 +874,7 @@ export const bookData: Book[] = [
     dateStarted: "08/20/2022",
     dateFinished: "09/02/2022",
     progress: "finished",
-    color: "",
+    color: "brown",
     fav: false
   },
   {
@@ -898,7 +898,7 @@ export const bookData: Book[] = [
     dateStarted: "09/03/2022",
     dateFinished: "09/03/2022",
     progress: "finished",
-    color: "",
+    color: "darkblue",
     fav: false
   },
   {
@@ -922,7 +922,7 @@ export const bookData: Book[] = [
     dateStarted: "09/03/2022",
     dateFinished: "09/04/2022",
     progress: "finished",
-    color: "",
+    color: "gold",
     fav: false
   },
   {
@@ -948,7 +948,7 @@ export const bookData: Book[] = [
     dateStarted: "09/05/2022",
     dateFinished: "09/22/2022",
     progress: "finished",
-    color: "",
+    color: "black",
     fav: false
   },
   {
@@ -966,7 +966,7 @@ export const bookData: Book[] = [
     dateStarted: "10/07/2022",
     dateFinished: "10/09/2022",
     progress: "finished",
-    color: "",
+    color: "lightblue",
     fav: true
   },
   {
@@ -984,7 +984,7 @@ export const bookData: Book[] = [
     dateStarted: "12/01/2022",
     dateFinished: "12/11/2022",
     progress: "finished",
-    color: "",
+    color: "pink",
     fav: false
   },
   {
@@ -1010,7 +1010,7 @@ export const bookData: Book[] = [
     dateStarted: "12/14/2022",
     dateFinished: "12/15/2022",
     progress: "finished",
-    color: "",
+    color: "black",
     fav: false
   },
   {
@@ -1028,7 +1028,7 @@ export const bookData: Book[] = [
     dateStarted: "12/11/2022",
     dateFinished: "12/12/2022",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: false
   },
   {
@@ -1052,7 +1052,7 @@ export const bookData: Book[] = [
     dateStarted: "12/13/2022",
     dateFinished: "12/14/2022",
     progress: "finished",
-    color: "",
+    color: "black",
     fav: true
   },
   {
@@ -1070,7 +1070,7 @@ export const bookData: Book[] = [
     dateStarted: "12/15/2022",
     dateFinished: "12/16/2022",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: false
   },
   {
@@ -1088,7 +1088,7 @@ export const bookData: Book[] = [
     dateStarted: "12/17/2022",
     dateFinished: "12/21/2022",
     progress: "finished",
-    color: "",
+    color: "green",
     fav: false
   },
   {
@@ -1123,7 +1123,7 @@ export const bookData: Book[] = [
     dateStarted: "12/22/2022",
     dateFinished: "12/24/2022",
     progress: "finished",
-    color: "",
+    color: "purple",
     fav: false
   },
   {
@@ -1149,7 +1149,7 @@ export const bookData: Book[] = [
     dateStarted: "12/24/2022",
     dateFinished: "12/28/2022",
     progress: "finished",
-    color: "",
+    color: "darkblue",
     fav: false
   },
   {
@@ -1174,7 +1174,7 @@ export const bookData: Book[] = [
     dateStarted: "12/28/2022",
     dateFinished: "12/30/2022",
     progress: "finished",
-    color: "",
+    color: "lightblue",
     fav: false
   },
   {
@@ -1202,7 +1202,7 @@ export const bookData: Book[] = [
     dateFinished: "01/05/2023",
     progress: "finished",
     fav: true,
-    color: ""
+    color: "gold"
   },
   {
     title: "The World We Make",
@@ -1227,7 +1227,7 @@ export const bookData: Book[] = [
     dateStarted: "01/08/2023",
     dateFinished: "01/12/2023",
     progress: "finished",
-    color: "",
+    color: "black",
     fav: false
   },
   {
@@ -1245,7 +1245,7 @@ export const bookData: Book[] = [
     dateStarted: "01/03/2023",
     dateFinished: "01/08/2023",
     progress: "finished",
-    color: "",
+    color: "darkblue",
     fav: false
   },
   {
@@ -1263,7 +1263,7 @@ export const bookData: Book[] = [
     dateStarted: "01/13/2023",
     dateFinished: "01/15/2023",
     progress: "finished",
-    color: "",
+    color: "gold",
     fav: false
   },
   {
@@ -1281,7 +1281,7 @@ export const bookData: Book[] = [
     dateStarted: "01/15/2023",
     dateFinished: "01/25/2023",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: false
   },
   {
@@ -1308,7 +1308,7 @@ export const bookData: Book[] = [
     dateStarted: "01/15/2023",
     dateFinished: "01/25/2023",
     progress: "finished",
-    color: "",
+    color: "red",
     fav: true
   }
 ];
