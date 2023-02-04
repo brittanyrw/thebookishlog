@@ -25,11 +25,14 @@
             { audio: book.medium == 'Audio' }
           ]"
         >
-          <img
-            class="book-cover-img"
-            :alt="`${book.title} book cover`"
-            :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
-          />
+          <div class="book-cover-img-wrapper">
+            <img
+              class="book-cover-img"
+              :alt="`${book.title} book cover`"
+              :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+            />
+            <div class="bookmark"></div>
+          </div>
           <div class="text-book-info">
             <h3>{{ book.title }}</h3>
             <p class="author">{{ book.author.join(", ") }}</p>
