@@ -492,7 +492,7 @@ h3 {
       }
       p:first-child {
         padding-right: 10px;
-        border-right: 3px solid white;
+        border-right: 3px solid #1d5ed3;
       }
     }
     .fade-location {
@@ -529,7 +529,6 @@ h3 {
       }
       p:first-child {
         padding-right: 10px;
-
         border-right: 3px solid #1d5ed3;
       }
     }

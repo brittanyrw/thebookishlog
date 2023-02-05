@@ -56,7 +56,6 @@
         </p>
       </div>
       <div class="country-stats">
-        <h3>Countries</h3>
         <ul>
           <li
             v-for="(countryAmount, countryCode) in countArray(authorCountries)"
@@ -152,7 +151,6 @@ export default {
     .country-stats {
       display: flex;
       padding: 35px 20px 20px 20px;
-      border: 2px solid white;
       position: relative;
       flex-wrap: wrap;
       margin-top: 80px;
