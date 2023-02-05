@@ -26,4 +26,5 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap");
 </style>

@@ -26,17 +26,6 @@
     <ul class="authors" v-show="toggle === 'no' && favToggle === 'no'">
       <li class="author" v-for="(author, index) in sortedAuthors" :key="index">
         <div class="author-name">
-          <h3>
-            {{ author.name }}
-            <img
-              v-if="author.fav"
-              class="author-fav-star"
-              alt="Favorite Author"
-              :src="require('@/assets/imgs/star.svg')"
-            />
-          </h3>
-        </div>
-        <div class="author-imgs">
           <div class="author-img-wrapper">
             <img
               v-if="author.image != false"
@@ -51,6 +40,36 @@
               :src="require('@/assets/imgs/placeholder-author.png')"
             />
           </div>
+          <div class="author-info">
+            <h3>
+              <a
+                :href="`https://${author.website}`"
+                target="_blank"
+                class="author-website"
+                >{{ author.name }}</a
+              >
+              <img
+                v-if="author.fav"
+                class="author-fav-star"
+                alt="Favorite Author"
+                :src="require('@/assets/imgs/star.svg')"
+              />
+            </h3>
+
+            <div class="author-stats">
+              <span class="book-number">{{ author.books.length }}</span>
+              <span v-if="author.lgbt" class="lgbt">🏳️‍🌈</span>
+              <span
+                class="flag"
+                v-for="(country, index) in author.country"
+                :key="index"
+              >
+                {{ flagEmoji(country.code) }}
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="author-imgs">
           <div class="author-books">
             <img
               v-for="(book, index) in author.books"
@@ -60,47 +79,12 @@
               :src="require(`@/assets/imgs/${slug(book)}.png`)"
             />
           </div>
-        </div>
-        <div class="author-info">
-          <div class="author-stats">
-            <span class="book-number">{{ author.books.length }}</span>
-            <img
-              v-if="author.lgbt"
-              class="lgbt"
-              alt="lgbt rainbow heart"
-              :src="require('@/assets/imgs/lgbtqa-heart.png')"
-            />
-            <span
-              class="flag"
-              v-for="(country, index) in author.country"
-              :key="index"
-            >
-              {{ flagEmoji(country.code) }}
-            </span>
-          </div>
-          <a
-            :href="`https://${author.website}`"
-            target="_blank"
-            class="author-website"
-            >{{ author.website }}</a
-          >
         </div>
       </li>
     </ul>
     <ul class="authors" v-show="favToggle === 'yes'">
       <li class="author" v-for="(author, index) in favAuthors" :key="index">
         <div class="author-name">
-          <h3>
-            {{ author.name }}
-            <img
-              v-if="author.fav"
-              class="author-fav-star"
-              alt="Favorite Author"
-              :src="require('@/assets/imgs/star.svg')"
-            />
-          </h3>
-        </div>
-        <div class="author-imgs">
           <div class="author-img-wrapper">
             <img
               v-if="author.image != false"
@@ -115,6 +99,36 @@
               :src="require('@/assets/imgs/placeholder-author.png')"
             />
           </div>
+          <div class="author-info">
+            <h3>
+              <a
+                :href="`https://${author.website}`"
+                target="_blank"
+                class="author-website"
+                >{{ author.name }}</a
+              >
+              <img
+                v-if="author.fav"
+                class="author-fav-star"
+                alt="Favorite Author"
+                :src="require('@/assets/imgs/star.svg')"
+              />
+            </h3>
+
+            <div class="author-stats">
+              <span class="book-number">{{ author.books.length }}</span>
+              <span v-if="author.lgbt" class="lgbt">🏳️‍🌈</span>
+              <span
+                class="flag"
+                v-for="(country, index) in author.country"
+                :key="index"
+              >
+                {{ flagEmoji(country.code) }}
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="author-imgs">
           <div class="author-books">
             <img
               v-for="(book, index) in author.books"
@@ -124,30 +138,6 @@
               :src="require(`@/assets/imgs/${slug(book)}.png`)"
             />
           </div>
-        </div>
-        <div class="author-info">
-          <div class="author-stats">
-            <span class="book-number">{{ author.books.length }}</span>
-            <img
-              v-if="author.lgbt"
-              class="lgbt"
-              alt="lgbt rainbow heart"
-              :src="require('@/assets/imgs/lgbtqa-heart.png')"
-            />
-            <span
-              class="flag"
-              v-for="(country, index) in author.country"
-              :key="index"
-            >
-              {{ flagEmoji(country.code) }}
-            </span>
-          </div>
-          <a
-            :href="`https://${author.website}`"
-            target="_blank"
-            class="author-website"
-            >{{ author.website }}</a
-          >
         </div>
       </li>
     </ul>
@@ -226,127 +216,80 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     .author {
-      border: 5px solid $black;
-      display: block;
-      margin: 10px auto;
-      border-radius: 7px;
-      width: 100%;
       flex-grow: 1;
-      @media screen and (min-width: 668px) {
-        margin: 10px;
-        width: auto;
-      }
+      border: 2px solid $black;
+      margin: 10px;
       .author-name {
-        color: white;
-        text-align: center;
-        padding: 20px;
-        background-color: $black;
-        position: relative;
+        border-bottom: 2px solid $black;
+        display: flex;
         h3 {
           margin: 0;
-          .author-fav-star {
-            position: absolute;
-            height: 30px;
-            top: 14px;
-            margin-left: 5px;
+          padding: 10px;
+          .author-website {
+            color: $black;
+            text-decoration: none;
           }
         }
-      }
-      .author-imgs {
-        @media screen and (min-width: 668px) {
+        .author-info {
           display: flex;
-        }
-      }
-      .author-stats {
-        display: flex;
-        align-items: center;
-      }
-      .author-img-wrapper {
-        height: 260px;
-        border-bottom: 5px solid $black;
-        overflow: hidden;
-        position: relative;
-        @media screen and (min-width: 668px) {
-          width: 200px;
-          height: 200px;
-          border-right: 5px solid $black;
-          border-bottom: none;
-        }
-        .author-img {
+          flex-direction: column;
+          justify-content: space-between;
           width: 100%;
         }
       }
-      .author-info {
-        background-color: $black;
-        padding: 0 10px 5px 10px;
-        @media screen and (min-width: 668px) {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        .author-stats {
-          justify-content: center;
-        }
-        .book-number {
-          background-color: white;
-          border-radius: 50%;
-          height: 40px;
-          width: 40px;
-          border: 4px solid $black;
-          font-weight: bold;
-          font-size: 22px;
-          color: $black;
-          display: flex;
-          justify-content: center;
-          margin-right: 5px;
-          margin-top: 5px;
-        }
-        .lgbt {
-          margin-top: 10px;
-          height: 35px;
-          margin-right: 5px;
-        }
-        .flag {
-          font-size: 40px;
-          margin-top: 10px;
-        }
-        .author-website {
-          text-decoration: none;
-          color: white;
-          font-size: 14px;
-          display: block;
-          margin: auto;
-          text-align: center;
-          @media screen and (min-width: 668px) {
-            display: inline-block;
-            text-align: right;
-            margin: 0;
-          }
+      .author-img-wrapper {
+        height: 130px;
+        width: 130px;
+        .author-img {
+          object-fit: cover;
+          width: 130px;
+          height: 130px;
+          overflow: hidden;
+          border-right: 2px solid $black;
         }
       }
       .author-books {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        margin: auto;
-        min-width: 132px;
-        justify-content: center;
-        flex-wrap: wrap;
+        text-align: center;
         .author-book-img {
-          height: 150px;
-          margin-right: 20px;
+          height: 100px;
+          margin: 10px;
+          border: 1px solid $black;
         }
-        .author-book-img:last-child {
-          margin-right: 0;
+      }
+      .author-stats {
+        position: relative;
+        padding: 10px;
+        .book-number {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          border-top: 2px solid;
+          border-left: 2px solid;
+          padding: 5px;
         }
+      }
+      .author-fav-star {
+        height: 20px;
+        margin-left: 5px;
+      }
+      .flag,
+      .lgbt {
+        font-size: 30px;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      .author:first-child {
+        width: 48%;
       }
     }
     .author:last-child,
-    .author:nth-last-child(2) {
-      flex-grow: unset;
+    .author:nth-last-child(2),
+    .author:nth-last-child(3) {
+      flex-grow: 0;
     }
   }
 }
+
 .author-grid {
   display: flex;
   justify-content: center;
@@ -354,12 +297,19 @@ export default {
   padding: 0;
   list-style: none;
   .author-grid-item {
-    width: 150px;
-    height: 150px;
     overflow: hidden;
+    height: 60px;
+    width: 60px;
+    @media screen and (min-width: 668px) {
+      width: 150px;
+      height: 150px;
+    }
     img {
       width: 100%;
-      min-height: 150px;
+      min-height: 60px;
+      @media screen and (min-width: 668px) {
+        min-height: 150px;
+      }
     }
   }
 }

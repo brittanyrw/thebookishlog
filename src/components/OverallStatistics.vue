@@ -5,53 +5,42 @@
         <section class="numbers">
           <h2>Other Numbers</h2>
           <div class="age">
-            <div class="stats-wrapper">
-              <h3>Age</h3>
-              <div class="stat">
-                <p class="stat-number">{{ valueCount("age", "Adult") }}</p>
-                <p class="stat-title">Adult</p>
-              </div>
-              <div class="stat">
-                <p class="stat-number">
-                  {{ valueCount("age", "Young Adult") }}
-                </p>
-                <p class="stat-title">Young Adult</p>
-              </div>
-              <div class="stat">
-                <p class="stat-number">
-                  {{ valueCount("age", "Middle Grade") }}
-                </p>
-                <p class="stat-title">Middle Grade</p>
-              </div>
-              <div class="stat">
-                <p class="stat-number">
-                  {{ valueCount("age", "Childrens") }}
-                </p>
-                <p class="stat-title">Children's</p>
-              </div>
+            <div class="stat blue">
+              <p class="stat-number">{{ valueCount("age", "Adult") }}</p>
+              <p class="stat-title">Adult</p>
             </div>
-            <div class="stats-wrapper">
-              <h3>Medium</h3>
-              <div class="stat">
-                <p class="stat-number">
-                  {{ valueCount("medium", "Physical") }}
-                </p>
-                <p class="stat-title">Physical Books</p>
-              </div>
-              <div class="stat">
-                <p class="stat-number">{{ valueCount("medium", "E-Book") }}</p>
-                <p class="stat-title">E-Books</p>
-              </div>
-              <div class="stat">
-                <p class="stat-number">{{ valueCount("medium", "Audio") }}</p>
-                <p class="stat-title">Audio Books</p>
-              </div>
-              <div class="stat">
-                <p class="stat-number">
-                  {{ valueCount("medium", "Physical and Audio") }}
-                </p>
-                <p class="stat-title">Both Physical & Audio</p>
-              </div>
+            <div class="stat red">
+              <p class="stat-number">
+                {{ valueCount("age", "Young Adult") }}
+              </p>
+              <p class="stat-title">Young Adult</p>
+            </div>
+            <div class="stat purple">
+              <p class="stat-number">
+                {{ valueCount("age", "Middle Grade") }}
+              </p>
+              <p class="stat-title">Middle Grade</p>
+            </div>
+
+            <div class="stat orange">
+              <p class="stat-number">
+                {{ valueCount("medium", "Physical") }}
+              </p>
+              <p class="stat-title">Physical Books</p>
+            </div>
+            <div class="stat gold">
+              <p class="stat-number">{{ valueCount("medium", "E-Book") }}</p>
+              <p class="stat-title">E-Books</p>
+            </div>
+            <div class="stat green">
+              <p class="stat-number">{{ valueCount("medium", "Audio") }}</p>
+              <p class="stat-title">Audio Books</p>
+            </div>
+            <div class="stat lightblue">
+              <p class="stat-number">
+                {{ valueCount("medium", "Physical and Audio") }}
+              </p>
+              <p class="stat-title">Physical & Audio</p>
             </div>
           </div>
         </section>
@@ -142,7 +131,7 @@
                 v-for="(genreAmount, genre) in count(listGenres)"
                 :key="genre"
                 class="genre"
-                :class="[{ 'fade-genre': genreAmount < 3 }]"
+                :class="[{ 'fade-genre': genreAmount < 2 }]"
               >
                 <p class="">{{ genre }}</p>
                 <p class="">{{ genreAmount }}</p>
@@ -157,8 +146,8 @@
               <li
                 v-for="(settingAmount, setting) in count(listSettings)"
                 :key="setting"
-                class="location"
-                :class="[{ 'fade-location': settingAmount < 2 }]"
+                class="genre"
+                :class="[{ 'fade-genre': settingAmount < 2 }]"
               >
                 <p class="">{{ setting }}</p>
                 <p class="">{{ settingAmount }}</p>
@@ -167,7 +156,7 @@
           </div>
         </div>
         <div class="genres">
-          <div class="genre-list">
+          <div class="genre-list narrators">
             <h2>Audiobook Narrators</h2>
             <ul>
               <li
@@ -328,7 +317,7 @@ h3 {
     h3 {
       position: absolute;
       background-color: white;
-      color: #1f1f1f;
+      color: $black;
       padding: 10px;
       text-align: center;
       z-index: 1;
@@ -355,7 +344,6 @@ h3 {
 
 .shortest-book {
   max-width: 250px;
-  margin-right: 10px;
 }
 
 .longest-book-wrapper {
@@ -374,7 +362,10 @@ h3 {
     flex-wrap: wrap;
     li {
       margin: 0 10px;
-      width: 150px;
+      width: 100px;
+      @media screen and (min-width: 668px) {
+        width: 150px;
+      }
     }
     .book p {
       margin: 10px auto;
@@ -382,19 +373,22 @@ h3 {
   }
 }
 
-// .long-book {
-//   margin-right: 10px;
-// }
-
 .book-cover-img {
   width: auto;
   height: 150px;
 }
 
 .numbers,
-.genres {
+.genres,
+.setting {
   background-color: $black;
   color: white;
+  border-left: 2px solid white;
+}
+
+.setting {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .length,
@@ -420,17 +414,53 @@ h3 {
   margin: auto;
   padding: 35px;
   .stat {
-    background-color: white;
+    background-color: $black;
     padding: 15px;
     text-align: center;
     margin: 10px;
-    border: 2px solid white;
-    -webkit-box-shadow: 5px 5px 0 white;
-    box-shadow: 9px 9px 0 white;
     border-radius: 7px;
-    color: $black;
-    outline: 3px solid $black;
     flex-grow: 1;
+    color: white;
+    &.blue {
+      box-shadow: #1d5ed3 2px 2px, $black 4px 4px, #1d5ed3 6px 6px,
+        $black 8px 8px, #1d5ed3 10px 10px;
+      border: 2px solid #1d5ed3;
+    }
+    &.green {
+      box-shadow: #1a963c 2px 2px, $black 4px 4px, #1a963c 6px 6px,
+        $black 8px 8px, #1a963c 10px 10px;
+      border: 2px solid #1a963c;
+    }
+    &.red {
+      box-shadow: #d31d1d 2px 2px, $black 4px 4px, #d31d1d 6px 6px,
+        $black 8px 8px, #d31d1d 10px 10px;
+      border: 2px solid #d31d1d;
+    }
+    &.purple {
+      box-shadow: #6e1dd3 2px 2px, $black 4px 4px, #6e1dd3 6px 6px,
+        $black 8px 8px, #6e1dd3 10px 10px;
+      border: 2px solid #6e1dd3;
+    }
+    &.gold {
+      box-shadow: #d3a01d 2px 2px, $black 4px 4px, #d3a01d 6px 6px,
+        $black 8px 8px, #d3a01d 10px 10px;
+      border: 2px solid #e0b549;
+    }
+    &.orange {
+      box-shadow: #d3721d 2px 2px, $black 4px 4px, #d3721d 6px 6px,
+        $black 8px 8px, #d3721d 10px 10px;
+      border: 2px solid #d3721d;
+    }
+    &.lightblue {
+      box-shadow: $black 2px 2px, #1dadd3 4px 4px, $black 6px 6px,
+        #1dadd3 8px 8px, $black 10px 10px;
+      border: 2px solid #1dadd3;
+    }
+    &.pink {
+      box-shadow: $black 2px 2px, #d31d96 4px 4px, $black 6px 6px,
+        #d31d96 8px 8px, $black 10px 10px;
+      border: 2px solid #d31d96;
+    }
     @media screen and (min-width: 922px) {
       flex-grow: 0;
     }
@@ -449,7 +479,7 @@ h3 {
 }
 
 .setting {
-  padding: 35px;
+  padding: 20px;
   .setting-list ul {
     display: flex;
     flex-wrap: wrap;
@@ -458,39 +488,7 @@ h3 {
     max-width: 1300px;
     margin: auto;
     .location {
-      margin: 15px;
-      background-color: $black;
-      text-align: center;
-      border-radius: 7px;
-      color: white;
-      display: flex;
-      p {
-        margin: 0;
-        padding: 10px;
-      }
-      p:first-child {
-        padding-right: 10px;
-        border-right: 3px solid white;
-      }
-    }
-    .fade-location {
-      background-color: #5f5a5a;
-      color: white;
-    }
-  }
-}
-
-.genres {
-  padding: 35px;
-  .genre-list ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 1300px;
-    margin: auto;
-    .genre {
-      margin: 15px;
+      margin: 10px;
       background-color: white;
       text-align: center;
       border-radius: 7px;
@@ -502,13 +500,115 @@ h3 {
       }
       p:first-child {
         padding-right: 10px;
-
-        border-right: 3px solid $black;
+        border-right: 3px solid #1d5ed3;
       }
     }
-    .fade-genre {
-      background-color: rgba(250, 230, 233, 0.3);
+    .fade-location {
+      background-color: #5f5a5a;
       color: white;
+    }
+  }
+}
+
+.genres,
+.setting {
+  padding: 20px;
+  .genre-list ul,
+  .setting-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: auto;
+    .genre,
+    .location {
+      margin: 10px;
+      background-color: $black;
+      text-align: center;
+      border-radius: 7px;
+      color: white;
+      display: flex;
+      box-shadow: $black 2px 2px, #1d5ed3 4px 4px, $black 6px 6px;
+      border: 2px solid #1d5ed3;
+      p {
+        margin: 0;
+        padding: 10px;
+      }
+      p:first-child {
+        padding-right: 10px;
+        border-right: 3px solid #1d5ed3;
+      }
+    }
+    .genre:nth-child(2n + 1),
+    .location:nth-child(2n + 1) {
+      box-shadow: $black 2px 2px, #6e1dd3 4px 4px, $black 6px 6px;
+      border: 2px solid #6e1dd3;
+      p:first-child {
+        border-color: #6e1dd3 !important;
+      }
+    }
+    .genre:nth-child(3n + 2),
+    .location:nth-child(3n + 2) {
+      box-shadow: $black 2px 2px, #1a963c 4px 4px, $black 6px 6px;
+      border: 2px solid #1a963c;
+      p:first-child {
+        border-color: #1a963c !important;
+      }
+    }
+    .genre:nth-child(5n + 3),
+    .location:nth-child(5n + 3) {
+      box-shadow: $black 2px 2px, #d31d96 4px 4px, $black 6px 6px;
+      border: 2px solid #d31d96;
+      p:first-child {
+        border-color: #d31d96 !important;
+      }
+    }
+    .genre:nth-child(7n + 5),
+    .location:nth-child(7n + 5) {
+      box-shadow: $black 2px 2px, #d3a01d 4px 4px, $black 6px 6px;
+      border: 2px solid #d3a01d;
+      p:first-child {
+        border-color: #d3a01d !important;
+      }
+    }
+    .genre:nth-child(11n + 7),
+    .location:nth-child(11n + 7) {
+      box-shadow: $black 2px 2px, #d31d1d 4px 4px, $black 6px 6px;
+      border: 2px solid #d31d1d;
+      p:first-child {
+        border-color: #d31d1d !important;
+      }
+    }
+    .genre:nth-child(13n + 11),
+    .location:nth-child(13n + 11) {
+      box-shadow: $black 2px 2px, #1dadd3 4px 4px, $black 6px 6px;
+      border: 2px solid #1dadd3;
+      p:first-child {
+        border-color: #1dadd3 !important;
+      }
+    }
+    .fade-genre,
+    .fade-location,
+    .fade-genre:nth-child(2n + 1),
+    .fade-location:nth-child(2n + 1),
+    .fade-genre:nth-child(3n + 2),
+    .fade-location:nth-child(3n + 2),
+    .fade-genre:nth-child(7n + 5),
+    .fade-location:nth-child(7n + 5),
+    .fade-genre:nth-child(5n + 3),
+    .fade-location:nth-child(5n + 3),
+    .fade-genre:nth-child(11n + 7),
+    .fade-location:nth-child(11n + 7),
+    .fade-genre:nth-child(13n + 11),
+    .fade-location:nth-child(13n + 11) {
+      background-color: $black !important;
+      color: #aea5a5 !important;
+      box-shadow: $black 2px 2px, #aea5a5 4px 4px, $black 6px 6px !important;
+      border: 2px solid #aea5a5 !important;
+      p:first-child {
+        border-color: #aea5a5 !important;
+      }
     }
   }
 }
