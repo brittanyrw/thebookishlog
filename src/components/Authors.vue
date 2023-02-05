@@ -277,12 +277,14 @@ export default {
         font-size: 30px;
       }
     }
-    @media screen and (min-width: 992px) { 
+    @media screen and (min-width: 992px) {
       .author:first-child {
         width: 48%;
       }
     }
-    .author:last-child, .author:nth-last-child(2),.author:nth-last-child(3) {
+    .author:last-child,
+    .author:nth-last-child(2),
+    .author:nth-last-child(3) {
       flex-grow: 0;
     }
   }
@@ -295,12 +297,19 @@ export default {
   padding: 0;
   list-style: none;
   .author-grid-item {
-    width: 150px;
-    height: 150px;
     overflow: hidden;
+    height: 60px;
+    width: 60px;
+    @media screen and (min-width: 668px) {
+      width: 150px;
+      height: 150px;
+    }
     img {
       width: 100%;
-      min-height: 150px;
+      min-height: 60px;
+      @media screen and (min-width: 668px) {
+        min-height: 150px;
+      }
     }
   }
 }

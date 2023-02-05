@@ -144,13 +144,16 @@ h2 {
 }
 
 #main {
-  margin: 20px auto;
+  margin: 20px;
   background-color: white;
   border: 2px solid $black;
   box-shadow: 2px 2px white, 4px 4px $black, 6px 6px white, 8px 8px $black,
     10px 10px white, 12px 12px $black;
   border-radius: 7px 7px 7px 0;
   max-width: 1300px;
+  @media screen and (min-width: 668px) {
+    margin: 20px auto;
+  }
   @media screen and (min-width: 992px) {
     margin: 50px auto;
   }

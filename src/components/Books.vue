@@ -256,10 +256,19 @@ export default {
     flex-wrap: wrap;
     .grid-book {
       margin: 0;
-      width: 170px;
+      width: 69px;
       .book-cover-img {
         box-shadow: none;
         border: none;
+        height: 100px;
+      }
+    }
+    @media screen and (min-width: 992px) {
+      .grid-book {
+        width: 170px;
+        .book-cover-img {
+          height: 250px;
+        }
       }
     }
     .text-book {
@@ -279,11 +288,16 @@ export default {
 
   .book {
     text-align: center;
-    width: 48%;
+    width: 100%;
     position: relative;
     margin-right: 10px;
     margin-bottom: 40px;
-    @media screen and (min-width: 668px) {
+
+    // @media screen and (min-width: 992px) {
+    //   width: 48%;
+  }
+  @media screen and (min-width: 668px) {
+    .book {
       width: 230px;
     }
   }

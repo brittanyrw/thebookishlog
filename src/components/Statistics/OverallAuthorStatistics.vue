@@ -153,7 +153,6 @@ export default {
       padding: 35px 20px 20px 20px;
       position: relative;
       flex-wrap: wrap;
-      margin-top: 80px;
       margin-bottom: 40px;
       align-items: center;
       flex-grow: 1;

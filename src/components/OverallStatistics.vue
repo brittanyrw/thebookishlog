@@ -131,7 +131,7 @@
                 v-for="(genreAmount, genre) in count(listGenres)"
                 :key="genre"
                 class="genre"
-                :class="[{ 'fade-genre': genreAmount < 3 }]"
+                :class="[{ 'fade-genre': genreAmount < 2 }]"
               >
                 <p class="">{{ genre }}</p>
                 <p class="">{{ genreAmount }}</p>
@@ -156,7 +156,7 @@
           </div>
         </div>
         <div class="genres">
-          <div class="genre-list">
+          <div class="genre-list narrators">
             <h2>Audiobook Narrators</h2>
             <ul>
               <li
@@ -344,7 +344,6 @@ h3 {
 
 .shortest-book {
   max-width: 250px;
-  margin-right: 10px;
 }
 
 .longest-book-wrapper {
@@ -363,7 +362,10 @@ h3 {
     flex-wrap: wrap;
     li {
       margin: 0 10px;
-      width: 150px;
+      width: 100px;
+      @media screen and (min-width: 668px) {
+        width: 150px;
+      }
     }
     .book p {
       margin: 10px auto;
@@ -477,7 +479,7 @@ h3 {
 }
 
 .setting {
-  padding: 35px;
+  padding: 20px;
   .setting-list ul {
     display: flex;
     flex-wrap: wrap;
@@ -486,7 +488,7 @@ h3 {
     max-width: 1300px;
     margin: auto;
     .location {
-      margin: 15px;
+      margin: 10px;
       background-color: white;
       text-align: center;
       border-radius: 7px;
@@ -510,7 +512,7 @@ h3 {
 
 .genres,
 .setting {
-  padding: 35px;
+  padding: 20px;
   .genre-list ul,
   .setting-list {
     display: flex;
@@ -521,7 +523,7 @@ h3 {
     margin: auto;
     .genre,
     .location {
-      margin: 15px;
+      margin: 10px;
       background-color: $black;
       text-align: center;
       border-radius: 7px;
