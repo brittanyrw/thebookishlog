@@ -377,7 +377,7 @@ h3 {
 }
 
 .numbers,
-.genres, 
+.genres,
 .setting {
   background-color: $black;
   color: white;
