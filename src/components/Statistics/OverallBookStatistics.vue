@@ -43,23 +43,23 @@
         <p class="stat-title">Avg Pages</p>
       </div>
       <div class="stat">
-            <p class="stat-number">
-              {{ countYear("2021") }}
-            </p>
-            <p class="stat-title">2021</p>
-          </div>
-          <div class="stat">
-            <p class="stat-number">
-              {{ countYear("2022") }}
-            </p>
-            <p class="stat-title">2022</p>
-          </div>
-          <div class="stat">
-            <p class="stat-number">
-              {{ countYear("2023") }}
-            </p>
-            <p class="stat-title">2023</p>
-          </div>
+        <p class="stat-number">
+          {{ countYear("2021") }}
+        </p>
+        <p class="stat-title">2021</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">
+          {{ countYear("2022") }}
+        </p>
+        <p class="stat-title">2022</p>
+      </div>
+      <div class="stat">
+        <p class="stat-number">
+          {{ countYear("2023") }}
+        </p>
+        <p class="stat-title">2023</p>
+      </div>
     </div>
   </div>
 </template>

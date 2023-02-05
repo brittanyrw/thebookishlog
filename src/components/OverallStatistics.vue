@@ -166,12 +166,24 @@
             </ul>
           </div>
         </div>
+        <div class="genres">
+          <div class="genre-list">
+            <h2>Audiobook Narrators</h2>
+            <ul>
+              <li
+                v-for="(narratorAmount, narrator) in count(listNarrators)"
+                :key="narrator"
+                class="genre"
+                :class="[{ 'fade-genre': narratorAmount < 2 }]"
+              >
+                <p class="">{{ narrator }}</p>
+                <p class="">{{ narratorAmount }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- <section class="next-book">
-      <button @click="nextBook">Next Book</button>
-      <p class="next-book-name">{{ newBook }}</p>
-    </section> -->
   </div>
 </template>
 
@@ -207,6 +219,16 @@ export default {
       });
 
       return settingList.flat();
+    },
+    listNarrators() {
+      let narratorList = [];
+      this.filterReadBooks.forEach(function(each) {
+        if (each.audioBookNarrator[0].length > 0) {
+          narratorList.push(each.audioBookNarrator);
+        }
+      });
+
+      return narratorList.flat();
     }
   },
   methods: {

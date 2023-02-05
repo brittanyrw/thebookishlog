@@ -15,10 +15,10 @@
         </div>
       </div>
 
-      <ul class="books"  v-show="toggle === 'no' ">
+      <ul class="books" v-show="toggle === 'no'">
         <li
           class="book"
-          v-for="(book, index) in filter('progress', 'finished')"
+          v-for="(book, index) in bookInfo"
           :key="index"
           :class="[
             { 'e-book': book.medium == 'E-Book' },
@@ -48,7 +48,7 @@
       <ul class="books text-books" v-show="toggle === 'yes'">
         <li
           class="book grid-book"
-          v-for="(book, index) in filter('progress', 'finished')"
+          v-for="(book, index) in bookInfo"
           :key="index"
         >
           <img
@@ -75,47 +75,6 @@ export default {
     bookInfo: Array
   },
   mixins: [mixins],
-  computed: {
-    sortedStartedBooks() {
-      let startedBooks = this.filter("progress", "started");
-      const sorted = (a, b) => {
-        if (a.pageProgress > b.pageProgress) {
-          return -1;
-        } else {
-          return 1;
-        }
-      };
-      return startedBooks.sort(sorted);
-    },
-    sortedBooks() {
-      let books = this.bookInfo;
-
-
-      const sorted = (a, b) => {
-        if (
-          new Date(
-            b.dateFinished.split("/")[2] +
-              "/" +
-              b.dateFinished.split("/")[1] +
-              "/" +
-              b.dateFinished.split("/")[0]
-          ) >
-          new Date(
-            a.dateFinished.split("/")[2] +
-              "/" +
-              a.dateFinished.split("/")[1] +
-              "/" +
-              a.dateFinished.split("/")[0]
-          )
-        ) {
-          return 1;
-        } else {
-          return -1;
-        }
-      };
-      return books.sort(sorted);
-    }
-  },
   methods: {
     filter(key, value) {
       return this.sortedBooks.filter(item => item[key] == value);
@@ -203,7 +162,7 @@ export default {
   }
 }
 
-.book:nth-child(2n + 1) { 
+.book:nth-child(2n + 1) {
   .bookmark {
     width: 40px;
   }
@@ -224,7 +183,7 @@ export default {
   .bookmark {
     width: 40px;
     border-radius: 20px 20px 0 0;
-  } 
+  }
 }
 .book:nth-child(11n + 7) {
   .bookmark {
@@ -237,7 +196,8 @@ export default {
     height: 100px;
     width: 40px;
   }
-  .bookmark:before, .bookmark:after {
+  .bookmark:before,
+  .bookmark:after {
     position: absolute;
     content: "";
     background: inherit;
@@ -255,12 +215,12 @@ export default {
   }
 }
 
-
 .book-cover-img {
   width: auto;
   display: inline-block;
   height: 250px;
-  box-shadow: 2px 2px white, 4px 4px $black, 6px 6px white, 8px 8px $black, 10px 10px white, 12px 12px $black;
+  box-shadow: 2px 2px white, 4px 4px $black, 6px 6px white, 8px 8px $black,
+    10px 10px white, 12px 12px $black;
   border: 2px solid $black;
 }
 
