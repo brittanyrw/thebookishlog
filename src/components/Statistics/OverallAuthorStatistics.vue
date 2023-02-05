@@ -2,18 +2,18 @@
   <div class="statistics-container">
     <h2>Author Statistics</h2>
     <div class="statistics">
-      <div class="stat">
+      <div class="stat blue">
         <p class="stat-number">{{ authorInfo.length }}</p>
         <p class="stat-title">Authors Read</p>
       </div>
-      <div class="stat">
+      <div class="stat red">
         <p class="stat-number">{{ valueCount("poc", true) }}</p>
         <p class="stat-title">Person of Color</p>
         <p class="stat-percent">
           {{ Math.floor((valueCount("poc", true) / authorInfo.length) * 100) }}%
         </p>
       </div>
-      <div class="stat">
+      <div class="stat purple">
         <p class="stat-number">{{ valueCount("gender", "female") }}</p>
         <p class="stat-title">Female</p>
         <p class="stat-percent">
@@ -24,7 +24,7 @@
           }}%
         </p>
       </div>
-      <div class="stat">
+      <div class="stat orange">
         <p class="stat-number">{{ valueCount("gender", "non-binary") }}</p>
         <p class="stat-title">Non-Binary</p>
         <p class="stat-percent">
@@ -35,7 +35,7 @@
           }}%
         </p>
       </div>
-      <div class="stat">
+      <div class="stat gold">
         <p class="stat-number">{{ valueCount("gender", "male") }}</p>
         <p class="stat-title">Male</p>
         <p class="stat-percent">
@@ -46,7 +46,7 @@
           }}%
         </p>
       </div>
-      <div class="stat">
+      <div class="stat green">
         <p class="stat-number">{{ valueCount("lgbt", true) }}</p>
         <p class="stat-title">LGBTQIA+</p>
         <p class="stat-percent">
@@ -132,7 +132,7 @@ export default {
 .statistics-container {
   background-color: $black;
   padding: 20px;
-  border: 2px solid white;
+  border-left: 2px solid white;
   h2 {
     color: white;
     margin: 0;
@@ -167,7 +167,7 @@ export default {
       h3 {
         position: absolute;
         background-color: white;
-        color: #1f1f1f;
+        color: $black;
         padding: 10px;
         text-align: center;
         z-index: 1;
@@ -177,16 +177,76 @@ export default {
       }
     }
     .stat {
-      background-color: white;
+      background-color: $black;
       text-align: center;
       margin: 10px 10px 40px 10px;
-      border: 2px solid white;
-      -webkit-box-shadow: 5px 5px 0 white;
-      box-shadow: 9px 9px 0 white;
       border-radius: 7px;
-      color: $black;
-      outline: 3px solid $black;
+      color: white;
       position: relative;
+      &.blue {
+        box-shadow: #1d5ed3 2px 2px, $black 4px 4px, #1d5ed3 6px 6px,
+          $black 8px 8px, #1d5ed3 10px 10px;
+        border: 2px solid #1d5ed3;
+        .stat-percent {
+          border-color: #1d5ed3;
+        }
+      }
+      &.green {
+        box-shadow: #1a963c 2px 2px, $black 4px 4px, #1a963c 6px 6px,
+          $black 8px 8px, #1a963c 10px 10px;
+        border: 2px solid #1a963c;
+        .stat-percent {
+          border-color: #1a963c;
+        }
+      }
+      &.red {
+        box-shadow: #d31d1d 2px 2px, $black 4px 4px, #d31d1d 6px 6px,
+          $black 8px 8px, #d31d1d 10px 10px;
+        border: 2px solid #d31d1d;
+        .stat-percent {
+          border-color: #d31d1d;
+        }
+      }
+      &.purple {
+        box-shadow: #6e1dd3 2px 2px, $black 4px 4px, #6e1dd3 6px 6px,
+          $black 8px 8px, #6e1dd3 10px 10px;
+        border: 2px solid #6e1dd3;
+        .stat-percent {
+          border-color: #6e1dd3;
+        }
+      }
+      &.gold {
+        box-shadow: #d3a01d 2px 2px, $black 4px 4px, #d3a01d 6px 6px,
+          $black 8px 8px, #d3a01d 10px 10px;
+        border: 2px solid #e0b549;
+        .stat-percent {
+          border-color: #e0b549;
+        }
+      }
+      &.orange {
+        box-shadow: #d3721d 2px 2px, $black 4px 4px, #d3721d 6px 6px,
+          $black 8px 8px, #d3721d 10px 10px;
+        border: 2px solid #d3721d;
+        .stat-percent {
+          border-color: #d3721d;
+        }
+      }
+      &.lightblue {
+        box-shadow: $black 2px 2px, #1dadd3 4px 4px, $black 6px 6px,
+          #1dadd3 8px 8px, $black 10px 10px;
+        border: 2px solid #1dadd3;
+        .stat-percent {
+          border-color: #1dadd3;
+        }
+      }
+      &.pink {
+        box-shadow: $black 2px 2px, #d31d96 4px 4px, $black 6px 6px,
+          #d31d96 8px 8px, $black 10px 10px;
+        border: 2px solid #d31d96;
+        .stat-percent {
+          border-color: #d31d96;
+        }
+      }
       @media screen and (min-width: 992px) {
         margin: 10px;
       }
@@ -218,7 +278,7 @@ export default {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        border: 2px solid white;
+        border: 2px solid;
       }
     }
   }
@@ -240,6 +300,9 @@ export default {
     color: $black;
     position: relative;
     padding: 10px;
+    border: 2px solid $black;
+    box-shadow: white 2px 2px, $black 4px 4px, white 6px 6px, $black 8px 8px,
+      white 10px 10px;
     p {
       display: inline-block;
       margin-bottom: 0;

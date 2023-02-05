@@ -117,7 +117,7 @@ export default {
 .stats-by-year-container {
   background-color: $black;
   padding: 20px 20px 40px 20px;
-  border: 2px solid white;
+  border-left: 2px solid white;
   h2 {
     color: white;
     margin: 0;
