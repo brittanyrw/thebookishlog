@@ -146,8 +146,8 @@
               <li
                 v-for="(settingAmount, setting) in count(listSettings)"
                 :key="setting"
-                class="location"
-                :class="[{ 'fade-location': settingAmount < 2 }]"
+                class="genre"
+                :class="[{ 'fade-genre': settingAmount < 2 }]"
               >
                 <p class="">{{ setting }}</p>
                 <p class="">{{ settingAmount }}</p>
@@ -377,10 +377,16 @@ h3 {
 }
 
 .numbers,
-.genres {
+.genres, 
+.setting {
   background-color: $black;
   color: white;
   border-left: 2px solid white;
+}
+
+.setting {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .length,
@@ -481,10 +487,10 @@ h3 {
     margin: auto;
     .location {
       margin: 15px;
-      background-color: $black;
+      background-color: white;
       text-align: center;
       border-radius: 7px;
-      color: white;
+      color: $black;
       display: flex;
       p {
         margin: 0;
