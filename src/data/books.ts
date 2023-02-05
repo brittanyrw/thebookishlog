@@ -209,7 +209,7 @@ export const bookData: Book[] = [
     dateFinished: "01/27/2023",
     progress: "finished",
     color: "red",
-    fav: true
+    fav: false
   },
   {
     title: "Akata Witch",
