@@ -52,7 +52,8 @@ export const authorData = [
       "Blackout",
       "Grown",
       "Let Me Hear a Rhyme",
-      "Whiteout"
+      "Whiteout",
+      "The Weight of Blood"
     ],
     poc: true,
     gender: "female",
@@ -357,7 +358,7 @@ export const authorData = [
   },
   {
     name: "Justina Ireland",
-    books: ["Dread Nation", "Deathless Divide"],
+    books: ["Dread Nation", "Deathless Divide", "Rust in the Root"],
     poc: true,
     gender: "female",
     lgbt: true,
@@ -396,7 +397,8 @@ export const authorData = [
       "The City We Became",
       "The Killing Moon",
       "The World We Make",
-      "The Hundred Thousand Kingdoms"
+      "The Hundred Thousand Kingdoms",
+      "Emergency Skin"
     ],
     poc: true,
     gender: "female",

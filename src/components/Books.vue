@@ -18,7 +18,7 @@
       <ul class="books" v-show="toggle === 'no'">
         <li
           class="book"
-          v-for="(book, index) in filter('progress', 'finished')"
+          v-for="(book, index) in bookInfo"
           :key="index"
           :class="[
             { 'e-book': book.medium == 'E-Book' },
@@ -48,7 +48,7 @@
       <ul class="books text-books" v-show="toggle === 'yes'">
         <li
           class="book grid-book"
-          v-for="(book, index) in filter('progress', 'finished')"
+          v-for="(book, index) in bookInfo"
           :key="index"
         >
           <img
@@ -75,46 +75,6 @@ export default {
     bookInfo: Array
   },
   mixins: [mixins],
-  computed: {
-    sortedStartedBooks() {
-      let startedBooks = this.filter("progress", "started");
-      const sorted = (a, b) => {
-        if (a.pageProgress > b.pageProgress) {
-          return -1;
-        } else {
-          return 1;
-        }
-      };
-      return startedBooks.sort(sorted);
-    },
-    sortedBooks() {
-      let books = this.bookInfo;
-
-      const sorted = (a, b) => {
-        if (
-          new Date(
-            b.dateFinished.split("/")[2] +
-              "/" +
-              b.dateFinished.split("/")[1] +
-              "/" +
-              b.dateFinished.split("/")[0]
-          ) >
-          new Date(
-            a.dateFinished.split("/")[2] +
-              "/" +
-              a.dateFinished.split("/")[1] +
-              "/" +
-              a.dateFinished.split("/")[0]
-          )
-        ) {
-          return 1;
-        } else {
-          return -1;
-        }
-      };
-      return books.sort(sorted);
-    }
-  },
   methods: {
     filter(key, value) {
       return this.sortedBooks.filter(item => item[key] == value);
@@ -297,6 +257,10 @@ export default {
     .grid-book {
       margin: 0;
       width: 170px;
+      .book-cover-img {
+        box-shadow: none;
+        border: none;
+      }
     }
     .text-book {
       padding: 10px;
