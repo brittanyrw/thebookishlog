@@ -34,7 +34,15 @@
             <div class="bookmark" :class="book.color"></div>
           </div>
           <div class="text-book-info">
-            <h3>{{ book.title }}</h3>
+            <h3>
+              {{ book.title }}
+              <img
+                v-if="book.fav"
+                class="book-fav-star"
+                alt="Favorite Book"
+                :src="require('@/assets/imgs/star.svg')"
+              />
+            </h3>
             <p class="author">{{ book.author.join(", ") }}</p>
           </div>
           <div
@@ -242,6 +250,9 @@ export default {
     margin-top: 1.5rem;
     margin-bottom: 8px;
   }
+  .book-fav-star {
+    height: 20px;
+  }
   .author {
     margin: 8px;
   }
@@ -292,9 +303,6 @@ export default {
     position: relative;
     margin-right: 10px;
     margin-bottom: 40px;
-
-    // @media screen and (min-width: 992px) {
-    //   width: 48%;
   }
   @media screen and (min-width: 668px) {
     .book {
