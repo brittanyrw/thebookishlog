@@ -24,7 +24,12 @@
       </div>
     </div>
     <ul class="authors" v-show="toggle === 'no' && favToggle === 'no'">
-      <li class="author" v-for="(author, index) in sortedAuthors" :key="index">
+      <li
+        class="author"
+        v-for="(author, index) in sortedAuthors"
+        :key="index"
+        :class="[{ 'single-book': author.books.length == 1 }]"
+      >
         <div class="author-name">
           <div class="author-img-wrapper">
             <img
@@ -41,7 +46,7 @@
             />
           </div>
           <div class="author-info">
-            <h3>
+            <h3 :class="[{ 'resize-name': author.name.length >= 16 }]">
               <a
                 :href="`https://${author.website}`"
                 target="_blank"
@@ -275,6 +280,26 @@ export default {
       .flag,
       .lgbt {
         font-size: 30px;
+      }
+      &.single-book {
+        flex-grow: unset;
+        width: 189px;
+        .author-name {
+          flex-direction: column;
+          .resize-name {
+            font-size: 14px;
+          }
+        }
+        .author-img-wrapper {
+          height: 189px;
+          width: 189px;
+          .author-img {
+            height: 189px;
+            width: 185px;
+            border-right: 0;
+            border-bottom: 2px solid black;
+          }
+        }
       }
     }
     @media screen and (min-width: 992px) {
