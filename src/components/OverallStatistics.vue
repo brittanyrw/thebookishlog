@@ -403,7 +403,7 @@ h3 {
 
 .book-length-ratings {
   padding: 35px;
-  max-width: 1000px;
+  max-width: 1300px;
   margin: auto;
 }
 .age {

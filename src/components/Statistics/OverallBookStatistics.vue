@@ -6,12 +6,6 @@
         <p class="stat-number">{{ filterReadBooks.length }}</p>
         <p class="stat-title">Books Read</p>
       </div>
-      <div class="stat red">
-        <p class="stat-number stat-number-pages">
-          {{ Math.floor(averageTimeToRead) }}
-        </p>
-        <p class="stat-title">Avg Days Per Book</p>
-      </div>
       <div class="stat purple">
         <p class="stat-number">
           {{ (countRead("rating") / filterReadBooks.length).toFixed(2) }}
@@ -42,6 +36,12 @@
         </p>
         <p class="stat-title">Avg Pages</p>
       </div>
+      <div class="stat red">
+        <p class="stat-number stat-number-pages">
+          {{ Math.floor(averageTimeToRead) }}
+        </p>
+        <p class="stat-title">Avg Days Per Book</p>
+      </div>
       <div class="stat pink">
         <p class="stat-number">
           {{ countYear("2021") }}
@@ -54,7 +54,7 @@
         </p>
         <p class="stat-title">2022</p>
       </div>
-      <div class="stat red">
+      <div class="stat purple">
         <p class="stat-number">
           {{ countYear("2023") }}
         </p>
