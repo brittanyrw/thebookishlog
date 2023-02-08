@@ -1,13 +1,14 @@
 <template>
   <div class="overall-statistics">
     <div class="main">
-      <OverallStatistics :book-info="books" />
+      <OverallStatistics :book-info="books" :tbr-info="tbr" />
     </div>
   </div>
 </template>
 
 <script>
 import { bookData } from "@/data/books";
+import { tbrData } from "@/data/tbr";
 import OverallStatistics from "@/components/OverallStatistics.vue";
 
 export default {
@@ -17,7 +18,8 @@ export default {
   },
   data() {
     return {
-      books: bookData
+      books: bookData,
+      tbr: tbrData
     };
   }
 };
