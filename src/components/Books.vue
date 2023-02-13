@@ -36,13 +36,21 @@
           <div class="text-book-info">
             <h3>
               {{ book.title }}
+            </h3>
+            <div class="icons">
               <img
                 v-if="book.fav"
                 class="book-fav-star"
                 alt="Favorite Book"
                 :src="require('@/assets/imgs/star.svg')"
               />
-            </h3>
+              <img
+                v-if="book.medium === 'Audio' || book.medium === 'Physical and Audio'"
+                class="book-headphones"
+                alt="Audiobook"
+                :src="require('@/assets/imgs/headphones.svg')"
+              />
+            </div>
             <p class="author">{{ book.author.join(", ") }}</p>
           </div>
           <div
@@ -250,9 +258,11 @@ export default {
     margin-top: 1.5rem;
     margin-bottom: 8px;
   }
-  .book-fav-star {
+  .book-fav-star, .book-headphones {
     height: 20px;
+    margin: 5px;
   }
+
   .author {
     margin: 8px;
   }
