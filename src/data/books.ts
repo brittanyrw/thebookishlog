@@ -218,7 +218,7 @@ export const bookData: Book[] = [
     publishedYear: 2011,
     setting: ["Nigeria"],
     genre: ["Science Fiction", "Black", "Magic", "Crime"],
-    age: "Middle Grade",
+    age: "Young Adult",
     type: "Fiction",
     pages: 349,
     medium: "Audio",
