@@ -42,6 +42,18 @@
               </p>
               <p class="stat-title">Physical & Audio</p>
             </div>
+            <div class="stat pink">
+              <p class="stat-number">
+                {{ valueCount("type", "Fiction") }}
+              </p>
+              <p class="stat-title">Fiction</p>
+            </div>
+            <div class="stat blue">
+              <p class="stat-number">
+                {{ valueCount("type", "Non-Fiction") }}
+              </p>
+              <p class="stat-title">Non-Fiction</p>
+            </div>
           </div>
         </section>
         <section class="book-length-ratings">
@@ -171,6 +183,26 @@
             </ul>
           </div>
         </div>
+        <div class="tbr">
+          <div class="tbr-list narrators">
+            <h2>"To Be Read" List</h2>
+            <div class="tbr-wrapper">
+              <div class="tbr-info">
+                <p class="subheading">Books that I own but haven't read yet.</p>
+                <p class="tbr-number">Total: {{ tbrInfo.length }}</p>
+              </div>
+              <div class="next-book">
+                <button @click="chooseNextBook()">Choose Next Book</button>
+                <p v-if="nextBook">{{ nextBook }}</p>
+              </div>
+            </div>
+            <ul>
+              <li v-for="tbr in tbrInfo" :key="slug(tbr)" class="tbr-book">
+                <p class="">{{ tbr }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -181,11 +213,12 @@ import mixins from "@/mixins/mixins.ts";
 
 export default {
   props: {
-    bookInfo: Array
+    bookInfo: Array,
+    tbrInfo: Array
   },
   data() {
     return {
-      newBook: ""
+      nextBook: ""
     };
   },
   mixins: [mixins],
@@ -255,7 +288,6 @@ export default {
         (a, b) => b[1] - a[1]
       );
       countedObj = Object.fromEntries(sortedCountedObj);
-      console.log(countedObj);
       return countedObj;
     },
     valueCount(key, value) {
@@ -270,9 +302,10 @@ export default {
       }
       return longestBooks;
     },
-    nextBook() {
-      let list = this.filter("progress", "started");
-      this.newBook = list[Math.floor(Math.random() * list.length)].title;
+    chooseNextBook() {
+      this.nextBook = this.tbrInfo[
+        Math.floor(Math.random() * this.tbrInfo.length)
+      ];
     }
   }
 };
@@ -293,6 +326,39 @@ h2 {
 
 h3 {
   margin: 0 0 15px 0;
+}
+
+.tbr {
+  padding: 20px;
+  h2,
+  .subheading,
+  .tbr-number {
+    text-align: center;
+  }
+  .tbr-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: auto;
+    .tbr-book {
+      margin: 10px;
+      background-color: $black;
+      text-align: center;
+      border-radius: 7px;
+      color: white;
+      display: flex;
+      p {
+        margin: 0;
+        padding: 10px;
+      }
+      p:first-child {
+        padding-right: 10px;
+        border-right: none !important;
+      }
+    }
+  }
 }
 
 .numbers {
@@ -410,7 +476,7 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
   padding: 35px;
   .stat {
@@ -511,10 +577,12 @@ h3 {
 }
 
 .genres,
-.setting {
+.setting,
+.tbr {
   padding: 20px;
   .genre-list ul,
-  .setting-list {
+  .setting-list,
+  .tbr-list ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -522,7 +590,8 @@ h3 {
     max-width: 1300px;
     margin: auto;
     .genre,
-    .location {
+    .location,
+    .tbr-book {
       margin: 10px;
       background-color: $black;
       text-align: center;
@@ -541,7 +610,8 @@ h3 {
       }
     }
     .genre:nth-child(2n + 1),
-    .location:nth-child(2n + 1) {
+    .location:nth-child(2n + 1),
+    .tbr-book:nth-child(2n + 1) {
       box-shadow: $black 2px 2px, #6e1dd3 4px 4px, $black 6px 6px;
       border: 2px solid #6e1dd3;
       p:first-child {
@@ -549,7 +619,8 @@ h3 {
       }
     }
     .genre:nth-child(3n + 2),
-    .location:nth-child(3n + 2) {
+    .location:nth-child(3n + 2),
+    .tbr-book:nth-child(3n + 2) {
       box-shadow: $black 2px 2px, #1a963c 4px 4px, $black 6px 6px;
       border: 2px solid #1a963c;
       p:first-child {
@@ -557,7 +628,8 @@ h3 {
       }
     }
     .genre:nth-child(5n + 3),
-    .location:nth-child(5n + 3) {
+    .location:nth-child(5n + 3),
+    .tbr-book:nth-child(5n + 3) {
       box-shadow: $black 2px 2px, #d31d96 4px 4px, $black 6px 6px;
       border: 2px solid #d31d96;
       p:first-child {
@@ -565,7 +637,8 @@ h3 {
       }
     }
     .genre:nth-child(7n + 5),
-    .location:nth-child(7n + 5) {
+    .location:nth-child(7n + 5),
+    .tbr-book:nth-child(7n + 5) {
       box-shadow: $black 2px 2px, #d3a01d 4px 4px, $black 6px 6px;
       border: 2px solid #d3a01d;
       p:first-child {
@@ -573,7 +646,8 @@ h3 {
       }
     }
     .genre:nth-child(11n + 7),
-    .location:nth-child(11n + 7) {
+    .location:nth-child(11n + 7),
+    .tbr-book:nth-child(11n + 7) {
       box-shadow: $black 2px 2px, #d31d1d 4px 4px, $black 6px 6px;
       border: 2px solid #d31d1d;
       p:first-child {
@@ -581,7 +655,8 @@ h3 {
       }
     }
     .genre:nth-child(13n + 11),
-    .location:nth-child(13n + 11) {
+    .location:nth-child(13n + 11),
+    .tbr-book:nth-child(13n + 11) {
       box-shadow: $black 2px 2px, #1dadd3 4px 4px, $black 6px 6px;
       border: 2px solid #1dadd3;
       p:first-child {
@@ -609,6 +684,24 @@ h3 {
       p:first-child {
         border-color: #aea5a5 !important;
       }
+    }
+  }
+}
+
+.next-book {
+  text-align: center;
+  margin-bottom: 20px;
+  button {
+    background-color: white;
+    border: 2px solid $black;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    &:hover,
+    &:active {
+      background-color: $black;
+      color: white;
     }
   }
 }
