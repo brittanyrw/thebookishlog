@@ -638,5 +638,20 @@ export const authorData = [
       }
     ],
     website: "sidikfofana.com"
+  },
+  {
+    name: "Krystal Marquis",
+    books: ["The Davenports"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "krystalmarquis.com"
   }
 ];

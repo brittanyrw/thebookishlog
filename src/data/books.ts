@@ -30,11 +30,13 @@ export type Setting =
   | "Boston"
   | "California"
   | "Canada"
+  | "Chicago"
   | "China"
   | "Egypt"
   | "Fictional"
   | "Florida"
   | "Georgia (USA)"
+  | "Illinois"
   | "Louisiana"
   | "London"
   | "Maryland"
@@ -109,6 +111,32 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished";
 
 export const bookData: Book[] = [
+  {
+    title: "The Davenports",
+    author: ["Krystal Marquis"],
+    audioBookNarrator: ["Joniece Abbott-Pratt"],
+    publishedYear: 2023,
+    setting: ["United States", "Chicago", "Illinois"],
+    genre: [
+      "Historical Fiction",
+      "Slavery",
+      "Feminism",
+      "Race",
+      "Romance",
+      "Black",
+      "Family"
+    ],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 379,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "02/09/2023",
+    dateFinished: "02/28/2023",
+    progress: "finished",
+    fav: false,
+    color: "brown"
+  },
   {
     title: "Emergency Skin",
     author: ["N.K. Jemisin"],

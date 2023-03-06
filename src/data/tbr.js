@@ -59,5 +59,6 @@ export const tbrData = [
   "We Are Not Like Them",
   "A Black Women's History of the United States",
   "Blood like Magic",
-  "The Black God's Drums"
+  "The Black God's Drums",
+  "Open Water"
 ];
