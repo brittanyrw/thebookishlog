@@ -180,7 +180,7 @@ export const authorData = [
   },
   {
     name: "P. Djèlí Clark",
-    books: ["Ring Shout", "A Master of Djinn"],
+    books: ["Ring Shout", "A Master of Djinn", "The Black God's Drums"],
     poc: true,
     gender: "male",
     lgbt: false,

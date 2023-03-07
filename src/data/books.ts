@@ -42,6 +42,7 @@ export type Setting =
   | "Maryland"
   | "Mexico"
   | "Minnesota"
+  | "New Orleans"
   | "New York City"
   | "New York State"
   | "Nigeria"
@@ -111,6 +112,35 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished";
 
 export const bookData: Book[] = [
+  {
+    title: "The Black God's Drums",
+    author: ["P. Djèlí Clark"],
+    audioBookNarrator: ["Channie Waites"],
+    publishedYear: 2018,
+    setting: ["United States", "New Orleans", "Louisiana"],
+    genre: [
+      "Historical Fiction",
+      "Slavery",
+      "Feminism",
+      "Race",
+      "Short Stories",
+      "Black",
+      "Alternate History",
+      "Fantasy",
+      "Magic",
+      "Science Fiction"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 111,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "03/06/2023",
+    dateFinished: "03/26/2023",
+    progress: "finished",
+    fav: false,
+    color: "gold"
+  },
   {
     title: "The Davenports",
     author: ["Krystal Marquis"],
@@ -1207,7 +1237,8 @@ export const bookData: Book[] = [
       "Historical Fiction",
       "Race",
       "Black",
-      "Alternate History"
+      "Alternate History",
+      "Short Stories"
     ],
     age: "Adult",
     type: "Fiction",
