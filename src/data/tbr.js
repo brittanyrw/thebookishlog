@@ -40,7 +40,6 @@ export const tbrData = [
   "Sold",
   "Dear Girls",
   "A Discovery of Witches",
-  "The Color Purple",
   "Changing the Equation",
   "How Much of These Hills is Gold",
   "Colonize This",
