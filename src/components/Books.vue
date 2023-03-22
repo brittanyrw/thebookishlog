@@ -45,7 +45,10 @@
                 :src="require('@/assets/imgs/star.svg')"
               />
               <img
-                v-if="book.medium === 'Audio' || book.medium === 'Physical and Audio'"
+                v-if="
+                  book.medium === 'Audio' ||
+                    book.medium === 'Physical and Audio'
+                "
                 class="book-headphones"
                 alt="Audiobook"
                 :src="require('@/assets/imgs/headphones.svg')"
@@ -258,7 +261,8 @@ export default {
     margin-top: 1.5rem;
     margin-bottom: 8px;
   }
-  .book-fav-star, .book-headphones {
+  .book-fav-star,
+  .book-headphones {
     height: 20px;
     margin: 5px;
   }
