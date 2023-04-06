@@ -127,6 +127,28 @@
               </div>
             </div>
           </div>
+          <div class="dnf-books">
+            <h3>DNFed books</h3>
+            <p>Books started that I decided not to finish.</p>
+            <ul>
+              <li
+                class="book"
+                v-for="(book, index) in filterDnf('progress', 'dnf')"
+                :key="index"
+              >
+                <img
+                  class="book-cover-img"
+                  :class="[
+                    { 'e-book': book.medium == 'E-Book' },
+                    { audio: book.medium == 'Audio' }
+                  ]"
+                  :alt="`${book.title} book cover`"
+                  :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                />
+                <p>{{ book.title }}</p>
+              </li>
+            </ul>
+          </div>
         </section>
         <div class="genres">
           <div class="genre-list">
@@ -217,7 +239,7 @@ export default {
   mixins: [mixins],
   computed: {
     filterReadBooks() {
-      return this.bookInfo.filter(item => item.dateFinished);
+      return this.bookInfo.filter(item => item.progress == "finished");
     },
     listGenres() {
       let genreList = [];
@@ -268,6 +290,9 @@ export default {
       return this.filterReadBooks.sort(sorted);
     },
     filter(key, value) {
+      return this.filterReadBooks.filter(item => item[key] == value);
+    },
+    filterDnf(key, value) {
       return this.bookInfo.filter(item => item[key] == value);
     },
     count(obj) {
@@ -319,6 +344,11 @@ h2 {
 
 h3 {
   margin: 0 0 15px 0;
+}
+
+.dnf-books {
+  margin: auto;
+  text-align: center;
 }
 
 .tbr {
@@ -412,7 +442,8 @@ h3 {
 }
 
 .overall-stats-component {
-  .favorite-books ul {
+  .favorite-books ul,
+  .dnf-books ul {
     display: flex;
     margin: auto;
     max-width: 1300px;

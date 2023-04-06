@@ -5,10 +5,10 @@ export interface Book {
   publishedYear: number;
   setting: Setting[];
   genre: Genres[];
-  age: Ages;
-  type: BookType;
+  age: Ages | "";
+  type: BookType | "";
   pages: number;
-  medium: Medium;
+  medium: Medium | "";
   rating: number;
   dateStarted: string;
   dateFinished: string;
@@ -109,9 +109,27 @@ export type BookType = "Fiction" | "Non-Fiction";
 
 export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 
-export type Progress = "finished";
+export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Six Crimson Cranes",
+    author: ["Elizabeth Lim"],
+    audioBookNarrator: [""],
+    publishedYear: 2021,
+    setting: [],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 464,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "03/07/2023",
+    dateFinished: "03/10/2023",
+    progress: "dnf",
+    fav: false,
+    color: "red"
+  },
   {
     title: "The Black God's Drums",
     author: ["P. Djèlí Clark"],
@@ -695,6 +713,24 @@ export const bookData: Book[] = [
     fav: false
   },
   {
+    title: "Fledgling",
+    author: ["Octavia E. Butler"],
+    audioBookNarrator: [""],
+    publishedYear: 0,
+    setting: [],
+    genre: [],
+    age: "Adult",
+    type: "Fiction",
+    pages: 0,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "08/21/2022",
+    dateFinished: "08/21/2022",
+    progress: "dnf",
+    color: "black",
+    fav: false
+  },
+  {
     title: "Kindred",
     author: ["Octavia E. Butler"],
     audioBookNarrator: ["Kim Staunton"],
@@ -1183,6 +1219,24 @@ export const bookData: Book[] = [
     fav: false
   },
   {
+    title: "Red, White & Royal Blue",
+    author: ["Casey McQuiston"],
+    audioBookNarrator: [""],
+    publishedYear: 2019,
+    setting: [],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 418,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "08/29/2021",
+    dateFinished: "09/17/2021",
+    progress: "dnf",
+    color: "purple",
+    fav: false
+  },
+  {
     title: "The Vanishing Half",
     author: ["Brit Bennett"],
     audioBookNarrator: [""],
@@ -1206,6 +1260,24 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "darkblue",
     fav: true
+  },
+  {
+    title: "The Testaments",
+    author: ["Margaret Atwood"],
+    audioBookNarrator: [""],
+    publishedYear: 2019,
+    setting: [],
+    genre: [],
+    age: "Adult",
+    type: "Fiction",
+    pages: 422,
+    medium: "Physical",
+    rating: 0,
+    dateStarted: "11/29/2020",
+    dateFinished: "09/09/2021",
+    progress: "dnf",
+    color: "blue",
+    fav: false
   },
   {
     title: "Boyfriend Material",
@@ -1322,6 +1394,42 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "lightblue"
+  },
+  {
+    title: "Uprooted",
+    author: ["Naomi Novik"],
+    audioBookNarrator: [""],
+    publishedYear: 2015,
+    setting: [],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 435,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "02/11/2021",
+    dateFinished: "02/16/2021",
+    progress: "dnf",
+    fav: false,
+    color: "gold"
+  },
+  {
+    title: "The Good Luck Girls",
+    author: ["Charlotte Nicole Davis"],
+    audioBookNarrator: [""],
+    publishedYear: 2019,
+    setting: [],
+    genre: [],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 352,
+    medium: "E-Book",
+    rating: 0,
+    dateStarted: "02/15/2021",
+    dateFinished: "02/15/2021",
+    progress: "dnf",
+    color: "brown",
+    fav: false
   },
   {
     title: "Full Disclosure",

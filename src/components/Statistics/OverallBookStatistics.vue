@@ -36,6 +36,12 @@
         </p>
         <p class="stat-title">Avg Pages</p>
       </div>
+      <div class="stat lightblue">
+        <p class="stat-number">
+          {{ valueCountDnf("progress", "dnf") }}
+        </p>
+        <p class="stat-title">DNF books</p>
+      </div>
       <div class="stat red">
         <p class="stat-number stat-number-pages">
           {{ Math.floor(averageTimeToRead) }}
@@ -71,7 +77,7 @@ export default {
   mixins: [mixins],
   computed: {
     filterReadBooks() {
-      return this.bookInfo.filter(item => item.dateFinished);
+      return this.bookInfo.filter(item => item.progress == "finished");
     },
     averageTimeToRead() {
       let timeToRead = this.filterReadBooks.map(
@@ -92,12 +98,15 @@ export default {
       );
     },
     count(key) {
-      return this.bookInfo.reduce(
+      return this.filterReadBooks.reduce(
         (res, item) => (item[key] ? res + item[key] : res),
         0
       );
     },
     valueCount(key, value) {
+      return this.filterReadBooks.filter(book => book[key] === value).length;
+    },
+    valueCountDnf(key, value) {
       return this.bookInfo.filter(book => book[key] === value).length;
     },
     countYear(year) {

@@ -22,7 +22,8 @@
           :key="index"
           :class="[
             { 'e-book': book.medium == 'E-Book' },
-            { audio: book.medium == 'Audio' }
+            { audio: book.medium == 'Audio' },
+            { dnf: book.progress == 'dnf' }
           ]"
         >
           <div class="book-cover-img-wrapper">
@@ -57,17 +58,21 @@
             <p class="author">{{ book.author.join(", ") }}</p>
           </div>
           <div
+            v-if="book.progress == 'finished'"
             class="stars"
             :style="`--rating: ${book.rating};`"
             :aria-label="`Rating is ${book.rating} out of 5.`"
           ></div>
+          <div v-if="book.progress == 'dnf'" class="dnf-label">
+            <p>DNF</p>
+          </div>
           <p class="read-date">{{ book.dateFinished }}</p>
         </li>
       </ul>
       <ul class="books text-books" v-show="toggle === 'yes'">
         <li
           class="book grid-book"
-          v-for="(book, index) in bookInfo"
+          v-for="(book, index) in filterReadBooks"
           :key="index"
         >
           <img
@@ -94,6 +99,11 @@ export default {
     bookInfo: Array
   },
   mixins: [mixins],
+  computed: {
+    filterReadBooks() {
+      return this.bookInfo.filter(item => item.progress == "finished");
+    }
+  },
   methods: {
     filter(key, value) {
       return this.sortedBooks.filter(item => item[key] == value);
@@ -182,6 +192,21 @@ export default {
   }
 }
 
+.book.dnf {
+  filter: grayscale(1);
+  position: relative;
+}
+
+.book.dnf:before {
+  content: "";
+  height: 103%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: -18px;
+  left: 0;
+  z-index: 99;
+}
 .book:nth-child(2n + 1) {
   .bookmark {
     width: 40px;
@@ -246,6 +271,10 @@ export default {
 
 .read-date {
   margin: 5px 0;
+}
+
+.dnf-label p {
+  font-weight: bold;
 }
 
 .books {
