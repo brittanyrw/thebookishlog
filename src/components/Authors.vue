@@ -256,7 +256,7 @@ export default {
       .author-books {
         text-align: center;
         .author-book-img {
-          height: 100px;
+          height: 106px;
           margin: 10px;
           border: 1px solid $black;
         }

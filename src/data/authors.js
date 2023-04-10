@@ -53,7 +53,8 @@ export const authorData = [
       "Grown",
       "Let Me Hear a Rhyme",
       "Whiteout",
-      "The Weight of Blood"
+      "The Weight of Blood",
+      "White Smoke"
     ],
     poc: true,
     gender: "female",

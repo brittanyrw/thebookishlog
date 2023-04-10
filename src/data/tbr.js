@@ -18,7 +18,6 @@ export const tbrData = [
   "She Who Became the Sun",
   "The Fifth Season",
   "Noor",
-  "White Smoke",
   "Gearbreakers",
   "I Am Not Your Perfect Mexican Daughter",
   "Blood Scion",

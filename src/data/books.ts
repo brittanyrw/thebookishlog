@@ -113,6 +113,24 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "White Smoke",
+    author: ["Tiffany D. Jackson"],
+    audioBookNarrator: [""],
+    publishedYear: 2021,
+    setting: ["United States", "Fictional"],
+    genre: ["Black", "Family", "Mystery", "Thriller", "Race", "Horror"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 373,
+    medium: "Physical",
+    rating: 3.5,
+    dateStarted: "02/07/2023",
+    dateFinished: "04/10/2023",
+    progress: "finished",
+    fav: false,
+    color: "purple"
+  },
+  {
     title: "Six Crimson Cranes",
     author: ["Elizabeth Lim"],
     audioBookNarrator: [""],
