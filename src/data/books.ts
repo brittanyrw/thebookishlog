@@ -15,6 +15,7 @@ export interface Book {
   progress: Progress;
   fav: boolean;
   color: string;
+  publisher: string;
 }
 
 export type Ages =
@@ -128,7 +129,8 @@ export const bookData: Book[] = [
     dateFinished: "04/10/2023",
     progress: "finished",
     fav: false,
-    color: "purple"
+    color: "purple",
+    publisher: "Katherine Tegen Books"
   },
   {
     title: "Six Crimson Cranes",
@@ -146,7 +148,8 @@ export const bookData: Book[] = [
     dateFinished: "03/10/2023",
     progress: "dnf",
     fav: false,
-    color: "red"
+    color: "red",
+    publisher: ""
   },
   {
     title: "The Black God's Drums",
@@ -175,7 +178,8 @@ export const bookData: Book[] = [
     dateFinished: "03/06/2023",
     progress: "finished",
     fav: false,
-    color: "gold"
+    color: "gold",
+    publisher: "Tor.com"
   },
   {
     title: "The Davenports",
@@ -201,7 +205,8 @@ export const bookData: Book[] = [
     dateFinished: "02/28/2023",
     progress: "finished",
     fav: false,
-    color: "brown"
+    color: "brown",
+    publisher: "Dial Books"
   },
   {
     title: "Emergency Skin",
@@ -219,7 +224,8 @@ export const bookData: Book[] = [
     dateFinished: "02/04/2023",
     progress: "finished",
     color: "green",
-    fav: false
+    fav: false,
+    publisher: "Amazon Original Stories"
   },
   {
     title: "The Weight of Blood",
@@ -251,7 +257,8 @@ export const bookData: Book[] = [
     dateFinished: "02/02/2023",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Katherine Tegen Books"
   },
   {
     title: "Rust in the Root",
@@ -276,7 +283,8 @@ export const bookData: Book[] = [
     dateFinished: "01/30/2023",
     progress: "finished",
     color: "black",
-    fav: false
+    fav: false,
+    publisher: "Balzer + Bray"
   },
   {
     title: "Stories from the Tenants Downstairs",
@@ -303,7 +311,8 @@ export const bookData: Book[] = [
     dateFinished: "01/27/2023",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Scribner"
   },
   {
     title: "Akata Witch",
@@ -321,7 +330,8 @@ export const bookData: Book[] = [
     dateFinished: "01/25/2023",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Speak"
   },
   {
     title: "The Hundred Thousand Kingdoms",
@@ -339,7 +349,8 @@ export const bookData: Book[] = [
     dateFinished: "01/15/2023",
     progress: "finished",
     color: "gold",
-    fav: false
+    fav: false,
+    publisher: "Orbit"
   },
   {
     title: "The World We Make",
@@ -365,7 +376,8 @@ export const bookData: Book[] = [
     dateFinished: "01/12/2023",
     progress: "finished",
     color: "black",
-    fav: false
+    fav: false,
+    publisher: "Orbit"
   },
   {
     title: "The Killing Moon",
@@ -383,7 +395,8 @@ export const bookData: Book[] = [
     dateFinished: "01/08/2023",
     progress: "finished",
     color: "darkblue",
-    fav: false
+    fav: false,
+    publisher: "Orbit"
   },
   {
     title: "Babel",
@@ -410,7 +423,8 @@ export const bookData: Book[] = [
     dateFinished: "01/05/2023",
     progress: "finished",
     fav: true,
-    color: "gold"
+    color: "gold",
+    publisher: "Harper Voyager"
   },
   {
     title: "The Girl Who Fell Beneath the Sea",
@@ -435,7 +449,8 @@ export const bookData: Book[] = [
     dateFinished: "12/30/2022",
     progress: "finished",
     color: "lightblue",
-    fav: false
+    fav: false,
+    publisher: "Feiwel & Friends"
   },
   {
     title: "The Deep",
@@ -461,7 +476,8 @@ export const bookData: Book[] = [
     dateFinished: "12/28/2022",
     progress: "finished",
     color: "darkblue",
-    fav: false
+    fav: false,
+    publisher: "Gallery / Saga Press"
   },
   {
     title: "Whiteout",
@@ -496,7 +512,8 @@ export const bookData: Book[] = [
     dateFinished: "12/24/2022",
     progress: "finished",
     color: "purple",
-    fav: false
+    fav: false,
+    publisher: "Quill Tree Books"
   },
   {
     title: "Jade City",
@@ -514,7 +531,8 @@ export const bookData: Book[] = [
     dateFinished: "12/21/2022",
     progress: "finished",
     color: "green",
-    fav: false
+    fav: false,
+    publisher: "Orbit"
   },
   {
     title: "The Nickel Boys",
@@ -532,7 +550,8 @@ export const bookData: Book[] = [
     dateFinished: "12/16/2022",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Doubleday"
   },
   {
     title: "The Underground Railroad",
@@ -556,7 +575,8 @@ export const bookData: Book[] = [
     dateFinished: "12/14/2022",
     progress: "finished",
     color: "black",
-    fav: true
+    fav: true,
+    publisher: "Doubleday"
   },
   {
     title: "The Red Palace",
@@ -574,7 +594,8 @@ export const bookData: Book[] = [
     dateFinished: "12/12/2022",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Feiwel & Friends"
   },
   {
     title: "Deathless Divide",
@@ -600,7 +621,8 @@ export const bookData: Book[] = [
     dateFinished: "12/15/2022",
     progress: "finished",
     color: "black",
-    fav: false
+    fav: false,
+    publisher: "Balzer + Bray"
   },
   {
     title: "Get a Life, Chloe Brown",
@@ -618,7 +640,8 @@ export const bookData: Book[] = [
     dateFinished: "12/11/2022",
     progress: "finished",
     color: "pink",
-    fav: false
+    fav: false,
+    publisher: "Avon"
   },
   {
     title: "Born a Crime",
@@ -636,7 +659,8 @@ export const bookData: Book[] = [
     dateFinished: "10/09/2022",
     progress: "finished",
     color: "lightblue",
-    fav: true
+    fav: true,
+    publisher: "One World"
   },
   {
     title: "The City We Became",
@@ -662,7 +686,8 @@ export const bookData: Book[] = [
     dateFinished: "09/22/2022",
     progress: "finished",
     color: "black",
-    fav: false
+    fav: false,
+    publisher: "Orbit"
   },
   {
     title: "Binti: Night Masquerade",
@@ -686,7 +711,8 @@ export const bookData: Book[] = [
     dateFinished: "09/04/2022",
     progress: "finished",
     color: "gold",
-    fav: false
+    fav: false,
+    publisher: "Tor.com"
   },
   {
     title: "Binti: Home",
@@ -710,7 +736,8 @@ export const bookData: Book[] = [
     dateFinished: "09/03/2022",
     progress: "finished",
     color: "darkblue",
-    fav: false
+    fav: false,
+    publisher: "Tor.com"
   },
   {
     title: "A Master of Djinn",
@@ -728,7 +755,8 @@ export const bookData: Book[] = [
     dateFinished: "09/02/2022",
     progress: "finished",
     color: "brown",
-    fav: false
+    fav: false,
+    publisher: "Tor.com"
   },
   {
     title: "Fledgling",
@@ -746,7 +774,8 @@ export const bookData: Book[] = [
     dateFinished: "08/21/2022",
     progress: "dnf",
     color: "black",
-    fav: false
+    fav: false,
+    publisher: ""
   },
   {
     title: "Kindred",
@@ -772,10 +801,11 @@ export const bookData: Book[] = [
     dateFinished: "08/20/2022",
     progress: "finished",
     color: "black",
-    fav: true
+    fav: true,
+    publisher: "Beacon Press"
   },
   {
-    title: "The Unkindness of Ghosts",
+    title: "An Unkindness of Ghosts",
     author: ["Rivers Solomon"],
     audioBookNarrator: ["Cherise Boothe"],
     publishedYear: 2017,
@@ -790,7 +820,8 @@ export const bookData: Book[] = [
     dateFinished: "08/16/2022",
     progress: "finished",
     fav: false,
-    color: "darkblue"
+    color: "darkblue",
+    publisher: "Akashic Books"
   },
   {
     title: "The Gilded Ones",
@@ -808,7 +839,8 @@ export const bookData: Book[] = [
     dateFinished: "08/13/2022",
     progress: "finished",
     fav: false,
-    color: "gold"
+    color: "gold",
+    publisher: "Delacorte Press"
   },
   {
     title: "The Burning God",
@@ -826,7 +858,8 @@ export const bookData: Book[] = [
     dateFinished: "08/04/2022",
     progress: "finished",
     fav: true,
-    color: "purple"
+    color: "purple",
+    publisher: "Harper Voyager"
   },
   {
     title: "The Dragon Republic",
@@ -844,7 +877,8 @@ export const bookData: Book[] = [
     dateFinished: "08/01/2022",
     progress: "finished",
     fav: true,
-    color: "darkblue"
+    color: "darkblue",
+    publisher: "Harper Voyager"
   },
   {
     title: "The Poppy War",
@@ -862,7 +896,8 @@ export const bookData: Book[] = [
     dateFinished: "07/30/2022",
     progress: "finished",
     fav: true,
-    color: "red"
+    color: "red",
+    publisher: "Harper Voyager"
   },
   {
     title: "This Wicked Fate",
@@ -880,7 +915,8 @@ export const bookData: Book[] = [
     dateFinished: "07/27/2022",
     progress: "finished",
     fav: false,
-    color: "purple"
+    color: "purple",
+    publisher: "Bloomsbury YA"
   },
   {
     title: "This Poison Heart",
@@ -898,7 +934,34 @@ export const bookData: Book[] = [
     dateFinished: "07/19/2022",
     progress: "finished",
     fav: false,
-    color: "green"
+    color: "green",
+    publisher: "Bloomsbury YA"
+  },
+  {
+    title: "Iron Heart",
+    author: ["Nina Varela"],
+    audioBookNarrator: ["Kim Mai Guest"],
+    publishedYear: 2020,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "Romance",
+      "LGBTQIA+",
+      "Science Fiction",
+      "Dystopia",
+      "War"
+    ],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 400,
+    medium: "Physical and Audio",
+    rating: 4,
+    dateStarted: "10/17/2021",
+    dateFinished: "07/17/2022",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Quill Tree Books"
   },
   {
     title: "Binti",
@@ -922,7 +985,8 @@ export const bookData: Book[] = [
     dateFinished: "07/16/2022",
     progress: "finished",
     color: "brown",
-    fav: false
+    fav: false,
+    publisher: "Tor.com"
   },
   {
     title: "Iron Widow",
@@ -948,7 +1012,8 @@ export const bookData: Book[] = [
     dateFinished: "07/16/2022",
     progress: "finished",
     color: "orange",
-    fav: false
+    fav: false,
+    publisher: "Penguin Teen"
   },
   {
     title: "Bloodchild and Other Stories",
@@ -974,7 +1039,8 @@ export const bookData: Book[] = [
     dateFinished: "07/10/2022",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Seven Stories Press"
   },
   {
     title: "How Long 'til Black Future Month?",
@@ -1009,7 +1075,8 @@ export const bookData: Book[] = [
     dateFinished: "07/09/2022",
     progress: "finished",
     color: "gold",
-    fav: true
+    fav: true,
+    publisher: "Orbit"
   },
   {
     title: "Redemptor",
@@ -1027,7 +1094,8 @@ export const bookData: Book[] = [
     dateFinished: "06/28/2022",
     progress: "finished",
     color: "purple",
-    fav: false
+    fav: false,
+    publisher: "Amulet Books"
   },
   {
     title: "Ace of Spades",
@@ -1045,7 +1113,8 @@ export const bookData: Book[] = [
     dateFinished: "06/19/2022",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Feiwel & Friends"
   },
   {
     title: "Dread Nation",
@@ -1071,32 +1140,8 @@ export const bookData: Book[] = [
     dateFinished: "10/22/2021",
     progress: "finished",
     color: "brown",
-    fav: false
-  },
-  {
-    title: "Iron Heart",
-    author: ["Nina Varela"],
-    audioBookNarrator: ["Kim Mai Guest"],
-    publishedYear: 2020,
-    setting: ["Fictional"],
-    genre: [
-      "Fantasy",
-      "Romance",
-      "LGBTQIA+",
-      "Science Fiction",
-      "Dystopia",
-      "War"
-    ],
-    age: "Young Adult",
-    type: "Fiction",
-    pages: 400,
-    medium: "Physical and Audio",
-    rating: 4,
-    dateStarted: "10/17/2021",
-    dateFinished: "07/17/2022",
-    progress: "finished",
-    color: "black",
-    fav: false
+    fav: false,
+    publisher: "Balzer + Bray"
   },
   {
     title: "Crier's War",
@@ -1114,7 +1159,8 @@ export const bookData: Book[] = [
     dateFinished: "10/16/2021",
     progress: "finished",
     color: "gold",
-    fav: false
+    fav: false,
+    publisher: "Quill Tree Books"
   },
   {
     title: "Blackout",
@@ -1139,7 +1185,8 @@ export const bookData: Book[] = [
     dateFinished: "10/12/2021",
     progress: "finished",
     fav: false,
-    color: "purple"
+    color: "purple",
+    publisher: "Quill Tree Books"
   },
   {
     title: "Such A Fun Age",
@@ -1157,7 +1204,8 @@ export const bookData: Book[] = [
     dateFinished: "10/03/2021",
     progress: "finished",
     color: "pink",
-    fav: false
+    fav: false,
+    publisher: "G.P. Putnam's Sons"
   },
   {
     title: "Grown",
@@ -1175,7 +1223,8 @@ export const bookData: Book[] = [
     dateFinished: "06/17/2022",
     progress: "finished",
     color: "gold",
-    fav: true
+    fav: true,
+    publisher: "Katherine Tegen Books"
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -1198,7 +1247,8 @@ export const bookData: Book[] = [
     dateFinished: "06/18/2022",
     progress: "finished",
     color: "green",
-    fav: false
+    fav: false,
+    publisher: "Katherine Tegen Books"
   },
   {
     title: "Allegedly",
@@ -1216,7 +1266,8 @@ export const bookData: Book[] = [
     dateFinished: "09/24/2021",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Katherine Tegen Books"
   },
   {
     title: "Raybearer",
@@ -1234,7 +1285,8 @@ export const bookData: Book[] = [
     dateFinished: "09/19/2021",
     progress: "finished",
     color: "purple",
-    fav: false
+    fav: false,
+    publisher: "Amulet Books"
   },
   {
     title: "Red, White & Royal Blue",
@@ -1252,7 +1304,8 @@ export const bookData: Book[] = [
     dateFinished: "09/17/2021",
     progress: "dnf",
     color: "purple",
-    fav: false
+    fav: false,
+    publisher: ""
   },
   {
     title: "The Vanishing Half",
@@ -1277,7 +1330,8 @@ export const bookData: Book[] = [
     dateFinished: "09/13/2021",
     progress: "finished",
     color: "darkblue",
-    fav: true
+    fav: true,
+    publisher: "Riverhead Books"
   },
   {
     title: "The Testaments",
@@ -1295,7 +1349,8 @@ export const bookData: Book[] = [
     dateFinished: "09/09/2021",
     progress: "dnf",
     color: "blue",
-    fav: false
+    fav: false,
+    publisher: ""
   },
   {
     title: "Boyfriend Material",
@@ -1313,7 +1368,8 @@ export const bookData: Book[] = [
     dateFinished: "08/29/2021",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Sourcebooks Casablanca"
   },
   {
     title: "Ring Shout",
@@ -1339,7 +1395,8 @@ export const bookData: Book[] = [
     dateFinished: "08/27/2021",
     progress: "finished",
     color: "black",
-    fav: true
+    fav: true,
+    publisher: "Tor.com"
   },
   {
     title: "The Grace Year",
@@ -1357,7 +1414,8 @@ export const bookData: Book[] = [
     dateFinished: "08/24/2021",
     progress: "finished",
     color: "pink",
-    fav: false
+    fav: false,
+    publisher: "Wednesday Books"
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -1375,7 +1433,8 @@ export const bookData: Book[] = [
     dateFinished: "08/23/2021",
     progress: "finished",
     color: "red",
-    fav: false
+    fav: false,
+    publisher: "Liveright"
   },
   {
     title: "Gods of Jade and Shadow",
@@ -1393,7 +1452,8 @@ export const bookData: Book[] = [
     dateFinished: "05/01/2021",
     progress: "finished",
     fav: false,
-    color: "purple"
+    color: "purple",
+    publisher: "Del Rey"
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -1411,7 +1471,8 @@ export const bookData: Book[] = [
     dateFinished: "02/20/2021",
     progress: "finished",
     fav: false,
-    color: "lightblue"
+    color: "lightblue",
+    publisher: "Houghton Mifflin Harcourt"
   },
   {
     title: "Uprooted",
@@ -1429,7 +1490,8 @@ export const bookData: Book[] = [
     dateFinished: "02/16/2021",
     progress: "dnf",
     fav: false,
-    color: "gold"
+    color: "gold",
+    publisher: ""
   },
   {
     title: "The Good Luck Girls",
@@ -1447,7 +1509,8 @@ export const bookData: Book[] = [
     dateFinished: "02/15/2021",
     progress: "dnf",
     color: "brown",
-    fav: false
+    fav: false,
+    publisher: ""
   },
   {
     title: "Full Disclosure",
@@ -1465,7 +1528,8 @@ export const bookData: Book[] = [
     dateFinished: "02/14/2021",
     progress: "finished",
     fav: false,
-    color: "darkblue"
+    color: "darkblue",
+    publisher: "Knopf Books for Young Readers"
   },
   {
     title: "Monday's Not Coming",
@@ -1483,7 +1547,8 @@ export const bookData: Book[] = [
     dateFinished: "02/12/2021",
     progress: "finished",
     fav: true,
-    color: "red"
+    color: "red",
+    publisher: "Katherine Tegen Books"
   },
   {
     title: "The Year of the Witching",
@@ -1509,7 +1574,8 @@ export const bookData: Book[] = [
     dateFinished: "02/11/2021",
     progress: "finished",
     fav: false,
-    color: "gold"
+    color: "gold",
+    publisher: "Ace"
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -1527,7 +1593,8 @@ export const bookData: Book[] = [
     dateFinished: "02/09/2021",
     progress: "finished",
     fav: false,
-    color: "red"
+    color: "red",
+    publisher: "Sourcebooks Fire"
   },
   {
     title: "Cinderella Is Dead",
@@ -1553,7 +1620,8 @@ export const bookData: Book[] = [
     dateFinished: "02/08/2021",
     progress: "finished",
     fav: false,
-    color: "purple"
+    color: "purple",
+    publisher: "Bloomsbury YA"
   },
   {
     title: "She Came to Slay: The Life and Times of Harriet Tubman",
@@ -1579,6 +1647,7 @@ export const bookData: Book[] = [
     dateFinished: "02/07/2021",
     progress: "finished",
     fav: false,
-    color: "red"
+    color: "red",
+    publisher: "Simon & Schuster"
   }
 ];

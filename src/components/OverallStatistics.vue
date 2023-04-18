@@ -198,6 +198,22 @@
             </ul>
           </div>
         </div>
+        <div class="genres">
+          <div class="genre-list narrators">
+            <h2>Book Publishers</h2>
+            <ul>
+              <li
+                v-for="(publisherAmount, publisher) in count(listPublishers)"
+                :key="publisher"
+                class="genre"
+                :class="[{ 'fade-genre': publisherAmount < 2 }]"
+              >
+                <p class="">{{ publisher }}</p>
+                <p class="">{{ publisherAmount }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="tbr">
           <div class="tbr-list narrators">
             <h2>"To Be Read" List</h2>
@@ -256,6 +272,16 @@ export default {
       });
 
       return settingList.flat();
+    },
+    listPublishers() {
+      let publisherList = [];
+      this.filterReadBooks.forEach(function(each) {
+        if (each.publisher.length > 0 ){
+          publisherList.push(each.publisher)
+        }
+      });
+
+      return publisherList.flat();
     },
     listNarrators() {
       let narratorList = [];
@@ -474,6 +500,7 @@ h3 {
   background-color: $black;
   color: white;
   border-left: 2px solid white;
+  border-top: 2px solid white;
 }
 
 .setting {

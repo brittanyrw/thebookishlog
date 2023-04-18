@@ -506,7 +506,7 @@ export const authorData = [
   },
   {
     name: "Rivers Solomon",
-    books: ["The Unkindness of Ghosts", "The Deep"],
+    books: ["An Unkindness of Ghosts", "The Deep"],
     poc: true,
     gender: "non-binary",
     lgbt: true,
