@@ -114,6 +114,25 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Bitter",
+    author: ["Akwaeke Emezi"],
+    audioBookNarrator: ["Bahni Turpin"],
+    publishedYear: 2022,
+    setting: ["Fictional"],
+    genre: ["Black", "Social Justice", "Mystery", "Thriller", "Race", "Horror", "Magic", "LGBTQIA+"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 272,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "03/14/2023",
+    dateFinished: "04/20/2023",
+    progress: "finished",
+    fav: false,
+    color: "brown",
+    publisher: "Listening Library"
+  },
+  {
     title: "White Smoke",
     author: ["Tiffany D. Jackson"],
     audioBookNarrator: [""],

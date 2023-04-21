@@ -654,5 +654,20 @@ export const authorData = [
       }
     ],
     website: "krystalmarquis.com"
+  },
+  {
+    name: "Akwaeke Emezi",
+    books: ["Bitter"],
+    poc: true,
+    gender: "non-binary", // change to array later
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "NG",
+        name: "Nigeria"
+      }
+    ],
+    website: "akwaeke.com"
   }
 ];
