@@ -276,8 +276,8 @@ export default {
     listPublishers() {
       let publisherList = [];
       this.filterReadBooks.forEach(function(each) {
-        if (each.publisher.length > 0 ){
-          publisherList.push(each.publisher)
+        if (each.publisher.length > 0) {
+          publisherList.push(each.publisher);
         }
       });
 

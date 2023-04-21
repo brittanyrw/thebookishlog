@@ -119,7 +119,16 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Bahni Turpin"],
     publishedYear: 2022,
     setting: ["Fictional"],
-    genre: ["Black", "Social Justice", "Mystery", "Thriller", "Race", "Horror", "Magic", "LGBTQIA+"],
+    genre: [
+      "Black",
+      "Social Justice",
+      "Mystery",
+      "Thriller",
+      "Race",
+      "Horror",
+      "Magic",
+      "LGBTQIA+"
+    ],
     age: "Young Adult",
     type: "Fiction",
     pages: 272,
