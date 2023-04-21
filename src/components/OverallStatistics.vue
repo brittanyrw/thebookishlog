@@ -219,7 +219,9 @@
             <h2>Audio Book Publishers</h2>
             <ul>
               <li
-                v-for="(audioPublisherAmount, audioPublisher) in count(listAudioPublishers)"
+                v-for="(audioPublisherAmount, audioPublisher) in count(
+                  listAudioPublishers
+                )"
                 :key="audioPublisher"
                 class="genre"
                 :class="[{ 'fade-genre': audioPublisherAmount < 2 }]"
@@ -229,7 +231,7 @@
               </li>
             </ul>
           </div>
-        </div>        
+        </div>
         <div class="tbr">
           <div class="tbr-list narrators">
             <h2>"To Be Read" List</h2>
@@ -764,12 +766,14 @@ h3 {
     }
   }
 }
-@media screen and (max-width: 425px) { 
+@media screen and (max-width: 425px) {
   .fade-genre {
     display: none !important;
   }
 
-  .genres, .setting, .tbr {
+  .genres,
+  .setting,
+  .tbr {
     padding: 10px;
     li {
       font-size: 12px;
@@ -781,10 +785,9 @@ h3 {
       }
     }
     p:first-child {
-      border-width: 1px !important
+      border-width: 1px !important;
     }
   }
-
 }
 
 .next-book {
