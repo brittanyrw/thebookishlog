@@ -1,10 +1,21 @@
 @import './base.css';
 
+/* Update the root colors */
+:root { 
+--black: #1F1F1F;
+--purple: #DCCFFF;
+--blue: #BBEFFF;
+--green: #E8FFE8;
+--red: #FFBABE;
+--orange: #FFDAC9;
+--yellow: #FFFAC9;
+--pink: #d31d96;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
