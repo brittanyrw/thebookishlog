@@ -16,6 +16,7 @@ export interface Book {
   fav: boolean;
   color: string;
   publisher: string;
+  audioBookPublisher: string;
 }
 
 export type Ages =
@@ -139,7 +140,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "brown",
-    publisher: "Listening Library"
+    publisher: "Knopf Books for Young Readers",
+    audioBookPublisher: "Listening Library"
   },
   {
     title: "White Smoke",
@@ -158,7 +160,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "purple",
-    publisher: "Katherine Tegen Books"
+    publisher: "Katherine Tegen Books",
+    audioBookPublisher: ""
   },
   {
     title: "Six Crimson Cranes",
@@ -177,7 +180,8 @@ export const bookData: Book[] = [
     progress: "dnf",
     fav: false,
     color: "red",
-    publisher: ""
+    publisher: "",
+    audioBookPublisher: ""
   },
   {
     title: "The Black God's Drums",
@@ -207,7 +211,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "gold",
-    publisher: "Tor.com"
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books"
   },
   {
     title: "The Davenports",
@@ -234,7 +239,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "brown",
-    publisher: "Dial Books"
+    publisher: "Dial Books",
+    audioBookPublisher: "Listening Library"
   },
   {
     title: "Emergency Skin",
@@ -253,7 +259,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "green",
     fav: false,
-    publisher: "Amazon Original Stories"
+    publisher: "Amazon Original Stories",
+    audioBookPublisher: "Amazon Original Stories"
   },
   {
     title: "The Weight of Blood",
@@ -286,7 +293,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Katherine Tegen Books"
+    publisher: "Katherine Tegen Books",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "Rust in the Root",
@@ -312,7 +320,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "black",
     fav: false,
-    publisher: "Balzer + Bray"
+    publisher: "Balzer + Bray",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "Stories from the Tenants Downstairs",
@@ -340,7 +349,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Scribner"
+    publisher: "Scribner",
+    audioBookPublisher: "Simon & Schuster Audio"
   },
   {
     title: "Akata Witch",
@@ -359,7 +369,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Speak"
+    publisher: "Speak",
+    audioBookPublisher: "Tantor Audio"
   },
   {
     title: "The Hundred Thousand Kingdoms",
@@ -378,7 +389,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "gold",
     fav: false,
-    publisher: "Orbit"
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio"
   },
   {
     title: "The World We Make",
@@ -405,7 +417,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "black",
     fav: false,
-    publisher: "Orbit"
+    publisher: "Orbit",
+    audioBookPublisher: "Orbit"
   },
   {
     title: "The Killing Moon",
@@ -424,7 +437,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "darkblue",
     fav: false,
-    publisher: "Orbit"
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio"
   },
   {
     title: "Babel",
@@ -452,7 +466,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: true,
     color: "gold",
-    publisher: "Harper Voyager"
+    publisher: "Harper Voyager",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "The Girl Who Fell Beneath the Sea",
@@ -478,7 +493,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "lightblue",
     fav: false,
-    publisher: "Feiwel & Friends"
+    publisher: "Feiwel & Friends",
+    audioBookPublisher: "Dreamscape Media, LLC"
   },
   {
     title: "The Deep",
@@ -505,7 +521,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "darkblue",
     fav: false,
-    publisher: "Gallery / Saga Press"
+    publisher: "Gallery / Saga Press",
+    audioBookPublisher: "Simon & Schuster Audio"
   },
   {
     title: "Whiteout",
@@ -541,7 +558,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "purple",
     fav: false,
-    publisher: "Quill Tree Books"
+    publisher: "Quill Tree Books",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "Jade City",
@@ -560,7 +578,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "green",
     fav: false,
-    publisher: "Orbit"
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio"
   },
   {
     title: "The Nickel Boys",
@@ -579,7 +598,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Doubleday"
+    publisher: "Doubleday",
+    audioBookPublisher: "Random House Audio"
   },
   {
     title: "The Underground Railroad",
@@ -604,7 +624,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "black",
     fav: true,
-    publisher: "Doubleday"
+    publisher: "Doubleday",
+    audioBookPublisher: "Random House Audio"
   },
   {
     title: "The Red Palace",
@@ -623,7 +644,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Feiwel & Friends"
+    publisher: "Feiwel & Friends",
+    audioBookPublisher: "Listening Library"
   },
   {
     title: "Deathless Divide",
@@ -650,7 +672,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "black",
     fav: false,
-    publisher: "Balzer + Bray"
+    publisher: "Balzer + Bray",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "Get a Life, Chloe Brown",
@@ -669,7 +692,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "pink",
     fav: false,
-    publisher: "Avon"
+    publisher: "Avon",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "Born a Crime",
@@ -688,7 +712,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "lightblue",
     fav: true,
-    publisher: "One World"
+    publisher: "One World",
+    audioBookPublisher: "Audible Studios"
   },
   {
     title: "The City We Became",
@@ -715,7 +740,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "black",
     fav: false,
-    publisher: "Orbit"
+    publisher: "Orbit",
+    audioBookPublisher: "Orbit"
   },
   {
     title: "Binti: Night Masquerade",
@@ -740,7 +766,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "gold",
     fav: false,
-    publisher: "Tor.com"
+    publisher: "Tor.com",
+    audioBookPublisher: "Tantor Audio"
   },
   {
     title: "Binti: Home",
@@ -765,7 +792,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "darkblue",
     fav: false,
-    publisher: "Tor.com"
+    publisher: "Tor.com",
+    audioBookPublisher: "Tantor Audio"
   },
   {
     title: "A Master of Djinn",
@@ -784,7 +812,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "brown",
     fav: false,
-    publisher: "Tor.com"
+    publisher: "Tor.com",
+    audioBookPublisher: "Macmillan Audio"
   },
   {
     title: "Fledgling",
@@ -803,7 +832,8 @@ export const bookData: Book[] = [
     progress: "dnf",
     color: "black",
     fav: false,
-    publisher: ""
+    publisher: "",
+    audioBookPublisher: ""
   },
   {
     title: "Kindred",
@@ -830,7 +860,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "black",
     fav: true,
-    publisher: "Beacon Press"
+    publisher: "Beacon Press",
+    audioBookPublisher: "Recorded Books"
   },
   {
     title: "An Unkindness of Ghosts",
@@ -849,7 +880,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "darkblue",
-    publisher: "Akashic Books"
+    publisher: "Akashic Books",
+    audioBookPublisher: "Blackstone Audio, Inc"
   },
   {
     title: "The Gilded Ones",
@@ -868,7 +900,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "gold",
-    publisher: "Delacorte Press"
+    publisher: "Delacorte Press",
+    audioBookPublisher: "Listening Library"
   },
   {
     title: "The Burning God",
@@ -887,7 +920,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: true,
     color: "purple",
-    publisher: "Harper Voyager"
+    publisher: "Harper Voyager",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "The Dragon Republic",
@@ -906,7 +940,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: true,
     color: "darkblue",
-    publisher: "Harper Voyager"
+    publisher: "Harper Voyager",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "The Poppy War",
@@ -925,7 +960,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: true,
     color: "red",
-    publisher: "Harper Voyager"
+    publisher: "Harper Voyager",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "This Wicked Fate",
@@ -944,7 +980,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "purple",
-    publisher: "Bloomsbury YA"
+    publisher: "Bloomsbury YA",
+    audioBookPublisher: "Bloomsbury Publishing Plc"
   },
   {
     title: "This Poison Heart",
@@ -963,7 +1000,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "green",
-    publisher: "Bloomsbury YA"
+    publisher: "Bloomsbury YA",
+    audioBookPublisher: "Bloomsbury Publishing Plc"
   },
   {
     title: "Iron Heart",
@@ -989,7 +1027,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "black",
     fav: false,
-    publisher: "Quill Tree Books"
+    publisher: "Quill Tree Books",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "Binti",
@@ -1014,7 +1053,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "brown",
     fav: false,
-    publisher: "Tor.com"
+    publisher: "Tor.com",
+    audioBookPublisher: "Macmillan Audio"
   },
   {
     title: "Iron Widow",
@@ -1041,7 +1081,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "orange",
     fav: false,
-    publisher: "Penguin Teen"
+    publisher: "Penguin Teen",
+    audioBookPublisher: "Penguin Teen Canada"
   },
   {
     title: "Bloodchild and Other Stories",
@@ -1068,7 +1109,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Seven Stories Press"
+    publisher: "Seven Stories Press",
+    audioBookPublisher: "Audible Studios"
   },
   {
     title: "How Long 'til Black Future Month?",
@@ -1104,7 +1146,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "gold",
     fav: true,
-    publisher: "Orbit"
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio"
   },
   {
     title: "Redemptor",
@@ -1123,7 +1166,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "purple",
     fav: false,
-    publisher: "Amulet Books"
+    publisher: "Amulet Books",
+    audioBookPublisher: "Blackstone Publishing"
   },
   {
     title: "Ace of Spades",
@@ -1142,7 +1186,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Feiwel & Friends"
+    publisher: "Feiwel & Friends",
+    audioBookPublisher: "Macmillan Audio"
   },
   {
     title: "Dread Nation",
@@ -1169,7 +1214,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "brown",
     fav: false,
-    publisher: "Balzer + Bray"
+    publisher: "Balzer + Bray",
+    audioBookPublisher: ""
   },
   {
     title: "Crier's War",
@@ -1188,7 +1234,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "gold",
     fav: false,
-    publisher: "Quill Tree Books"
+    publisher: "Quill Tree Books",
+    audioBookPublisher: ""
   },
   {
     title: "Blackout",
@@ -1214,7 +1261,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "purple",
-    publisher: "Quill Tree Books"
+    publisher: "Quill Tree Books",
+    audioBookPublisher: ""
   },
   {
     title: "Such A Fun Age",
@@ -1233,7 +1281,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "pink",
     fav: false,
-    publisher: "G.P. Putnam's Sons"
+    publisher: "G.P. Putnam's Sons",
+    audioBookPublisher: ""
   },
   {
     title: "Grown",
@@ -1252,7 +1301,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "gold",
     fav: true,
-    publisher: "Katherine Tegen Books"
+    publisher: "Katherine Tegen Books",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -1276,7 +1326,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "green",
     fav: false,
-    publisher: "Katherine Tegen Books"
+    publisher: "Katherine Tegen Books",
+    audioBookPublisher: "HarperAudio"
   },
   {
     title: "Allegedly",
@@ -1295,7 +1346,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Katherine Tegen Books"
+    publisher: "Katherine Tegen Books",
+    audioBookPublisher: ""
   },
   {
     title: "Raybearer",
@@ -1314,7 +1366,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "purple",
     fav: false,
-    publisher: "Amulet Books"
+    publisher: "Amulet Books",
+    audioBookPublisher: ""
   },
   {
     title: "Red, White & Royal Blue",
@@ -1333,7 +1386,8 @@ export const bookData: Book[] = [
     progress: "dnf",
     color: "purple",
     fav: false,
-    publisher: ""
+    publisher: "",
+    audioBookPublisher: ""
   },
   {
     title: "The Vanishing Half",
@@ -1359,7 +1413,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "darkblue",
     fav: true,
-    publisher: "Riverhead Books"
+    publisher: "Riverhead Books",
+    audioBookPublisher: ""
   },
   {
     title: "The Testaments",
@@ -1378,7 +1433,8 @@ export const bookData: Book[] = [
     progress: "dnf",
     color: "blue",
     fav: false,
-    publisher: ""
+    publisher: "",
+    audioBookPublisher: ""
   },
   {
     title: "Boyfriend Material",
@@ -1397,7 +1453,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Sourcebooks Casablanca"
+    publisher: "Sourcebooks Casablanca",
+    audioBookPublisher: ""
   },
   {
     title: "Ring Shout",
@@ -1424,7 +1481,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "black",
     fav: true,
-    publisher: "Tor.com"
+    publisher: "Tor.com",
+    audioBookPublisher: ""
   },
   {
     title: "The Grace Year",
@@ -1443,7 +1501,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "pink",
     fav: false,
-    publisher: "Wednesday Books"
+    publisher: "Wednesday Books",
+    audioBookPublisher: ""
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -1462,7 +1521,8 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "red",
     fav: false,
-    publisher: "Liveright"
+    publisher: "Liveright",
+    audioBookPublisher: ""
   },
   {
     title: "Gods of Jade and Shadow",
@@ -1481,7 +1541,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "purple",
-    publisher: "Del Rey"
+    publisher: "Del Rey",
+    audioBookPublisher: ""
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -1500,7 +1561,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "lightblue",
-    publisher: "Houghton Mifflin Harcourt"
+    publisher: "Houghton Mifflin Harcourt",
+    audioBookPublisher: ""
   },
   {
     title: "Uprooted",
@@ -1519,7 +1581,8 @@ export const bookData: Book[] = [
     progress: "dnf",
     fav: false,
     color: "gold",
-    publisher: ""
+    publisher: "",
+    audioBookPublisher: ""
   },
   {
     title: "The Good Luck Girls",
@@ -1538,7 +1601,8 @@ export const bookData: Book[] = [
     progress: "dnf",
     color: "brown",
     fav: false,
-    publisher: ""
+    publisher: "",
+    audioBookPublisher: ""
   },
   {
     title: "Full Disclosure",
@@ -1557,7 +1621,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "darkblue",
-    publisher: "Knopf Books for Young Readers"
+    publisher: "Knopf Books for Young Readers",
+    audioBookPublisher: ""
   },
   {
     title: "Monday's Not Coming",
@@ -1576,7 +1641,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: true,
     color: "red",
-    publisher: "Katherine Tegen Books"
+    publisher: "Katherine Tegen Books",
+    audioBookPublisher: ""
   },
   {
     title: "The Year of the Witching",
@@ -1603,7 +1669,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "gold",
-    publisher: "Ace"
+    publisher: "Ace",
+    audioBookPublisher: ""
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -1622,7 +1689,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "red",
-    publisher: "Sourcebooks Fire"
+    publisher: "Sourcebooks Fire",
+    audioBookPublisher: ""
   },
   {
     title: "Cinderella Is Dead",
@@ -1649,7 +1717,8 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "purple",
-    publisher: "Bloomsbury YA"
+    publisher: "Bloomsbury YA",
+    audioBookPublisher: ""
   },
   {
     title: "She Came to Slay: The Life and Times of Harriet Tubman",
@@ -1676,6 +1745,7 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "red",
-    publisher: "Simon & Schuster"
+    publisher: "Simon & Schuster",
+    audioBookPublisher: ""
   }
 ];

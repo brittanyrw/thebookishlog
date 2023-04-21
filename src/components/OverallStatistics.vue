@@ -214,6 +214,22 @@
             </ul>
           </div>
         </div>
+        <div class="genres">
+          <div class="genre-list narrators">
+            <h2>Audio Book Publishers</h2>
+            <ul>
+              <li
+                v-for="(audioPublisherAmount, audioPublisher) in count(listAudioPublishers)"
+                :key="audioPublisher"
+                class="genre"
+                :class="[{ 'fade-genre': audioPublisherAmount < 2 }]"
+              >
+                <p class="">{{ audioPublisher }}</p>
+                <p class="">{{ audioPublisherAmount }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>        
         <div class="tbr">
           <div class="tbr-list narrators">
             <h2>"To Be Read" List</h2>
@@ -282,6 +298,16 @@ export default {
       });
 
       return publisherList.flat();
+    },
+    listAudioPublishers() {
+      let audioPublisherList = [];
+      this.filterReadBooks.forEach(function(each) {
+        if (each.audioBookPublisher.length > 0) {
+          audioPublisherList.push(each.audioBookPublisher);
+        }
+      });
+
+      return audioPublisherList.flat();
     },
     listNarrators() {
       let narratorList = [];
@@ -737,6 +763,28 @@ h3 {
       }
     }
   }
+}
+@media screen and (max-width: 425px) { 
+  .fade-genre {
+    display: none !important;
+  }
+
+  .genres, .setting, .tbr {
+    padding: 10px;
+    li {
+      font-size: 12px;
+      margin: 5px !important;
+      box-shadow: none !important;
+      border-width: 1px !important;
+      p {
+        padding: 5px !important;
+      }
+    }
+    p:first-child {
+      border-width: 1px !important
+    }
+  }
+
 }
 
 .next-book {
