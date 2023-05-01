@@ -657,7 +657,7 @@ export const authorData = [
   },
   {
     name: "Akwaeke Emezi",
-    books: ["Bitter"],
+    books: ["Bitter", "The Death of Vivek Oji"],
     poc: true,
     gender: "non-binary", // change to array later
     lgbt: true,

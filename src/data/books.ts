@@ -28,6 +28,7 @@ export type Ages =
 
 export type Setting =
   | ""
+  | "Africa"
   | "Atlanta"
   | "Boston"
   | "California"
@@ -114,6 +115,34 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "The Death of Vivek Oji",
+    author: ["Akwaeke Emezi"],
+    audioBookNarrator: ["Yetide Badaki", "Chukwudi Iwuji"],
+    publishedYear: 2020,
+    setting: ["Africa", "Nigeria"],
+    genre: [
+      "Black",
+      "Mystery",
+      "Race",
+      "LGBTQIA+",
+      "Family",
+      "Romance",
+      "Africa"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 248,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "04/27/2023",
+    dateFinished: "04/28/2023",
+    progress: "finished",
+    fav: false,
+    color: "pink",
+    publisher: "Riverhead Books",
+    audioBookPublisher: "Penguin Audio"
+  },
   {
     title: "Bitter",
     author: ["Akwaeke Emezi"],
@@ -357,7 +386,7 @@ export const bookData: Book[] = [
     author: ["Nnedi Okorafor"],
     audioBookNarrator: ["Yetide Badaki"],
     publishedYear: 2011,
-    setting: ["Nigeria"],
+    setting: ["Africa", "Nigeria"],
     genre: ["Science Fiction", "Black", "Magic", "Crime"],
     age: "Young Adult",
     type: "Fiction",
@@ -700,7 +729,7 @@ export const bookData: Book[] = [
     author: ["Trevor Noah"],
     audioBookNarrator: ["Trevor Noah"],
     publishedYear: 2016,
-    setting: ["South Africa"],
+    setting: ["Africa", "South Africa"],
     genre: ["Autobiography", "Black", "Africa", "Family", "Race"],
     age: "Adult",
     type: "Non-Fiction",
@@ -800,7 +829,7 @@ export const bookData: Book[] = [
     author: ["P. Djèlí Clark"],
     audioBookNarrator: ["Suehyla El-Attar"],
     publishedYear: 2021,
-    setting: ["Egypt"],
+    setting: ["Africa", "Egypt"],
     genre: ["Science Fiction", "Magic", "Horror", "Race", "History", "Mystery"],
     age: "Adult",
     type: "Fiction",

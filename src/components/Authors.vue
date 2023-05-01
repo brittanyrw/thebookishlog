@@ -304,7 +304,7 @@ export default {
     }
     @media screen and (min-width: 992px) {
       .author:first-child {
-        width: 48%;
+        flex-basis: 100%;
       }
     }
     .author:last-child,
