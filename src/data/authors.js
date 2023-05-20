@@ -669,5 +669,20 @@ export const authorData = [
       }
     ],
     website: "akwaeke.com"
+  },
+  {
+    name: "Tommy Orange",
+    books: ["There, There"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "penguinrandomhouse.com/authors/2156371/tommy-orange/"
   }
 ];

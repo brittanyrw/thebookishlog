@@ -90,6 +90,7 @@ export type Genres =
   | "Music"
   | "Mystery"
   | "Mythology"
+  | "Native American"
   | "Psychology"
   | "Race"
   | "Retelling"
@@ -115,6 +116,31 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "There, There",
+    author: ["Tommy Orange"],
+    audioBookNarrator: [
+      "Darrell Dennis",
+      "Shaun Taylor-Corbett",
+      "Alma Ceurvo",
+      "Kyla Garcia"
+    ],
+    publishedYear: 2018,
+    setting: ["United States", "California"],
+    genre: ["Native American", "Mystery", "Race", "Family", "Crime", "History"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 292,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "05/15/2023",
+    dateFinished: "05/17/2023",
+    progress: "finished",
+    fav: false,
+    color: "black",
+    publisher: "Vintage",
+    audioBookPublisher: "Random House Audio"
+  },
   {
     title: "The Death of Vivek Oji",
     author: ["Akwaeke Emezi"],
