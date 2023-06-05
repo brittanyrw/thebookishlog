@@ -95,6 +95,7 @@ export type Genres =
   | "Race"
   | "Retelling"
   | "Romance"
+  | "Scandal"
   | "Science Fiction"
   | "Short Stories"
   | "Slavery"
@@ -116,6 +117,26 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Yellowface",
+    author: ["R. F. Kuang"],
+    audioBookNarrator: [""],
+    publishedYear: 2023,
+    setting: ["United States", "Washington, DC"],
+    genre: ["Mystery", "Scandal", "Race", "Academic", "Crime"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 323,
+    medium: "Physical",
+    rating: 5,
+    dateStarted: "05/30/2023",
+    dateFinished: "06/03/2023",
+    progress: "finished",
+    fav: true,
+    color: "gold",
+    publisher: "William Morrow",
+    audioBookPublisher: ""
+  },
   {
     title: "There, There",
     author: ["Tommy Orange"],
@@ -497,7 +518,7 @@ export const bookData: Book[] = [
   },
   {
     title: "Babel",
-    author: ["Rebecca F. Kuang"],
+    author: ["R. F. Kuang"],
     audioBookNarrator: ["Chris Lew Kum Hoi", "Billie Fulford-Brown"],
     publishedYear: 2022,
     setting: ["Fictional", "Asia", "United Kingdom", "China"],
@@ -960,7 +981,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Burning God",
-    author: ["Rebecca F. Kuang"],
+    author: ["R. F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2020,
     setting: ["Fictional", "Asia"],
@@ -980,7 +1001,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Dragon Republic",
-    author: ["Rebecca F. Kuang"],
+    author: ["R. F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2019,
     setting: ["Fictional", "Asia"],
@@ -1000,7 +1021,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Poppy War",
-    author: ["Rebecca F. Kuang"],
+    author: ["R. F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2018,
     setting: ["Fictional", "Asia"],
