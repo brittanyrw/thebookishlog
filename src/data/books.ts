@@ -497,7 +497,7 @@ export const bookData: Book[] = [
   },
   {
     title: "Babel",
-    author: ["Rebecca F. Kuang"],
+    author: ["R. F. Kuang"],
     audioBookNarrator: ["Chris Lew Kum Hoi", "Billie Fulford-Brown"],
     publishedYear: 2022,
     setting: ["Fictional", "Asia", "United Kingdom", "China"],
@@ -960,7 +960,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Burning God",
-    author: ["Rebecca F. Kuang"],
+    author: ["R. F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2020,
     setting: ["Fictional", "Asia"],
@@ -980,7 +980,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Dragon Republic",
-    author: ["Rebecca F. Kuang"],
+    author: ["R. F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2019,
     setting: ["Fictional", "Asia"],
@@ -1000,7 +1000,7 @@ export const bookData: Book[] = [
   },
   {
     title: "The Poppy War",
-    author: ["Rebecca F. Kuang"],
+    author: ["R. F. Kuang"],
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2018,
     setting: ["Fictional", "Asia"],
