@@ -15,6 +15,12 @@
               </p>
               <p class="stat-title">Young Adult</p>
             </div>
+            <div class="stat purple">
+              <p class="stat-number">
+                {{ valueCount("age", "Middle Grade") }}
+              </p>
+              <p class="stat-title">Middle Grade</p>
+            </div>            
             <div class="stat orange">
               <p class="stat-number">
                 {{ valueCount("medium", "Physical") }}
@@ -47,6 +53,12 @@
               </p>
               <p class="stat-title">Non-Fiction</p>
             </div>
+            <div class="stat orange">
+              <p class="stat-number">
+                {{ valueCountList("genre", "Short Stories") }}
+              </p>
+              <p class="stat-title">Short Stories/Novellas</p>
+            </div>
           </div>
         </section>
         <section class="book-length-ratings">
@@ -57,6 +69,29 @@
                 <li
                   class="book"
                   v-for="(book, index) in filter('fav', true)"
+                  :key="index"
+                >
+                  <img
+                    class="book-cover-img"
+                    :class="[
+                      { 'e-book': book.medium == 'E-Book' },
+                      { audio: book.medium == 'Audio' }
+                    ]"
+                    :alt="`${book.title} book cover`"
+                    :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                  />
+                  <p>{{ book.title }}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ratings">
+            <div class="favorite-books">
+              <h3>Short Stories and Novellas</h3>
+              <ul>
+                <li
+                  class="book"
+                  v-for="(book, index) in filterList('genre', 'Short Stories')"
                   :key="index"
                 >
                   <img
@@ -346,6 +381,9 @@ export default {
     filter(key, value) {
       return this.filterReadBooks.filter(item => item[key] == value);
     },
+    filterList(key, value) {
+      return this.filterReadBooks.filter(item => item[key].includes(value));
+    },
     filterDnf(key, value) {
       return this.bookInfo.filter(item => item[key] == value);
     },
@@ -364,6 +402,9 @@ export default {
     },
     valueCount(key, value) {
       return this.filterReadBooks.filter(book => book[key] === value).length;
+    },
+    valueCountList(key, value) {
+      return this.filterReadBooks.filter(book => book[key].includes(value)).length;
     },
     longestBook() {
       let longestBooks = [];

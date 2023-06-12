@@ -468,7 +468,13 @@ export const authorData = [
   },
   {
     name: "R. F. Kuang",
-    books: ["The Poppy War", "The Dragon Republic", "The Burning God", "Babel" ,"Babel"],
+    books: [
+      "The Poppy War",
+      "The Dragon Republic",
+      "The Burning God",
+      "Babel",
+      "Yellowface"
+    ],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -684,5 +690,20 @@ export const authorData = [
       }
     ],
     website: "penguinrandomhouse.com/authors/2156371/tommy-orange/"
+  },
+  {
+    name: "B.B. Alston",
+    books: ["Amari and the Night Brothers"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "bbalston.com"
   }
 ];

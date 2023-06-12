@@ -95,6 +95,7 @@ export type Genres =
   | "Race"
   | "Retelling"
   | "Romance"
+  | "Scandal"
   | "Science Fiction"
   | "Short Stories"
   | "Slavery"
@@ -116,6 +117,46 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Amari and the Night Brothers",
+    author: ["B.B. Alston"],
+    audioBookNarrator: ["Imani Parks"],
+    publishedYear: 2021,
+    setting: ["United States", "New York City"],
+    genre: ["Mystery", "Family", "Magic", "Academic", "Fantasy", "Black"],
+    age: "Middle Grade",
+    type: "Fiction",
+    pages: 416,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "06/06/2023",
+    dateFinished: "06/10/2023",
+    progress: "finished",
+    fav: false,
+    color: "darkblue",
+    publisher: "Balzer + Bray",
+    audioBookPublisher: "HarperAudio"
+  },
+  {
+    title: "Yellowface",
+    author: ["R. F. Kuang"],
+    audioBookNarrator: [""],
+    publishedYear: 2023,
+    setting: ["United States", "Washington, DC"],
+    genre: ["Mystery", "Scandal", "Race", "Academic", "Crime"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 323,
+    medium: "Physical",
+    rating: 5,
+    dateStarted: "05/30/2023",
+    dateFinished: "06/03/2023",
+    progress: "finished",
+    fav: true,
+    color: "gold",
+    publisher: "William Morrow",
+    audioBookPublisher: ""
+  },
   {
     title: "There, There",
     author: ["Tommy Orange"],
@@ -414,7 +455,7 @@ export const bookData: Book[] = [
     publishedYear: 2011,
     setting: ["Africa", "Nigeria"],
     genre: ["Science Fiction", "Black", "Magic", "Crime"],
-    age: "Young Adult",
+    age: "Middle Grade",
     type: "Fiction",
     pages: 349,
     medium: "Audio",
@@ -602,7 +643,7 @@ export const bookData: Book[] = [
     ],
     publishedYear: 2022,
     setting: ["United States", "Georgia (USA)", "Atlanta"],
-    genre: ["Black", "Romance", "LGBTQIA+"],
+    genre: ["Black", "Romance", "LGBTQIA+", "Short Stories"],
     age: "Young Adult",
     type: "Fiction",
     pages: 291,
