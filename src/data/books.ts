@@ -17,6 +17,7 @@ export interface Book {
   color: string;
   publisher: string;
   audioBookPublisher: string;
+  dedication: Object;
 }
 
 export type Ages =
@@ -65,6 +66,7 @@ export type Genres =
   | "Alternate History"
   | "Africa"
   | "Afrofuturism"
+  | "Artificial Intelligence"
   | "Asia"
   | "Autobiography"
   | "Biography"
@@ -135,7 +137,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "darkblue",
     publisher: "Balzer + Bray",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "Children",
+      text: "To my kids, always dream big."
+    }
   },
   {
     title: "Yellowface",
@@ -155,7 +161,11 @@ export const bookData: Book[] = [
     fav: true,
     color: "gold",
     publisher: "William Morrow",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "Wife",
+      text: "To my wife, I love you"
+    }
   },
   {
     title: "There, There",
@@ -180,7 +190,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "black",
     publisher: "Vintage",
-    audioBookPublisher: "Random House Audio"
+    audioBookPublisher: "Random House Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Death of Vivek Oji",
@@ -208,7 +222,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "pink",
     publisher: "Riverhead Books",
-    audioBookPublisher: "Penguin Audio"
+    audioBookPublisher: "Penguin Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Bitter",
@@ -237,7 +255,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "brown",
     publisher: "Knopf Books for Young Readers",
-    audioBookPublisher: "Listening Library"
+    audioBookPublisher: "Listening Library",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "White Smoke",
@@ -257,7 +279,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "purple",
     publisher: "Katherine Tegen Books",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Six Crimson Cranes",
@@ -277,7 +303,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "red",
     publisher: "",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Black God's Drums",
@@ -308,7 +338,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "gold",
     publisher: "Tor.com",
-    audioBookPublisher: "Recorded Books"
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Davenports",
@@ -336,7 +370,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "brown",
     publisher: "Dial Books",
-    audioBookPublisher: "Listening Library"
+    audioBookPublisher: "Listening Library",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Emergency Skin",
@@ -356,7 +394,11 @@ export const bookData: Book[] = [
     color: "green",
     fav: false,
     publisher: "Amazon Original Stories",
-    audioBookPublisher: "Amazon Original Stories"
+    audioBookPublisher: "Amazon Original Stories",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Weight of Blood",
@@ -390,7 +432,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Katherine Tegen Books",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Rust in the Root",
@@ -417,7 +463,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: false,
     publisher: "Balzer + Bray",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Stories from the Tenants Downstairs",
@@ -446,7 +496,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Scribner",
-    audioBookPublisher: "Simon & Schuster Audio"
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Akata Witch",
@@ -466,7 +520,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Speak",
-    audioBookPublisher: "Tantor Audio"
+    audioBookPublisher: "Tantor Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Hundred Thousand Kingdoms",
@@ -486,7 +544,11 @@ export const bookData: Book[] = [
     color: "gold",
     fav: false,
     publisher: "Orbit",
-    audioBookPublisher: "Hachette Audio"
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The World We Make",
@@ -514,7 +576,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: false,
     publisher: "Orbit",
-    audioBookPublisher: "Orbit"
+    audioBookPublisher: "Orbit",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Killing Moon",
@@ -534,7 +600,11 @@ export const bookData: Book[] = [
     color: "darkblue",
     fav: false,
     publisher: "Orbit",
-    audioBookPublisher: "Hachette Audio"
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Babel",
@@ -563,7 +633,11 @@ export const bookData: Book[] = [
     fav: true,
     color: "gold",
     publisher: "Harper Voyager",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Girl Who Fell Beneath the Sea",
@@ -590,7 +664,11 @@ export const bookData: Book[] = [
     color: "lightblue",
     fav: false,
     publisher: "Feiwel & Friends",
-    audioBookPublisher: "Dreamscape Media, LLC"
+    audioBookPublisher: "Dreamscape Media, LLC",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Deep",
@@ -618,7 +696,11 @@ export const bookData: Book[] = [
     color: "darkblue",
     fav: false,
     publisher: "Gallery / Saga Press",
-    audioBookPublisher: "Simon & Schuster Audio"
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Whiteout",
@@ -655,7 +737,11 @@ export const bookData: Book[] = [
     color: "purple",
     fav: false,
     publisher: "Quill Tree Books",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Jade City",
@@ -675,7 +761,11 @@ export const bookData: Book[] = [
     color: "green",
     fav: false,
     publisher: "Orbit",
-    audioBookPublisher: "Hachette Audio"
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Nickel Boys",
@@ -695,7 +785,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Doubleday",
-    audioBookPublisher: "Random House Audio"
+    audioBookPublisher: "Random House Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Underground Railroad",
@@ -721,7 +815,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: true,
     publisher: "Doubleday",
-    audioBookPublisher: "Random House Audio"
+    audioBookPublisher: "Random House Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Red Palace",
@@ -741,7 +839,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Feiwel & Friends",
-    audioBookPublisher: "Listening Library"
+    audioBookPublisher: "Listening Library",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Deathless Divide",
@@ -769,7 +871,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: false,
     publisher: "Balzer + Bray",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Get a Life, Chloe Brown",
@@ -789,7 +895,11 @@ export const bookData: Book[] = [
     color: "pink",
     fav: false,
     publisher: "Avon",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Born a Crime",
@@ -809,7 +919,11 @@ export const bookData: Book[] = [
     color: "lightblue",
     fav: true,
     publisher: "One World",
-    audioBookPublisher: "Audible Studios"
+    audioBookPublisher: "Audible Studios",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The City We Became",
@@ -837,7 +951,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: false,
     publisher: "Orbit",
-    audioBookPublisher: "Orbit"
+    audioBookPublisher: "Orbit",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Binti: Night Masquerade",
@@ -863,7 +981,11 @@ export const bookData: Book[] = [
     color: "gold",
     fav: false,
     publisher: "Tor.com",
-    audioBookPublisher: "Tantor Audio"
+    audioBookPublisher: "Tantor Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Binti: Home",
@@ -889,7 +1011,11 @@ export const bookData: Book[] = [
     color: "darkblue",
     fav: false,
     publisher: "Tor.com",
-    audioBookPublisher: "Tantor Audio"
+    audioBookPublisher: "Tantor Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "A Master of Djinn",
@@ -909,7 +1035,11 @@ export const bookData: Book[] = [
     color: "brown",
     fav: false,
     publisher: "Tor.com",
-    audioBookPublisher: "Macmillan Audio"
+    audioBookPublisher: "Macmillan Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Fledgling",
@@ -929,7 +1059,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: false,
     publisher: "",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Kindred",
@@ -957,7 +1091,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: true,
     publisher: "Beacon Press",
-    audioBookPublisher: "Recorded Books"
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "An Unkindness of Ghosts",
@@ -977,7 +1115,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "darkblue",
     publisher: "Akashic Books",
-    audioBookPublisher: "Blackstone Audio, Inc"
+    audioBookPublisher: "Blackstone Audio, Inc",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Gilded Ones",
@@ -997,7 +1139,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "gold",
     publisher: "Delacorte Press",
-    audioBookPublisher: "Listening Library"
+    audioBookPublisher: "Listening Library",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Burning God",
@@ -1017,7 +1163,11 @@ export const bookData: Book[] = [
     fav: true,
     color: "purple",
     publisher: "Harper Voyager",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Dragon Republic",
@@ -1037,7 +1187,11 @@ export const bookData: Book[] = [
     fav: true,
     color: "darkblue",
     publisher: "Harper Voyager",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Poppy War",
@@ -1057,7 +1211,11 @@ export const bookData: Book[] = [
     fav: true,
     color: "red",
     publisher: "Harper Voyager",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "This Wicked Fate",
@@ -1077,7 +1235,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "purple",
     publisher: "Bloomsbury YA",
-    audioBookPublisher: "Bloomsbury Publishing Plc"
+    audioBookPublisher: "Bloomsbury Publishing Plc",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "This Poison Heart",
@@ -1097,7 +1259,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "green",
     publisher: "Bloomsbury YA",
-    audioBookPublisher: "Bloomsbury Publishing Plc"
+    audioBookPublisher: "Bloomsbury Publishing Plc",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Iron Heart",
@@ -1124,7 +1290,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: false,
     publisher: "Quill Tree Books",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Binti",
@@ -1150,7 +1320,11 @@ export const bookData: Book[] = [
     color: "brown",
     fav: false,
     publisher: "Tor.com",
-    audioBookPublisher: "Macmillan Audio"
+    audioBookPublisher: "Macmillan Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Iron Widow",
@@ -1178,7 +1352,11 @@ export const bookData: Book[] = [
     color: "orange",
     fav: false,
     publisher: "Penguin Teen",
-    audioBookPublisher: "Penguin Teen Canada"
+    audioBookPublisher: "Penguin Teen Canada",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Bloodchild and Other Stories",
@@ -1206,7 +1384,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Seven Stories Press",
-    audioBookPublisher: "Audible Studios"
+    audioBookPublisher: "Audible Studios",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "How Long 'til Black Future Month?",
@@ -1243,7 +1425,11 @@ export const bookData: Book[] = [
     color: "gold",
     fav: true,
     publisher: "Orbit",
-    audioBookPublisher: "Hachette Audio"
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Redemptor",
@@ -1263,7 +1449,11 @@ export const bookData: Book[] = [
     color: "purple",
     fav: false,
     publisher: "Amulet Books",
-    audioBookPublisher: "Blackstone Publishing"
+    audioBookPublisher: "Blackstone Publishing",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Ace of Spades",
@@ -1283,7 +1473,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Feiwel & Friends",
-    audioBookPublisher: "Macmillan Audio"
+    audioBookPublisher: "Macmillan Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Dread Nation",
@@ -1311,7 +1505,11 @@ export const bookData: Book[] = [
     color: "brown",
     fav: false,
     publisher: "Balzer + Bray",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Crier's War",
@@ -1331,7 +1529,11 @@ export const bookData: Book[] = [
     color: "gold",
     fav: false,
     publisher: "Quill Tree Books",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Blackout",
@@ -1358,7 +1560,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "purple",
     publisher: "Quill Tree Books",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Such A Fun Age",
@@ -1378,7 +1584,11 @@ export const bookData: Book[] = [
     color: "pink",
     fav: false,
     publisher: "G.P. Putnam's Sons",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Grown",
@@ -1398,7 +1608,11 @@ export const bookData: Book[] = [
     color: "gold",
     fav: true,
     publisher: "Katherine Tegen Books",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -1423,7 +1637,11 @@ export const bookData: Book[] = [
     color: "green",
     fav: false,
     publisher: "Katherine Tegen Books",
-    audioBookPublisher: "HarperAudio"
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Allegedly",
@@ -1443,7 +1661,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Katherine Tegen Books",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Raybearer",
@@ -1463,7 +1685,11 @@ export const bookData: Book[] = [
     color: "purple",
     fav: false,
     publisher: "Amulet Books",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Red, White & Royal Blue",
@@ -1483,7 +1709,11 @@ export const bookData: Book[] = [
     color: "purple",
     fav: false,
     publisher: "",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Vanishing Half",
@@ -1510,7 +1740,11 @@ export const bookData: Book[] = [
     color: "darkblue",
     fav: true,
     publisher: "Riverhead Books",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Testaments",
@@ -1530,7 +1764,11 @@ export const bookData: Book[] = [
     color: "blue",
     fav: false,
     publisher: "",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Boyfriend Material",
@@ -1550,7 +1788,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Sourcebooks Casablanca",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Ring Shout",
@@ -1578,7 +1820,11 @@ export const bookData: Book[] = [
     color: "black",
     fav: true,
     publisher: "Tor.com",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Grace Year",
@@ -1598,7 +1844,11 @@ export const bookData: Book[] = [
     color: "pink",
     fav: false,
     publisher: "Wednesday Books",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Kim Jiyoung, Born 1982",
@@ -1618,7 +1868,11 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Liveright",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Gods of Jade and Shadow",
@@ -1638,7 +1892,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "purple",
     publisher: "Del Rey",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -1658,7 +1916,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "lightblue",
     publisher: "Houghton Mifflin Harcourt",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Uprooted",
@@ -1678,7 +1940,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "gold",
     publisher: "",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Good Luck Girls",
@@ -1698,7 +1964,11 @@ export const bookData: Book[] = [
     color: "brown",
     fav: false,
     publisher: "",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Full Disclosure",
@@ -1718,7 +1988,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "darkblue",
     publisher: "Knopf Books for Young Readers",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Monday's Not Coming",
@@ -1738,7 +2012,11 @@ export const bookData: Book[] = [
     fav: true,
     color: "red",
     publisher: "Katherine Tegen Books",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "The Year of the Witching",
@@ -1766,7 +2044,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "gold",
     publisher: "Ace",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -1786,7 +2068,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "red",
     publisher: "Sourcebooks Fire",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "Cinderella Is Dead",
@@ -1814,7 +2100,11 @@ export const bookData: Book[] = [
     fav: false,
     color: "purple",
     publisher: "Bloomsbury YA",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   },
   {
     title: "She Came to Slay: The Life and Times of Harriet Tubman",
@@ -1842,6 +2132,10 @@ export const bookData: Book[] = [
     fav: false,
     color: "red",
     publisher: "Simon & Schuster",
-    audioBookPublisher: ""
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
   }
 ];

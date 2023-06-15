@@ -20,7 +20,7 @@
                 {{ valueCount("age", "Middle Grade") }}
               </p>
               <p class="stat-title">Middle Grade</p>
-            </div>            
+            </div>
             <div class="stat orange">
               <p class="stat-number">
                 {{ valueCount("medium", "Physical") }}
@@ -404,7 +404,8 @@ export default {
       return this.filterReadBooks.filter(book => book[key] === value).length;
     },
     valueCountList(key, value) {
-      return this.filterReadBooks.filter(book => book[key].includes(value)).length;
+      return this.filterReadBooks.filter(book => book[key].includes(value))
+        .length;
     },
     longestBook() {
       let longestBooks = [];
