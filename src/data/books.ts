@@ -41,6 +41,7 @@ export type Setting =
   | "Florida"
   | "Georgia (USA)"
   | "Illinois"
+  | "Japan"
   | "Louisiana"
   | "London"
   | "Maryland"
@@ -53,6 +54,7 @@ export type Setting =
   | "Ocean"
   | "Ohio"
   | "Philadelphia"
+  | "Seattle"
   | "South Africa"
   | "South Korea"
   | "Space"
@@ -120,6 +122,54 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Hidden Girl and Other Stories",
+    author: ["Ken Liu"],
+    audioBookNarrator: ["Ramón de Ocampo", "Cindy Kay", "Michael Kramer", "Nancy Wu", "Emily Woo Zeller"],
+    publishedYear: 2020,
+    setting: ["United States", "Japan", "Space", "Fictional"],
+    genre: ["Science Fiction", "LGBTQIA+", "Romance", "Artificial Intelligence", "Short Stories", "Alternate History", "Asia", "Dystopia", "Family", "War", "Crime"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 411,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "06/15/2023",
+    dateFinished: "06/19/2023",
+    progress: "finished",
+    fav: true,
+    color: "red",
+    publisher: "Saga Press",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "The Cybernetic Tea Shop",
+    author: ["Meredith Katz"],
+    audioBookNarrator: [""],
+    publishedYear: 2016,
+    setting: ["United States", "Seattle"],
+    genre: ["Science Fiction", "LGBTQIA+", "Romance", "Artificial Intelligence", "Short Stories"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 112,
+    medium: "Physical",
+    rating: 4,
+    dateStarted: "02/23/2023",
+    dateFinished: "06/15/2023",
+    progress: "finished",
+    fav: false,
+    color: "gold",
+    publisher: "Soft Cryptid",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "Amari and the Night Brothers",
     author: ["B.B. Alston"],
     audioBookNarrator: ["Imani Parks"],
@@ -139,8 +189,8 @@ export const bookData: Book[] = [
     publisher: "Balzer + Bray",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "Children",
-      text: "To my kids, always dream big."
+      to: "",
+      text: ""
     }
   },
   {
@@ -163,8 +213,8 @@ export const bookData: Book[] = [
     publisher: "William Morrow",
     audioBookPublisher: "",
     dedication: {
-      to: "Wife",
-      text: "To my wife, I love you"
+      to: "",
+      text: ""
     }
   },
   {

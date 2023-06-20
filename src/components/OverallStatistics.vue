@@ -85,29 +85,6 @@
               </ul>
             </div>
           </div>
-          <div class="ratings">
-            <div class="favorite-books">
-              <h3>Short Stories and Novellas</h3>
-              <ul>
-                <li
-                  class="book"
-                  v-for="(book, index) in filterList('genre', 'Short Stories')"
-                  :key="index"
-                >
-                  <img
-                    class="book-cover-img"
-                    :class="[
-                      { 'e-book': book.medium == 'E-Book' },
-                      { audio: book.medium == 'Audio' }
-                    ]"
-                    :alt="`${book.title} book cover`"
-                    :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
-                  />
-                  <p>{{ book.title }}</p>
-                </li>
-              </ul>
-            </div>
-          </div>
           <div class="length">
             <div class="shortest-book">
               <h3>Shortest Book</h3>

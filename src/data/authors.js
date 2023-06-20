@@ -705,5 +705,41 @@ export const authorData = [
       }
     ],
     website: "bbalston.com"
+  },
+  {
+    name: "Meredith Katz",
+    books: ["The Cybernetic Tea Shop"],
+    poc: false,
+    gender: "non-binary",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "CA",
+        name: "Canada"
+      }
+    ],
+    website: "softcryptid.com"
+  },
+  {
+    name: "Ken Liu",
+    books: ["The Hidden Girl and Other Stories"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      },
+      {
+        code: "CN",
+        name: "China"
+      }
+    ],
+    website: "kenliu.name"
   }
 ];
+
+
