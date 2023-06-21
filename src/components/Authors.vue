@@ -241,6 +241,17 @@ export default {
   },
   mixins: [mixins],
   computed: {
+    allAuthors() {
+      let sortedAuthorList = this.authorInfo;
+      const sorted = (a, b) => {
+        if (a.books.length > b.books.length) {
+          return -1;
+        } else {
+          return 1;
+        }
+      };
+      return sortedAuthorList.sort(sorted);
+    },
     sortedAuthors() {
       let sortedAuthorList = this.authorInfo;
       const sorted = (a, b) => {
@@ -264,10 +275,10 @@ export default {
       return sortedAuthorList.sort(sorted).filter(author => author.books.length === 1);
     },
     authorsWithImages() {
-      return this.sortedAuthors.filter(author => author.image != false);
+      return this.allAuthors.filter(author => author.image != false);
     },
     favAuthors() {
-      return this.sortedAuthors.filter(author => author.fav);
+      return this.allAuthors.filter(author => author.fav);
     }
   }
 };

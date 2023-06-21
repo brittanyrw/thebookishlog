@@ -122,6 +122,30 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "A Dead Djinn in Cairo",
+    author: ["P. Djèlí Clark"],
+    audioBookNarrator: ["Suehyla El-Attar"],
+    publishedYear: 2016,
+    setting: ["Africa", "Egypt"],
+    genre: ["Science Fiction", "Magic", "Horror", "History", "Mystery", "Short Stories"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 43,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "06/19/2023",
+    dateFinished: "06/20/2023",
+    progress: "finished",
+    color: "brown",
+    fav: false,
+    publisher: "Tor.com",
+    audioBookPublisher: "Macmillan Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "The Hidden Girl and Other Stories",
     author: ["Ken Liu"],
     audioBookNarrator: ["Ramón de Ocampo", "Cindy Kay", "Michael Kramer", "Nancy Wu", "Emily Woo Zeller"],

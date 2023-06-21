@@ -181,7 +181,7 @@ export const authorData = [
   },
   {
     name: "P. Djèlí Clark",
-    books: ["Ring Shout", "A Master of Djinn", "The Black God's Drums"],
+    books: ["Ring Shout", "A Master of Djinn", "The Black God's Drums", "A Dead Djinn in Cairo"],
     poc: true,
     gender: "male",
     lgbt: false,
