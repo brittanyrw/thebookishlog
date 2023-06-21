@@ -23,10 +23,74 @@
         <label for="toggle-fav-authors">Show Favorite Authors</label>
       </div>
     </div>
-    <ul class="authors" v-show="toggle === 'no' && favToggle === 'no'">
+    <ul class="authors multi-book-authors" v-show="toggle === 'no' && favToggle === 'no'">
       <li
         class="author"
         v-for="(author, index) in sortedAuthors"
+        :key="index"
+        :class="[{ 'single-book': author.books.length == 1 }, { 'two-book': author.books.length == 2 }]"
+      >
+        <div class="author-name">
+          <div class="author-img-wrapper">
+            <img
+              v-if="author.image != false"
+              class="author-img"
+              :alt="`${author.name}`"
+              :src="require(`@/assets/imgs/${slug(author.name)}.png`)"
+            />
+            <img
+              v-else
+              class="author-img"
+              :alt="`${author.name}`"
+              :src="require('@/assets/imgs/placeholder-author.png')"
+            />
+          </div>
+          <div class="author-info">
+            <h3 :class="[{ 'resize-name': author.name.length >= 16 }]">
+              <a
+                :href="`https://${author.website}`"
+                target="_blank"
+                class="author-website"
+                >{{ author.name }}</a
+              >
+              <img
+                v-if="author.fav"
+                class="author-fav-star"
+                alt="Favorite Author"
+                :src="require('@/assets/imgs/star.svg')"
+              />
+            </h3>
+
+            <div class="author-stats">
+              <span class="book-number">{{ author.books.length }}</span>
+              <span v-if="author.lgbt" class="lgbt">🏳️‍🌈</span>
+              <span
+                class="flag"
+                v-for="(country, index) in author.country"
+                :key="index"
+              >
+                {{ flagEmoji(country.code) }}
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="author-imgs">
+          <div class="author-books">
+            <img
+              v-for="(book, index) in author.books"
+              :key="index"
+              class="author-book-img"
+              :alt="`${book}`"
+              :src="require(`@/assets/imgs/${slug(book)}.png`)"
+            />
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="authors single-book-authors" v-show="toggle === 'no' && favToggle === 'no'">
+      <li
+        class="author"
+        v-for="(author, index) in singleSortedAuthors"
         :key="index"
         :class="[{ 'single-book': author.books.length == 1 }, { 'two-book': author.books.length == 2 }]"
       >
@@ -186,7 +250,18 @@ export default {
           return 1;
         }
       };
-      return sortedAuthorList.sort(sorted);
+      return sortedAuthorList.sort(sorted).filter(author => author.books.length > 1);
+    },
+    singleSortedAuthors() {
+      let sortedAuthorList = this.authorInfo;
+      const sorted = (a, b) => {
+        if (a.books.length > b.books.length) {
+          return -1;
+        } else {
+          return 1;
+        }
+      };
+      return sortedAuthorList.sort(sorted).filter(author => author.books.length === 1);
     },
     authorsWithImages() {
       return this.sortedAuthors.filter(author => author.image != false);
@@ -220,6 +295,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    .break {
+      flex-basis: 100%;
+    }
     .author {
       flex-grow: 1;
       border: 2px solid $black;
@@ -302,15 +380,6 @@ export default {
         }
       }
     }
-    @media screen and (min-width: 992px) {
-      .author:first-child, .author:nth-child(2) {
-        // flex-basis: 100%;
-        width: 48%;
-      }
-      .two-book {
-        width: 290px;
-      }
-    }
     .author:last-child,
     .author:nth-last-child(2),
     .author:nth-last-child(3) {
@@ -318,6 +387,16 @@ export default {
     }
   }
 }
+
+@media screen and (min-width: 992px) {
+      .multi-book-authors .author:first-child, .multi-book-authors .author:nth-child(2) {
+        // flex-basis: 100%;
+        width: 48%;
+      }
+      .two-book {
+        width: 290px;
+      }
+    }
 
 .author-grid {
   display: flex;
