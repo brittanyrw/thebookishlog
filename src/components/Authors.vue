@@ -28,7 +28,7 @@
         class="author"
         v-for="(author, index) in sortedAuthors"
         :key="index"
-        :class="[{ 'single-book': author.books.length == 1 }]"
+        :class="[{ 'single-book': author.books.length == 1 }, { 'two-book': author.books.length == 2 }]"
       >
         <div class="author-name">
           <div class="author-img-wrapper">
@@ -303,8 +303,12 @@ export default {
       }
     }
     @media screen and (min-width: 992px) {
-      .author:first-child {
-        flex-basis: 100%;
+      .author:first-child, .author:nth-child(2) {
+        // flex-basis: 100%;
+        width: 48%;
+      }
+      .two-book {
+        width: 290px;
       }
     }
     .author:last-child,
