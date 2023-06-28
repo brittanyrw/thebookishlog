@@ -122,12 +122,51 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Broken Kingdoms",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Casaundra Freeman"],
+    publishedYear: 2010,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "Romance",
+      "Magic",
+      "Black",
+      "War",
+      "Disability",
+      "Horror"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 384,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "06/21/2023",
+    dateFinished: "06/27/2023",
+    progress: "finished",
+    color: "darkblue",
+    fav: false,
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "A Dead Djinn in Cairo",
     author: ["P. Djèlí Clark"],
     audioBookNarrator: ["Suehyla El-Attar"],
     publishedYear: 2016,
     setting: ["Africa", "Egypt"],
-    genre: ["Science Fiction", "Magic", "Horror", "History", "Mystery", "Short Stories"],
+    genre: [
+      "Science Fiction",
+      "Magic",
+      "Horror",
+      "History",
+      "Mystery",
+      "Short Stories"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 43,
@@ -148,10 +187,28 @@ export const bookData: Book[] = [
   {
     title: "The Hidden Girl and Other Stories",
     author: ["Ken Liu"],
-    audioBookNarrator: ["Ramón de Ocampo", "Cindy Kay", "Michael Kramer", "Nancy Wu", "Emily Woo Zeller"],
+    audioBookNarrator: [
+      "Ramón de Ocampo",
+      "Cindy Kay",
+      "Michael Kramer",
+      "Nancy Wu",
+      "Emily Woo Zeller"
+    ],
     publishedYear: 2020,
     setting: ["United States", "Japan", "Space", "Fictional"],
-    genre: ["Science Fiction", "LGBTQIA+", "Romance", "Artificial Intelligence", "Short Stories", "Alternate History", "Asia", "Dystopia", "Family", "War", "Crime"],
+    genre: [
+      "Science Fiction",
+      "LGBTQIA+",
+      "Romance",
+      "Artificial Intelligence",
+      "Short Stories",
+      "Alternate History",
+      "Asia",
+      "Dystopia",
+      "Family",
+      "War",
+      "Crime"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 411,
@@ -175,7 +232,13 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2016,
     setting: ["United States", "Seattle"],
-    genre: ["Science Fiction", "LGBTQIA+", "Romance", "Artificial Intelligence", "Short Stories"],
+    genre: [
+      "Science Fiction",
+      "LGBTQIA+",
+      "Romance",
+      "Artificial Intelligence",
+      "Short Stories"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 112,

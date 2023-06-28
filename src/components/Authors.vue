@@ -23,12 +23,18 @@
         <label for="toggle-fav-authors">Show Favorite Authors</label>
       </div>
     </div>
-    <ul class="authors multi-book-authors" v-show="toggle === 'no' && favToggle === 'no'">
+    <ul
+      class="authors multi-book-authors"
+      v-show="toggle === 'no' && favToggle === 'no'"
+    >
       <li
         class="author"
         v-for="(author, index) in sortedAuthors"
         :key="index"
-        :class="[{ 'single-book': author.books.length == 1 }, { 'two-book': author.books.length == 2 }]"
+        :class="[
+          { 'single-book': author.books.length == 1 },
+          { 'two-book': author.books.length == 2 }
+        ]"
       >
         <div class="author-name">
           <div class="author-img-wrapper">
@@ -87,12 +93,18 @@
         </div>
       </li>
     </ul>
-    <ul class="authors single-book-authors" v-show="toggle === 'no' && favToggle === 'no'">
+    <ul
+      class="authors single-book-authors"
+      v-show="toggle === 'no' && favToggle === 'no'"
+    >
       <li
         class="author"
         v-for="(author, index) in singleSortedAuthors"
         :key="index"
-        :class="[{ 'single-book': author.books.length == 1 }, { 'two-book': author.books.length == 2 }]"
+        :class="[
+          { 'single-book': author.books.length == 1 },
+          { 'two-book': author.books.length == 2 }
+        ]"
       >
         <div class="author-name">
           <div class="author-img-wrapper">
@@ -261,7 +273,9 @@ export default {
           return 1;
         }
       };
-      return sortedAuthorList.sort(sorted).filter(author => author.books.length > 1);
+      return sortedAuthorList
+        .sort(sorted)
+        .filter(author => author.books.length > 1);
     },
     singleSortedAuthors() {
       let sortedAuthorList = this.authorInfo;
@@ -272,7 +286,9 @@ export default {
           return 1;
         }
       };
-      return sortedAuthorList.sort(sorted).filter(author => author.books.length === 1);
+      return sortedAuthorList
+        .sort(sorted)
+        .filter(author => author.books.length === 1);
     },
     authorsWithImages() {
       return this.allAuthors.filter(author => author.image != false);
@@ -329,6 +345,9 @@ export default {
           flex-direction: column;
           justify-content: space-between;
           width: 100%;
+        }
+        .resize-name {
+          font-size: 14px;
         }
       }
       .author-img-wrapper {
@@ -400,14 +419,15 @@ export default {
 }
 
 @media screen and (min-width: 992px) {
-      .multi-book-authors .author:first-child, .multi-book-authors .author:nth-child(2) {
-        // flex-basis: 100%;
-        width: 48%;
-      }
-      .two-book {
-        width: 290px;
-      }
-    }
+  .multi-book-authors .author:first-child,
+  .multi-book-authors .author:nth-child(2) {
+    // flex-basis: 100%;
+    width: 48%;
+  }
+  .two-book {
+    width: 290px;
+  }
+}
 
 .author-grid {
   display: flex;

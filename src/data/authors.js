@@ -181,7 +181,12 @@ export const authorData = [
   },
   {
     name: "P. Djèlí Clark",
-    books: ["Ring Shout", "A Master of Djinn", "The Black God's Drums", "A Dead Djinn in Cairo"],
+    books: [
+      "Ring Shout",
+      "A Master of Djinn",
+      "The Black God's Drums",
+      "A Dead Djinn in Cairo"
+    ],
     poc: true,
     gender: "male",
     lgbt: false,
@@ -399,7 +404,8 @@ export const authorData = [
       "The Killing Moon",
       "The World We Make",
       "The Hundred Thousand Kingdoms",
-      "Emergency Skin"
+      "Emergency Skin",
+      "The Broken Kingdoms"
     ],
     poc: true,
     gender: "female",
@@ -467,7 +473,7 @@ export const authorData = [
     website: "nnedi.com"
   },
   {
-    name: "R. F. Kuang",
+    name: "R.F. Kuang",
     books: [
       "The Poppy War",
       "The Dragon Republic",
@@ -741,5 +747,3 @@ export const authorData = [
     website: "kenliu.name"
   }
 ];
-
-
