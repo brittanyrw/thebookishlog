@@ -406,8 +406,8 @@ export const authorData = [
       "The Hundred Thousand Kingdoms",
       "Emergency Skin",
       "The Broken Kingdoms",
-      "The Awakened Kingdom",
-      "The Kingdom of Gods"
+      "The Kingdom of Gods",
+      "The Awakened Kingdom"
     ],
     poc: true,
     gender: "female",

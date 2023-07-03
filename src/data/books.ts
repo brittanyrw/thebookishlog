@@ -95,6 +95,7 @@ export type Genres =
   | "Mystery"
   | "Mythology"
   | "Native American"
+  | "Novella"
   | "Psychology"
   | "Race"
   | "Retelling"
@@ -102,6 +103,7 @@ export type Genres =
   | "Scandal"
   | "Science Fiction"
   | "Short Stories"
+  | "Short Story Collection"
   | "Slavery"
   | "Social Justice"
   | "Space"
@@ -127,7 +129,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2014,
     setting: ["Fictional"],
-    genre: ["Fantasy", "Magic", "Black", "Short Stories"],
+    genre: ["Fantasy", "Magic", "Black", "Novella", "Science Fiction"],
     age: "Adult",
     type: "Fiction",
     pages: 96,
@@ -158,7 +160,8 @@ export const bookData: Book[] = [
       "Black",
       "War",
       "LGBTQIA+",
-      "Horror"
+      "Horror",
+      "Science Fiction"
     ],
     age: "Adult",
     type: "Fiction",
@@ -190,7 +193,8 @@ export const bookData: Book[] = [
       "Black",
       "War",
       "Disability",
-      "Horror"
+      "Horror",
+      "Science Fiction"
     ],
     age: "Adult",
     type: "Fiction",
@@ -257,7 +261,7 @@ export const bookData: Book[] = [
       "LGBTQIA+",
       "Romance",
       "Artificial Intelligence",
-      "Short Stories",
+      "Short Story Collection",
       "Alternate History",
       "Asia",
       "Dystopia",
@@ -513,7 +517,7 @@ export const bookData: Book[] = [
       "Slavery",
       "Feminism",
       "Race",
-      "Short Stories",
+      "Novella",
       "Black",
       "Alternate History",
       "Fantasy",
@@ -677,7 +681,7 @@ export const bookData: Book[] = [
     ],
     publishedYear: 2022,
     setting: ["New York City", "United States"],
-    genre: ["Short Stories", "Black", "Crime", "Family"],
+    genre: ["Short Story Collection", "Black", "Crime", "Family"],
     age: "Adult",
     type: "Fiction",
     pages: 213,
@@ -872,7 +876,7 @@ export const bookData: Book[] = [
     genre: [
       "Black",
       "Race",
-      "Short Stories",
+      "Novella",
       "LGBTQIA+",
       "Slavery",
       "Romance",
@@ -918,7 +922,7 @@ export const bookData: Book[] = [
     ],
     publishedYear: 2022,
     setting: ["United States", "Georgia (USA)", "Atlanta"],
-    genre: ["Black", "Romance", "LGBTQIA+", "Short Stories"],
+    genre: ["Black", "Romance", "LGBTQIA+", "Short Story Collection"],
     age: "Young Adult",
     type: "Fiction",
     pages: 291,
@@ -1156,13 +1160,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2018,
     setting: ["Fictional", "Space"],
-    genre: [
-      "Short Stories",
-      "Science Fiction",
-      "Black",
-      "Afrofuturism",
-      "Space"
-    ],
+    genre: ["Novella", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 208,
@@ -1186,13 +1184,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2017,
     setting: ["Fictional", "Space"],
-    genre: [
-      "Short Stories",
-      "Science Fiction",
-      "Black",
-      "Afrofuturism",
-      "Space"
-    ],
+    genre: ["Novella", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 176,
@@ -1495,13 +1487,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2015,
     setting: ["Fictional", "Space"],
-    genre: [
-      "Short Stories",
-      "Science Fiction",
-      "Black",
-      "Afrofuturism",
-      "Space"
-    ],
+    genre: ["Novella", "Science Fiction", "Black", "Afrofuturism", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 96,
@@ -1559,7 +1545,7 @@ export const bookData: Book[] = [
     setting: ["Fictional", "United States", "Space"],
     genre: [
       "LGBTQIA+",
-      "Short Stories",
+      "Short Story Collection",
       "Black",
       "Science Fiction",
       "Afrofuturism",
@@ -1601,7 +1587,7 @@ export const bookData: Book[] = [
       "Fantasy",
       "LGBTQIA+",
       "Magic",
-      "Short Stories",
+      "Short Story Collection",
       "Black",
       "Science Fiction",
       "Afrofuturism",
@@ -1741,7 +1727,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2021,
     setting: ["United States", "New York City"],
-    genre: ["Short Stories", "Black", "LGBTQIA+", "Romance"],
+    genre: ["Short Story Collection", "Black", "LGBTQIA+", "Romance"],
     age: "Young Adult",
     type: "Fiction",
     pages: 256,
@@ -2000,7 +1986,7 @@ export const bookData: Book[] = [
       "Race",
       "Black",
       "Alternate History",
-      "Short Stories"
+      "Novella"
     ],
     age: "Adult",
     type: "Fiction",

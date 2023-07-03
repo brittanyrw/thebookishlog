@@ -55,9 +55,21 @@
             </div>
             <div class="stat orange">
               <p class="stat-number">
+                {{ valueCountList("genre", "Novella") }}
+              </p>
+              <p class="stat-title">Novellas</p>
+            </div>
+            <div class="stat red">
+              <p class="stat-number">
                 {{ valueCountList("genre", "Short Stories") }}
               </p>
-              <p class="stat-title">Short Stories/Novellas</p>
+              <p class="stat-title">Short Stories</p>
+            </div>
+            <div class="stat purple">
+              <p class="stat-number">
+                {{ valueCountList("genre", "Short Story Collection") }}
+              </p>
+              <p class="stat-title">Short Story Collections</p>
             </div>
           </div>
         </section>
@@ -777,11 +789,19 @@ h3 {
     .fade-location:nth-child(13n + 11) {
       background-color: $black !important;
       color: #aea5a5 !important;
-      box-shadow: $black 2px 2px, #aea5a5 4px 4px, $black 6px 6px !important;
-      border: 2px solid #aea5a5 !important;
+      // box-shadow: $black 2px 2px, #aea5a5 4px 4px, $black 6px 6px !important;
+      box-shadow: none !important;
+      border: none !important;
+      margin: 5px !important;
+      font-size: 14px;
+      padding: 0 !important;
       p:first-child {
-        border-color: #aea5a5 !important;
+        border-color: none !important;
+        border: none !important;
       }
+    }
+    .fade-genre p:nth-child(2) {
+      display: none;
     }
   }
 }

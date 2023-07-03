@@ -36,59 +36,61 @@
           { 'two-book': author.books.length == 2 }
         ]"
       >
-        <div class="author-name">
-          <div class="author-img-wrapper">
-            <img
-              v-if="author.image != false"
-              class="author-img"
-              :alt="`${author.name}`"
-              :src="require(`@/assets/imgs/${slug(author.name)}.png`)"
-            />
-            <img
-              v-else
-              class="author-img"
-              :alt="`${author.name}`"
-              :src="require('@/assets/imgs/placeholder-author.png')"
-            />
-          </div>
-          <div class="author-info">
-            <h3 :class="[{ 'resize-name': author.name.length >= 16 }]">
-              <a
-                :href="`https://${author.website}`"
-                target="_blank"
-                class="author-website"
-                >{{ author.name }}</a
-              >
+        <div class="author-wrapper">
+          <div class="author-name">
+            <div class="author-img-wrapper">
               <img
-                v-if="author.fav"
-                class="author-fav-star"
-                alt="Favorite Author"
-                :src="require('@/assets/imgs/star.svg')"
+                v-if="author.image != false"
+                class="author-img"
+                :alt="`${author.name}`"
+                :src="require(`@/assets/imgs/${slug(author.name)}.png`)"
               />
-            </h3>
+              <img
+                v-else
+                class="author-img"
+                :alt="`${author.name}`"
+                :src="require('@/assets/imgs/placeholder-author.png')"
+              />
+            </div>
+            <div class="author-info">
+              <h3 :class="[{ 'resize-name': author.name.length >= 16 }]">
+                <a
+                  :href="`https://${author.website}`"
+                  target="_blank"
+                  class="author-website"
+                  >{{ author.name }}</a
+                >
+                <img
+                  v-if="author.fav"
+                  class="author-fav-star"
+                  alt="Favorite Author"
+                  :src="require('@/assets/imgs/star.svg')"
+                />
+              </h3>
 
-            <div class="author-stats">
-              <span class="book-number">{{ author.books.length }}</span>
-              <span v-if="author.lgbt" class="lgbt">🏳️‍🌈</span>
-              <span
-                class="flag"
-                v-for="(country, index) in author.country"
-                :key="index"
-              >
-                {{ flagEmoji(country.code) }}
-              </span>
+              <div class="author-stats">
+                <span class="book-number">{{ author.books.length }}</span>
+                <span v-if="author.lgbt" class="lgbt">🏳️‍🌈</span>
+                <span
+                  class="flag"
+                  v-for="(country, index) in author.country"
+                  :key="index"
+                >
+                  {{ flagEmoji(country.code) }}
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="author-imgs">
-          <div class="author-books">
-            <img
-              v-for="(book, index) in author.books"
-              :key="index"
-              class="author-book-img"
-              :alt="`${book}`"
-              :src="require(`@/assets/imgs/${slug(book)}.png`)"
-            />
+          <div class="author-imgs">
+            <div class="author-books">
+              <img
+                v-for="(book, index) in author.books"
+                :key="index"
+                class="author-book-img"
+                :alt="`${book}`"
+                :src="require(`@/assets/imgs/${slug(book)}.png`)"
+              />
+            </div>
           </div>
         </div>
       </li>
