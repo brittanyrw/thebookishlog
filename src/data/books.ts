@@ -122,6 +122,62 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Awakened Kingdom",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 2014,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "Magic", "Black", "Short Stories"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 96,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "07/02/2023",
+    dateFinished: "07/02/2023",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Orbit",
+    audioBookPublisher: "Orbit",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "The Kingdom of Gods",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Casaundra Freeman"],
+    publishedYear: 2011,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "Romance",
+      "Magic",
+      "Black",
+      "War",
+      "LGBTQIA+",
+      "Horror"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 613,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "06/27/2023",
+    dateFinished: "07/02/2023",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "The Broken Kingdoms",
     author: ["N.K. Jemisin"],
     audioBookNarrator: ["Casaundra Freeman"],

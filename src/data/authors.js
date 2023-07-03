@@ -405,7 +405,9 @@ export const authorData = [
       "The World We Make",
       "The Hundred Thousand Kingdoms",
       "Emergency Skin",
-      "The Broken Kingdoms"
+      "The Broken Kingdoms",
+      "The Awakened Kingdom",
+      "The Kingdom of Gods"
     ],
     poc: true,
     gender: "female",
