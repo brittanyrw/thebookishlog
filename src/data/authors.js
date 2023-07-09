@@ -407,7 +407,9 @@ export const authorData = [
       "Emergency Skin",
       "The Broken Kingdoms",
       "The Kingdom of Gods",
-      "The Awakened Kingdom"
+      "The Awakened Kingdom",
+      "Shades in Shadow",
+      "The Shadowed Sun"
     ],
     poc: true,
     gender: "female",
@@ -747,5 +749,20 @@ export const authorData = [
       }
     ],
     website: "kenliu.name"
+  },
+  {
+    name: "Nella Larsen",
+    books: ["Passing"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "en.wikipedia.org/wiki/Nella_Larsen"
   }
 ];

@@ -124,6 +124,84 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Passing",
+    author: ["Nella Larsen"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 1929,
+    setting: ["United States", "Chicago", "New York City"],
+    genre: ["Black", "Novella", "Race"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 160,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "07/08/2023",
+    dateFinished: "07/08/2023",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Signet",
+    audioBookPublisher: "Audible",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "The Shadowed Sun",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Sarah Zimmerman"],
+    publishedYear: 2012,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "Magic", "Black", "Romance", "Science Fiction", "War"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 510,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "07/02/2023",
+    dateFinished: "07/08/2023",
+    progress: "finished",
+    color: "purple",
+    fav: false,
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "Shades in Shadow",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: [""],
+    publishedYear: 2015,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "Magic",
+      "Black",
+      "Short Story Collection",
+      "Science Fiction"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 60,
+    medium: "E-Book",
+    rating: 4,
+    dateStarted: "07/04/2023",
+    dateFinished: "07/06/2023",
+    progress: "finished",
+    color: "darkblue",
+    fav: false,
+    publisher: "Orbit",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "The Awakened Kingdom",
     author: ["N.K. Jemisin"],
     audioBookNarrator: ["Robin Miles"],
@@ -1116,7 +1194,7 @@ export const bookData: Book[] = [
     color: "lightblue",
     fav: true,
     publisher: "One World",
-    audioBookPublisher: "Audible Studios",
+    audioBookPublisher: "Audible",
     dedication: {
       to: "",
       text: ""
@@ -1563,7 +1641,7 @@ export const bookData: Book[] = [
     color: "red",
     fav: false,
     publisher: "Seven Stories Press",
-    audioBookPublisher: "Audible Studios",
+    audioBookPublisher: "Audible",
     dedication: {
       to: "",
       text: ""
