@@ -409,7 +409,8 @@ export const authorData = [
       "The Kingdom of Gods",
       "The Awakened Kingdom",
       "Shades in Shadow",
-      "The Shadowed Sun"
+      "The Shadowed Sun",
+      "The Fifth Season"
     ],
     poc: true,
     gender: "female",

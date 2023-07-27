@@ -292,28 +292,32 @@ export default {
     display: inline-block;
     background-color: white;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     border-radius: 7px;
     color: $black;
     position: relative;
-    padding: 10px;
+    padding: 5px;
     border: 2px solid $black;
-    box-shadow: white 2px 2px, $black 4px 4px, white 6px 6px, $black 8px 8px,
+    @media screen and (min-width: 992px) { 
+      padding: 10px;
+      margin: 10px;
+      box-shadow: white 2px 2px, $black 4px 4px, white 6px 6px, $black 8px 8px,
       white 10px 10px;
+    }
     p {
       display: inline-block;
       margin-bottom: 0;
       margin-top: 0;
     }
     .author-stat-flag {
-      font-size: 35px;
+      font-size: 28px;
       margin-right: 15px;
       @media screen and (min-width: 992px) {
         font-size: 40px;
       }
     }
     .author-stat-flag-amount {
-      font-size: 35px;
+      font-size: 28px;
       font-weight: bold;
       @media screen and (min-width: 992px) {
         font-size: 40px;

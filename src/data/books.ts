@@ -124,6 +124,87 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Fifth Season",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 2015,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "Magic",
+      "Black",
+      "Romance",
+      "Science Fiction",
+      "War",
+      "Family",
+      "Dystopia"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 468,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "07/22/2023",
+    dateFinished: "07/27/2023",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "The Sword of Kaigen",
+    author: ["M.L. Wang"],
+    audioBookNarrator: ["Andrew Tell"],
+    publishedYear: 2018,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "Magic", "Science Fiction", "War", "Family"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 613,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "07/14/2023",
+    dateFinished: "07/19/2023",
+    progress: "dnf",
+    color: "darkblue",
+    fav: false,
+    publisher: "M. L. Wang",
+    audioBookPublisher: "M. L. Wang",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "Children of Blood and Bone",
+    author: ["Tomi Adeyemi"],
+    audioBookNarrator: ["Bahni Turpin"],
+    publishedYear: 2018,
+    setting: ["Fictional", "Nigeria"],
+    genre: ["Fantasy", "Magic", "Black", "Romance", "Science Fiction", "War"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 544,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "07/09/2023",
+    dateFinished: "07/14/2023",
+    progress: "dnf",
+    color: "red",
+    fav: false,
+    publisher: "Henry Holt Company",
+    audioBookPublisher: "Macmillan Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "Passing",
     author: ["Nella Larsen"],
     audioBookNarrator: ["Robin Miles"],

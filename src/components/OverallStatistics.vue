@@ -151,7 +151,7 @@
               </div>
             </div>
           </div>
-          <div class="dnf-books">
+          <!-- <div class="dnf-books">
             <h3>DNFed books</h3>
             <p>Books started that I decided not to finish.</p>
             <ul>
@@ -172,7 +172,7 @@
                 <p>{{ book.title }}</p>
               </li>
             </ul>
-          </div>
+          </div> -->
         </section>
         <div class="genres">
           <div class="genre-list">
