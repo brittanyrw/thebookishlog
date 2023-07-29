@@ -298,11 +298,11 @@ export default {
     position: relative;
     padding: 5px;
     border: 2px solid $black;
-    @media screen and (min-width: 992px) { 
+    @media screen and (min-width: 992px) {
       padding: 10px;
       margin: 10px;
       box-shadow: white 2px 2px, $black 4px 4px, white 6px 6px, $black 8px 8px,
-      white 10px 10px;
+        white 10px 10px;
     }
     p {
       display: inline-block;

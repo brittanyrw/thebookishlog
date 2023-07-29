@@ -124,6 +124,41 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Obelisk Gate",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 2016,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "Magic",
+      "Black",
+      "Romance",
+      "Science Fiction",
+      "War",
+      "Family",
+      "Dystopia",
+      "LGBTQIA+",
+      "Horror"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 410,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "07/27/2023",
+    dateFinished: "07/29/2023",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "The Fifth Season",
     author: ["N.K. Jemisin"],
     audioBookNarrator: ["Robin Miles"],
@@ -137,18 +172,19 @@ export const bookData: Book[] = [
       "Science Fiction",
       "War",
       "Family",
-      "Dystopia"
+      "Dystopia",
+      "LGBTQIA+"
     ],
     age: "Adult",
     type: "Fiction",
     pages: 468,
     medium: "Audio",
-    rating: 4.5,
+    rating: 5,
     dateStarted: "07/22/2023",
     dateFinished: "07/27/2023",
     progress: "finished",
     color: "black",
-    fav: false,
+    fav: true,
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {

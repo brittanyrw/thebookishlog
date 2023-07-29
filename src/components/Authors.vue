@@ -421,11 +421,11 @@ export default {
 }
 
 @media screen and (min-width: 992px) {
-  .multi-book-authors .author:first-child,
-  .multi-book-authors .author:nth-child(2) {
-    // flex-basis: 100%;
-    width: 48%;
-  }
+  // .multi-book-authors .author:first-child,
+  // .multi-book-authors .author:nth-child(2) {
+  //   // flex-basis: 100%;
+  //   width: 48%;
+  // }
   .two-book {
     width: 290px;
   }
