@@ -124,6 +124,41 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Stone Sky",
+    author: ["N.K. Jemisin"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 2017,
+    setting: ["Fictional"],
+    genre: [
+      "Fantasy",
+      "Magic",
+      "Black",
+      "Romance",
+      "Science Fiction",
+      "War",
+      "Family",
+      "Dystopia",
+      "LGBTQIA+",
+      "Horror"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 416,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "07/29/2023",
+    dateFinished: "08/12/2023",
+    progress: "finished",
+    color: "green",
+    fav: true,
+    publisher: "Orbit",
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "The Obelisk Gate",
     author: ["N.K. Jemisin"],
     audioBookNarrator: ["Robin Miles"],
@@ -150,7 +185,7 @@ export const bookData: Book[] = [
     dateFinished: "07/29/2023",
     progress: "finished",
     color: "gold",
-    fav: false,
+    fav: true,
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {

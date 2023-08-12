@@ -411,7 +411,8 @@ export const authorData = [
       "Shades in Shadow",
       "The Shadowed Sun",
       "The Fifth Season",
-      "The Obelisk Gate"
+      "The Obelisk Gate",
+      "The Stone Sky"
     ],
     poc: true,
     gender: "female",
