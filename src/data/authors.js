@@ -767,5 +767,39 @@ export const authorData = [
       }
     ],
     website: "en.wikipedia.org/wiki/Nella_Larsen"
+  },
+  {
+    name: "Kanae Minato",
+    books: ["Confessions"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "JP",
+        name: "Japan"
+      }
+    ],
+    website: "en.wikipedia.org/wiki/Kanae_Minato"
+  },
+  {
+    name: "Ling Ling Huang",
+    books: ["Natural Beauty"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      },
+      {
+        code: "CN",
+        name: "China"
+      }
+    ],
+    website: "www.linglinghuang.com/"
   }
 ];

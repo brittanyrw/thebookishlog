@@ -86,6 +86,7 @@ export type Genres =
   | "History"
   | "Horror"
   | "Humor"
+  | "Japan"
   | "Korea"
   | "LGBTQIA+"
   | "Mafia"
@@ -99,6 +100,7 @@ export type Genres =
   | "Psychology"
   | "Race"
   | "Retelling"
+  | "Revenge"
   | "Romance"
   | "Scandal"
   | "Science Fiction"
@@ -124,6 +126,72 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Natural Beauty",
+    author: ["Ling Ling Huang"],
+    audioBookNarrator: ["Carolyn Kang"],
+    publishedYear: 2008,
+    setting: ["New York City", "United States"],
+    genre: [
+      "Crime",
+      "Health",
+      "Horror",
+      "Music",
+      "Academic",
+      "Thriller",
+      "Race",
+      "China",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 272,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "08/15/2023",
+    dateFinished: "08/15/2023",
+    progress: "finished",
+    color: "green",
+    fav: false,
+    publisher: "Mulholland Books",
+    audioBookPublisher: "Penguin Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "Confessions",
+    author: ["Kanae Minato"],
+    audioBookNarrator: ["Elaina Erika Davis", "Noah Galvin"],
+    publishedYear: 2008,
+    setting: ["Japan"],
+    genre: [
+      "Family",
+      "Crime",
+      "Japan",
+      "Horror",
+      "Revenge",
+      "Academic",
+      "Thriller"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 240,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/14/2023",
+    dateFinished: "08/14/2023",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Mulholland Books",
+    audioBookPublisher: "Hachette Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "The Stone Sky",
     author: ["N.K. Jemisin"],
     audioBookNarrator: ["Robin Miles"],
@@ -139,7 +207,8 @@ export const bookData: Book[] = [
       "Family",
       "Dystopia",
       "LGBTQIA+",
-      "Horror"
+      "Horror",
+      "Revenge"
     ],
     age: "Adult",
     type: "Fiction",
@@ -174,7 +243,8 @@ export const bookData: Book[] = [
       "Family",
       "Dystopia",
       "LGBTQIA+",
-      "Horror"
+      "Horror",
+      "Revenge"
     ],
     age: "Adult",
     type: "Fiction",
@@ -208,7 +278,8 @@ export const bookData: Book[] = [
       "War",
       "Family",
       "Dystopia",
-      "LGBTQIA+"
+      "LGBTQIA+",
+      "Revenge"
     ],
     age: "Adult",
     type: "Fiction",
@@ -233,7 +304,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Andrew Tell"],
     publishedYear: 2018,
     setting: ["Fictional"],
-    genre: ["Fantasy", "Magic", "Science Fiction", "War", "Family"],
+    genre: ["Fantasy", "Magic", "Science Fiction", "War", "Family", "Revenge"],
     age: "Adult",
     type: "Fiction",
     pages: 613,
@@ -305,7 +376,15 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Sarah Zimmerman"],
     publishedYear: 2012,
     setting: ["Fictional"],
-    genre: ["Fantasy", "Magic", "Black", "Romance", "Science Fiction", "War"],
+    genre: [
+      "Fantasy",
+      "Magic",
+      "Black",
+      "Romance",
+      "Science Fiction",
+      "War",
+      "Revenge"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 510,
@@ -1566,7 +1645,16 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2020,
     setting: ["Fictional", "Asia"],
-    genre: ["Fantasy", "Horror", "Retelling", "China", "Magic", "War", "Asia"],
+    genre: [
+      "Fantasy",
+      "Horror",
+      "Retelling",
+      "China",
+      "Magic",
+      "War",
+      "Asia",
+      "Revenge"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 654,
@@ -1590,7 +1678,16 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2019,
     setting: ["Fictional", "Asia"],
-    genre: ["Fantasy", "Horror", "Retelling", "China", "Magic", "War", "Asia"],
+    genre: [
+      "Fantasy",
+      "Horror",
+      "Retelling",
+      "China",
+      "Magic",
+      "War",
+      "Asia",
+      "Revenge"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 658,
@@ -1614,7 +1711,16 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Emily Woo Zeller"],
     publishedYear: 2018,
     setting: ["Fictional", "Asia"],
-    genre: ["Fantasy", "Horror", "Retelling", "China", "Magic", "War", "Asia"],
+    genre: [
+      "Fantasy",
+      "Horror",
+      "Retelling",
+      "China",
+      "Magic",
+      "War",
+      "Asia",
+      "Revenge"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 527,
@@ -1748,7 +1854,8 @@ export const bookData: Book[] = [
       "Science Fiction",
       "Romance",
       "Historical Fiction",
-      "War"
+      "War",
+      "Revenge"
     ],
     age: "Young Adult",
     type: "Fiction",
@@ -2082,7 +2189,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["Fictional"],
-    genre: ["Fantasy", "LGBTQIA+", "Magic", "Africa", "Black"],
+    genre: ["Fantasy", "LGBTQIA+", "Magic", "Africa", "Black", "Revenge"],
     age: "Young Adult",
     type: "Fiction",
     pages: 368,
