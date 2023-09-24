@@ -800,6 +800,21 @@ export const authorData = [
         name: "China"
       }
     ],
-    website: "www.linglinghuang.com/"
+    website: "www.linglinghuang.com"
+  },
+  {
+    name: "Honorée Fanonne Jeffers",
+    books: ["The Love Songs of W.E.B. Du Bois"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: true,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "honoreejeffers.com"
   }
 ];

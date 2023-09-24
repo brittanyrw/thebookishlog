@@ -26,7 +26,6 @@ export const tbrData = [
   "The Great Pretender",
   "Dear Girls",
   "A Discovery of Witches",
-  "How Much of These Hills is Gold",
   "Colonize This",
   "A Thousand Ships",
   "My Life in Civil Rights",

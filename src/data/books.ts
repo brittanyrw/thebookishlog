@@ -126,6 +126,44 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Love Songs of W.E.B. Du Bois",
+    author: ["Honorée Fanonne Jeffers"],
+    audioBookNarrator: ["Adenrele Ojo", "Karen Chilton", "Prentice Onayemi"],
+    publishedYear: 2021,
+    setting: ["Georgia (USA)", "United States"],
+    genre: [
+      "Family",
+      "Slavery",
+      "Black",
+      "Historical Fiction",
+      "Feminism",
+      "Africa",
+      "Native American",
+      "Romance",
+      "Crime",
+      "Academic",
+      "Race",
+      "Black",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 816,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "08/16/2023",
+    dateFinished: "09/23/2023",
+    progress: "finished",
+    color: "gold",
+    fav: true,
+    publisher: "Harper",
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "Natural Beauty",
     author: ["Ling Ling Huang"],
     audioBookNarrator: ["Carolyn Kang"],
