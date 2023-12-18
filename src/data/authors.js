@@ -816,5 +816,20 @@ export const authorData = [
       }
     ],
     website: "honoreejeffers.com"
+  },
+  {
+    name: "Tracey Rose Peyton",
+    books: ["Night Wherever We Go"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "traceyrosepeyton.com"
   }
 ];

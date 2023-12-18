@@ -61,8 +61,12 @@
         <p class="stat-title">2022</p>
       </div>
       <div class="stat purple">
-        <p class="stat-number">{{ countYear("2023") }}/50</p>
+        <p class="stat-number">{{ countYear("2023") }}</p>
         <p class="stat-title">2023</p>
+      </div>
+      <div class="stat orange">
+        <p class="stat-number">{{ countYear("2024") }}</p>
+        <p class="stat-title">2024</p>
       </div>
     </div>
   </div>

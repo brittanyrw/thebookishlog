@@ -58,6 +58,7 @@ export type Setting =
   | "South Africa"
   | "South Korea"
   | "Space"
+  | "Texas"
   | "United Kingdom"
   | "United States"
   | "Washington, DC"
@@ -126,6 +127,38 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Night Wherever We Go",
+    author: ["Tracey Rose Peyton"],
+    audioBookNarrator: ["Karen Chilton"],
+    publishedYear: 2023,
+    setting: ["Texas", "United States"],
+    genre: [
+      "Family",
+      "Slavery",
+      "Black",
+      "Historical Fiction",
+      "Feminism",
+      "Romance",
+      "Race"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 295,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "10/14/2023",
+    dateFinished: "12/08/2023",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Ecco",
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "The Love Songs of W.E.B. Du Bois",
     author: ["Honorée Fanonne Jeffers"],
     audioBookNarrator: ["Adenrele Ojo", "Karen Chilton", "Prentice Onayemi"],
@@ -143,7 +176,6 @@ export const bookData: Book[] = [
       "Crime",
       "Academic",
       "Race",
-      "Black",
       "LGBTQIA+"
     ],
     age: "Adult",
