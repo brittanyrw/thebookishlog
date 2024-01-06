@@ -185,7 +185,8 @@ export const authorData = [
       "Ring Shout",
       "A Master of Djinn",
       "The Black God's Drums",
-      "A Dead Djinn in Cairo"
+      "A Dead Djinn in Cairo",
+      "Out There Screaming: An Anthology of New Black Horror"
     ],
     poc: true,
     gender: "male",
@@ -412,7 +413,8 @@ export const authorData = [
       "The Shadowed Sun",
       "The Fifth Season",
       "The Obelisk Gate",
-      "The Stone Sky"
+      "The Stone Sky",
+      "Out There Screaming: An Anthology of New Black Horror"
     ],
     poc: true,
     gender: "female",
@@ -462,7 +464,13 @@ export const authorData = [
   },
   {
     name: "Nnedi Okorafor",
-    books: ["Binti", "Binti: Home", "Binti: Night Masquerade", "Akata Witch"],
+    books: [
+      "Binti",
+      "Binti: Home",
+      "Binti: Night Masquerade",
+      "Akata Witch",
+      "Out There Screaming: An Anthology of New Black Horror"
+    ],
     poc: true,
     gender: "female",
     lgbt: false,
@@ -831,5 +839,257 @@ export const authorData = [
       }
     ],
     website: "traceyrosepeyton.com"
+  },
+  {
+    name: "Erin E. Adams",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      },
+      {
+        code: "HT",
+        name: "Haiti"
+      }
+    ],
+    website: "erineadams.com"
+  },
+  {
+    name: "Violet Allen",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: ""
+  },
+  {
+    name: "Lesley Nneka Arimah",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "NG",
+        name: "Nigeria"
+      },
+      {
+        code: "GB",
+        name: "United Kingdom"
+      }
+    ],
+    website: "larimah.com"
+  },
+  {
+    name: "Maurice Broaddus",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "mauricebroaddus.com"
+  },
+  {
+    name: "Chesya Burke",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "thechesyaburke.org"
+  },
+  {
+    name: "Ezra Claytan Daniels",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "ezracdaniels.com"
+  },
+  {
+    name: "Tananarive Due",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "tananarivedue.com"
+  },
+  {
+    name: "Nalo Hopkinson",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "JM",
+        name: "Jamaica"
+      },
+      {
+        code: "CA",
+        name: "Canada"
+      }
+    ],
+    website: "nalohopkinson.com"
+  },
+  {
+    name: "Justin C. Key",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: ""
+  },
+  {
+    name: "L.D. Lewis",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "ldlewiswrites.com"
+  },
+  {
+    name: "Tochi Onyebuchi",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "tochionyebuchi.com"
+  },
+  {
+    name: "Rebecca Roanhorse",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "rebeccaroanhorse.com"
+  },
+  {
+    name: "Nicole D. Sconiers",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: ""
+  },
+  {
+    name: "Rion Amilcar Scott",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "rionamilcarscott.com"
+  },
+  {
+    name: "Terence Taylor",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: ""
+  },
+  {
+    name: "Cadwell Turnbull",
+    books: ["Out There Screaming: An Anthology of New Black Horror"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "cadwellturnbull.com"
   }
 ];
