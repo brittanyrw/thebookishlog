@@ -778,7 +778,7 @@ export const authorData = [
   },
   {
     name: "Kanae Minato",
-    books: ["Confessions"],
+    books: ["Confessions", "Penance"],
     poc: true,
     gender: "female",
     lgbt: false,

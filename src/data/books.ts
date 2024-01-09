@@ -127,6 +127,38 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Penance",
+    author: ["Kanae Minato"],
+    audioBookNarrator: [""],
+    publishedYear: 2009,
+    setting: ["Japan"],
+    genre: [
+      "Family",
+      "Crime",
+      "Japan",
+      "Horror",
+      "Revenge",
+      "Academic",
+      "Thriller"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 240,
+    medium: "Physical",
+    rating: 4.5,
+    dateStarted: "01/07/2024",
+    dateFinished: "01/09/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Mulholland Books",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "Out There Screaming: An Anthology of New Black Horror",
     author: [
       "Erin E. Adams",
@@ -308,7 +340,7 @@ export const bookData: Book[] = [
     dateFinished: "08/14/2023",
     progress: "finished",
     color: "black",
-    fav: false,
+    fav: true,
     publisher: "Mulholland Books",
     audioBookPublisher: "Hachette Audio",
     dedication: {
