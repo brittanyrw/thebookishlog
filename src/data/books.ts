@@ -17,7 +17,7 @@ export interface Book {
   color: string;
   publisher: string;
   audioBookPublisher: string;
-  dedication: Object;
+  dedication: Dedication;
 }
 
 export type Ages =
@@ -26,6 +26,28 @@ export type Ages =
   | "Adult"
   | "Middle Grade"
   | "Childrens";
+
+export type Dedication = {
+  to: DedicationPerson[];
+  text: string;
+};
+
+export type DedicationPerson =
+  | ""
+  | "Unknown"
+  | "Friend"
+  | "Family"
+  | "Mom"
+  | "Dad"
+  | "Children"
+  | "Poet"
+  | "Historical figure"
+  | "General"
+  | "Survivors of abuse"
+  | "Journalist"
+  | "Author"
+  | "Significant Other"
+  | "Quote";
 
 export type Setting =
   | ""
@@ -154,7 +176,7 @@ export const bookData: Book[] = [
     publisher: "Mulholland Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -209,7 +231,7 @@ export const bookData: Book[] = [
     publisher: "Random House",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -241,7 +263,7 @@ export const bookData: Book[] = [
     publisher: "Ecco",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -278,7 +300,7 @@ export const bookData: Book[] = [
     publisher: "Harper",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -312,7 +334,7 @@ export const bookData: Book[] = [
     publisher: "Mulholland Books",
     audioBookPublisher: "Penguin Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -344,7 +366,7 @@ export const bookData: Book[] = [
     publisher: "Mulholland Books",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -380,7 +402,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -416,7 +438,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -451,8 +473,9 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
-      text: ""
+      to: ["General"], //outsiders?
+      text:
+        "For all those who have to fight for the respect that everyone else is given without question"
     }
   },
   {
@@ -475,7 +498,7 @@ export const bookData: Book[] = [
     publisher: "M. L. Wang",
     audioBookPublisher: "M. L. Wang",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -499,7 +522,7 @@ export const bookData: Book[] = [
     publisher: "Henry Holt Company",
     audioBookPublisher: "Macmillan Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -523,7 +546,7 @@ export const bookData: Book[] = [
     publisher: "Signet",
     audioBookPublisher: "Audible",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -555,7 +578,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -585,7 +608,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -609,7 +632,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Orbit",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -642,7 +665,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -675,7 +698,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -706,7 +729,7 @@ export const bookData: Book[] = [
     publisher: "Tor.com",
     audioBookPublisher: "Macmillan Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -748,7 +771,7 @@ export const bookData: Book[] = [
     publisher: "Saga Press",
     audioBookPublisher: "Simon & Schuster Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -778,7 +801,7 @@ export const bookData: Book[] = [
     publisher: "Soft Cryptid",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -802,7 +825,7 @@ export const bookData: Book[] = [
     publisher: "Balzer + Bray",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -826,8 +849,8 @@ export const bookData: Book[] = [
     publisher: "William Morrow",
     audioBookPublisher: "",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Unknown"],
+      text: "To Eric and Janette"
     }
   },
   {
@@ -855,8 +878,8 @@ export const bookData: Book[] = [
     publisher: "Vintage",
     audioBookPublisher: "Random House Audio",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Family"],
+      text: "For Kateri and Fleix" //wife and son
     }
   },
   {
@@ -887,7 +910,7 @@ export const bookData: Book[] = [
     publisher: "Riverhead Books",
     audioBookPublisher: "Penguin Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -920,7 +943,7 @@ export const bookData: Book[] = [
     publisher: "Knopf Books for Young Readers",
     audioBookPublisher: "Listening Library",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -944,7 +967,7 @@ export const bookData: Book[] = [
     publisher: "Katherine Tegen Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -968,7 +991,7 @@ export const bookData: Book[] = [
     publisher: "",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1003,7 +1026,7 @@ export const bookData: Book[] = [
     publisher: "Tor.com",
     audioBookPublisher: "Recorded Books",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1035,7 +1058,7 @@ export const bookData: Book[] = [
     publisher: "Dial Books",
     audioBookPublisher: "Listening Library",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1059,7 +1082,7 @@ export const bookData: Book[] = [
     publisher: "Amazon Original Stories",
     audioBookPublisher: "Amazon Original Stories",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1097,7 +1120,7 @@ export const bookData: Book[] = [
     publisher: "Katherine Tegen Books",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1128,7 +1151,7 @@ export const bookData: Book[] = [
     publisher: "Balzer + Bray",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1161,7 +1184,7 @@ export const bookData: Book[] = [
     publisher: "Scribner",
     audioBookPublisher: "Simon & Schuster Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1185,7 +1208,7 @@ export const bookData: Book[] = [
     publisher: "Speak",
     audioBookPublisher: "Tantor Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1209,7 +1232,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1241,7 +1264,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Orbit",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1265,7 +1288,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1298,8 +1321,8 @@ export const bookData: Book[] = [
     publisher: "Harper Voyager",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Significant Other"],
+      text: "To Bennett, who is all the light and laughter in the world"
     }
   },
   {
@@ -1329,7 +1352,7 @@ export const bookData: Book[] = [
     publisher: "Feiwel & Friends",
     audioBookPublisher: "Dreamscape Media, LLC",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1361,7 +1384,7 @@ export const bookData: Book[] = [
     publisher: "Gallery / Saga Press",
     audioBookPublisher: "Simon & Schuster Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1402,7 +1425,7 @@ export const bookData: Book[] = [
     publisher: "Quill Tree Books",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1426,7 +1449,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1450,7 +1473,7 @@ export const bookData: Book[] = [
     publisher: "Doubleday",
     audioBookPublisher: "Random House Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1480,7 +1503,7 @@ export const bookData: Book[] = [
     publisher: "Doubleday",
     audioBookPublisher: "Random House Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1504,7 +1527,7 @@ export const bookData: Book[] = [
     publisher: "Feiwel & Friends",
     audioBookPublisher: "Listening Library",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1536,7 +1559,7 @@ export const bookData: Book[] = [
     publisher: "Balzer + Bray",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1560,7 +1583,7 @@ export const bookData: Book[] = [
     publisher: "Avon",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1584,7 +1607,7 @@ export const bookData: Book[] = [
     publisher: "One World",
     audioBookPublisher: "Audible",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1616,8 +1639,8 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Orbit",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Quote"],
+      text: "'One belongs to New York instantly, one belongs to it as much in five minutes as in five years.' - Thomas Wolfe"
     }
   },
   {
@@ -1640,7 +1663,7 @@ export const bookData: Book[] = [
     publisher: "Tor.com",
     audioBookPublisher: "Tantor Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1664,7 +1687,7 @@ export const bookData: Book[] = [
     publisher: "Tor.com",
     audioBookPublisher: "Tantor Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1688,7 +1711,7 @@ export const bookData: Book[] = [
     publisher: "Tor.com",
     audioBookPublisher: "Macmillan Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1712,7 +1735,7 @@ export const bookData: Book[] = [
     publisher: "",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1744,8 +1767,8 @@ export const bookData: Book[] = [
     publisher: "Beacon Press",
     audioBookPublisher: "Recorded Books",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Friend"],
+      text: "To Victoria Rose, friend and goad"
     }
   },
   {
@@ -1768,7 +1791,7 @@ export const bookData: Book[] = [
     publisher: "Akashic Books",
     audioBookPublisher: "Blackstone Audio, Inc",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1792,7 +1815,7 @@ export const bookData: Book[] = [
     publisher: "Delacorte Press",
     audioBookPublisher: "Listening Library",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1825,7 +1848,7 @@ export const bookData: Book[] = [
     publisher: "Harper Voyager",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1858,7 +1881,7 @@ export const bookData: Book[] = [
     publisher: "Harper Voyager",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1891,8 +1914,8 @@ export const bookData: Book[] = [
     publisher: "Harper Voyager",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Journalist", "Author"],
+      text: "This is for Iris"
     }
   },
   {
@@ -1915,7 +1938,7 @@ export const bookData: Book[] = [
     publisher: "Bloomsbury YA",
     audioBookPublisher: "Bloomsbury Publishing Plc",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1939,7 +1962,7 @@ export const bookData: Book[] = [
     publisher: "Bloomsbury YA",
     audioBookPublisher: "Bloomsbury Publishing Plc",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1970,7 +1993,7 @@ export const bookData: Book[] = [
     publisher: "Quill Tree Books",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -1994,7 +2017,7 @@ export const bookData: Book[] = [
     publisher: "Tor.com",
     audioBookPublisher: "Macmillan Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2027,7 +2050,7 @@ export const bookData: Book[] = [
     publisher: "Penguin Teen",
     audioBookPublisher: "Penguin Teen Canada",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2059,7 +2082,7 @@ export const bookData: Book[] = [
     publisher: "Seven Stories Press",
     audioBookPublisher: "Audible",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2100,7 +2123,7 @@ export const bookData: Book[] = [
     publisher: "Orbit",
     audioBookPublisher: "Hachette Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2124,7 +2147,7 @@ export const bookData: Book[] = [
     publisher: "Amulet Books",
     audioBookPublisher: "Blackstone Publishing",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2148,7 +2171,7 @@ export const bookData: Book[] = [
     publisher: "Feiwel & Friends",
     audioBookPublisher: "Macmillan Audio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2180,7 +2203,7 @@ export const bookData: Book[] = [
     publisher: "Balzer + Bray",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2204,7 +2227,7 @@ export const bookData: Book[] = [
     publisher: "Quill Tree Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2235,7 +2258,7 @@ export const bookData: Book[] = [
     publisher: "Quill Tree Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2259,7 +2282,7 @@ export const bookData: Book[] = [
     publisher: "G.P. Putnam's Sons",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2283,8 +2306,8 @@ export const bookData: Book[] = [
     publisher: "Katherine Tegen Books",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Survivors of abuse", "Quote"],
+      text: "'All water has a perfect memory and is forever trying to get back to where it was' - Toni Morrison. To the victims, to the survivors, to the bravehearted, to teh girls who grew up too fast ... we believe you."
     }
   },
   {
@@ -2312,7 +2335,7 @@ export const bookData: Book[] = [
     publisher: "Katherine Tegen Books",
     audioBookPublisher: "HarperAudio",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2336,7 +2359,7 @@ export const bookData: Book[] = [
     publisher: "Katherine Tegen Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2360,7 +2383,7 @@ export const bookData: Book[] = [
     publisher: "Amulet Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2384,7 +2407,7 @@ export const bookData: Book[] = [
     publisher: "",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2415,7 +2438,7 @@ export const bookData: Book[] = [
     publisher: "Riverhead Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2439,7 +2462,7 @@ export const bookData: Book[] = [
     publisher: "",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2463,7 +2486,7 @@ export const bookData: Book[] = [
     publisher: "Sourcebooks Casablanca",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2495,8 +2518,9 @@ export const bookData: Book[] = [
     publisher: "Tor.com",
     audioBookPublisher: "",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Poet", "Historical figure", "Quote"],
+      text:
+        "For Claude McKay: 'If we must die let it not be like hogs.' And for Lulu Wilson's Maw: 'My maw was in her cabin with a week-old baby and one night twelve Klu Kluxes done come to the place. They come in by ones and she whopped 'em one at a time.'"
     }
   },
   {
@@ -2519,7 +2543,7 @@ export const bookData: Book[] = [
     publisher: "Wednesday Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2543,7 +2567,7 @@ export const bookData: Book[] = [
     publisher: "Liveright",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2567,7 +2591,7 @@ export const bookData: Book[] = [
     publisher: "Del Rey",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2591,7 +2615,7 @@ export const bookData: Book[] = [
     publisher: "Houghton Mifflin Harcourt",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2615,7 +2639,7 @@ export const bookData: Book[] = [
     publisher: "",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2639,7 +2663,7 @@ export const bookData: Book[] = [
     publisher: "",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2663,7 +2687,7 @@ export const bookData: Book[] = [
     publisher: "Knopf Books for Young Readers",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2687,8 +2711,8 @@ export const bookData: Book[] = [
     publisher: "Katherine Tegen Books",
     audioBookPublisher: "",
     dedication: {
-      to: "",
-      text: ""
+      to: ["Family"], //dad and grandfather
+      text: "For my daddy and my Pop-Pop who let me fly but were always there to catch me."
     }
   },
   {
@@ -2719,7 +2743,7 @@ export const bookData: Book[] = [
     publisher: "Ace",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2743,7 +2767,7 @@ export const bookData: Book[] = [
     publisher: "Sourcebooks Fire",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2775,7 +2799,7 @@ export const bookData: Book[] = [
     publisher: "Bloomsbury YA",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   },
@@ -2807,7 +2831,7 @@ export const bookData: Book[] = [
     publisher: "Simon & Schuster",
     audioBookPublisher: "",
     dedication: {
-      to: "",
+      to: [""],
       text: ""
     }
   }

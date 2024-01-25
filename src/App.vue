@@ -17,6 +17,9 @@
         <router-link to="/stats">
           <button>Stats</button>
         </router-link>
+        <router-link to="/dedications">
+          <button>Dedications</button>
+        </router-link>
       </div>
       <div class="external-links">
         <h4>Other Logs</h4>
