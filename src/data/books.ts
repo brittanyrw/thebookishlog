@@ -40,7 +40,9 @@ export type Setting =
   | "Fictional"
   | "Florida"
   | "Georgia (USA)"
+  | "Germany"
   | "Illinois"
+  | "India"
   | "Japan"
   | "Louisiana"
   | "London"
@@ -126,6 +128,30 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Caste: The Origins of Our Discontents",
+    author: ["Isabel Wilkerson"],
+    audioBookNarrator: [""],
+    publishedYear: 2020,
+    setting: ["United States", "Germany", "India"],
+    genre: ["Race", "Black", "History", "Social Justice", "Slavery"],
+    age: "Adult",
+    type: "Non-Fiction",
+    pages: 496,
+    medium: "Physical",
+    rating: 4.5,
+    dateStarted: "01/10/2024",
+    dateFinished: "01/27/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Random House",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
   {
     title: "Penance",
     author: ["Kanae Minato"],

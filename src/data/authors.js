@@ -1091,5 +1091,20 @@ export const authorData = [
       }
     ],
     website: "cadwellturnbull.com"
+  },
+  {
+    name: "Isabel Wilkerson",
+    books: ["Caste: The Origins of Our Discontents"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "isabelwilkerson.com"
   }
 ];

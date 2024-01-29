@@ -55,7 +55,14 @@
                 :src="require('@/assets/imgs/headphones.svg')"
               />
             </div>
-            <p class="author">{{ book.author.join(", ") }}</p>
+            <p
+              class="author"
+              :class="[
+                { 'toggle-author': book.author.join(', ').length > 100 }
+              ]"
+            >
+              {{ book.author.join(", ") }}
+            </p>
           </div>
           <div
             v-if="book.progress == 'finished'"
@@ -145,6 +152,10 @@ export default {
   }
 }
 
+.toggle-author {
+  font-size: 14px;
+}
+
 .book-cover-img-wrapper {
   position: relative;
   z-index: 1;
@@ -190,6 +201,10 @@ export default {
   &.orange {
     background: #d3721d;
   }
+}
+
+.currently-reading-book-list {
+  padding: 20px;
 }
 
 .book.dnf {
