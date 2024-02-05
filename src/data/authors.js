@@ -151,7 +151,7 @@ export const authorData = [
   },
   {
     name: "Cho Nam-Joo",
-    books: ["Kim Jiyoung, Born 1982"],
+    books: ["Kim Jiyoung, Born 1982", "Miss Kim Knows and Other Stories"],
     poc: true,
     gender: "female",
     lgbt: false,

@@ -129,6 +129,30 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Miss Kim Knows and Other Stories",
+    author: ["Cho Nam-Joo"],
+    audioBookNarrator: [""],
+    publishedYear: 2021,
+    setting: ["South Korea"],
+    genre: ["Feminism", "Asia", "Korea", "Family", "Short Story Collection"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 223,
+    medium: "Physical",
+    rating: 3.5,
+    dateStarted: "01/28/2024",
+    dateFinished: "02/04/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Scribner UK",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "Caste: The Origins of Our Discontents",
     author: ["Isabel Wilkerson"],
     audioBookNarrator: [""],
@@ -221,7 +245,8 @@ export const bookData: Book[] = [
       "Dystopia",
       "Magic",
       "Science Fiction",
-      "Short Story Collection"    ],
+      "Short Story Collection"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 371,
@@ -2555,7 +2580,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2016,
     setting: ["South Korea"],
-    genre: ["Dystopia", "Feminism", "Asia", "Korea"],
+    genre: ["Feminism", "Asia", "Korea", "Family"],
     age: "Adult",
     type: "Fiction",
     pages: 163,
