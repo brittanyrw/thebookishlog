@@ -48,6 +48,7 @@ export type Setting =
   | "London"
   | "Maryland"
   | "Mexico"
+  | "Michigan"
   | "Minnesota"
   | "New Orleans"
   | "New York City"
@@ -80,6 +81,7 @@ export type Genres =
   | "Crime"
   | "Disability"
   | "Dystopia"
+  | "Experiments"
   | "Fairy Tale"
   | "Fantasy"
   | "Family"
@@ -128,6 +130,39 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Lakewood",
+    author: ["Megan Giddings"],
+    audioBookNarrator: [""],
+    publishedYear: 2020,
+    setting: ["United States", "Michigan"],
+    genre: [
+      "Experiments",
+      "Black",
+      "Race",
+      "Family",
+      "Health",
+      "Mystery",
+      "Thriller",
+      "Horror"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 288,
+    medium: "Physical",
+    rating: 4,
+    dateStarted: "02/05/2024",
+    dateFinished: "02/13/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Amistad",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
   {
     title: "Miss Kim Knows and Other Stories",
     author: ["Cho Nam-Joo"],
@@ -348,7 +383,8 @@ export const bookData: Book[] = [
       "Thriller",
       "Race",
       "China",
-      "LGBTQIA+"
+      "LGBTQIA+",
+      "Experiments"
     ],
     age: "Adult",
     type: "Fiction",

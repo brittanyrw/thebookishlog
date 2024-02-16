@@ -348,9 +348,9 @@ export default {
           justify-content: space-between;
           width: 100%;
         }
-        .resize-name {
+        /* .resize-name {
           font-size: 14px;
-        }
+        } */
       }
       .author-img-wrapper {
         height: 130px;
@@ -396,9 +396,9 @@ export default {
         width: 189px;
         .author-name {
           flex-direction: column;
-          .resize-name {
+          /*.resize-name {
             font-size: 14px;
-          }
+          }*/
         }
         .author-img-wrapper {
           height: 189px;

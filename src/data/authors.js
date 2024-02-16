@@ -782,7 +782,7 @@ export const authorData = [
     poc: true,
     gender: "female",
     lgbt: false,
-    fav: false,
+    fav: true,
     country: [
       {
         code: "JP",
@@ -1106,5 +1106,20 @@ export const authorData = [
       }
     ],
     website: "isabelwilkerson.com"
+  },
+  {
+    name: "Megan Giddings",
+    books: ["Lakewood"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "megangiddings.com"
   }
 ];
