@@ -537,7 +537,7 @@ export const authorData = [
     poc: true,
     gender: "non-binary",
     lgbt: true,
-    fav: false,
+    fav: true,
     country: [
       {
         code: "US",
