@@ -1,7 +1,6 @@
 export const tbrData = [
   "A Black Women's History of the United States",
   "A Thousand Ships",
-  "Almond",
   "The Atlas Six",
   "The Beautiful Ones",
   "Beautiful Star",
@@ -13,7 +12,6 @@ export const tbrData = [
   "Crying in Hmart",
   "Daughters of Nri",
   "Dawn",
-  "Firekeeper's Daughter",
   "Gearbreakers",
   "Harlem Shuffle",
   "Kaikeyi",
@@ -35,7 +33,6 @@ export const tbrData = [
   "The Startup Wife",
   "The Taking of Jake Livingston",
   "Tower",
-  "Wash Day Diaries",
   "What My Bones Know",
   "We Are Not Like Them"
 ];

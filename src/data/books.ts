@@ -86,6 +86,8 @@ export type Genres =
   | "Fantasy"
   | "Family"
   | "Feminism"
+  | "Friendship"
+  | "Graphic Novel"
   | "Health"
   | "Historical Fiction"
   | "History"
@@ -130,6 +132,85 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Wash Day Diaries",
+    author: ["Jamila Rowser", "Robyn Smith"],
+    audioBookNarrator: [""],
+    publishedYear: 2022,
+    setting: ["New York City", "United States"],
+    genre: [
+      "Graphic Novel",
+      "Friendship",
+      "Romance",
+      "Black",
+      "Feminism",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 192,
+    medium: "Physical",
+    rating: 4.5,
+    dateStarted: "02/19/2024",
+    dateFinished: "02/19/2024",
+    progress: "finished",
+    color: "pink",
+    fav: false,
+    publisher: "Chronicle Books",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "Almond",
+    author: ["Sohn Won-Pyung"],
+    audioBookNarrator: [""],
+    publishedYear: 2017,
+    setting: ["South Korea", "Asia"],
+    genre: ["Family", "Friendship", "Health", "Psychology", "Asia", "Korea"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 272,
+    medium: "Physical",
+    rating: 5,
+    dateStarted: "02/14/2024",
+    dateFinished: "02/19/2024",
+    progress: "finished",
+    color: "purple",
+    fav: true,
+    publisher: "HarperVia",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "Firekeeper's Daughter",
+    author: ["Angeline Boulley"],
+    audioBookNarrator: ["Isabella Star LaBlanc"],
+    publishedYear: 2021,
+    setting: ["Michigan", "United States"],
+    genre: ["Native American", "Mystery", "Crime", "Family", "Romance"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 496,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "12/13/2023",
+    dateFinished: "02/19/2024",
+    progress: "dnf",
+    color: "red",
+    fav: false,
+    publisher: "Henry, Holt and Co. (BYR)",
+    audioBookPublisher: "Macmillan Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
   {
     title: "Lakewood",
     author: ["Megan Giddings"],
@@ -312,7 +393,8 @@ export const bookData: Book[] = [
       "Historical Fiction",
       "Feminism",
       "Romance",
-      "Race"
+      "Race",
+      "Friendship"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1370,7 +1452,8 @@ export const bookData: Book[] = [
       "War",
       "Race",
       "Historical Fiction",
-      "Alternate History"
+      "Alternate History",
+      "Friendship"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1475,7 +1558,13 @@ export const bookData: Book[] = [
     ],
     publishedYear: 2022,
     setting: ["United States", "Georgia (USA)", "Atlanta"],
-    genre: ["Black", "Romance", "LGBTQIA+", "Short Story Collection"],
+    genre: [
+      "Black",
+      "Romance",
+      "LGBTQIA+",
+      "Short Story Collection",
+      "Friendship"
+    ],
     age: "Young Adult",
     type: "Fiction",
     pages: 291,
@@ -1608,7 +1697,8 @@ export const bookData: Book[] = [
       "Race",
       "Black",
       "Alternate History",
-      "War"
+      "War",
+      "Friendship"
     ],
     age: "Young Adult",
     type: "Fiction",
@@ -1713,7 +1803,14 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2018,
     setting: ["Fictional", "Space"],
-    genre: ["Novella", "Science Fiction", "Black", "Afrofuturism", "Space"],
+    genre: [
+      "Novella",
+      "Science Fiction",
+      "Black",
+      "Afrofuturism",
+      "Space",
+      "Friendship"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 208,
@@ -1737,7 +1834,14 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2017,
     setting: ["Fictional", "Space"],
-    genre: ["Novella", "Science Fiction", "Black", "Afrofuturism", "Space"],
+    genre: [
+      "Novella",
+      "Science Fiction",
+      "Black",
+      "Afrofuturism",
+      "Space",
+      "Friendship"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 176,
@@ -1897,7 +2001,8 @@ export const bookData: Book[] = [
       "Magic",
       "War",
       "Asia",
-      "Revenge"
+      "Revenge",
+      "Friendship"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1930,7 +2035,8 @@ export const bookData: Book[] = [
       "Magic",
       "War",
       "Asia",
-      "Revenge"
+      "Revenge",
+      "Friendship"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1963,7 +2069,8 @@ export const bookData: Book[] = [
       "Magic",
       "War",
       "Asia",
-      "Revenge"
+      "Revenge",
+      "Friendship"
     ],
     age: "Adult",
     type: "Fiction",
@@ -2067,7 +2174,14 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Robin Miles"],
     publishedYear: 2015,
     setting: ["Fictional", "Space"],
-    genre: ["Novella", "Science Fiction", "Black", "Afrofuturism", "Space"],
+    genre: [
+      "Novella",
+      "Science Fiction",
+      "Black",
+      "Afrofuturism",
+      "Space",
+      "Friendship"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 96,
@@ -2385,7 +2499,7 @@ export const bookData: Book[] = [
     ],
     publishedYear: 2019,
     setting: ["United States", "New York City"],
-    genre: ["Mystery", "Black", "Psychology", "Crime", "Music"],
+    genre: ["Mystery", "Black", "Psychology", "Crime", "Music", "Friendship"],
     age: "Young Adult",
     type: "Fiction",
     pages: 377,
@@ -2760,7 +2874,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2018,
     setting: ["United States", "Washington, DC"],
-    genre: ["Mystery", "Black", "Crime", "Psychology"],
+    genre: ["Mystery", "Black", "Crime", "Psychology", "Friendship"],
     age: "Young Adult",
     type: "Fiction",
     pages: 435,

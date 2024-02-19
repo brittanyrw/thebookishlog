@@ -71,6 +71,12 @@
               </p>
               <p class="stat-title">Short Story Collections</p>
             </div>
+            <div class="stat gold">
+              <p class="stat-number">
+                {{ valueCountList("genre", "Graphic Novel") }}
+              </p>
+              <p class="stat-title">Graphic Novels</p>
+            </div>
           </div>
         </section>
         <section class="book-length-ratings">

@@ -1121,5 +1121,58 @@ export const authorData = [
       }
     ],
     website: "megangiddings.com"
+  },
+  {
+    name: "Sohn Won-Pyung",
+    books: ["Almond"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "KR",
+        name: "Korea"
+      }
+    ],
+    website: "en.wikipedia.org/wiki/Sohn_Won-pyung"
+  },
+  {
+    name: "Jamila Rowser",
+    books: ["Wash Day Diaries"],
+    poc: true,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "PR",
+        name: "Puerto Rico"
+      },
+      {
+        code: "DO",
+        name: "Dominican Republic"
+      },
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "jamilarowser.com"
+  },
+  {
+    name: "Robyn Smith",
+    books: ["Wash Day Diaries"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "JM",
+        name: "Jamaica"
+      }
+    ],
+    website: "robrosmo.com"
   }
 ];
