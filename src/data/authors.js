@@ -1174,5 +1174,20 @@ export const authorData = [
       }
     ],
     website: "robrosmo.com"
+  },
+  {
+    name: "Emma Newman",
+    books: ["Planetfall"],
+    poc: false,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "GB",
+        name: "United Kingdom"
+      }
+    ],
+    website: "enewman.co.uk"
   }
 ];

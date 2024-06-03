@@ -133,6 +133,38 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Planetfall",
+    author: ["Emma Newman"],
+    audioBookNarrator: ["Emma Newman"],
+    publishedYear: 2015,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Mystery",
+      "Artificial Intelligence",
+      "Dystopia",
+      "Space",
+      "Psychology",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 336,
+    medium: "Audio",
+    rating: 3,
+    dateStarted: "06/01/2024",
+    dateFinished: "06/02/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Ace/Roc",
+    audioBookPublisher: "Blackstone Audio, Inc",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "Wash Day Diaries",
     author: ["Jamila Rowser", "Robyn Smith"],
     audioBookNarrator: [""],
