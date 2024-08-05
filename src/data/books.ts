@@ -146,7 +146,8 @@ export const bookData: Book[] = [
       "Space",
       "Psychology",
       "LGBTQIA+",
-      "Family"
+      "Family",
+      "Short Story Collection"
     ],
     age: "Adult",
     type: "Fiction",
