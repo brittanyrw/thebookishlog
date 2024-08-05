@@ -133,6 +133,137 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Before, After, Alone",
+    author: ["Emma Newman"],
+    audioBookNarrator: ["Emma Newman"],
+    publishedYear: 2023,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Mystery",
+      "Artificial Intelligence",
+      "Dystopia",
+      "Space",
+      "Psychology",
+      "LGBTQIA+",
+      "Family"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 161,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/04/2024",
+    dateFinished: "08/04/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Emmington Press",
+    audioBookPublisher: "Emmington Press",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "Atlas Alone",
+    author: ["Emma Newman"],
+    audioBookNarrator: ["Emma Newman"],
+    publishedYear: 2019,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Mystery",
+      "Artificial Intelligence",
+      "Dystopia",
+      "Space",
+      "Psychology",
+      "LGBTQIA+",
+      "Crime"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 320,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "08/03/2024",
+    dateFinished: "08/04/2024",
+    progress: "finished",
+    color: "darkblue",
+    fav: false,
+    publisher: "Ace/Roc",
+    audioBookPublisher: "Tantor Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "Before Mars",
+    author: ["Emma Newman"],
+    audioBookNarrator: ["Emma Newman"],
+    publishedYear: 2018,
+    setting: ["Space"],
+    genre: [
+      "Science Fiction",
+      "Mystery",
+      "Artificial Intelligence",
+      "Dystopia",
+      "Space",
+      "Psychology",
+      "LGBTQIA+",
+      "Family"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 340,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "08/01/2024",
+    dateFinished: "08/03/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Ace/Roc",
+    audioBookPublisher: "Tantor Audio",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
+    title: "After Atlas",
+    author: ["Emma Newman"],
+    audioBookNarrator: ["Andrew Kingston"],
+    publishedYear: 2016,
+    setting: ["London", "United Kingdom"],
+    genre: [
+      "Science Fiction",
+      "Mystery",
+      "Artificial Intelligence",
+      "Dystopia",
+      "LGBTQIA+",
+      "Crime",
+      "Slavery"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 369,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "06/08/2024",
+    dateFinished: "07/30/2024",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Ace/Roc",
+    audioBookPublisher: "Blackstone Audio, Inc",
+    dedication: {
+      to: "",
+      text: ""
+    }
+  },
+  {
     title: "Planetfall",
     author: ["Emma Newman"],
     audioBookNarrator: ["Emma Newman"],

@@ -1177,11 +1177,17 @@ export const authorData = [
   },
   {
     name: "Emma Newman",
-    books: ["Planetfall"],
+    books: [
+      "Planetfall",
+      "After Atlas",
+      "Before Mars",
+      "Atlas Alone",
+      "Before, After, Alone"
+    ],
     poc: false,
     gender: "female",
     lgbt: false,
-    fav: false,
+    fav: true,
     country: [
       {
         code: "GB",
