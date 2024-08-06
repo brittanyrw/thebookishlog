@@ -103,6 +103,7 @@
               </ul>
             </div>
           </div>
+          <div class="divider"></div>
           <div class="length">
             <div class="shortest-book">
               <h3>Shortest Book</h3>
@@ -157,7 +158,120 @@
               </div>
             </div>
           </div>
-          <!-- <div class="dnf-books">
+          <div class="divider"></div>
+          <div class="dnf-books">
+            <h3>Favorite Series</h3>
+            <p>My favorite series of books.</p>
+            <div class="series-container">
+              <div class="series">
+                <h4>The Fifth Season</h4>
+                <ul>
+                  <li
+                    class="book"
+                    v-for="(book, index) in filter('series', 'The Broken Earth')"
+                    :key="index"
+                  >
+                    <img
+                      class="book-cover-img"
+                      :class="[
+                        { 'e-book': book.medium == 'E-Book' },
+                        { audio: book.medium == 'Audio' }
+                      ]"
+                      :alt="`${book.title} book cover`"
+                      :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                    />
+                    <p>{{ book.title }}</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="series">
+                <h4>Planetfall</h4>
+                <ul>
+                  <li
+                    class="book"
+                    v-for="(book, index) in filter('series', 'Planetfall')"
+                    :key="index"
+                  >
+                    <img
+                      class="book-cover-img"
+                      :class="[
+                        { 'e-book': book.medium == 'E-Book' },
+                        { audio: book.medium == 'Audio' }
+                      ]"
+                      :alt="`${book.title} book cover`"
+                      :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                    />
+                    <p>{{ book.title }}</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="series">
+                <h4>The Poppy War</h4>
+                <ul>
+                  <li
+                    class="book"
+                    v-for="(book, index) in filter('series', 'The Poppy War')"
+                    :key="index"
+                  >
+                    <img
+                      class="book-cover-img"
+                      :class="[
+                        { 'e-book': book.medium == 'E-Book' },
+                        { audio: book.medium == 'Audio' }
+                      ]"
+                      :alt="`${book.title} book cover`"
+                      :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                    />
+                    <p>{{ book.title }}</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="series">
+                <h4>Binti</h4>
+                <ul>
+                  <li
+                    class="book"
+                    v-for="(book, index) in filter('series', 'Binti')"
+                    :key="index"
+                  >
+                    <img
+                      class="book-cover-img"
+                      :class="[
+                        { 'e-book': book.medium == 'E-Book' },
+                        { audio: book.medium == 'Audio' }
+                      ]"
+                      :alt="`${book.title} book cover`"
+                      :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                    />
+                    <p>{{ book.title }}</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="series">
+                <h4>Great Cities</h4>
+                <ul>
+                  <li
+                    class="book"
+                    v-for="(book, index) in filter('series', 'Great Cities')"
+                    :key="index"
+                  >
+                    <img
+                      class="book-cover-img"
+                      :class="[
+                        { 'e-book': book.medium == 'E-Book' },
+                        { audio: book.medium == 'Audio' }
+                      ]"
+                      :alt="`${book.title} book cover`"
+                      :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                    />
+                    <p>{{ book.title }}</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="dnf-books">
             <h3>DNFed books</h3>
             <p>Books started that I decided not to finish.</p>
             <ul>
@@ -178,7 +292,7 @@
                 <p>{{ book.title }}</p>
               </li>
             </ul>
-          </div> -->
+          </div>
         </section>
         <div class="genres">
           <div class="genre-list">
@@ -475,6 +589,13 @@ h3 {
   }
 }
 
+.divider {
+  height: 5px;
+  background-color: black;
+  border-radius: 7px;
+  margin: 20px;
+}
+
 .numbers {
   h2 {
     padding-top: 20px;
@@ -508,6 +629,7 @@ h3 {
   }
 }
 
+
 .length {
   display: flex;
   margin: auto;
@@ -522,8 +644,9 @@ h3 {
   justify-content: center;
 }
 
-.shortest-book {
-  max-width: 250px;
+.shortest-book,
+.longest-book {
+  width: 250px;
 }
 
 .longest-book-wrapper {
@@ -557,6 +680,21 @@ h3 {
 .book-cover-img {
   width: auto;
   height: 150px;
+}
+
+.series-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .series {
+    flex-grow: 1;
+    margin: 10px;
+    .book {
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 .numbers,

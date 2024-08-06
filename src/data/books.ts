@@ -18,6 +18,7 @@ export interface Book {
   publisher: string;
   audioBookPublisher: string;
   dedication: Object;
+  series: string;
 }
 
 export type Ages =
@@ -164,7 +165,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Planetfall"
   },
   {
     title: "Atlas Alone",
@@ -197,7 +199,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Planetfall"
   },
   {
     title: "Before Mars",
@@ -230,7 +233,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Planetfall"
   },
   {
     title: "After Atlas",
@@ -262,7 +266,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Planetfall"
   },
   {
     title: "Planetfall",
@@ -294,7 +299,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Planetfall"
   },
   {
     title: "Wash Day Diaries",
@@ -325,7 +331,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Almond",
@@ -349,7 +356,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Firekeeper's Daughter",
@@ -373,7 +381,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Lakewood",
@@ -406,14 +415,15 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Miss Kim Knows and Other Stories",
     author: ["Cho Nam-Joo"],
     audioBookNarrator: [""],
     publishedYear: 2021,
-    setting: ["South Korea"],
+    setting: ["South Korea", "Asia"],
     genre: ["Feminism", "Asia", "Korea", "Family", "Short Story Collection"],
     age: "Adult",
     type: "Fiction",
@@ -430,14 +440,15 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Caste: The Origins of Our Discontents",
     author: ["Isabel Wilkerson"],
     audioBookNarrator: [""],
     publishedYear: 2020,
-    setting: ["United States", "Germany", "India"],
+    setting: ["United States", "Germany", "India", "Asia"],
     genre: ["Race", "Black", "History", "Social Justice", "Slavery"],
     age: "Adult",
     type: "Non-Fiction",
@@ -454,14 +465,15 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Penance",
     author: ["Kanae Minato"],
     audioBookNarrator: [""],
     publishedYear: 2009,
-    setting: ["Japan"],
+    setting: ["Japan", "Asia"],
     genre: [
       "Family",
       "Crime",
@@ -486,7 +498,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Out There Screaming: An Anthology of New Black Horror",
@@ -542,7 +555,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Night Wherever We Go",
@@ -575,7 +589,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Love Songs of W.E.B. Du Bois",
@@ -612,7 +627,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Natural Beauty",
@@ -647,14 +663,15 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Confessions",
     author: ["Kanae Minato"],
     audioBookNarrator: ["Elaina Erika Davis", "Noah Galvin"],
     publishedYear: 2008,
-    setting: ["Japan"],
+    setting: ["Japan", "Asia"],
     genre: [
       "Family",
       "Crime",
@@ -679,7 +696,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Stone Sky",
@@ -715,7 +733,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "The Broken Earth"
   },
   {
     title: "The Obelisk Gate",
@@ -751,7 +770,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "The Broken Earth"
   },
   {
     title: "The Fifth Season",
@@ -786,7 +806,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "The Broken Earth"
   },
   {
     title: "The Sword of Kaigen",
@@ -810,14 +831,15 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Children of Blood and Bone",
     author: ["Tomi Adeyemi"],
     audioBookNarrator: ["Bahni Turpin"],
     publishedYear: 2018,
-    setting: ["Fictional", "Nigeria"],
+    setting: ["Fictional", "Nigeria", "Africa"],
     genre: ["Fantasy", "Magic", "Black", "Romance", "Science Fiction", "War"],
     age: "Young Adult",
     type: "Fiction",
@@ -834,7 +856,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Passing",
@@ -858,7 +881,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Shadowed Sun",
@@ -890,7 +914,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Shades in Shadow",
@@ -920,7 +945,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Awakened Kingdom",
@@ -944,7 +970,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Kingdom of Gods",
@@ -977,7 +1004,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Broken Kingdoms",
@@ -1010,7 +1038,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "A Dead Djinn in Cairo",
@@ -1041,7 +1070,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Hidden Girl and Other Stories",
@@ -1054,7 +1084,7 @@ export const bookData: Book[] = [
       "Emily Woo Zeller"
     ],
     publishedYear: 2020,
-    setting: ["United States", "Japan", "Space", "Fictional"],
+    setting: ["United States", "Japan", "Space", "Fictional", "Asia"],
     genre: [
       "Science Fiction",
       "LGBTQIA+",
@@ -1083,7 +1113,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Cybernetic Tea Shop",
@@ -1113,7 +1144,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Amari and the Night Brothers",
@@ -1137,7 +1169,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Yellowface",
@@ -1161,7 +1194,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "There, There",
@@ -1190,7 +1224,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Death of Vivek Oji",
@@ -1222,7 +1257,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Bitter",
@@ -1255,7 +1291,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "White Smoke",
@@ -1279,7 +1316,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Six Crimson Cranes",
@@ -1303,7 +1341,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Black God's Drums",
@@ -1338,7 +1377,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Davenports",
@@ -1370,7 +1410,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Emergency Skin",
@@ -1394,7 +1435,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Weight of Blood",
@@ -1432,7 +1474,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Rust in the Root",
@@ -1463,7 +1506,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Stories from the Tenants Downstairs",
@@ -1496,7 +1540,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Akata Witch",
@@ -1520,7 +1565,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Hundred Thousand Kingdoms",
@@ -1544,7 +1590,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The World We Make",
@@ -1576,7 +1623,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Great Cities"
   },
   {
     title: "The Killing Moon",
@@ -1600,7 +1648,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Babel",
@@ -1634,7 +1683,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Girl Who Fell Beneath the Sea",
@@ -1665,7 +1715,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Deep",
@@ -1697,7 +1748,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Whiteout",
@@ -1744,7 +1796,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Jade City",
@@ -1768,7 +1821,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Nickel Boys",
@@ -1792,7 +1846,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Underground Railroad",
@@ -1822,14 +1877,15 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Red Palace",
     author: ["June Hur"],
     audioBookNarrator: ["Michelle H. Lee"],
     publishedYear: 2022,
-    setting: ["South Korea"],
+    setting: ["South Korea", "Asia"],
     genre: ["Asia", "Mystery", "Health", "Crime", "Korea"],
     age: "Young Adult",
     type: "Fiction",
@@ -1846,7 +1902,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Deathless Divide",
@@ -1879,7 +1936,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Get a Life, Chloe Brown",
@@ -1903,7 +1961,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Born a Crime",
@@ -1927,7 +1986,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The City We Became",
@@ -1959,7 +2019,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Great Cities"
   },
   {
     title: "Binti: Night Masquerade",
@@ -1990,7 +2051,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Binti"
   },
   {
     title: "Binti: Home",
@@ -2021,7 +2083,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Binti"
   },
   {
     title: "A Master of Djinn",
@@ -2045,7 +2108,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Fledgling",
@@ -2069,7 +2133,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Kindred",
@@ -2101,7 +2166,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "An Unkindness of Ghosts",
@@ -2125,7 +2191,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Gilded Ones",
@@ -2149,7 +2216,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Burning God",
@@ -2183,7 +2251,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "The Poppy War"
   },
   {
     title: "The Dragon Republic",
@@ -2217,7 +2286,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "The Poppy War"
   },
   {
     title: "The Poppy War",
@@ -2251,7 +2321,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "The Poppy War"
   },
   {
     title: "This Wicked Fate",
@@ -2275,7 +2346,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "This Poison Heart",
@@ -2299,7 +2371,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Iron Heart",
@@ -2330,7 +2403,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Binti",
@@ -2361,7 +2435,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: "Binti"
   },
   {
     title: "Iron Widow",
@@ -2394,7 +2469,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Bloodchild and Other Stories",
@@ -2426,7 +2502,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "How Long 'til Black Future Month?",
@@ -2467,7 +2544,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Redemptor",
@@ -2491,7 +2569,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Ace of Spades",
@@ -2515,7 +2594,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Dread Nation",
@@ -2547,7 +2627,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Crier's War",
@@ -2571,7 +2652,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Blackout",
@@ -2602,7 +2684,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Such A Fun Age",
@@ -2626,7 +2709,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Grown",
@@ -2650,7 +2734,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Let Me Hear a Rhyme",
@@ -2679,7 +2764,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Allegedly",
@@ -2703,7 +2789,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Raybearer",
@@ -2727,7 +2814,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Red, White & Royal Blue",
@@ -2751,7 +2839,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Vanishing Half",
@@ -2782,7 +2871,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Testaments",
@@ -2806,7 +2896,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Boyfriend Material",
@@ -2830,7 +2921,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Ring Shout",
@@ -2862,7 +2954,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Grace Year",
@@ -2886,14 +2979,15 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Kim Jiyoung, Born 1982",
     author: ["Cho Nam-Joo"],
     audioBookNarrator: [""],
     publishedYear: 2016,
-    setting: ["South Korea"],
+    setting: ["South Korea", "Asia"],
     genre: ["Feminism", "Asia", "Korea", "Family"],
     age: "Adult",
     type: "Fiction",
@@ -2910,7 +3004,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Gods of Jade and Shadow",
@@ -2934,7 +3029,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
@@ -2958,7 +3054,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Uprooted",
@@ -2982,7 +3079,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Good Luck Girls",
@@ -3006,7 +3104,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Full Disclosure",
@@ -3030,7 +3129,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Monday's Not Coming",
@@ -3054,7 +3154,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "The Year of the Witching",
@@ -3081,12 +3182,13 @@ export const bookData: Book[] = [
     progress: "finished",
     fav: false,
     color: "gold",
-    publisher: "Ace",
+    publisher: "Ace/Roc",
     audioBookPublisher: "",
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "I'm Not Dying with You Tonight",
@@ -3110,7 +3212,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "Cinderella Is Dead",
@@ -3142,7 +3245,8 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   },
   {
     title: "She Came to Slay: The Life and Times of Harriet Tubman",
@@ -3174,6 +3278,7 @@ export const bookData: Book[] = [
     dedication: {
       to: "",
       text: ""
-    }
+    },
+    series: ""
   }
 ];
