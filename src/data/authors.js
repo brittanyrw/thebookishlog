@@ -430,7 +430,14 @@ export const authorData = [
   },
   {
     name: "Octavia E. Butler",
-    books: ["Bloodchild and Other Stories", "Kindred"],
+    books: [
+      "Bloodchild and Other Stories",
+      "Kindred",
+      "Parable of the Sower",
+      "Dawn",
+      "Adulthood Rites",
+      "Imago"
+    ],
     poc: true,
     gender: "female",
     lgbt: false,

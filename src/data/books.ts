@@ -107,6 +107,7 @@ export type Genres =
   | "Novella"
   | "Psychology"
   | "Race"
+  | "Religion"
   | "Retelling"
   | "Revenge"
   | "Romance"
@@ -133,6 +134,125 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Imago",
+    author: ["Octavia E. Butler"],
+    audioBookNarrator: ["Ron Butler"],
+    publishedYear: 1989,
+    setting: ["Space", "Fictional"],
+    genre: ["Science Fiction", "Dystopia", "Psychology", "Family"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 220,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/13/2024",
+    dateFinished: "08/18/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Warner Aspect Books",
+    audioBookPublisher: "Grand Central Publishing",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "Xenogenesis"
+  },
+  {
+    title: "Adulthood Rites",
+    author: ["Octavia E. Butler"],
+    audioBookNarrator: ["JD Jackson"],
+    publishedYear: 1988,
+    setting: ["Fictional"],
+    genre: ["Science Fiction", "Dystopia", "Psychology", "Family", "Space"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 277,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "08/10/2024",
+    dateFinished: "08/12/2024",
+    progress: "finished",
+    color: "darkblue",
+    fav: false,
+    publisher: "Warner Aspect Books",
+    audioBookPublisher: "Grand Central Publishing",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "Xenogenesis"
+  },
+  {
+    title: "Dawn",
+    author: ["Octavia E. Butler"],
+    audioBookNarrator: ["Julienne Irons"],
+    publishedYear: 1987,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Dystopia",
+      "Psychology",
+      "Family",
+      "Horror",
+      "Black",
+      "Space",
+      "Experiments"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 248,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/09/2024",
+    dateFinished: "08/10/2024",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Warner Aspect Books",
+    audioBookPublisher: "Grand Central Publishing",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "Xenogenesis"
+  },
+  {
+    title: "Parable of the Sower",
+    author: ["Octavia E. Butler"],
+    audioBookNarrator: ["Lynne Thigpen"],
+    publishedYear: 1993,
+    setting: ["United States", "California"],
+    genre: [
+      "Science Fiction",
+      "Dystopia",
+      "Psychology",
+      "Family",
+      "Religion",
+      "Horror",
+      "Black",
+      "Disability",
+      "Race"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 345,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/04/2024",
+    dateFinished: "08/08/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Grand Central Publishing",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
   {
     title: "Before, After, Alone",
     author: ["Emma Newman"],
