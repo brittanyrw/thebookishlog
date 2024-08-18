@@ -168,7 +168,10 @@
                 <ul>
                   <li
                     class="book"
-                    v-for="(book, index) in filter('series', 'The Broken Earth')"
+                    v-for="(book, index) in filter(
+                      'series',
+                      'The Broken Earth'
+                    )"
                     :key="index"
                   >
                     <img
@@ -628,7 +631,6 @@ h3 {
     }
   }
 }
-
 
 .length {
   display: flex;
