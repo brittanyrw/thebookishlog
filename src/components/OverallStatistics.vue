@@ -209,6 +209,30 @@
                 </ul>
               </div>
               <div class="series">
+                <h4>The Murderbot Diaries</h4>
+                <ul>
+                  <li
+                    class="book"
+                    v-for="(book, index) in filter(
+                      'series',
+                      'The Murderbot Diaries'
+                    )"
+                    :key="index"
+                  >
+                    <img
+                      class="book-cover-img"
+                      :class="[
+                        { 'e-book': book.medium == 'E-Book' },
+                        { audio: book.medium == 'Audio' }
+                      ]"
+                      :alt="`${book.title} book cover`"
+                      :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                    />
+                    <p>{{ book.title }}</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="series">
                 <h4>The Poppy War</h4>
                 <ul>
                   <li

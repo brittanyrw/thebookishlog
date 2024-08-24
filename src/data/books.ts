@@ -70,6 +70,7 @@ export type Setting =
 
 export type Genres =
   | "Academic"
+  | "Action"
   | "Alternate History"
   | "Africa"
   | "Afrofuturism"
@@ -110,6 +111,7 @@ export type Genres =
   | "Religion"
   | "Retelling"
   | "Revenge"
+  | "Robot"
   | "Romance"
   | "Scandal"
   | "Science Fiction"
@@ -134,6 +136,138 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Exit Strategy",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2018,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 172,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/22/2024",
+    dateFinished: "08/22/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Murderbot Diaries"
+  },
+  {
+    title: "Rogue Protocol",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2018,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 160,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "08/20/2024",
+    dateFinished: "08/22/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Murderbot Diaries"
+  },
+  {
+    title: "Artificial Condition",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2018,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 160,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/19/2024",
+    dateFinished: "08/19/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Murderbot Diaries"
+  },
+  {
+    title: "All Systems Red",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2017,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 160,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/18/2024",
+    dateFinished: "08/18/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Murderbot Diaries"
+  },
   {
     title: "Imago",
     author: ["Octavia E. Butler"],
@@ -1247,7 +1381,8 @@ export const bookData: Book[] = [
       "LGBTQIA+",
       "Romance",
       "Artificial Intelligence",
-      "Short Stories"
+      "Short Stories",
+      "Robot"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1863,7 +1998,7 @@ export const bookData: Book[] = [
     progress: "finished",
     color: "darkblue",
     fav: false,
-    publisher: "Gallery / Saga Press",
+    publisher: "Saga Press",
     audioBookPublisher: "Simon & Schuster Audio",
     dedication: {
       to: "",

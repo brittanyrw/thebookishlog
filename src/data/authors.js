@@ -1202,5 +1202,25 @@ export const authorData = [
       }
     ],
     website: "enewman.co.uk"
+  },
+  {
+    name: "Martha Wells",
+    books: [
+      "All Systems Red",
+      "Artificial Condition",
+      "Rogue Protocol",
+      "Exit Strategy"
+    ],
+    poc: false,
+    gender: "female",
+    lgbt: false,
+    fav: true,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "marthawells.com"
   }
 ];
