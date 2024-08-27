@@ -149,7 +149,8 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+"
+      "LGBTQIA+",
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -182,7 +183,8 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+"
+      "LGBTQIA+",
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -215,7 +217,8 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+"
+      "LGBTQIA+",
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -248,7 +251,8 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+"
+      "LGBTQIA+",
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -274,7 +278,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Ron Butler"],
     publishedYear: 1989,
     setting: ["Space", "Fictional"],
-    genre: ["Science Fiction", "Dystopia", "Psychology", "Family"],
+    genre: ["Science Fiction", "Dystopia", "Psychology", "Family", "Space"],
     age: "Adult",
     type: "Fiction",
     pages: 220,
@@ -1350,7 +1354,8 @@ export const bookData: Book[] = [
       "Dystopia",
       "Family",
       "War",
-      "Crime"
+      "Crime",
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
