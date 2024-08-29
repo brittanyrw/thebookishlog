@@ -1209,7 +1209,10 @@ export const authorData = [
       "All Systems Red",
       "Artificial Condition",
       "Rogue Protocol",
-      "Exit Strategy"
+      "Exit Strategy",
+      "Network Effect",
+      "Fugitive Telemetry",
+      "System Collapse"
     ],
     poc: false,
     gender: "female",

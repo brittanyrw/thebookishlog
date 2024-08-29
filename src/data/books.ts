@@ -137,6 +137,104 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "System Collapse",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2023,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Space"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 245,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "08/27/2024",
+    dateFinished: "08/28/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Murderbot Diaries"
+  },
+  {
+    title: "Fugitive Telemetry",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2021,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+",
+      "Space"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 168,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/26/2024",
+    dateFinished: "08/26/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Murderbot Diaries"
+  },
+  {
+    title: "Network Effect",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2020,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Space"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 350,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/23/2024",
+    dateFinished: "08/26/2024",
+    progress: "finished",
+    color: "black",
+    fav: false,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Murderbot Diaries"
+  },
+  {
     title: "Exit Strategy",
     author: ["Martha Wells"],
     audioBookNarrator: ["Kevin R. Free"],
