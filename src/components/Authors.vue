@@ -422,7 +422,9 @@ export default {
 
 @media screen and (min-width: 992px) {
   .multi-book-authors .author:first-child,
-  .multi-book-authors .author:nth-child(2) {
+  .multi-book-authors .author:nth-child(2),
+  .multi-book-authors .author:nth-child(3),
+  .multi-book-authors .author:nth-child(4) {
     // flex-basis: 100%;
     width: 48%;
   }

@@ -436,7 +436,8 @@ export const authorData = [
       "Parable of the Sower",
       "Dawn",
       "Adulthood Rites",
-      "Imago"
+      "Imago",
+      "Wild Seed"
     ],
     poc: true,
     gender: "female",
@@ -706,11 +707,11 @@ export const authorData = [
   },
   {
     name: "Tommy Orange",
-    books: ["There, There"],
+    books: ["There, There", "Wandering Stars"],
     poc: true,
     gender: "male",
     lgbt: false,
-    fav: false,
+    fav: true,
     country: [
       {
         code: "US",
@@ -1225,5 +1226,41 @@ export const authorData = [
       }
     ],
     website: "marthawells.com"
+  },
+  {
+    name: "Dolen Perkins-Valdez",
+    books: ["Take My Hand"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "dolenperkinsvaldez.com"
+  },
+  {
+    name: "Nana Kwame Adjei-Brenyah",
+    books: ["Chain-Gang All-Stars"],
+    poc: true,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      },
+      {
+        code: "GH",
+        name: "Ghana"
+      }
+    ],
+    website: "nanakwameadjei-brenyah.com"
   }
 ];
+
+

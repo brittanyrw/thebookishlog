@@ -31,12 +31,14 @@ export type Ages =
 export type Setting =
   | ""
   | "Africa"
+  | "Alabama"
   | "Atlanta"
   | "Boston"
   | "California"
   | "Canada"
   | "Chicago"
   | "China"
+  | "Colorado"
   | "Egypt"
   | "Fictional"
   | "Florida"
@@ -69,6 +71,7 @@ export type Setting =
   | "Asia";
 
 export type Genres =
+  | ""
   | "Academic"
   | "Action"
   | "Alternate History"
@@ -97,6 +100,7 @@ export type Genres =
   | "Humor"
   | "Japan"
   | "Korea"
+  | "Legal"
   | "LGBTQIA+"
   | "Mafia"
   | "Magic"
@@ -137,6 +141,191 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Wild Seed",
+    author: ["Octavia Butler"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 1980,
+    setting: ["United States", "Africa"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Race",
+      "Horror",
+      "Family",
+      "Africa",
+      "Black",
+      "Crime",
+      "Disability",
+      "Experiments",
+      "Health",
+      "Historical Fiction",
+      "Slavery",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 307,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "09/13/2024",
+    dateFinished: "09/19/2024",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Grand Central Publishing",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Patternist"
+  },
+  {
+    title: "Wandering Stars",
+    author: ["Tommy Orange"],
+    audioBookNarrator: [
+      "Shaun Taylor-Corbett",
+      "MacLeod Andrews",
+      "Alma Cuervo",
+      "Curtis Michael Holland",
+      "Calvin Joyal",
+      "Phil Ava",
+      "Emmanuel Chumaceiro",
+      "Christian Young",
+      "Charley Flyte"
+    ],
+    publishedYear: 2024,
+    setting: ["United States", "California", "Colorado"],
+    genre: [
+      "Historical Fiction",
+      "Family",
+      "Race",
+      "Native American",
+      "Health",
+      "Psychology"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 315,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "09/07/2024",
+    dateFinished: "09/10/2024",
+    progress: "finished",
+    color: "darkblue",
+    fav: true,
+    publisher: "Knopf",
+    audioBookPublisher: "Random House Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "Chain-Gang All-Stars",
+    author: ["Nana Kwame Adjei-Brenyah"],
+    audioBookNarrator: [
+      "Shayna Small",
+      "Aaron Goodson",
+      "Michael Crouch",
+      "Lee Osorio"
+    ],
+    publishedYear: 2023,
+    setting: ["United States"],
+    genre: [
+      "Black",
+      "Psychology",
+      "Action",
+      "Race",
+      "Romance",
+      "Social Justice",
+      "Crime",
+      "Dystopia",
+      "Experiments",
+      "Horror",
+      "Slavery",
+      "LGBTQIA+"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 367,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "09/04/2024",
+    dateFinished: "09/07/2024",
+    progress: "finished",
+    color: "red",
+    fav: true,
+    publisher: "Pantheon",
+    audioBookPublisher: "Random House Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "Take My Hand",
+    author: ["Dolen Perkins-Valdez"],
+    audioBookNarrator: ["Lauren J. Daggett"],
+    publishedYear: 2022,
+    setting: ["Alabama", "United States"],
+    genre: [
+      "Historical Fiction",
+      "Health",
+      "Feminism",
+      "Family",
+      "Race",
+      "Black",
+      "Disability",
+      "Experiments",
+      "Legal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 359,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "08/30/2024",
+    dateFinished: "09/04/2024",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Berkley",
+    audioBookPublisher: "Penguin Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "Ledgendborn",
+    author: ["Tracy Deonn"],
+    audioBookNarrator: [""],
+    publishedYear: 2020,
+    setting: [""],
+    genre: [""],
+    age: "",
+    type: "",
+    pages: 0,
+    medium: "",
+    rating: 0,
+    dateStarted: "08/29/2024",
+    dateFinished: "08/29/2024",
+    progress: "dnf",
+    color: "black",
+    fav: false,
+    publisher: "",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Legendborn Cycle"
+  },
+  {
     title: "System Collapse",
     author: ["Martha Wells"],
     audioBookNarrator: ["Kevin R. Free"],
@@ -148,18 +337,19 @@ export const bookData: Book[] = [
       "Action",
       "Artificial Intelligence",
       "Robot",
-      "Space"
+      "Space",
+      "LGBTQIA+"
     ],
     age: "Adult",
     type: "Fiction",
     pages: 245,
     medium: "Audio",
-    rating: 4.5,
+    rating: 5,
     dateStarted: "08/27/2024",
     dateFinished: "08/28/2024",
     progress: "finished",
     color: "black",
-    fav: false,
+    fav: true,
     publisher: "Tor.com",
     audioBookPublisher: "Recorded Books",
     dedication: {
@@ -188,7 +378,7 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 168,
     medium: "Audio",
-    rating: 4,
+    rating: 4.5,
     dateStarted: "08/26/2024",
     dateFinished: "08/26/2024",
     progress: "finished",
@@ -214,13 +404,14 @@ export const bookData: Book[] = [
       "Action",
       "Artificial Intelligence",
       "Robot",
-      "Space"
+      "Space",
+      "LGBTQIA+"
     ],
     age: "Adult",
     type: "Fiction",
     pages: 350,
     medium: "Audio",
-    rating: 4,
+    rating: 4.5,
     dateStarted: "08/23/2024",
     dateFinished: "08/26/2024",
     progress: "finished",
@@ -254,7 +445,7 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 172,
     medium: "Audio",
-    rating: 4,
+    rating: 4.5,
     dateStarted: "08/22/2024",
     dateFinished: "08/22/2024",
     progress: "finished",
@@ -288,12 +479,12 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 160,
     medium: "Audio",
-    rating: 4.5,
+    rating: 5,
     dateStarted: "08/20/2024",
     dateFinished: "08/22/2024",
     progress: "finished",
     color: "black",
-    fav: false,
+    fav: true,
     publisher: "Tor.com",
     audioBookPublisher: "Recorded Books",
     dedication: {
@@ -322,7 +513,7 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 160,
     medium: "Audio",
-    rating: 4,
+    rating: 4.5,
     dateStarted: "08/19/2024",
     dateFinished: "08/19/2024",
     progress: "finished",
@@ -356,7 +547,7 @@ export const bookData: Book[] = [
     type: "Fiction",
     pages: 160,
     medium: "Audio",
-    rating: 4,
+    rating: 4.5,
     dateStarted: "08/18/2024",
     dateFinished: "08/18/2024",
     progress: "finished",
@@ -549,7 +740,7 @@ export const bookData: Book[] = [
     dateFinished: "08/04/2024",
     progress: "finished",
     color: "darkblue",
-    fav: false,
+    fav: true,
     publisher: "Ace/Roc",
     audioBookPublisher: "Tantor Audio",
     dedication: {
@@ -1575,7 +1766,7 @@ export const bookData: Book[] = [
     dateStarted: "05/15/2023",
     dateFinished: "05/17/2023",
     progress: "finished",
-    fav: false,
+    fav: true,
     color: "black",
     publisher: "Vintage",
     audioBookPublisher: "Random House Audio",
@@ -3211,7 +3402,8 @@ export const bookData: Book[] = [
       "California",
       "New York City",
       "Washington, DC",
-      "Minnesota"
+      "Minnesota",
+      "New Orleans"
     ],
     genre: ["Historical Fiction", "Race", "Black"],
     age: "Adult",
