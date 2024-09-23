@@ -437,7 +437,9 @@ export const authorData = [
       "Dawn",
       "Adulthood Rites",
       "Imago",
-      "Wild Seed"
+      "Wild Seed",
+      "Mind of My Mind",
+      "Clay's Ark"
     ],
     poc: true,
     gender: "female",
@@ -1262,5 +1264,3 @@ export const authorData = [
     website: "nanakwameadjei-brenyah.com"
   }
 ];
-
-
