@@ -141,6 +141,80 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Will of the Many",
+    author: ["James Islington"],
+    audioBookNarrator: ["Euan Morton"],
+    publishedYear: 2023,
+    setting: ["Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Fantasy",
+      "Horror",
+      "Crime",
+      "Disability",
+      "Experiments",
+      "Action",
+      "Academic",
+      "Historical Fiction",
+      "Revenge",
+      "Mystery"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 630,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "09/23/2024",
+    dateFinished: "10/01/2024",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Saga Press",
+    audioBookPublisher: "Audible Studios",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "Hierarchy"
+  },
+  {
+    title: "Patternmaster",
+    author: ["Octavia Butler"],
+    audioBookNarrator: ["Robin Miles"],
+    publishedYear: 1976,
+    setting: ["United States", "California"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Race",
+      "Horror",
+      "Family",
+      "Black",
+      "Crime",
+      "Disability",
+      "Experiments",
+      "Health"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 224,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "09/22/2024",
+    dateFinished: "09/23/2024",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Grand Central Publishing",
+    audioBookPublisher: "Grand Central Publishing",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Patternist"
+  },
+  {
     title: "Clay's Ark",
     author: ["Octavia Butler"],
     audioBookNarrator: ["Robin Miles"],
@@ -2288,7 +2362,8 @@ export const bookData: Book[] = [
       "Race",
       "Historical Fiction",
       "Alternate History",
-      "Friendship"
+      "Friendship",
+      "Academic"
     ],
     age: "Adult",
     type: "Fiction",
@@ -2926,7 +3001,8 @@ export const bookData: Book[] = [
       "War",
       "Asia",
       "Revenge",
-      "Friendship"
+      "Friendship",
+      "Academic"
     ],
     age: "Adult",
     type: "Fiction",

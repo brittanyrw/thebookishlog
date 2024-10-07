@@ -439,7 +439,8 @@ export const authorData = [
       "Imago",
       "Wild Seed",
       "Mind of My Mind",
-      "Clay's Ark"
+      "Clay's Ark",
+      "Patternmaster"
     ],
     poc: true,
     gender: "female",
@@ -1262,5 +1263,20 @@ export const authorData = [
       }
     ],
     website: "nanakwameadjei-brenyah.com"
+  },
+  {
+    name: "James Islington",
+    books: ["The Will of the Many"],
+    poc: false,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "AU",
+        name: "Australia"
+      }
+    ],
+    website: "jamesislington.com"
   }
 ];
