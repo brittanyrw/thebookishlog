@@ -186,6 +186,9 @@ export default {
   &.black {
     background: #3d3b36;
   }
+  &.white {
+    background: #ffffff;
+  }
   &.purple {
     background: #6e1dd3;
   }

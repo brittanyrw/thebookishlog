@@ -1278,5 +1278,24 @@ export const authorData = [
       }
     ],
     website: "jamesislington.com"
+  },
+  {
+    name: "Julia Alvarez",
+    books: ["In the Time of the Butterflies"],
+    poc: true,
+    gender: "female",
+    lgbt: false,
+    fav: true,
+    country: [
+      {
+        code: "DO",
+        name: "Dominican Republic"
+      },
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "juliaalvarez.com"
   }
 ];

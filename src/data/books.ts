@@ -39,6 +39,7 @@ export type Setting =
   | "Chicago"
   | "China"
   | "Colorado"
+  | "Dominican Republic"
   | "Egypt"
   | "Fictional"
   | "Florida"
@@ -82,6 +83,7 @@ export type Genres =
   | "Autobiography"
   | "Biography"
   | "Black"
+  | "Caribbean"
   | "China"
   | "Crime"
   | "Disability"
@@ -100,6 +102,7 @@ export type Genres =
   | "Humor"
   | "Japan"
   | "Korea"
+  | "Latin America"
   | "Legal"
   | "LGBTQIA+"
   | "Mafia"
@@ -141,6 +144,45 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "In the Time of the Butterflies",
+    author: ["Julia Alvarez"],
+    audioBookNarrator: [
+      "Noemi de la Puente",
+      "Alma Cuervo",
+      "Bianca Carnacho",
+      "Melanie Martinez"
+    ],
+    publishedYear: 1994,
+    setting: ["Dominican Republic"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "Latin America",
+      "Caribbean"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 324,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "10/01/2024",
+    dateFinished: "10/07/2024",
+    progress: "finished",
+    color: "red",
+    fav: true,
+    publisher: "Plume",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
     title: "The Will of the Many",
     author: ["James Islington"],
     audioBookNarrator: ["Euan Morton"],
@@ -179,6 +221,31 @@ export const bookData: Book[] = [
     series: "Hierarchy"
   },
   {
+    title: "Black Sun",
+    author: ["Rebecca Roanhorse"],
+    audioBookNarrator: [""],
+    publishedYear: 2020,
+    setting: [""],
+    genre: [""],
+    age: "",
+    type: "",
+    pages: 0,
+    medium: "",
+    rating: 0,
+    dateStarted: "09/23/2024",
+    dateFinished: "09/23/2024",
+    progress: "dnf",
+    color: "black",
+    fav: false,
+    publisher: "",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "Between Earth and Sky"
+  },
+  {
     title: "Patternmaster",
     author: ["Octavia Butler"],
     audioBookNarrator: ["Robin Miles"],
@@ -204,7 +271,7 @@ export const bookData: Book[] = [
     dateStarted: "09/22/2024",
     dateFinished: "09/23/2024",
     progress: "finished",
-    color: "gold",
+    color: "purple",
     fav: false,
     publisher: "Grand Central Publishing",
     audioBookPublisher: "Grand Central Publishing",
@@ -3712,7 +3779,13 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["Mexico"],
-    genre: ["Fantasy", "Historical Fiction", "Mythology", "Magical Realism"],
+    genre: [
+      "Fantasy",
+      "Historical Fiction",
+      "Mythology",
+      "Magical Realism",
+      "Latin America"
+    ],
     age: "Adult",
     type: "Fiction",
     pages: 338,
