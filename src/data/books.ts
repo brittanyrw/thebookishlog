@@ -43,6 +43,7 @@ export type Setting =
   | "Egypt"
   | "Fictional"
   | "Florida"
+  | "France"
   | "Georgia (USA)"
   | "Germany"
   | "Illinois"
@@ -143,6 +144,72 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "The White Queen",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Susan Lyons"],
+    publishedYear: 2009,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 436,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "10/16/2024",
+    dateFinished: "10/27/2024",
+    progress: "finished",
+    color: "darkblue",
+    fav: false,
+    publisher: "Simon & Schuster",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "The Lady of the Rivers",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato"],
+    publishedYear: 2011,
+    setting: ["United Kingdom", "France"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 513,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "10/09/2024",
+    dateFinished: "10/16/2024",
+    progress: "finished",
+    color: "green",
+    fav: false,
+    publisher: "Simon & Schuster",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
   {
     title: "In the Time of the Butterflies",
     author: ["Julia Alvarez"],

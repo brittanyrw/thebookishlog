@@ -1297,5 +1297,20 @@ export const authorData = [
       }
     ],
     website: "juliaalvarez.com"
+  },
+  {
+    name: "Philippa Gregory",
+    books: ["The Lady of the Rivers", "The White Queen"],
+    poc: false,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "GB",
+        name: "United Kingdom"
+      }
+    ],
+    website: "philippagregory.com"
   }
 ];
