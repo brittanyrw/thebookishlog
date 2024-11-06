@@ -1300,7 +1300,12 @@ export const authorData = [
   },
   {
     name: "Philippa Gregory",
-    books: ["The Lady of the Rivers", "The White Queen"],
+    books: [
+      "The Lady of the Rivers",
+      "The White Queen",
+      "The Red Queen",
+      "The Kingmakers Daughter"
+    ],
     poc: false,
     gender: "female",
     lgbt: false,

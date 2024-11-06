@@ -121,6 +121,7 @@ export type Genres =
   | "Revenge"
   | "Robot"
   | "Romance"
+  | "Royal"
   | "Scandal"
   | "Science Fiction"
   | "Short Stories"
@@ -145,6 +146,73 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Kingmakers Daughter",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato"],
+    publishedYear: 2012,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 464,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "11/02/2024",
+    dateFinished: "11/05/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Simon & Schuster",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "The Red Queen",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato", "Graeme Malcolm"],
+    publishedYear: 2010,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 392,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "10/27/2024",
+    dateFinished: "11/04/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Simon & Schuster",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
     title: "The White Queen",
     author: ["Philippa Gregory"],
     audioBookNarrator: ["Susan Lyons"],
@@ -157,7 +225,8 @@ export const bookData: Book[] = [
       "Feminism",
       "Religion",
       "Romance",
-      "War"
+      "War",
+      "Royal"
     ],
     age: "Adult",
     type: "Fiction",
@@ -190,7 +259,8 @@ export const bookData: Book[] = [
       "Feminism",
       "Religion",
       "Romance",
-      "War"
+      "War",
+      "Royal"
     ],
     age: "Adult",
     type: "Fiction",
