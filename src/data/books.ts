@@ -132,6 +132,7 @@ export type Genres =
   | "Thriller"
   | "Time Travel"
   | "True Crime"
+  | "Tudors"
   | "Vampires"
   | "War"
   | "Werewolves"
@@ -146,6 +147,136 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Heartstopper: Volume One",
+    author: ["Alice Oseman"],
+    audioBookNarrator: [""],
+    publishedYear: 2018,
+    setting: ["United Kingdom"],
+    genre: ["Graphic Novel", "Romance", "Friendship", "LGBTQIA+"],
+    age: "Young Adult",
+    type: "Fiction",
+    pages: 288,
+    medium: "Physical",
+    rating: 4,
+    dateStarted: "12/13/2024",
+    dateFinished: "12/13/2024",
+    progress: "finished",
+    color: "pink",
+    fav: false,
+    publisher: "Self Published",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "The King's Curse",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato"],
+    publishedYear: 2014,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 592,
+    medium: "Audio",
+    rating: 4.5,
+    dateStarted: "12/02/2024",
+    dateFinished: "12/16/2024",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Simon & Schuster",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "The Constant Princess",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato"],
+    publishedYear: 2005,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 390,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "12/04/2024",
+    dateFinished: "",
+    progress: "dnf",
+    color: "red",
+    fav: false,
+    publisher: "Simon & Schuster",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "The White Princess",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato"],
+    publishedYear: 2013,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 560,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "11/05/2024",
+    dateFinished: "11/24/2024",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Simon & Schuster",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
     title: "The Kingmakers Daughter",
     author: ["Philippa Gregory"],
     audioBookNarrator: ["Bianca Amato"],
@@ -158,7 +289,9 @@ export const bookData: Book[] = [
       "Feminism",
       "Religion",
       "Romance",
-      "War"
+      "War",
+      "Tudors",
+      "Royal"
     ],
     age: "Adult",
     type: "Fiction",
@@ -192,7 +325,8 @@ export const bookData: Book[] = [
       "Religion",
       "Romance",
       "War",
-      "Royal"
+      "Royal",
+      "Tudors"
     ],
     age: "Adult",
     type: "Fiction",
@@ -226,7 +360,8 @@ export const bookData: Book[] = [
       "Religion",
       "Romance",
       "War",
-      "Royal"
+      "Royal",
+      "Tudors"
     ],
     age: "Adult",
     type: "Fiction",
@@ -260,7 +395,8 @@ export const bookData: Book[] = [
       "Religion",
       "Romance",
       "War",
-      "Royal"
+      "Royal",
+      "Tudors"
     ],
     age: "Adult",
     type: "Fiction",

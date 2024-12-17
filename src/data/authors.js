@@ -1304,12 +1304,14 @@ export const authorData = [
       "The Lady of the Rivers",
       "The White Queen",
       "The Red Queen",
-      "The Kingmakers Daughter"
+      "The Kingmakers Daughter",
+      "The White Princess",
+      "The King's Curse"
     ],
     poc: false,
     gender: "female",
     lgbt: false,
-    fav: false,
+    fav: true,
     country: [
       {
         code: "GB",
@@ -1317,5 +1319,20 @@ export const authorData = [
       }
     ],
     website: "philippagregory.com"
+  },
+  {
+    name: "Alice Oseman",
+    books: ["Heartstopper: Volume One"],
+    poc: false,
+    gender: "female",
+    lgbt: true,
+    fav: false,
+    country: [
+      {
+        code: "GB",
+        name: "United Kingdom"
+      }
+    ],
+    website: "aliceoseman.com"
   }
 ];
