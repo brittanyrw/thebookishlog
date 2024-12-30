@@ -147,6 +147,80 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Boleyn Inheritance",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: [
+      "Georgia Maguire",
+      "Pippa Bennett-Warner",
+      "Cathleen McCarron"
+    ],
+    publishedYear: 2006,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 531,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "12/22/2024",
+    dateFinished: "12/27/2024",
+    progress: "finished",
+    color: "darkblue",
+    fav: false,
+    publisher: "Harper Collins",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "The Other Boleyn Girl",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Vanessa Kirby"],
+    publishedYear: 2001,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 661,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "12/16/2024",
+    dateFinished: "12/22/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Washington Square Press",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
     title: "Heartstopper: Volume One",
     author: ["Alice Oseman"],
     audioBookNarrator: [""],

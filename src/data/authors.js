@@ -1306,7 +1306,9 @@ export const authorData = [
       "The Red Queen",
       "The Kingmakers Daughter",
       "The White Princess",
-      "The King's Curse"
+      "The King's Curse",
+      "The Other Boleyn Girl",
+      "The Boleyn Inheritance"
     ],
     poc: false,
     gender: "female",
