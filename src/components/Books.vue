@@ -54,6 +54,12 @@
                 alt="Audiobook"
                 :src="require('@/assets/imgs/headphones.svg')"
               />
+              <img
+                v-if="book.isReread"
+                class="book-headphones"
+                alt="Reread"
+                :src="require('@/assets/imgs/rotate.svg')"
+              />
             </div>
             <p
               class="author"

@@ -297,6 +297,28 @@
               </div>
             </div>
           </div>
+          <div class="divider" v-if="filter('isReread', true).length > 0"></div>
+          <div class="dnf-books" v-if="filter('isReread', true).length > 0">
+            <h3>Re-read Books</h3>
+            <ul>
+              <li
+                class="book"
+                v-for="(book, index) in filter('isReread', true)"
+                :key="index"
+              >
+                <img
+                  class="book-cover-img"
+                  :class="[
+                    { 'e-book': book.medium == 'E-Book' },
+                    { audio: book.medium == 'Audio' }
+                  ]"
+                  :alt="`${book.title} book cover`"
+                  :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                />
+                <p>{{ book.title }}</p>
+              </li>
+            </ul>
+          </div>
           <div class="divider"></div>
           <div class="dnf-books">
             <h3>DNFed books</h3>

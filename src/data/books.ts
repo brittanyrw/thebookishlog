@@ -19,6 +19,7 @@ export interface Book {
   audioBookPublisher: string;
   dedication: Object;
   series: string;
+  isReread?: boolean;
 }
 
 export type Ages =
@@ -146,6 +147,66 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Blood over Bright Haven",
+    author: ["M.L. Wang"],
+    audioBookNarrator: ["Moira Quirk"],
+    publishedYear: 2023,
+    setting: ["Fictional"],
+    genre: ["Fantasy", "Magic", "Science Fiction", "Academic"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 430,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "12/30/2024",
+    dateFinished: "01/01/2025",
+    progress: "dnf",
+    color: "darkblue",
+    fav: false,
+    publisher: "M. L. Wang",
+    audioBookPublisher: "M. L. Wang",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "The Taming of the Queen",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato"],
+    publishedYear: 2015,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 425,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "12/27/2024",
+    dateFinished: "12/30/2024",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Simon & Schuster UK",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
   {
     title: "The Boleyn Inheritance",
     author: ["Philippa Gregory"],

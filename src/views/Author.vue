@@ -2,7 +2,7 @@
   <div class="authors">
     <div class="main">
       <OverallAuthorStatistics :author-info="authors" />
-      <Authors :author-info="authors" />
+      <Authors :author-info="authors" :book-info="books" />
     </div>
   </div>
 </template>
@@ -10,6 +10,7 @@
 <script>
 import Authors from "@/components/Authors.vue";
 import { authorData } from "@/data/authors.js";
+import { bookData } from "@/data/books";
 import OverallAuthorStatistics from "@/components/Statistics/OverallAuthorStatistics.vue";
 
 export default {
@@ -20,7 +21,8 @@ export default {
   },
   data() {
     return {
-      authors: authorData
+      authors: authorData,
+      books: bookData
     };
   }
 };

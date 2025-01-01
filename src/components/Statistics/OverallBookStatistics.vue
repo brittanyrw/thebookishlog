@@ -48,6 +48,10 @@
         </p>
         <p class="stat-title">Avg Days Per Book</p>
       </div>
+      <div class="stat purple">
+        <p class="stat-number">{{ rereadCount }}</p>
+        <p class="stat-title">Re-reads</p>
+      </div>
       <div class="stat pink">
         <p class="stat-number">
           {{ countYear("2021") }}
@@ -92,6 +96,9 @@ export default {
           1
       );
       return timeToRead.reduce((a, b) => a + b) / timeToRead.length;
+    },
+    rereadCount() {
+      return this.filterReadBooks.filter(book => book.isReread).length;
     }
   },
   methods: {

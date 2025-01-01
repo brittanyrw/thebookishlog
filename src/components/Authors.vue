@@ -83,13 +83,23 @@
           </div>
           <div class="author-imgs">
             <div class="author-books">
-              <img
+              <div
                 v-for="(book, index) in author.books"
                 :key="index"
-                class="author-book-img"
-                :alt="`${book}`"
-                :src="require(`@/assets/imgs/${slug(book)}.png`)"
-              />
+                class="author-book-container"
+              >
+                <img
+                  class="author-book-img"
+                  :alt="`${book}`"
+                  :src="require(`@/assets/imgs/${slug(book)}.png`)"
+                />
+                <div
+                  v-if="getRereadCount(book) && getRereadCount(book) > 1"
+                  class="reread-count-badge"
+                >
+                  {{ getRereadCount(book) }}x
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -154,13 +164,20 @@
         </div>
         <div class="author-imgs">
           <div class="author-books">
-            <img
+            <div
               v-for="(book, index) in author.books"
               :key="index"
-              class="author-book-img"
-              :alt="`${book}`"
-              :src="require(`@/assets/imgs/${slug(book)}.png`)"
-            />
+              class="author-book-container"
+            >
+              <img
+                class="author-book-img"
+                :alt="`${book}`"
+                :src="require(`@/assets/imgs/${slug(book)}.png`)"
+              />
+              <div v-if="getRereadCount(book)" class="reread-count-badge">
+                {{ getRereadCount(book) }}x
+              </div>
+            </div>
           </div>
         </div>
       </li>
@@ -213,13 +230,20 @@
         </div>
         <div class="author-imgs">
           <div class="author-books">
-            <img
+            <div
               v-for="(book, index) in author.books"
               :key="index"
-              class="author-book-img"
-              :alt="`${book}`"
-              :src="require(`@/assets/imgs/${slug(book)}.png`)"
-            />
+              class="author-book-container"
+            >
+              <img
+                class="author-book-img"
+                :alt="`${book}`"
+                :src="require(`@/assets/imgs/${slug(book)}.png`)"
+              />
+              <div v-if="getRereadCount(book)" class="reread-count-badge">
+                {{ getRereadCount(book) }}x
+              </div>
+            </div>
           </div>
         </div>
       </li>
@@ -251,7 +275,8 @@ export default {
     };
   },
   props: {
-    authorInfo: Array
+    authorInfo: Array,
+    bookInfo: Array
   },
   mixins: [mixins],
   computed: {
@@ -297,6 +322,18 @@ export default {
     },
     favAuthors() {
       return this.allAuthors.filter(author => author.fav);
+    }
+  },
+  methods: {
+    getRereadCount(bookTitle) {
+      if (!bookTitle) return 0;
+
+      const rereadCount =
+        this.bookInfo.filter(
+          book => book.title === bookTitle && book.isReread === true
+        ).length + 1;
+
+      return rereadCount;
     }
   }
 };
@@ -365,6 +402,10 @@ export default {
       }
       .author-books {
         text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         .author-book-img {
           height: 106px;
           margin: 10px;
@@ -455,5 +496,25 @@ export default {
       }
     }
   }
+}
+.author-book-container {
+  position: relative;
+}
+.reread-count-badge {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  background-color: $black;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.7em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 </style>
