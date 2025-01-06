@@ -30,7 +30,7 @@
         </p>
         <p class="stat-title">Total Pages</p>
       </div>
-      <div class="stat lightblue">
+      <div class="stat pink">
         <p class="stat-number">
           {{ Math.floor(countRead("pages") / filterReadBooks.length) }}
         </p>
@@ -71,6 +71,10 @@
       <div class="stat orange">
         <p class="stat-number">{{ countYear("2024") }}</p>
         <p class="stat-title">2024</p>
+      </div>
+      <div class="stat green">
+        <p class="stat-number">{{ countYear("2025") }}</p>
+        <p class="stat-title">2025</p>
       </div>
     </div>
   </div>
@@ -155,7 +159,7 @@ export default {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     .stat {
       background-color: $black;

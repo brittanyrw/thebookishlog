@@ -174,7 +174,10 @@
                 :alt="`${book}`"
                 :src="require(`@/assets/imgs/${slug(book)}.png`)"
               />
-              <div v-if="getRereadCount(book)" class="reread-count-badge">
+              <div
+                v-if="getRereadCount(book) && getRereadCount(book) > 1"
+                class="reread-count-badge"
+              >
                 {{ getRereadCount(book) }}x
               </div>
             </div>

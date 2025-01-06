@@ -77,6 +77,12 @@
               </p>
               <p class="stat-title">Graphic Novels</p>
             </div>
+            <div class="stat green">
+              <p class="stat-number">
+                {{ valueCountList("genre", "Musical") }}
+              </p>
+              <p class="stat-title">Musical Book and Lyrics</p>
+            </div>
           </div>
         </section>
         <section class="book-length-ratings">

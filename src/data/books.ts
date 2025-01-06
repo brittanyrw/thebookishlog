@@ -111,10 +111,12 @@ export type Genres =
   | "Magic"
   | "Magical Realism"
   | "Music"
+  | "Musical"
   | "Mystery"
   | "Mythology"
   | "Native American"
   | "Novella"
+  | "Play"
   | "Psychology"
   | "Race"
   | "Religion"
@@ -147,6 +149,171 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Exit Strategy",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2018,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+",
+      "Space"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 172,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "01/05/2025",
+    dateFinished: "01/05/2025",
+    progress: "finished",
+    color: "black",
+    fav: true,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "",
+    isReread: true
+  },
+  {
+    title: "Rogue Protocol",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2018,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+",
+      "Space"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 160,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "01/04/2025",
+    dateFinished: "01/05/2025",
+    progress: "finished",
+    color: "black",
+    fav: true,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "",
+    isReread: true
+  },
+  {
+    title: "Artificial Condition",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2018,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+",
+      "Space"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 160,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "01/03/2025",
+    dateFinished: "01/04/2025",
+    progress: "finished",
+    color: "black",
+    fav: true,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "",
+    isReread: true
+  },
+  {
+    title: "Tick, Tick... Boom!",
+    author: ["Jonathan Larson"],
+    audioBookNarrator: [""],
+    publishedYear: 2004,
+    setting: ["New York City", "United States"],
+    genre: ["Musical", "Romance", "Play", "LGBTQIA+", "Friendship", "Health"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 102,
+    medium: "Physical",
+    rating: 5,
+    dateStarted: "01/01/2025",
+    dateFinished: "01/03/2025",
+    progress: "finished",
+    color: "red",
+    fav: true,
+    publisher: "Applause",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "All Systems Red",
+    author: ["Martha Wells"],
+    audioBookNarrator: ["Kevin R. Free"],
+    publishedYear: 2017,
+    setting: ["Space", "Fictional"],
+    genre: [
+      "Science Fiction",
+      "Psychology",
+      "Action",
+      "Artificial Intelligence",
+      "Robot",
+      "Novella",
+      "LGBTQIA+",
+      "Space"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 160,
+    medium: "Audio",
+    rating: 5,
+    dateStarted: "01/01/2025",
+    dateFinished: "01/03/2025",
+    progress: "finished",
+    color: "black",
+    fav: true,
+    publisher: "Tor.com",
+    audioBookPublisher: "Recorded Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "",
+    isReread: true
+  },
   {
     title: "Blood over Bright Haven",
     author: ["M.L. Wang"],

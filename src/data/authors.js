@@ -1337,5 +1337,20 @@ export const authorData = [
       }
     ],
     website: "aliceoseman.com"
+  },
+  {
+    name: "Jonathan Larson",
+    books: ["Tick, Tick... Boom!"],
+    poc: false,
+    gender: "male",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "en.wikipedia.org/wiki/Jonathan_Larson"
   }
 ];
