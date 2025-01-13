@@ -180,7 +180,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: "The Murderbot Diaries",
+    series: "",
     isReread: true
   },
   {
@@ -208,14 +208,14 @@ export const bookData: Book[] = [
     dateFinished: "01/10/2025",
     progress: "finished",
     color: "black",
-    fav: false,
+    fav: true,
     publisher: "Tor.com",
     audioBookPublisher: "Recorded Books",
     dedication: {
       to: "",
       text: ""
     },
-    series: "The Murderbot Diaries",
+    series: "",
     isReread: true
   },
   {
@@ -242,14 +242,14 @@ export const bookData: Book[] = [
     dateFinished: "01/09/2025",
     progress: "finished",
     color: "black",
-    fav: false,
+    fav: true,
     publisher: "Tor.com",
     audioBookPublisher: "Recorded Books",
     dedication: {
       to: "",
       text: ""
     },
-    series: "The Murderbot Diaries",
+    series: "",
     isReread: true
   },
   {

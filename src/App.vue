@@ -6,33 +6,6 @@
         <p>
           A log of all of the books I have read starting in 2021.
         </p>
-        <div class="icons-header">
-          <p>Icon Legend:</p>
-          <div class="book-icon-container">
-            <img
-              class="book-icon"
-              alt="star"
-              :src="require('@/assets/imgs/star.svg')"
-            />
-            <p>Fav Book</p>
-          </div>
-          <div class="book-icon-container">
-            <img
-              class="book-icon"
-              alt="headphones"
-              :src="require('@/assets/imgs/headphones.svg')"
-            />
-            <p>Audio Book</p>
-          </div>
-          <div class="book-icon-container">
-            <img
-              class="book-icon"
-              alt="repeat"
-              :src="require('@/assets/imgs/rotate.svg')"
-            />
-            <p>Re-Read</p>
-          </div>
-        </div>
       </div>
       <div class="nav-links">
         <router-link to="/">

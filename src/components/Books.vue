@@ -3,6 +3,33 @@
     <div class="read-book-list">
       <div class="header">
         <h2>Books Read</h2>
+        <div class="icons-header">
+          <p>Icon Legend:</p>
+          <div class="book-icon-container">
+            <img
+              class="book-icon"
+              alt="star"
+              :src="require('@/assets/imgs/star.svg')"
+            />
+            <p>Fav Book</p>
+          </div>
+          <div class="book-icon-container">
+            <img
+              class="book-icon"
+              alt="headphones"
+              :src="require('@/assets/imgs/headphones.svg')"
+            />
+            <p>Audio Book</p>
+          </div>
+          <div class="book-icon-container">
+            <img
+              class="book-icon"
+              alt="repeat"
+              :src="require('@/assets/imgs/rotate.svg')"
+            />
+            <p>Re-Read</p>
+          </div>
+        </div>
         <div class="toggle-button-wrapper">
           <input
             type="checkbox"
@@ -155,6 +182,7 @@ export default {
   @media screen and (min-width: 992px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
