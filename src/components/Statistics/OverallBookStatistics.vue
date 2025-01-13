@@ -2,11 +2,11 @@
   <div class="statistics-container">
     <h2>Statistics</h2>
     <div class="statistics">
-      <div class="stat blue">
+      <div class="stat purple">
         <p class="stat-number">{{ filterReadBooks.length }}</p>
         <p class="stat-title">Books Read</p>
       </div>
-      <div class="stat purple">
+      <div class="stat blue">
         <p class="stat-number">
           {{ (countRead("rating") / filterReadBooks.length).toFixed(2) }}
         </p>
@@ -30,7 +30,7 @@
         </p>
         <p class="stat-title">Total Pages</p>
       </div>
-      <div class="stat pink">
+      <div class="stat red">
         <p class="stat-number">
           {{ Math.floor(countRead("pages") / filterReadBooks.length) }}
         </p>
@@ -42,39 +42,48 @@
         </p>
         <p class="stat-title">DNF books</p>
       </div>
-      <div class="stat red">
-        <p class="stat-number stat-number-pages">
-          {{ Math.floor(averageTimeToRead) }}
-        </p>
-        <p class="stat-title">Avg Days Per Book</p>
-      </div>
-      <div class="stat purple">
+      <div class="stat gold">
         <p class="stat-number">{{ rereadCount }}</p>
         <p class="stat-title">Re-reads</p>
       </div>
-      <div class="stat pink">
+      <div class="stat lightblue">
         <p class="stat-number">
           {{ countYear("2021") }}
         </p>
         <p class="stat-title">2021</p>
       </div>
-      <div class="stat blue">
+      <div class="stat red">
         <p class="stat-number">
           {{ countYear("2022") }}
         </p>
         <p class="stat-title">2022</p>
       </div>
-      <div class="stat purple">
+      <div class="stat green">
         <p class="stat-number">{{ countYear("2023") }}</p>
         <p class="stat-title">2023</p>
       </div>
-      <div class="stat orange">
+      <div class="stat pink">
         <p class="stat-number">{{ countYear("2024") }}</p>
         <p class="stat-title">2024</p>
       </div>
-      <div class="stat green">
-        <p class="stat-number">{{ countYear("2025") }}</p>
+      <div class="stat orange">
+        <p class="stat-number">{{ countYear("2025") }}/52</p>
+        <p class="stat-title">
+          {{ Math.floor((countYear("2025") / 52) * 100) }}%
+        </p>
         <p class="stat-title">2025</p>
+      </div>
+      <div class="stat blue stat-number-avg-days">
+        <p class="stat-number">
+          {{ Math.floor(averageTimeToRead(2025)) }}
+        </p>
+        <p class="stat-title">Avg Days Per Book (2025)</p>
+      </div>
+      <div class="stat purple">
+        <p class="stat-number">
+          {{ Math.floor(countYearlyRead("pages", 2025) / countYear("2025")) }}
+        </p>
+        <p class="stat-title">Avg Pages (2025)</p>
       </div>
     </div>
   </div>
@@ -90,16 +99,6 @@ export default {
   computed: {
     filterReadBooks() {
       return this.bookInfo.filter(item => item.progress == "finished");
-    },
-    averageTimeToRead() {
-      let timeToRead = this.filterReadBooks.map(
-        book =>
-          ((new Date(book.dateStarted) - new Date(book.dateFinished)) /
-            86400000) *
-            -1 +
-          1
-      );
-      return timeToRead.reduce((a, b) => a + b) / timeToRead.length;
     },
     rereadCount() {
       return this.filterReadBooks.filter(book => book.isReread).length;
@@ -128,6 +127,30 @@ export default {
       return this.filterReadBooks.filter(book =>
         book["dateFinished"].includes(year)
       ).length;
+    },
+    countYearlyRead(key, year) {
+      return this.filterReadBooks
+        .filter(item => {
+          const date = new Date(item.dateFinished);
+          return date.getFullYear() === year;
+        })
+        .reduce((res, item) => (item[key] ? res + item[key] : res), 0);
+    },
+    averageTimeToRead(year) {
+      let yearlyBooks = this.filterReadBooks.filter(book => {
+        let finishedYear = new Date(book.dateFinished).getFullYear();
+        return finishedYear === year;
+      });
+
+      let timeToRead = yearlyBooks.map(book => {
+        let start = new Date(book.dateStarted);
+        let finish = new Date(book.dateFinished);
+        return Math.max((finish - start) / 86400000 + 1, 0);
+      });
+
+      return timeToRead.length > 0
+        ? timeToRead.reduce((a, b) => a + b, 0) / timeToRead.length
+        : 0;
     }
   }
 };
@@ -169,6 +192,10 @@ export default {
       border-radius: 7px;
       flex-grow: 1;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       &.blue {
         box-shadow: #1d5ed3 2px 2px, $black 4px 4px, #1d5ed3 6px 6px,
           $black 8px 8px, #1d5ed3 10px 10px;
@@ -233,5 +260,9 @@ export default {
   margin: 50px 20px 20px 20px;
   position: relative;
   padding-top: 40px;
+}
+
+.stat-number-avg-days {
+  max-width: 150px;
 }
 </style>
