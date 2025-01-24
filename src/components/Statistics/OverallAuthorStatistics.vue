@@ -76,7 +76,7 @@ import mixins from "@/mixins/mixins.ts";
 
 export default {
   props: {
-    authorInfo: Array,
+    authorInfo: Array
   },
   mixins: [mixins],
   computed: {
@@ -92,11 +92,11 @@ export default {
         }
       });
       return countryList;
-    },
+    }
   },
   methods: {
     valueCount(key, value) {
-      return this.authorInfo.filter((book) => book[key] === value).length;
+      return this.authorInfo.filter(book => book[key] === value).length;
     },
     countArray(arr) {
       var countedArray = {};
@@ -200,10 +200,10 @@ export default {
       color: white;
       position: relative;
       display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       &.blue {
         box-shadow: #1d5ed3 2px 2px, $black 4px 4px, #1d5ed3 6px 6px,
           $black 8px 8px, #1d5ed3 10px 10px;

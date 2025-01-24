@@ -70,8 +70,7 @@ export const authorData = [
       }
     ],
     website: "writeinbk.com",
-    awards: ["NAACP Image Award",
-"John Steptoe New Talent Award"]
+    awards: ["NAACP Image Award", "John Steptoe New Talent Award"]
   },
   {
     name: "Kimberly Jones",
