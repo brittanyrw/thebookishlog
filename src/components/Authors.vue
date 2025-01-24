@@ -499,6 +499,12 @@ export default {
 }
 .author-book-container {
   position: relative;
+  transition: all 300ms;
+}
+.author-book-container:hover {
+  cursor: pointer;
+  z-index: 1;
+  transform: scale(2);
 }
 .reread-count-badge {
   position: absolute;
