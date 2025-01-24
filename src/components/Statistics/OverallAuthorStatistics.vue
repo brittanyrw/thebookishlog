@@ -7,6 +7,24 @@
         <p class="stat-title">Authors Read</p>
       </div>
       <div class="stat red">
+        <p class="stat-number">{{ valueCount("fav", true) }}</p>
+        <p class="stat-title">Fav Authors</p>
+        <p class="stat-percent">
+          {{ Math.floor((valueCount("fav", true) / authorInfo.length) * 100) }}%
+        </p>
+      </div>
+      <div class="stat red">
+        <p class="stat-number">{{ getAuthorsWithMultipleBooks(2) }}</p>
+        <p class="stat-title">Multi Books</p>
+        <p class="stat-percent">
+          {{
+            Math.floor(
+              (getAuthorsWithMultipleBooks(2) / authorInfo.length) * 100
+            )
+          }}%
+        </p>
+      </div>
+      <div class="stat red">
         <p class="stat-number">{{ valueCount("poc", true) }}</p>
         <p class="stat-title">Person of Color</p>
         <p class="stat-percent">
@@ -43,15 +61,6 @@
             Math.floor(
               (valueCount("gender", "male") / authorInfo.length) * 100
             )
-          }}%
-        </p>
-      </div>
-      <div class="stat green">
-        <p class="stat-number">{{ valueCount("lgbt", true) }}</p>
-        <p class="stat-title">LGBTQIA+</p>
-        <p class="stat-percent">
-          {{
-            Math.floor((valueCount("lgbt", true) / authorInfo.length) * 100)
           }}%
         </p>
       </div>
@@ -121,6 +130,10 @@ export default {
     countryName(countryCode) {
       let regionNames = new Intl.DisplayNames(["en"], { type: "region" });
       return regionNames.of(countryCode);
+    },
+    getAuthorsWithMultipleBooks(minBooks) {
+      return this.authorInfo.filter(author => author.books.length >= minBooks)
+        .length;
     }
   }
 };
