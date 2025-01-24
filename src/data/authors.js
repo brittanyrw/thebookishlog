@@ -12,7 +12,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "ericaarmstrongdunbar.com"
+    website: "ericaarmstrongdunbar.com",
+    awards: ["Frederick Douglass Prize"]
   },
   {
     name: "Kalynn Bayron",
@@ -27,7 +28,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "kalynnbayron.com"
+    website: "kalynnbayron.com",
+    awards: ["2022 Randall Kenan Prize"]
   },
   {
     name: "Alexis Henderson",
@@ -42,7 +44,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "alexishenderson.com"
+    website: "alexishenderson.com",
+    awards: []
   },
   {
     name: "Tiffany D. Jackson",
@@ -66,7 +69,9 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "writeinbk.com"
+    website: "writeinbk.com",
+    awards: ["NAACP Image Award",
+"John Steptoe New Talent Award"]
   },
   {
     name: "Kimberly Jones",
@@ -81,7 +86,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "kimjoneswrites.com"
+    website: "kimjoneswrites.com",
+    awards: []
   },
   {
     name: "Gilly Segal",
@@ -96,7 +102,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "gillysegal.com"
+    website: "gillysegal.com",
+    awards: []
   },
   {
     name: "Camryn Garrett",
@@ -111,7 +118,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "camryngarrett.com"
+    website: "camryngarrett.com",
+    awards: []
   },
   {
     name: "Hallie Rubenhold",
@@ -128,7 +136,8 @@ export const authorData = [
         name: "United Kingdom"
       }
     ],
-    website: "hallierubenhold.com"
+    website: "hallierubenhold.com",
+    awards: ["Baillie Gifford Prize"]
   },
   {
     name: "Silvia Moreno-Garcia",
@@ -147,7 +156,16 @@ export const authorData = [
         name: "Canada"
       }
     ],
-    website: "silviamoreno-garcia.com"
+    website: "silviamoreno-garcia.com",
+    awards: [
+      "World Fantasy Award",
+      "Copper Cylinder Adult Award",
+      "Ignyte Awards",
+      "Sunburst Award",
+      "Aurora Award",
+      "British Fantasy Award—Horror Novel",
+      "Locus Award for Best Horror Novel"
+    ]
   },
   {
     name: "Cho Nam-Joo",
@@ -162,7 +180,8 @@ export const authorData = [
         name: "Korea"
       }
     ],
-    website: ""
+    website: "",
+    awards: []
   },
   {
     name: "Kim Liggett",
@@ -177,7 +196,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "kimliggett.com"
+    website: "kimliggett.com",
+    awards: ["Bram Stoker Award"]
   },
   {
     name: "P. Djèlí Clark",
@@ -202,7 +222,18 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "pdjeliclark.com"
+    website: "pdjeliclark.com",
+    awards: [
+      "Compton Crook Award",
+      "Ignyte Award",
+      "Locus Award",
+      "Nebula Award",
+      "British Fantasy Award",
+      "Locus Award",
+      "Nebula Award",
+      "Locus Award",
+      "Nebula Award"
+    ]
   },
   {
     name: "Alexis Hall",
@@ -218,7 +249,8 @@ export const authorData = [
       }
     ],
     website: "quicunquevult.com",
-    image: false
+    image: false,
+    awards: []
   },
   {
     name: "Brit Bennett",
@@ -233,7 +265,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "britbennett.com"
+    website: "britbennett.com",
+    awards: []
   },
   {
     name: "Jordan Ifueko",
@@ -252,7 +285,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "jordanifueko.com"
+    website: "jordanifueko.com",
+    awards: []
   },
   {
     name: "Kiley Reid",
@@ -267,7 +301,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "kileyreid.com"
+    website: "kileyreid.com",
+    awards: []
   },
   {
     name: "Dhonielle Clayton",
@@ -282,7 +317,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "dhonielleclayton.com"
+    website: "dhonielleclayton.com",
+    awards: []
   },
   {
     name: "Nic Stone",
@@ -297,7 +333,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "nicstone.info"
+    website: "nicstone.info",
+    awards: []
   },
   {
     name: "Angie Thomas",
@@ -312,7 +349,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "angiethomas.com"
+    website: "angiethomas.com",
+    awards: []
   },
   {
     name: "Ashley Woodfolk",
@@ -327,7 +365,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "ashleywoodfolk.com"
+    website: "ashleywoodfolk.com",
+    awards: []
   },
   {
     name: "Nicola Yoon",
@@ -346,7 +385,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "nicolayoon.com"
+    website: "nicolayoon.com",
+    awards: []
   },
   {
     name: "Nina Varela",
@@ -361,7 +401,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "ninavarela.com"
+    website: "ninavarela.com",
+    awards: []
   },
   {
     name: "Justina Ireland",
@@ -376,7 +417,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "authorjustinaireland.com"
+    website: "authorjustinaireland.com",
+    awards: []
   },
   {
     name: "Faridah Àbíké-Íyímídé",
@@ -395,7 +437,8 @@ export const authorData = [
         name: "Nigeria"
       }
     ],
-    website: "faridahabikeiyimide.com"
+    website: "faridahabikeiyimide.com",
+    awards: []
   },
   {
     name: "N.K. Jemisin",
@@ -426,7 +469,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "nkjemisin.com"
+    website: "nkjemisin.com",
+    awards: []
   },
   {
     name: "Octavia E. Butler",
@@ -452,7 +496,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "octaviabutler.com"
+    website: "octaviabutler.com",
+    awards: []
   },
   {
     name: "Xiran Jay Zhao",
@@ -471,7 +516,8 @@ export const authorData = [
         name: "Canada"
       }
     ],
-    website: "xiranjayzhao.com"
+    website: "xiranjayzhao.com",
+    awards: []
   },
   {
     name: "Nnedi Okorafor",
@@ -496,7 +542,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "nnedi.com"
+    website: "nnedi.com",
+    awards: []
   },
   {
     name: "R.F. Kuang",
@@ -521,7 +568,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "rfkuang.com"
+    website: "rfkuang.com",
+    awards: []
   },
   {
     name: "Namina Forna",
@@ -540,7 +588,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "naminaforna.com"
+    website: "naminaforna.com",
+    awards: []
   },
   {
     name: "Rivers Solomon",
@@ -555,7 +604,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "rivers-solomon.com"
+    website: "rivers-solomon.com",
+    awards: []
   },
   {
     name: "Trevor Noah",
@@ -570,7 +620,8 @@ export const authorData = [
         name: "South Africa"
       }
     ],
-    website: "trevornoah.com"
+    website: "trevornoah.com",
+    awards: []
   },
   {
     name: "Talia Hibbert",
@@ -585,7 +636,8 @@ export const authorData = [
         name: "United Kingdom"
       }
     ],
-    website: "taliahibbert.com"
+    website: "taliahibbert.com",
+    awards: []
   },
   {
     name: "June Hur",
@@ -604,7 +656,8 @@ export const authorData = [
         name: "Canada"
       }
     ],
-    website: "junehur.com"
+    website: "junehur.com",
+    awards: []
   },
   {
     name: "Colson Whitehead",
@@ -619,7 +672,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "colsonwhitehead.com"
+    website: "colsonwhitehead.com",
+    awards: []
   },
   {
     name: "Fonda Lee",
@@ -642,7 +696,8 @@ export const authorData = [
         name: "China"
       }
     ],
-    website: "fondalee.com"
+    website: "fondalee.com",
+    awards: []
   },
   {
     name: "Axie Oh",
@@ -661,7 +716,8 @@ export const authorData = [
         name: "Korea"
       }
     ],
-    website: "axieoh.com"
+    website: "axieoh.com",
+    awards: []
   },
   {
     name: "Sidik Fofana",
@@ -676,7 +732,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "sidikfofana.com"
+    website: "sidikfofana.com",
+    awards: []
   },
   {
     name: "Krystal Marquis",
@@ -691,7 +748,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "krystalmarquis.com"
+    website: "krystalmarquis.com",
+    awards: []
   },
   {
     name: "Akwaeke Emezi",
@@ -706,7 +764,8 @@ export const authorData = [
         name: "Nigeria"
       }
     ],
-    website: "akwaeke.com"
+    website: "akwaeke.com",
+    awards: []
   },
   {
     name: "Tommy Orange",
@@ -721,7 +780,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "penguinrandomhouse.com/authors/2156371/tommy-orange/"
+    website: "penguinrandomhouse.com/authors/2156371/tommy-orange/",
+    awards: []
   },
   {
     name: "B.B. Alston",
@@ -736,7 +796,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "bbalston.com"
+    website: "bbalston.com",
+    awards: []
   },
   {
     name: "Meredith Katz",
@@ -751,7 +812,8 @@ export const authorData = [
         name: "Canada"
       }
     ],
-    website: "softcryptid.com"
+    website: "softcryptid.com",
+    awards: []
   },
   {
     name: "Ken Liu",
@@ -770,7 +832,8 @@ export const authorData = [
         name: "China"
       }
     ],
-    website: "kenliu.name"
+    website: "kenliu.name",
+    awards: []
   },
   {
     name: "Nella Larsen",
@@ -785,7 +848,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "en.wikipedia.org/wiki/Nella_Larsen"
+    website: "en.wikipedia.org/wiki/Nella_Larsen",
+    awards: []
   },
   {
     name: "Kanae Minato",
@@ -800,7 +864,8 @@ export const authorData = [
         name: "Japan"
       }
     ],
-    website: "en.wikipedia.org/wiki/Kanae_Minato"
+    website: "en.wikipedia.org/wiki/Kanae_Minato",
+    awards: []
   },
   {
     name: "Ling Ling Huang",
@@ -819,7 +884,8 @@ export const authorData = [
         name: "China"
       }
     ],
-    website: "www.linglinghuang.com"
+    website: "www.linglinghuang.com",
+    awards: []
   },
   {
     name: "Honorée Fanonne Jeffers",
@@ -834,7 +900,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "honoreejeffers.com"
+    website: "honoreejeffers.com",
+    awards: []
   },
   {
     name: "Tracey Rose Peyton",
@@ -849,7 +916,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "traceyrosepeyton.com"
+    website: "traceyrosepeyton.com",
+    awards: []
   },
   {
     name: "Erin E. Adams",
@@ -868,7 +936,8 @@ export const authorData = [
         name: "Haiti"
       }
     ],
-    website: "erineadams.com"
+    website: "erineadams.com",
+    awards: []
   },
   {
     name: "Violet Allen",
@@ -883,7 +952,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: ""
+    website: "",
+    awards: []
   },
   {
     name: "Lesley Nneka Arimah",
@@ -902,7 +972,8 @@ export const authorData = [
         name: "United Kingdom"
       }
     ],
-    website: "larimah.com"
+    website: "larimah.com",
+    awards: []
   },
   {
     name: "Maurice Broaddus",
@@ -917,7 +988,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "mauricebroaddus.com"
+    website: "mauricebroaddus.com",
+    awards: []
   },
   {
     name: "Chesya Burke",
@@ -932,7 +1004,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "thechesyaburke.org"
+    website: "thechesyaburke.org",
+    awards: []
   },
   {
     name: "Ezra Claytan Daniels",
@@ -947,7 +1020,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "ezracdaniels.com"
+    website: "ezracdaniels.com",
+    awards: []
   },
   {
     name: "Tananarive Due",
@@ -962,7 +1036,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "tananarivedue.com"
+    website: "tananarivedue.com",
+    awards: []
   },
   {
     name: "Nalo Hopkinson",
@@ -981,7 +1056,8 @@ export const authorData = [
         name: "Canada"
       }
     ],
-    website: "nalohopkinson.com"
+    website: "nalohopkinson.com",
+    awards: []
   },
   {
     name: "Justin C. Key",
@@ -996,7 +1072,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: ""
+    website: "",
+    awards: []
   },
   {
     name: "L.D. Lewis",
@@ -1011,7 +1088,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "ldlewiswrites.com"
+    website: "ldlewiswrites.com",
+    awards: []
   },
   {
     name: "Tochi Onyebuchi",
@@ -1026,7 +1104,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "tochionyebuchi.com"
+    website: "tochionyebuchi.com",
+    awards: []
   },
   {
     name: "Rebecca Roanhorse",
@@ -1041,7 +1120,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "rebeccaroanhorse.com"
+    website: "rebeccaroanhorse.com",
+    awards: []
   },
   {
     name: "Nicole D. Sconiers",
@@ -1056,7 +1136,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: ""
+    website: "",
+    awards: []
   },
   {
     name: "Rion Amilcar Scott",
@@ -1071,7 +1152,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "rionamilcarscott.com"
+    website: "rionamilcarscott.com",
+    awards: []
   },
   {
     name: "Terence Taylor",
@@ -1086,7 +1168,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: ""
+    website: "",
+    awards: []
   },
   {
     name: "Cadwell Turnbull",
@@ -1101,7 +1184,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "cadwellturnbull.com"
+    website: "cadwellturnbull.com",
+    awards: []
   },
   {
     name: "Isabel Wilkerson",
@@ -1116,7 +1200,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "isabelwilkerson.com"
+    website: "isabelwilkerson.com",
+    awards: []
   },
   {
     name: "Megan Giddings",
@@ -1131,7 +1216,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "megangiddings.com"
+    website: "megangiddings.com",
+    awards: []
   },
   {
     name: "Sohn Won-Pyung",
@@ -1146,7 +1232,8 @@ export const authorData = [
         name: "Korea"
       }
     ],
-    website: "en.wikipedia.org/wiki/Sohn_Won-pyung"
+    website: "en.wikipedia.org/wiki/Sohn_Won-pyung",
+    awards: []
   },
   {
     name: "Jamila Rowser",
@@ -1169,7 +1256,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "jamilarowser.com"
+    website: "jamilarowser.com",
+    awards: []
   },
   {
     name: "Robyn Smith",
@@ -1184,7 +1272,8 @@ export const authorData = [
         name: "Jamaica"
       }
     ],
-    website: "robrosmo.com"
+    website: "robrosmo.com",
+    awards: []
   },
   {
     name: "Emma Newman",
@@ -1205,7 +1294,8 @@ export const authorData = [
         name: "United Kingdom"
       }
     ],
-    website: "enewman.co.uk"
+    website: "enewman.co.uk",
+    awards: []
   },
   {
     name: "Martha Wells",
@@ -1228,7 +1318,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "marthawells.com"
+    website: "marthawells.com",
+    awards: []
   },
   {
     name: "Dolen Perkins-Valdez",
@@ -1243,7 +1334,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "dolenperkinsvaldez.com"
+    website: "dolenperkinsvaldez.com",
+    awards: []
   },
   {
     name: "Nana Kwame Adjei-Brenyah",
@@ -1262,7 +1354,8 @@ export const authorData = [
         name: "Ghana"
       }
     ],
-    website: "nanakwameadjei-brenyah.com"
+    website: "nanakwameadjei-brenyah.com",
+    awards: []
   },
   {
     name: "James Islington",
@@ -1277,7 +1370,8 @@ export const authorData = [
         name: "Australia"
       }
     ],
-    website: "jamesislington.com"
+    website: "jamesislington.com",
+    awards: []
   },
   {
     name: "Julia Alvarez",
@@ -1296,7 +1390,8 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "juliaalvarez.com"
+    website: "juliaalvarez.com",
+    awards: []
   },
   {
     name: "Philippa Gregory",
@@ -1322,7 +1417,8 @@ export const authorData = [
         name: "United Kingdom"
       }
     ],
-    website: "philippagregory.com"
+    website: "philippagregory.com",
+    awards: []
   },
   {
     name: "Alice Oseman",
@@ -1337,7 +1433,8 @@ export const authorData = [
         name: "United Kingdom"
       }
     ],
-    website: "aliceoseman.com"
+    website: "aliceoseman.com",
+    awards: []
   },
   {
     name: "Jonathan Larson",
@@ -1352,6 +1449,7 @@ export const authorData = [
         name: "United States"
       }
     ],
-    website: "en.wikipedia.org/wiki/Jonathan_Larson"
+    website: "en.wikipedia.org/wiki/Jonathan_Larson",
+    awards: []
   }
 ];
