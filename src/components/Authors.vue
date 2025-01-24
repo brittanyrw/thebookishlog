@@ -70,7 +70,6 @@
 
               <div class="author-stats">
                 <span class="book-number">{{ author.books.length }}</span>
-                <span v-if="author.lgbt" class="lgbt">🏳️‍🌈</span>
                 <span
                   class="flag"
                   v-for="(country, index) in author.country"
@@ -151,7 +150,6 @@
 
             <div class="author-stats">
               <span class="book-number">{{ author.books.length }}</span>
-              <span v-if="author.lgbt" class="lgbt">🏳️‍🌈</span>
               <span
                 class="flag"
                 v-for="(country, index) in author.country"
@@ -220,7 +218,6 @@
 
             <div class="author-stats">
               <span class="book-number">{{ author.books.length }}</span>
-              <span v-if="author.lgbt" class="lgbt">🏳️‍🌈</span>
               <span
                 class="flag"
                 v-for="(country, index) in author.country"
