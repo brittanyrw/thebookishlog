@@ -106,7 +106,6 @@ export type Genres =
   | "Korea"
   | "Latin America"
   | "Legal"
-  | "LGBTQIA+"
   | "Mafia"
   | "Magic"
   | "Magical Realism"
@@ -161,8 +160,7 @@ export const bookData: Book[] = [
       "Action",
       "Artificial Intelligence",
       "Robot",
-      "Space",
-      "LGBTQIA+"
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -196,7 +194,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -230,8 +227,7 @@ export const bookData: Book[] = [
       "Action",
       "Artificial Intelligence",
       "Robot",
-      "Space",
-      "LGBTQIA+"
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -265,7 +261,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -300,7 +295,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -335,7 +329,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -363,7 +356,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2004,
     setting: ["New York City", "United States"],
-    genre: ["Musical", "Romance", "Play", "LGBTQIA+", "Friendship", "Health"],
+    genre: ["Musical", "Romance", "Play", "Friendship", "Health"],
     age: "Adult",
     type: "Fiction",
     pages: 102,
@@ -395,7 +388,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -557,7 +549,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2018,
     setting: ["United Kingdom"],
-    genre: ["Graphic Novel", "Romance", "Friendship", "LGBTQIA+"],
+    genre: ["Graphic Novel", "Romance", "Friendship"],
     age: "Young Adult",
     type: "Fiction",
     pages: 288,
@@ -1051,8 +1043,7 @@ export const bookData: Book[] = [
       "Experiments",
       "Health",
       "Historical Fiction",
-      "Slavery",
-      "LGBTQIA+"
+      "Slavery"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1136,8 +1127,7 @@ export const bookData: Book[] = [
       "Dystopia",
       "Experiments",
       "Horror",
-      "Slavery",
-      "LGBTQIA+"
+      "Slavery"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1229,8 +1219,7 @@ export const bookData: Book[] = [
       "Action",
       "Artificial Intelligence",
       "Robot",
-      "Space",
-      "LGBTQIA+"
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1263,7 +1252,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -1296,8 +1284,7 @@ export const bookData: Book[] = [
       "Action",
       "Artificial Intelligence",
       "Robot",
-      "Space",
-      "LGBTQIA+"
+      "Space"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1330,7 +1317,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -1364,7 +1350,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -1398,7 +1383,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -1432,7 +1416,6 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Robot",
       "Novella",
-      "LGBTQIA+",
       "Space"
     ],
     age: "Adult",
@@ -1585,7 +1568,6 @@ export const bookData: Book[] = [
       "Dystopia",
       "Space",
       "Psychology",
-      "LGBTQIA+",
       "Family",
       "Short Story Collection"
     ],
@@ -1620,7 +1602,6 @@ export const bookData: Book[] = [
       "Dystopia",
       "Space",
       "Psychology",
-      "LGBTQIA+",
       "Crime"
     ],
     age: "Adult",
@@ -1654,7 +1635,6 @@ export const bookData: Book[] = [
       "Dystopia",
       "Space",
       "Psychology",
-      "LGBTQIA+",
       "Family"
     ],
     age: "Adult",
@@ -1686,7 +1666,6 @@ export const bookData: Book[] = [
       "Mystery",
       "Artificial Intelligence",
       "Dystopia",
-      "LGBTQIA+",
       "Crime",
       "Slavery"
     ],
@@ -1720,8 +1699,7 @@ export const bookData: Book[] = [
       "Artificial Intelligence",
       "Dystopia",
       "Space",
-      "Psychology",
-      "LGBTQIA+"
+      "Psychology"
     ],
     age: "Adult",
     type: "Fiction",
@@ -1747,14 +1725,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2022,
     setting: ["New York City", "United States"],
-    genre: [
-      "Graphic Novel",
-      "Friendship",
-      "Romance",
-      "Black",
-      "Feminism",
-      "LGBTQIA+"
-    ],
+    genre: ["Graphic Novel", "Friendship", "Romance", "Black", "Feminism"],
     age: "Adult",
     type: "Fiction",
     pages: 192,
@@ -2048,8 +2019,7 @@ export const bookData: Book[] = [
       "Romance",
       "Crime",
       "Academic",
-      "Race",
-      "LGBTQIA+"
+      "Race"
     ],
     age: "Adult",
     type: "Fiction",
@@ -2084,7 +2054,6 @@ export const bookData: Book[] = [
       "Thriller",
       "Race",
       "China",
-      "LGBTQIA+",
       "Experiments"
     ],
     age: "Adult",
@@ -2153,7 +2122,6 @@ export const bookData: Book[] = [
       "War",
       "Family",
       "Dystopia",
-      "LGBTQIA+",
       "Horror",
       "Revenge"
     ],
@@ -2190,7 +2158,6 @@ export const bookData: Book[] = [
       "War",
       "Family",
       "Dystopia",
-      "LGBTQIA+",
       "Horror",
       "Revenge"
     ],
@@ -2227,7 +2194,6 @@ export const bookData: Book[] = [
       "War",
       "Family",
       "Dystopia",
-      "LGBTQIA+",
       "Revenge"
     ],
     age: "Adult",
@@ -2424,7 +2390,6 @@ export const bookData: Book[] = [
       "Magic",
       "Black",
       "War",
-      "LGBTQIA+",
       "Horror",
       "Science Fiction"
     ],
@@ -2526,7 +2491,6 @@ export const bookData: Book[] = [
     setting: ["United States", "Japan", "Space", "Fictional", "Asia"],
     genre: [
       "Science Fiction",
-      "LGBTQIA+",
       "Romance",
       "Artificial Intelligence",
       "Short Story Collection",
@@ -2564,7 +2528,6 @@ export const bookData: Book[] = [
     setting: ["United States", "Seattle"],
     genre: [
       "Science Fiction",
-      "LGBTQIA+",
       "Romance",
       "Artificial Intelligence",
       "Novella",
@@ -2674,15 +2637,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Yetide Badaki", "Chukwudi Iwuji"],
     publishedYear: 2020,
     setting: ["Africa", "Nigeria"],
-    genre: [
-      "Black",
-      "Mystery",
-      "Race",
-      "LGBTQIA+",
-      "Family",
-      "Romance",
-      "Africa"
-    ],
+    genre: ["Black", "Mystery", "Race", "Family", "Romance", "Africa"],
     age: "Adult",
     type: "Fiction",
     pages: 248,
@@ -2714,8 +2669,7 @@ export const bookData: Book[] = [
       "Thriller",
       "Race",
       "Horror",
-      "Magic",
-      "LGBTQIA+"
+      "Magic"
     ],
     age: "Young Adult",
     type: "Fiction",
@@ -3042,7 +2996,6 @@ export const bookData: Book[] = [
     setting: ["New York City", "United States"],
     genre: [
       "Fantasy",
-      "LGBTQIA+",
       "Magic",
       "Black",
       "Science Fiction",
@@ -3073,7 +3026,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Sarah Zimmerman"],
     publishedYear: 2012,
     setting: ["Fictional"],
-    genre: ["Fantasy", "LGBTQIA+", "Magic", "Black", "Science Fiction", "War"],
+    genre: ["Fantasy", "Magic", "Black", "Science Fiction", "War"],
     age: "Adult",
     type: "Fiction",
     pages: 418,
@@ -3170,7 +3123,6 @@ export const bookData: Book[] = [
       "Black",
       "Race",
       "Novella",
-      "LGBTQIA+",
       "Slavery",
       "Romance",
       "Science Fiction"
@@ -3216,13 +3168,7 @@ export const bookData: Book[] = [
     ],
     publishedYear: 2022,
     setting: ["United States", "Georgia (USA)", "Atlanta"],
-    genre: [
-      "Black",
-      "Romance",
-      "LGBTQIA+",
-      "Short Story Collection",
-      "Friendship"
-    ],
+    genre: ["Black", "Romance", "Short Story Collection", "Friendship"],
     age: "Young Adult",
     type: "Fiction",
     pages: 291,
@@ -3439,7 +3385,6 @@ export const bookData: Book[] = [
     setting: ["New York City", "United States"],
     genre: [
       "Fantasy",
-      "LGBTQIA+",
       "Magic",
       "Black",
       "Science Fiction",
@@ -3773,7 +3718,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Jordan Cobb"],
     publishedYear: 2022,
     setting: ["United States", "New York State"],
-    genre: ["Fantasy", "LGBTQIA+", "Retelling", "Black", "Mythology"],
+    genre: ["Fantasy", "Retelling", "Black", "Mythology"],
     age: "Young Adult",
     type: "Fiction",
     pages: 320,
@@ -3798,7 +3743,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Jordan Cobb"],
     publishedYear: 2021,
     setting: ["New York City", "United States", "New York State"],
-    genre: ["Fantasy", "LGBTQIA+", "Retelling", "Black", "Mythology"],
+    genre: ["Fantasy", "Retelling", "Black", "Mythology"],
     age: "Young Adult",
     type: "Fiction",
     pages: 384,
@@ -3823,14 +3768,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Kim Mai Guest"],
     publishedYear: 2020,
     setting: ["Fictional"],
-    genre: [
-      "Fantasy",
-      "Romance",
-      "LGBTQIA+",
-      "Science Fiction",
-      "Dystopia",
-      "War"
-    ],
+    genre: ["Fantasy", "Romance", "Science Fiction", "Dystopia", "War"],
     age: "Young Adult",
     type: "Fiction",
     pages: 400,
@@ -3888,7 +3826,6 @@ export const bookData: Book[] = [
     publishedYear: 2021,
     setting: ["Fictional"],
     genre: [
-      "LGBTQIA+",
       "Fantasy",
       "Asia",
       "Science Fiction",
@@ -3922,7 +3859,6 @@ export const bookData: Book[] = [
     publishedYear: 1995,
     setting: ["Fictional", "United States", "Space"],
     genre: [
-      "LGBTQIA+",
       "Short Story Collection",
       "Black",
       "Science Fiction",
@@ -3964,7 +3900,6 @@ export const bookData: Book[] = [
     setting: ["Fictional", "United States", "Space"],
     genre: [
       "Fantasy",
-      "LGBTQIA+",
       "Magic",
       "Short Story Collection",
       "Black",
@@ -3996,7 +3931,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Joniece Abbott-Pratt"],
     publishedYear: 2021,
     setting: ["Fictional"],
-    genre: ["Fantasy", "LGBTQIA+", "Magic", "Africa", "Black"],
+    genre: ["Fantasy", "Magic", "Africa", "Black"],
     age: "Young Adult",
     type: "Fiction",
     pages: 336,
@@ -4021,7 +3956,7 @@ export const bookData: Book[] = [
     audioBookNarrator: ["Tapiwa Mugweni"],
     publishedYear: 2021,
     setting: ["Fictional"],
-    genre: ["Horror", "Thriller", "LGBTQIA+", "Black", "Race", "Academic"],
+    genre: ["Horror", "Thriller", "Black", "Race", "Academic"],
     age: "Young Adult",
     type: "Fiction",
     pages: 470,
@@ -4079,7 +4014,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["Fictional"],
-    genre: ["Fantasy", "Romance", "LGBTQIA+", "Science Fiction", "Dystopia"],
+    genre: ["Fantasy", "Romance", "Science Fiction", "Dystopia"],
     age: "Young Adult",
     type: "Fiction",
     pages: 435,
@@ -4111,7 +4046,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2021,
     setting: ["United States", "New York City"],
-    genre: ["Short Story Collection", "Black", "LGBTQIA+", "Romance"],
+    genre: ["Short Story Collection", "Black", "Romance"],
     age: "Young Adult",
     type: "Fiction",
     pages: 256,
@@ -4241,7 +4176,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["Fictional"],
-    genre: ["Fantasy", "LGBTQIA+", "Magic", "Africa", "Black", "Revenge"],
+    genre: ["Fantasy", "Magic", "Africa", "Black", "Revenge"],
     age: "Young Adult",
     type: "Fiction",
     pages: 368,
@@ -4349,7 +4284,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2020,
     setting: ["United Kingdom", "London"],
-    genre: ["LGBTQIA+", "Romance", "Humor", "Novella"],
+    genre: ["Romance", "Humor", "Novella"],
     age: "Adult",
     type: "Fiction",
     pages: 185,
@@ -4563,7 +4498,7 @@ export const bookData: Book[] = [
     audioBookNarrator: [""],
     publishedYear: 2019,
     setting: ["United States", "California"],
-    genre: ["LGBTQIA+", "Romance", "Health", "Mystery", "Black"],
+    genre: ["Romance", "Health", "Mystery", "Black"],
     age: "Young Adult",
     type: "Fiction",
     pages: 290,
@@ -4673,7 +4608,6 @@ export const bookData: Book[] = [
     setting: ["Fictional"],
     genre: [
       "Fantasy",
-      "LGBTQIA+",
       "Retelling",
       "Fairy Tale",
       "Dystopia",
