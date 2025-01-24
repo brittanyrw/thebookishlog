@@ -1309,7 +1309,8 @@ export const authorData = [
       "The King's Curse",
       "The Other Boleyn Girl",
       "The Boleyn Inheritance",
-      "The Taming of the Queen"
+      "The Taming of the Queen",
+      "The Queen's Fool"
     ],
     poc: false,
     gender: "female",
