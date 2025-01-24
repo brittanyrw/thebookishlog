@@ -556,7 +556,7 @@ export const authorData = [
       }
     ],
     website: "xiranjayzhao.com",
-    awards: []
+    awards: ["BSFA Award", "Astounding Award"]
   },
   {
     name: "Nnedi Okorafor",
@@ -582,7 +582,15 @@ export const authorData = [
       }
     ],
     website: "nnedi.com",
-    awards: []
+    awards: [
+      "Hugo Award",
+      "Nebula",
+      "World Fantasy Award—Novel",
+      "Hugo",
+      "LaGuardia Wole Soyinka Prize",
+      "Zahrah the Windseeker Macmillan Writers Prize for Africa",
+      "Long Juju Man Carl Brandon Parallax Award"
+    ]
   },
   {
     name: "R.F. Kuang",
@@ -608,7 +616,13 @@ export const authorData = [
       }
     ],
     website: "rfkuang.com",
-    awards: []
+    awards: [
+      "Crawford Award",
+      "Compton Crook Award",
+      "Nebula Award",
+      "Locus Award",
+      "British Book Award"
+    ]
   },
   {
     name: "Namina Forna",
