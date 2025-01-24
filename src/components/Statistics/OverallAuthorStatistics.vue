@@ -13,7 +13,7 @@
           {{ Math.floor((valueCount("fav", true) / authorInfo.length) * 100) }}%
         </p>
       </div>
-      <div class="stat red">
+      <div class="stat purple">
         <p class="stat-number">{{ getAuthorsWithMultipleBooks(2) }}</p>
         <p class="stat-title">Multi Books</p>
         <p class="stat-percent">
@@ -24,42 +24,33 @@
           }}%
         </p>
       </div>
-      <div class="stat red">
-        <p class="stat-number">{{ valueCount("poc", true) }}</p>
-        <p class="stat-title">Person of Color</p>
+      <div class="stat orange">
+        <p class="stat-number">{{ getAuthorsWithMultipleBooks(2) }}</p>
+        <p class="stat-title">Award Winning Authors</p>
         <p class="stat-percent">
-          {{ Math.floor((valueCount("poc", true) / authorInfo.length) * 100) }}%
+          {{
+            Math.floor(
+              (getAuthorsWithMultipleBooks(2) / authorInfo.length) * 100
+            )
+          }}%
         </p>
       </div>
-      <div class="stat purple">
+      <div class="stat gold most-awards">
+        <p class="stat-number most-awards-number">
+          {{ getAuthorWithMostAwards().name }}
+        </p>
+        <p class="stat-title">Most Awards</p>
+        <p class="stat-percent">
+          {{ getAuthorWithMostAwards().awards.length }}
+        </p>
+      </div>
+      <div class="stat green">
         <p class="stat-number">{{ valueCount("gender", "female") }}</p>
         <p class="stat-title">Female</p>
         <p class="stat-percent">
           {{
             Math.floor(
               (valueCount("gender", "female") / authorInfo.length) * 100
-            )
-          }}%
-        </p>
-      </div>
-      <div class="stat orange">
-        <p class="stat-number">{{ valueCount("gender", "non-binary") }}</p>
-        <p class="stat-title">Non-Binary</p>
-        <p class="stat-percent">
-          {{
-            Math.floor(
-              (valueCount("gender", "non-binary") / authorInfo.length) * 100
-            )
-          }}%
-        </p>
-      </div>
-      <div class="stat gold">
-        <p class="stat-number">{{ valueCount("gender", "male") }}</p>
-        <p class="stat-title">Male</p>
-        <p class="stat-percent">
-          {{
-            Math.floor(
-              (valueCount("gender", "male") / authorInfo.length) * 100
             )
           }}%
         </p>
@@ -85,7 +76,7 @@ import mixins from "@/mixins/mixins.ts";
 
 export default {
   props: {
-    authorInfo: Array
+    authorInfo: Array,
   },
   mixins: [mixins],
   computed: {
@@ -101,11 +92,11 @@ export default {
         }
       });
       return countryList;
-    }
+    },
   },
   methods: {
     valueCount(key, value) {
-      return this.authorInfo.filter(book => book[key] === value).length;
+      return this.authorInfo.filter((book) => book[key] === value).length;
     },
     countArray(arr) {
       var countedArray = {};
@@ -134,6 +125,21 @@ export default {
     getAuthorsWithMultipleBooks(minBooks) {
       return this.authorInfo.filter(author => author.books.length >= minBooks)
         .length;
+    },
+    getAuthorsWithAwards() {
+      return this.authorInfo.filter(
+        author => author.awards && author.awards.length > 0
+      ).length;
+    },
+    getAuthorWithMostAwards() {
+      return this.authorInfo.reduce((maxAuthor, currentAuthor) => {
+        const currentAwardCount =
+          (currentAuthor.awards && currentAuthor.awards.length) || 0;
+        const maxAwardCount =
+          (maxAuthor.awards && maxAuthor.awards.length) || 0;
+
+        return currentAwardCount > maxAwardCount ? currentAuthor : maxAuthor;
+      }, this.authorInfo[0]);
     }
   }
 };
@@ -193,6 +199,11 @@ export default {
       border-radius: 7px;
       color: white;
       position: relative;
+      display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
       &.blue {
         box-shadow: #1d5ed3 2px 2px, $black 4px 4px, #1d5ed3 6px 6px,
           $black 8px 8px, #1d5ed3 10px 10px;
@@ -269,6 +280,10 @@ export default {
           font-size: 50px;
         }
       }
+      .stat-number.most-awards-number {
+        font-size: 35px;
+        max-width: 324px;
+      }
       .stat-title {
         margin: 0;
         padding: 0 20px 30px 20px;
@@ -292,6 +307,10 @@ export default {
       }
     }
   }
+}
+
+.most-awards .stat-title {
+  padding: 0 20px 20px 20px !important;
 }
 
 .country-stats {
