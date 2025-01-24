@@ -266,7 +266,7 @@ export const authorData = [
       }
     ],
     website: "britbennett.com",
-    awards: []
+    awards: ["Goodreads Choice Award"]
   },
   {
     name: "Jordan Ifueko",
@@ -302,7 +302,7 @@ export const authorData = [
       }
     ],
     website: "kileyreid.com",
-    awards: []
+    awards: ["Goodreads Choice Awards", "Australian Book Industry Awards"]
   },
   {
     name: "Dhonielle Clayton",
@@ -318,7 +318,7 @@ export const authorData = [
       }
     ],
     website: "dhonielleclayton.com",
-    awards: []
+    awards: ["Ignyte Award"]
   },
   {
     name: "Nic Stone",
@@ -334,7 +334,7 @@ export const authorData = [
       }
     ],
     website: "nicstone.info",
-    awards: []
+    awards: ["William C. Morris YA Debut Award", "Kids’ Book Choice Awards"]
   },
   {
     name: "Angie Thomas",
@@ -350,7 +350,19 @@ export const authorData = [
       }
     ],
     website: "angiethomas.com",
-    awards: []
+    awards: [
+      "Goodreads Choice Awards",
+      "Goodreads Choice Award",
+      "Amelia Elizabeth Walden Award",
+      "Audie Award",
+      "Audie Award",
+      "Edgar Award",
+      "Goodreads Choice Award",
+      "Indies Choice Award",
+      "William C. Morris Award",
+      "Odyssey Award",
+      "Waterstones Children's Book Prize"
+    ]
   },
   {
     name: "Ashley Woodfolk",
@@ -470,7 +482,22 @@ export const authorData = [
       }
     ],
     website: "nkjemisin.com",
-    awards: []
+    awards: [
+      "Sense of Gender Award",
+      "Romantic Times Reviewers' Choice Award",
+      "Romantic Times Reviewers' Choice Award",
+      "BSFA Award for Best Novel",
+      "Locus",
+      "Locus",
+      "Locus",
+      "Nebula",
+      "Hugo",
+      "Hugo",
+      "Hugo",
+      "Locus",
+      "Hugo",
+      "American Library Association's Alex Award"
+    ]
   },
   {
     name: "Octavia E. Butler",
@@ -497,7 +524,19 @@ export const authorData = [
       }
     ],
     website: "octaviabutler.com",
-    awards: []
+    awards: [
+      "Creative Arts Award",
+      "Hugo Award for Best Short Story",
+      "Nebula Award for Best Novelette",
+      "Locus Award for Best Novelette",
+      "Hugo Award for Best Novelette",
+      "Science Fiction Chronicle Award for Best Novelette",
+      "Science Fiction Chronicle Award for Best Novelette",
+      "James Tiptree Jr. Award",
+      "Nebula Award for Best Novel",
+      "Lifetime Achievement Award in Writing",
+      "Solstice Award"
+    ]
   },
   {
     name: "Xiran Jay Zhao",
