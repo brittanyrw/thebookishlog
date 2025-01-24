@@ -149,6 +149,41 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Queen's Fool",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato"],
+    publishedYear: 2003,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 504,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "01/11/2025",
+    dateFinished: "01/15/2025",
+    progress: "finished",
+    color: "green",
+    fav: false,
+    publisher: "Harper Collins",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
     title: "System Collapse",
     author: ["Martha Wells"],
     audioBookNarrator: ["Kevin R. Free"],
