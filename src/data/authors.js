@@ -598,7 +598,8 @@ export const authorData = [
       "The Dragon Republic",
       "The Burning God",
       "Babel",
-      "Yellowface"
+      "Yellowface",
+      "Katabasis"
     ],
     poc: true,
     gender: "female",
@@ -1502,6 +1503,24 @@ export const authorData = [
       }
     ],
     website: "en.wikipedia.org/wiki/Jonathan_Larson",
+    awards: []
+  },
+  {
+    name: "Pamela Nagami M.D.",
+    books: [
+      "The Woman with a Worm in Her Head: And Other True Stories of Infectious Disease"
+    ],
+    poc: false,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "bjrobbinsliterary.com/pamela-nagami-md",
     awards: []
   }
 ];

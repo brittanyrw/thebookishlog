@@ -109,6 +109,7 @@ export type Genres =
   | "Mafia"
   | "Magic"
   | "Magical Realism"
+  | "Medical"
   | "Music"
   | "Musical"
   | "Mystery"
@@ -148,6 +149,64 @@ export type Medium = "Physical" | "E-Book" | "Audio" | "Physical and Audio";
 export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
+  {
+    title: "Katabasis",
+    author: ["R. F. Kuang"],
+    audioBookNarrator: ["Morag Sims", "Will Watt"],
+    publishedYear: 2025,
+    setting: ["United Kingdom", "Fictional"],
+    genre: [
+      "Fantasy",
+      "Academic",
+      "Action",
+      "Disability",
+      "Horror",
+      "Religion"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 550,
+    medium: "Audio",
+    rating: 3,
+    dateStarted: "09/14/2025",
+    dateFinished: "09/26/2025",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Harper Voyager",
+    audioBookPublisher: "Harper Voyager",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title:
+      "The Woman with a Worm in Her Head: And Other True Stories of Infectious Disease",
+    author: ["Pamela Nagami M.D."],
+    audioBookNarrator: ["Donna Rawlings"],
+    publishedYear: 2001,
+    setting: ["United States"],
+    genre: ["Health", "Autobiography", "Medical"],
+    age: "Adult",
+    type: "Non-Fiction",
+    pages: 288,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "07/06/2025",
+    dateFinished: "08/31/2025",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "St. Martin's Griffin",
+    audioBookPublisher: "Macmillan Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
   {
     title: "The Queen's Fool",
     author: ["Philippa Gregory"],
