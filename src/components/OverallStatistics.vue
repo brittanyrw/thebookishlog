@@ -301,6 +301,30 @@
                   </li>
                 </ul>
               </div>
+              <div class="series">
+                <h4>The Plantagenet and Tudor Novels</h4>
+                <ul class="smaller-series-container">
+                  <li
+                    class="book"
+                    v-for="(book, index) in filter(
+                      'series',
+                      'The Plantagenet and Tudor Novels'
+                    )"
+                    :key="index"
+                  >
+                    <img
+                      class="book-cover-img"
+                      :class="[
+                        { 'e-book': book.medium == 'E-Book' },
+                        { audio: book.medium == 'Audio' }
+                      ]"
+                      :alt="`${book.title} book cover`"
+                      :src="require(`@/assets/imgs/${slug(book.title)}.png`)"
+                    />
+                    <p>{{ book.title }}</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="divider" v-if="filter('isReread', true).length > 0"></div>
@@ -709,6 +733,10 @@ h3 {
   justify-content: center;
 }
 
+.smaller-series-container {
+  max-width: 1000px !important;
+}
+
 .overall-stats-component {
   .favorite-books ul,
   .dnf-books ul {
@@ -726,7 +754,7 @@ h3 {
       }
     }
     .book p {
-      margin: 10px auto;
+      margin: 20px auto;
     }
   }
 }
@@ -734,6 +762,9 @@ h3 {
 .book-cover-img {
   width: auto;
   height: 150px;
+  box-shadow: 2px 2px white, 4px 4px #1f1f1f, 6px 6px white, 8px 8px #1f1f1f,
+    10px 10px white, 12px 12px #1f1f1f;
+  border: 2px solid #1f1f1f;
 }
 
 .series-container {

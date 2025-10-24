@@ -150,6 +150,41 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Last Tudor",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Bianca Amato"],
+    publishedYear: 2017,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Feminism",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 518,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "09/29/2025",
+    dateFinished: "10/13/2025",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "Atria Books",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Plantagenet and Tudor Novels"
+  },
+  {
     title: "Katabasis",
     author: ["R. F. Kuang"],
     audioBookNarrator: ["Morag Sims", "Will Watt"],
@@ -240,7 +275,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "System Collapse",
@@ -561,7 +596,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "The Boleyn Inheritance",
@@ -600,7 +635,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "The Other Boleyn Girl",
@@ -635,7 +670,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "Heartstopper: Volume One",
@@ -695,7 +730,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "The Constant Princess",
@@ -730,7 +765,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "The White Princess",
@@ -765,7 +800,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "The Kingmakers Daughter",
@@ -800,7 +835,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "The Red Queen",
@@ -835,7 +870,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "The White Queen",
@@ -870,7 +905,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "The Lady of the Rivers",
@@ -905,7 +940,7 @@ export const bookData: Book[] = [
       to: "",
       text: ""
     },
-    series: ""
+    series: "The Plantagenet and Tudor Novels"
   },
   {
     title: "In the Time of the Butterflies",
