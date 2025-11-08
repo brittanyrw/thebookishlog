@@ -1459,7 +1459,9 @@ export const authorData = [
       "The Boleyn Inheritance",
       "The Taming of the Queen",
       "The Queen's Fool",
-      "The Last Tudor"
+      "The Last Tudor",
+      "The Virgin’s Lover",
+      "The Other Queen"
     ],
     poc: false,
     gender: "female",

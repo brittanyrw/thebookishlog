@@ -150,6 +150,99 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Shadow of the Gods",
+    author: ["John Gwynne"],
+    audioBookNarrator: [""],
+    publishedYear: 2021,
+    setting: [""],
+    genre: [""],
+    age: "Adult",
+    type: "Fiction",
+    pages: 480,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "11/04/2025",
+    dateFinished: "11/05/2025",
+    progress: "dnf",
+    color: "red",
+    fav: false,
+    publisher: "",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "The Other Queen",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Richard Armitage", "Alex Kingston", "Madeleine Leslay"],
+    publishedYear: 2008,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 449,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "10/27/2025",
+    dateFinished: "11/04/2025",
+    progress: "finished",
+    color: "darkblue",
+    fav: false,
+    publisher: "Atria Books",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Plantagenet and Tudor Novels"
+  },
+  {
+    title: "The Virgin’s Lover",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Perdita Weeks"],
+    publishedYear: 2004,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 497,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "10/14/2025",
+    dateFinished: "10/23/2025",
+    progress: "finished",
+    color: "red",
+    fav: false,
+    publisher: "Atria Books",
+    audioBookPublisher: "Simon & Schuster Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Plantagenet and Tudor Novels"
+  },
+  {
     title: "The Last Tudor",
     author: ["Philippa Gregory"],
     audioBookNarrator: ["Bianca Amato"],
@@ -183,6 +276,31 @@ export const bookData: Book[] = [
       text: ""
     },
     series: "The Plantagenet and Tudor Novels"
+  },
+  {
+    title: "Artemis",
+    author: ["Andy Weir"],
+    audioBookNarrator: [""],
+    publishedYear: 2017,
+    setting: [""],
+    genre: [""],
+    age: "Adult",
+    type: "Fiction",
+    pages: 335,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "09/27/2025",
+    dateFinished: "09/27/2025",
+    progress: "dnf",
+    color: "darkblue",
+    fav: false,
+    publisher: "",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
   },
   {
     title: "Katabasis",
@@ -236,6 +354,31 @@ export const bookData: Book[] = [
     fav: false,
     publisher: "St. Martin's Griffin",
     audioBookPublisher: "Macmillan Audio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "Hench",
+    author: ["Natalie Zina Walschots"],
+    audioBookNarrator: [""],
+    publishedYear: 2020,
+    setting: [""],
+    genre: [""],
+    age: "Adult",
+    type: "Fiction",
+    pages: 448,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "01/17/2025",
+    dateFinished: "01/17/2025",
+    progress: "dnf",
+    color: "darkblue",
+    fav: false,
+    publisher: "",
+    audioBookPublisher: "",
     dedication: {
       to: "",
       text: ""
