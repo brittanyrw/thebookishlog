@@ -1461,7 +1461,8 @@ export const authorData = [
       "The Queen's Fool",
       "The Last Tudor",
       "The Virgin’s Lover",
-      "The Other Queen"
+      "The Other Queen",
+      "Boleyn Traitor"
     ],
     poc: false,
     gender: "female",

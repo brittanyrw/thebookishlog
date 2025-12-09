@@ -150,6 +150,65 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "The Strength of the Few",
+    author: ["James Islington"],
+    audioBookNarrator: [""],
+    publishedYear: 2025,
+    setting: [""],
+    genre: [""],
+    age: "Adult",
+    type: "Fiction",
+    pages: 720,
+    medium: "Audio",
+    rating: 0,
+    dateStarted: "11/17/2025",
+    dateFinished: "11/19/2025",
+    progress: "dnf",
+    color: "red",
+    fav: false,
+    publisher: "",
+    audioBookPublisher: "",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
+    title: "Boleyn Traitor",
+    author: ["Philippa Gregory"],
+    audioBookNarrator: ["Gemma Whelan"],
+    publishedYear: 2025,
+    setting: ["United Kingdom"],
+    genre: [
+      "Historical Fiction",
+      "Biography",
+      "Family",
+      "Religion",
+      "Romance",
+      "War",
+      "Tudors",
+      "Royal"
+    ],
+    age: "Adult",
+    type: "Fiction",
+    pages: 496,
+    medium: "Audio",
+    rating: 4,
+    dateStarted: "11/05/2025",
+    dateFinished: "11/16/2025",
+    progress: "finished",
+    color: "gold",
+    fav: false,
+    publisher: "William Morrow",
+    audioBookPublisher: "HarperAudio",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: "The Plantagenet and Tudor Novels"
+  },
+  {
     title: "The Shadow of the Gods",
     author: ["John Gwynne"],
     audioBookNarrator: [""],

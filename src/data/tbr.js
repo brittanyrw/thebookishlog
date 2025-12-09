@@ -47,7 +47,6 @@ export const tbrData = [
   "Orbital",
   "Beautiful Star",
   "Several people are typing",
-  "Artemis",
   "Assassian's apprentice",
   "The Body",
   "I who have never known men",
