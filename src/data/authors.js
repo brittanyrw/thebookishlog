@@ -1180,7 +1180,7 @@ export const authorData = [
     name: "Nicole D. Sconiers",
     books: ["Out There Screaming: An Anthology of New Black Horror"],
     poc: true,
-    gender: "",
+    gender: "female",
     lgbt: false,
     fav: false,
     country: [

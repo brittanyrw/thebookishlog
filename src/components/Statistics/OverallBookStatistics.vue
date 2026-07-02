@@ -67,23 +67,12 @@
         <p class="stat-title">2024</p>
       </div>
       <div class="stat orange">
-        <p class="stat-number">{{ countYear("2025") }}/52</p>
-        <p class="stat-title">
-          {{ Math.floor((countYear("2025") / 52) * 100) }}%
-        </p>
+        <p class="stat-number">{{ countYear("2025") }}</p>
         <p class="stat-title">2025</p>
       </div>
-      <div class="stat blue stat-number-avg-days">
-        <p class="stat-number">
-          {{ Math.floor(averageTimeToRead(2025)) }}
-        </p>
-        <p class="stat-title">Avg Days Per Book (2025)</p>
-      </div>
-      <div class="stat purple">
-        <p class="stat-number">
-          {{ Math.floor(countYearlyRead("pages", 2025) / countYear("2025")) }}
-        </p>
-        <p class="stat-title">Avg Pages (2025)</p>
+      <div class="stat gold">
+        <p class="stat-number">{{ countYear("2026") }}</p>
+        <p class="stat-title">2026</p>
       </div>
     </div>
   </div>

@@ -25,26 +25,6 @@
         </p>
       </div>
       <div class="stat orange">
-        <p class="stat-number">{{ getAuthorsWithMultipleBooks(2) }}</p>
-        <p class="stat-title">Award Winning Authors</p>
-        <p class="stat-percent">
-          {{
-            Math.floor(
-              (getAuthorsWithMultipleBooks(2) / authorInfo.length) * 100
-            )
-          }}%
-        </p>
-      </div>
-      <div class="stat gold most-awards">
-        <p class="stat-number most-awards-number">
-          {{ getAuthorWithMostAwards().name }}
-        </p>
-        <p class="stat-title">Most Awards</p>
-        <p class="stat-percent">
-          {{ getAuthorWithMostAwards().awards.length }}
-        </p>
-      </div>
-      <div class="stat green">
         <p class="stat-number">{{ valueCount("gender", "female") }}</p>
         <p class="stat-title">Female</p>
         <p class="stat-percent">
@@ -53,6 +33,44 @@
               (valueCount("gender", "female") / authorInfo.length) * 100
             )
           }}%
+        </p>
+      </div>
+      <div class="stat gold">
+        <p class="stat-number">{{ valueCount("gender", "male") }}</p>
+        <p class="stat-title">Male</p>
+        <p class="stat-percent">
+          {{
+            Math.floor(
+              (valueCount("gender", "male") / authorInfo.length) * 100
+            )
+          }}%
+        </p>
+      </div>
+      <div class="stat green">
+        <p class="stat-number">{{ valueCount("gender", "non-binary") }}</p>
+        <p class="stat-title">Non-Binary</p>
+        <p class="stat-percent">
+          {{
+            Math.floor(
+              (valueCount("gender", "non-binary") / authorInfo.length) * 100
+            )
+          }}%
+        </p>
+      </div>
+      <div class="stat lightblue">
+        <p class="stat-number">{{ valueCount("lgbt", true) }}</p>
+        <p class="stat-title">LGBTQIA+</p>
+        <p class="stat-percent">
+          {{
+            Math.floor((valueCount("lgbt", true) / authorInfo.length) * 100)
+          }}%
+        </p>
+      </div>
+      <div class="stat pink">
+        <p class="stat-number">{{ valueCount("poc", true) }}</p>
+        <p class="stat-title">POC</p>
+        <p class="stat-percent">
+          {{ Math.floor((valueCount("poc", true) / authorInfo.length) * 100) }}%
         </p>
       </div>
       <div class="country-stats">
@@ -267,9 +285,6 @@ export default {
         .stat-percent {
           border-color: #d31d96;
         }
-      }
-      @media screen and (min-width: 992px) {
-        margin: 10px;
       }
       .stat-number {
         font-size: 35px;
