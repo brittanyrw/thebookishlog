@@ -151,6 +151,31 @@ export type Progress = "finished" | "dnf" | "started";
 
 export const bookData: Book[] = [
   {
+    title: "Annie Bot",
+    author: ["Sierra Greer"],
+    audioBookNarrator: ["Jennifer Jill Araya"],
+    publishedYear: 2024,
+    setting: ["New York City", "United States"],
+    genre: ["Science Fiction", "Romance", "Thriller", "Dystopia"],
+    age: "Adult",
+    type: "Fiction",
+    pages: 240,
+    medium: "Audio",
+    rating: 3.5,
+    dateStarted: "07/19/2026",
+    dateFinished: "07/23/2026",
+    progress: "finished",
+    color: "pink",
+    fav: false,
+    publisher: "Mariner Books",
+    audioBookPublisher: "Mariner Books",
+    dedication: {
+      to: "",
+      text: ""
+    },
+    series: ""
+  },
+  {
     title: "The Strength of the Few",
     author: ["James Islington"],
     audioBookNarrator: [""],

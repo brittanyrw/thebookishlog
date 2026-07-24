@@ -24,7 +24,6 @@ export const tbrData = [
   "Harlem Shuffle",
   "Death of the Author",
   "Legends and Lattes",
-  "Blood like Magic",
   "How the Garcia Girls Lost Their Accident",
   "What My Bones Know",
   "Genesis of Misery",

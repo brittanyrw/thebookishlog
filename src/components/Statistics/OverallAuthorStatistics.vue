@@ -80,7 +80,12 @@
             :key="countryCode"
             class="author-stat-flags"
           >
-            <p class="author-stat-flag">{{ flagEmoji(countryCode) }}</p>
+            <img
+              class="author-stat-flag"
+              :src="`https://flagcdn.com/${countryCode.toLowerCase()}.svg`"
+              :alt="countryName(countryCode)"
+              loading="lazy"
+            />
             <p class="author-stat-flag-amount">{{ countryAmount }}</p>
             <p class="author-stat-country">{{ countryName(countryCode) }}</p>
           </li>
@@ -359,6 +364,8 @@ export default {
     .author-stat-flag {
       font-size: 28px;
       margin-right: 15px;
+      height: 25px;
+      border: 1px solid $black;
       @media screen and (min-width: 992px) {
         font-size: 40px;
       }

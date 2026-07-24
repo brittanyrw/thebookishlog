@@ -17,6 +17,13 @@
           {{ valueCount("rating", 5) }}
         </p>
         <p class="stat-title">5 Stars</p>
+        <p class="stat-percent">
+          {{
+            Math.floor(
+              (valueCount("rating", 5) / filterReadBooks.length) * 100
+            )
+          }}%
+        </p>
       </div>
       <div class="stat gold">
         <p class="stat-number">
@@ -41,6 +48,13 @@
           {{ valueCountDnf("progress", "dnf") }}
         </p>
         <p class="stat-title">DNF books</p>
+        <p class="stat-percent">
+          {{
+            Math.floor(
+              (valueCountDnf("progress", "dnf") / filterReadBooks.length) * 100
+            )
+          }}%
+        </p>
       </div>
       <div class="stat gold">
         <p class="stat-number">{{ rereadCount }}</p>
@@ -175,7 +189,7 @@ export default {
     margin: auto;
     .stat {
       background-color: $black;
-      padding: 15px;
+      padding: 15px 15px 30px 15px;
       text-align: center;
       margin: 10px;
       border-radius: 7px;
@@ -185,6 +199,7 @@ export default {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      position: relative;
       &.blue {
         box-shadow: #1d5ed3 2px 2px, $black 4px 4px, #1d5ed3 6px 6px,
           $black 8px 8px, #1d5ed3 10px 10px;
@@ -214,11 +229,17 @@ export default {
         box-shadow: #d3721d 2px 2px, $black 4px 4px, #d3721d 6px 6px,
           $black 8px 8px, #d3721d 10px 10px;
         border: 2px solid #d3721d;
+        .stat-percent {
+          border-color: #d3721d;
+        }
       }
       &.lightblue {
         box-shadow: $black 2px 2px, #1dadd3 4px 4px, $black 6px 6px,
           #1dadd3 8px 8px, $black 10px 10px;
         border: 2px solid #1dadd3;
+        .stat-percent {
+          border-color: #1dadd3;
+        }
       }
       &.pink {
         box-shadow: $black 2px 2px, #d31d96 4px 4px, $black 6px 6px,
@@ -238,6 +259,23 @@ export default {
       }
       .stat-title {
         margin: 0;
+      }
+      .stat-percent {
+        margin: 0;
+        background-color: $black;
+        color: white;
+        position: absolute;
+        padding: 10px;
+        bottom: -40px;
+        right: 5px;
+        height: 65px;
+        width: 65px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 2px solid;
       }
     }
   }

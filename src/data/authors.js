@@ -1526,5 +1526,21 @@ export const authorData = [
     ],
     website: "bjrobbinsliterary.com/pamela-nagami-md",
     awards: []
+  },
+  {
+    name: "Sierra Greer",
+    books: ["Annie Bot"],
+    poc: false,
+    gender: "female",
+    lgbt: false,
+    fav: false,
+    country: [
+      {
+        code: "US",
+        name: "United States"
+      }
+    ],
+    website: "sierragreerwriter.com",
+    awards: []
   }
 ];

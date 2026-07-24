@@ -70,12 +70,16 @@
 
               <div class="author-stats">
                 <span class="book-number">{{ author.books.length }}</span>
-                <span
-                  class="flag"
+
+                <img
                   v-for="(country, index) in author.country"
                   :key="index"
-                >
-                  {{ flagEmoji(country.code) }}
+                  class="flag"
+                  :src="`https://flagcdn.com/${country.code.toLowerCase()}.svg`"
+                  loading="lazy"
+                />
+                <span v-if="author.lgbt" class="lgbt">
+                  🏳️‍🌈
                 </span>
               </div>
             </div>
@@ -150,12 +154,15 @@
 
             <div class="author-stats">
               <span class="book-number">{{ author.books.length }}</span>
-              <span
-                class="flag"
+              <img
                 v-for="(country, index) in author.country"
                 :key="index"
-              >
-                {{ flagEmoji(country.code) }}
+                class="flag"
+                :src="`https://flagcdn.com/${country.code.toLowerCase()}.svg`"
+                loading="lazy"
+              />
+              <span v-if="author.lgbt" class="lgbt">
+                🏳️‍🌈
               </span>
             </div>
           </div>
@@ -218,12 +225,15 @@
 
             <div class="author-stats">
               <span class="book-number">{{ author.books.length }}</span>
-              <span
-                class="flag"
+              <img
                 v-for="(country, index) in author.country"
                 :key="index"
-              >
-                {{ flagEmoji(country.code) }}
+                class="flag"
+                :src="`https://flagcdn.com/${country.code.toLowerCase()}.svg`"
+                loading="lazy"
+              />
+              <span v-if="author.lgbt" class="lgbt">
+                🏳️‍🌈
               </span>
             </div>
           </div>
@@ -428,9 +438,14 @@ export default {
         height: 20px;
         margin-left: 5px;
       }
-      .flag,
-      .lgbt {
+      .flag {
         font-size: 30px;
+        height: 25px;
+        border: 1px solid $black;
+        margin-right: 10px;
+      }
+      .lgbt {
+        font-size: 38px;
       }
       &.single-book {
         flex-grow: unset;
