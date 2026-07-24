@@ -191,7 +191,7 @@ export default {
       background-color: $black;
       padding: 15px 15px 30px 15px;
       text-align: center;
-      margin: 10px;
+      margin: 20px 15px;
       border-radius: 7px;
       flex-grow: 1;
       color: white;
